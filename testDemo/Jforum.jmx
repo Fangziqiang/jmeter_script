@@ -196,10 +196,10 @@
           <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="正则表达式提取器" enabled="true">
             <stringProp name="RegexExtractor.useHeaders">false</stringProp>
             <stringProp name="RegexExtractor.refname">moduleID</stringProp>
-            <stringProp name="RegexExtractor.regex">&lt;a class=&quot;forumlink&quot; href=&quot;/jforum/forums/show/(.*).page&quot;&gt;</stringProp>
+            <stringProp name="RegexExtractor.regex">&lt;a class=&quot;forumlink&quot; href=&quot;/jforum/forums/show/(.+).page&quot;&gt;</stringProp>
             <stringProp name="RegexExtractor.template">$1$</stringProp>
             <stringProp name="RegexExtractor.default"></stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
+            <stringProp name="RegexExtractor.match_number">0</stringProp>
           </RegexExtractor>
           <hashTree/>
         </hashTree>
