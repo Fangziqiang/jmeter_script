@@ -1,0 +1,32 @@
+一、环境准备
+jdk版本：1.8
+工具：XSHELL5  xftp5
+
+二、安装步骤
+1、下载安装包
+下载地址：http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+使用wget下载
+wget   https://download.oracle.com/otn-pub/java/jdk/8u201-b09/42970487e3af4f5aa5bca3f542482c60/jdk-8u201-linux-x64.tar.gz?AuthParam=1554176100_9a6554c9d20833fbdd23772a619ab3f1
+
+2、解压安装包
+进入需要解压的目录（我使用/usr/local/java），解压命令
+tar -xvf jdk-8u201-linux-x64.tar.gz
+
+3、修改配置文件（配置环境变量）
+vim /etc/profile
+在文件末尾添加以下内容
+unset i
+unset -f pathmunge
+export JAVA_HOME=/usr/local/java/jdk1.8.0_201
+export CLASSPATH=.;$JAVA_HOME/lib/dt.jar;$JAVA_HOME/lib/tools.jar
+PATH=$PATH:/opt/lampp/bin:$JAVA_HOME/bin
+export PATH
+
+保存之后通过source 、etc/profile命令使修改的配置生效
+
+4、测试JDK安装是否成功
+
+java -version
+
+5、下载或者直接上传tomcat包   使用./startup.sh启动tomcat

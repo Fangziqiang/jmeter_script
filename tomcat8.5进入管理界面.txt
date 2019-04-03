@@ -1,0 +1,37 @@
+1、首先修改conf/tomcat-user.xml文件
+  
+  <role rolename="tomcat"/>
+  <role rolename="role1"/>
+  <role rolename="manager-gui"/>
+  <user username="tomcat" password="tomcat" roles="tomcat,manager-gui"/>
+  <user username="both" password="tomcat" roles="tomcat,role1"/>
+  <user username="role1" password="tomcat" roles="role1"/>
+</tomcat-users>
+
+2、修改地址访问限制:webapps/manager/META-INF/context.xml
+注释掉下面一段
+<!--
+  <Valve className="org.apache.catalina.valves.RemoteAddrValve"
+         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />
+-->
+
+或者修改为如下内容
+<Context antiResourceLocking="false" privileged="true" >
+  <Valve className="org.apache.catalina.valves.RemoteAddrValve"
+         allow="^.*$" />
+</Context>
+
+3、
+新建或编辑conf/Catalina/localhost/manager.xml
+<context privileged="true" antiResourceLocking="false"
+         docBase="${catalina.home}/webapps/manager">
+             <Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="^.*$" />
+</Context>
+
+新建或编辑conf/Catalina/localhost/host-manager.xml
+<context privileged="true" antiResourceLocking="false"
+         docBase="${catalina.home}/webapps/host-manager">
+             <Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="^.*$" />
+</Context>
+
+
