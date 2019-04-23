@@ -1,0 +1,12 @@
+
+1、添加正则表达式提取token
+2、添加Bean Shell后置处理器
+在登录的http请求下添加Bean Shell后置处理器
+
+2、在Bean Shell 操作面板，
+Parametres（参数）：把需要操作的参数传递给Bean Shell。前面提取出来的Token的值，就把参数Token写入
+Script（脚本内容）：  
+//调用函数__setProperty，把Bean Shell PostProcessor中的参数Token的值赋值给requestToken，并设置requestToken为jmeter内置属性。
+${__setProperty(requestToken,${Token},)};  
+
+3、调用全局变量：将全局变量${__property(requestToken,,)写在信息头中，就实现了token跨线程使用
