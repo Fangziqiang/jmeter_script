@@ -1,0 +1,13 @@
+https://blog.csdn.net/zuozewei/article/details/82911173
+
+
+influxdb数据库管理地址：
+http://192.168.10.103:8083/?#
+
+数据库地址：192.168.10.6:8086
+database :jmeter
+user:root 
+pwd:123456
+
+Grafana：web监控平台
+http://192.168.10.103:3000/dashboard/db/new-dashboard?panelId=1&fullscreen&edit
