@@ -1,4 +1,6 @@
-https://blog.csdn.net/zuozewei/article/details/82911173
+﻿https://blog.csdn.net/zuozewei/article/details/82911173
+
+https://www.cnblogs.com/yyhh/p/5990228.html
 
 
 influxdb数据库管理地址：
@@ -11,3 +13,8 @@ pwd:123456
 
 Grafana：web监控平台
 http://192.168.10.103:3000/dashboard/db/new-dashboard?panelId=1&fullscreen&edit
+admin/admin
+
+
+service influxdb restart 、
+service grafana-server start
