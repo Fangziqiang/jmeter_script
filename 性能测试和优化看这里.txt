@@ -1,0 +1,17 @@
+性能优化模式：http://tech.meituan.com/performance_tuning_pattern.html?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io
+
+性能优化之空间性可靠性：http://www.jianshu.com/p/85331bd720dc?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io
+
+阿里全链路压测：https://my.oschina.net/cctester/blog/994727
+
+有赞全链路压测：https://mp.weixin.qq.com/s/0a-Sd_fCkE2mDFzNpKxf7A
+
+京东全链路压测：https://sdk.cn/news/6349
+
+后端服务压测详解：http://mp.weixin.qq.com/s/XW9geHZ9odHdI7srDiKBIg
+
+高并发性能调试：http://www.cnblogs.com/zengkefu/p/5814757.html#3614463
+
+饿了么全链路压测-基于jmeter：https://www.testwo.com/article/1104
+
+java GC详解：https://www.testwo.com/article/1104
