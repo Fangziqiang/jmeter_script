@@ -39,7 +39,7 @@
           <stringProp name="HTTPSampler.domain">hzcx.aiinp.com</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
-          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
           <stringProp name="HTTPSampler.path">/user/order</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -406,7 +406,7 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <intProp name="LoopController.loops">-1</intProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">100</stringProp>
+        <stringProp name="ThreadGroup.num_threads">80</stringProp>
         <stringProp name="ThreadGroup.ramp_time">0</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
@@ -427,7 +427,7 @@
           <stringProp name="HTTPSampler.domain">192.168.10.6</stringProp>
           <stringProp name="HTTPSampler.port">8080</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
-          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
           <stringProp name="HTTPSampler.path">/user/order</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -464,7 +464,7 @@
             </elementProp>
             <elementProp name="Authorization" elementType="Header">
               <stringProp name="Header.name">Authorization</stringProp>
-              <stringProp name="Header.value">Bearer eyJhbGciOiJIUzUxMiJ9.eyJkZXZpY2VUeXBlIjoicGMiLCJyYW5kb21LZXkiOiJkdW9lb2oiLCJzdWIiOiIxMTY5MTM4NTI0MjQ5ODI5Mzc3MTU2NzU3OTMyMHJhcnNzOSIsImV4cCI6MTU3MjI1MzY1NCwiZGV2aWNlSWQiOiIxMTgxMzcxMDY0ODExMjc0MjQxMTU3MDQ5NTc4NXFzdjljOSIsImlhdCI6MTU3MTY0ODg1NH0.iLJq8jx0Hci9mD1dd-6ARXKrPsTsT61aCipNjTHL1O_dHgwCoWZ2kCddvuSs9g-IkvSDT1gmi5FSpU1h6DEbaA</stringProp>
+              <stringProp name="Header.value">Bearer eyJhbGciOiJIUzUxMiJ9.eyJkZXZpY2VUeXBlIjoid3giLCJyYW5kb21LZXkiOiJhNHY5aWgiLCJzdWIiOiIxMTY5MTM4NTI0MjQ5ODI5Mzc3MTU2NzU3OTMyMHJhcnNzOSIsImV4cCI6MTU3MjkxNzE2NiwiZGV2aWNlSWQiOiIxMTY5NTQzODY2Mzc0NzI5NzI5MTU2NzY3NTk2MTJia3dndSIsImlhdCI6MTU3MjMxMjM2Nn0.3T270posZoTSuIf0_1pyIrnldqQzahKyoyCvLT_YIn0q5WYOAtqMSu7WGSTv3qWEwrN5VM4fa3dKss23fn7uvA</stringProp>
             </elementProp>
             <elementProp name="Host" elementType="Header">
               <stringProp name="Header.name">Host</stringProp>
@@ -778,15 +778,30 @@
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
+        <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+          <collectionProp name="Asserion.test_strings"/>
+          <stringProp name="Assertion.custom_message">ca</stringProp>
+          <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+          <boolProp name="Assertion.assume_success">false</boolProp>
+          <intProp name="Assertion.test_type">16</intProp>
+        </ResponseAssertion>
+        <hashTree/>
+        <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell 后置处理程序" enabled="true">
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <boolProp name="resetInterpreter">false</boolProp>
+          <stringProp name="script"></stringProp>
+        </BeanShellPostProcessor>
+        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="PC客户端上传订单_线上117822362909426892915697453784sixic" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">20</stringProp>
+          <intProp name="LoopController.loops">-1</intProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">5</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <stringProp name="ThreadGroup.num_threads">30</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
@@ -806,7 +821,7 @@
           <stringProp name="HTTPSampler.domain">hzcx.aiinp.com</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
-          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
           <stringProp name="HTTPSampler.path">/user/order</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -974,7 +989,7 @@
           <stringProp name="HTTPSampler.domain">hzcx.aiinp.com</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
-          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
           <stringProp name="HTTPSampler.path">/user/order</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -1287,6 +1302,126 @@
           </objProp>
           <stringProp name="filename"></stringProp>
         </ResultCollector>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="登录" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <longProp name="ThreadGroup.start_time">1568965040000</longProp>
+        <longProp name="ThreadGroup.end_time">1568965040000</longProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;phone&quot;:&quot;15737831133&quot;,&quot;password&quot;:&quot;111111&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">192.168.10.6</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/auth/login</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="察看结果树" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP信息头管理器" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="&quot;charset&quot;" elementType="Header">
+              <stringProp name="Header.name">charset</stringProp>
+              <stringProp name="Header.value">utf-8</stringProp>
+            </elementProp>
+            <elementProp name="&quot;Accept-Encoding&quot;" elementType="Header">
+              <stringProp name="Header.name">Accept-Encoding</stringProp>
+              <stringProp name="Header.value">gzip</stringProp>
+            </elementProp>
+            <elementProp name="&quot;referer&quot;" elementType="Header">
+              <stringProp name="Header.name">referer</stringProp>
+              <stringProp name="Header.value">https://servicewechat.com/wx2ae551f4370691b6/0/page-frame.html</stringProp>
+            </elementProp>
+            <elementProp name="&quot;content-type&quot;" elementType="Header">
+              <stringProp name="Header.name">content-type</stringProp>
+              <stringProp name="Header.value">application/json</stringProp>
+            </elementProp>
+            <elementProp name="&quot;User-Agent&quot;" elementType="Header">
+              <stringProp name="Header.name">User-Agent</stringProp>
+              <stringProp name="Header.value">Mozilla/5.0 (Linux; Android 8.0.0; MIX 2 Build/OPR1.170623.027; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.99 Mobile Safari/537.36 MicroMessenger/7.0.6.1460(0x27000634) Process/appbrand0 NetType/WIFI Language/zh_CN</stringProp>
+            </elementProp>
+            <elementProp name="&quot;Content-Length&quot;" elementType="Header">
+              <stringProp name="Header.name">Content-Length</stringProp>
+              <stringProp name="Header.value">0</stringProp>
+            </elementProp>
+            <elementProp name="&quot;Host&quot;" elementType="Header">
+              <stringProp name="Header.name">Host</stringProp>
+              <stringProp name="Header.value">hzcx.aiinp.com</stringProp>
+            </elementProp>
+            <elementProp name="&quot;Connection&quot;" elementType="Header">
+              <stringProp name="Header.name">Connection</stringProp>
+              <stringProp name="Header.value">Keep-Alive</stringProp>
+            </elementProp>
+            <elementProp name="hzcx-user&quot;" elementType="Header">
+              <stringProp name="Header.name">hzcx-user</stringProp>
+              <stringProp name="Header.value">ofjzM4j3qO5YPncyHg9d9j5maNe8</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
         <hashTree/>
       </hashTree>
     </hashTree>
