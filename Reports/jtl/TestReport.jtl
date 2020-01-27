@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="6077" it="0" lt="6033" ct="5974" ts="1580107972109" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="2559" sby="118" ng="1" na="1">
+  <java.net.URL>https://www.baidu.com/</java.net.URL>
+</httpSample>
+
+</testResults>
