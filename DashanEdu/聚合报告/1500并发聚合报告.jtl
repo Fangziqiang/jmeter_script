@@ -1,0 +1,14 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1581339939828,283,login,200,OK,客户端压测 1-1,text,true,,836,514,1,1,https://interface.xuexi8.net/jiekou2/index.php?c=Userv2&a=loginStuednt,275,0,188
+1581339940142,76,强制升级接口,200,OK,客户端压测 1-1,text,true,,881,457,1,1,https://interface.xuexi8.net/jiekou2/index.php?c=MobileConfig&a=forceUpdata,74,0,0
+1581339940280,77,班课弹窗图,200,OK,客户端压测 1-1,text,true,,629,464,1,1,https://interface.xuexi8.net/jiekou2/index.php?c=Extent&a=sanPing,77,0,0
+1581339940358,137,HomePage,200,OK,客户端压测 1-1,text,true,,1621,464,1,1,https://interface.xuexi8.net/jiekou2/index.php?c=Homepage&a=index,137,0,0
+1581339940496,78,获取当前学生购物车商品数量,200,OK,客户端压测 1-1,text,true,,540,474,1,1,https://interface.xuexi8.net/jiekou2/index.php?c=StudentCar&a=countCouse%20,78,0,0
+1581339940575,132,图片接口,200,OK,客户端压测 1-1,text,true,,983,467,1,1,https://interface.xuexi8.net/jiekou2/index.php?c=teacher&a=sliderPic,132,0,0
+1581339940708,67,学生登录日志,200,OK,客户端压测 1-1,text,true,,563,810,1,1,https://interface.xuexi8.net/jiekou2/index.php?c=MobileConfig&a=studentLoginLog,67,0,0
+1581339940775,71,发现,200,OK,客户端压测 1-1,text,true,,590,499,1,1,https://interface.xuexi8.net/jiekou2/index.php?c=MobileConfig&a=checkIsShow,67,0,0
+1581339940847,87,获取直播班级,200,OK,客户端压测 1-1,text,true,,1535,530,1,1,https://interface.xuexi8.net/jiekou2/index.php?c=Courseplaso&a=getPlasoCourse,86,0,0
+1581339940934,107,获取直播章节数据,200,OK,客户端压测 1-1,text,true,,2147,543,1,1,https://interface.xuexi8.net/jiekou2/index.php?c=Courseplaso&a=getPlasoChapter,107,0,0
+1581339941042,1267,家校任务列表,200,OK,客户端压测 1-1,text,true,,4210,469,1,1,https://interface.xuexi8.net/jiekou2/index.php?c=homeSchool&a=homeTask,1265,0,0
+1581339942306,1483,家校全部班级,200,OK,客户端压测 1-1,text,true,,4248,523,1,1,https://interface.xuexi8.net/jiekou2/index.php?c=homeSchool&a=homeTask,1482,0,123
+1581339943789,1,调试取样器,200,OK,客户端压测 1-1,text,true,,427,0,1,1,null,0,0,0
