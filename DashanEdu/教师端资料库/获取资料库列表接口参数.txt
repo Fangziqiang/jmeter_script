@@ -1,0 +1,8 @@
+search_time:	时间区间（0不限时间，1一天以内，2一周以内，3一月以内，4一年以内）
+search_text:	检索关键字
+search_id:	检索字段（资料名称) 上传人姓名，1上传人，2资料标题）
+user_id:	资料上传人
+search_type:	资料文件类别（1：ppt|pptx；2：视频；3：音频；4：xls|xlsx；5：doc|docx；6：pdf；7：swf）
+data_class_id：	资料类别
+page：		页码
+limit：		每页几条
