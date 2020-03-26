@@ -70,7 +70,7 @@
       <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
         <stringProp name="delimiter">,</stringProp>
         <stringProp name="fileEncoding">UTF-8</stringProp>
-        <stringProp name="filename">D:/学习资料/03性能测试/Jmeter资料/apache-jmeter-3.3/jmeter_script/DashanEdu/useraccount.dat</stringProp>
+        <stringProp name="filename">/useraccount.dat</stringProp>
         <boolProp name="ignoreFirstLine">true</boolProp>
         <boolProp name="quotedData">false</boolProp>
         <boolProp name="recycle">true</boolProp>
@@ -162,47 +162,7 @@
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-            <collectionProp name="HeaderManager.headers">
-              <elementProp name="Cookie" elementType="Header">
-                <stringProp name="Header.name">Cookie</stringProp>
-                <stringProp name="Header.value">acw_tc=&quot;65c86a0c15812399458947985ee5577c2b9f487254742fa93c13cf79f9cd03&quot;;$Path=&quot;/&quot;;$Domain=&quot;interface.xuexi8.net&quot;; PHPSESSID=1cfsatavmktv0fe8bk6ping3h5</stringProp>
-              </elementProp>
-              <elementProp name="Content-Length" elementType="Header">
-                <stringProp name="Header.name">Content-Length</stringProp>
-                <stringProp name="Header.value">175</stringProp>
-              </elementProp>
-              <elementProp name="User-Agent" elementType="Header">
-                <stringProp name="Header.name">User-Agent</stringProp>
-                <stringProp name="Header.value">Dalvik/2.1.0 (Linux; U; Android 7.1.1; OPPO R9s Build/NMF26F)</stringProp>
-              </elementProp>
-              <elementProp name="Host" elementType="Header">
-                <stringProp name="Header.name">Host</stringProp>
-                <stringProp name="Header.value">interface.xuexi8.net</stringProp>
-              </elementProp>
-              <elementProp name="Connection" elementType="Header">
-                <stringProp name="Header.name">Connection</stringProp>
-                <stringProp name="Header.value">Keep-Alive</stringProp>
-              </elementProp>
-              <elementProp name="Accept-Encoding" elementType="Header">
-                <stringProp name="Header.name">Accept-Encoding</stringProp>
-                <stringProp name="Header.value">gzip</stringProp>
-              </elementProp>
-            </collectionProp>
-          </HeaderManager>
-          <hashTree/>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="token" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">false</stringProp>
-            <stringProp name="RegexExtractor.refname">token</stringProp>
-            <stringProp name="RegexExtractor.regex">login_token&quot;:&quot;(.+?)&quot;</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default"></stringProp>
-            <stringProp name="RegexExtractor.match_number">1</stringProp>
-            <boolProp name="RegexExtractor.default_empty_value">true</boolProp>
-          </RegexExtractor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="强制升级接口" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
@@ -222,49 +182,16 @@
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-            <collectionProp name="HeaderManager.headers">
-              <elementProp name="Cookie" elementType="Header">
-                <stringProp name="Header.name">Cookie</stringProp>
-                <stringProp name="Header.value">$Version=&quot;1&quot;; acw_tc=&quot;65c86a0c15812399458947985ee5577c2b9f487254742fa93c13cf79f9cd03&quot;;$Path=&quot;/&quot;;$Domain=&quot;interface.xuexi8.net&quot;</stringProp>
-              </elementProp>
-              <elementProp name="Content-Type" elementType="Header">
-                <stringProp name="Header.name">Content-Type</stringProp>
-                <stringProp name="Header.value">application/x-www-form-urlencoded;charset=UTF-8</stringProp>
-              </elementProp>
-              <elementProp name="Content-Length" elementType="Header">
-                <stringProp name="Header.name">Content-Length</stringProp>
-                <stringProp name="Header.value">61</stringProp>
-              </elementProp>
-              <elementProp name="User-Agent" elementType="Header">
-                <stringProp name="Header.name">User-Agent</stringProp>
-                <stringProp name="Header.value">Dalvik/2.1.0 (Linux; U; Android 7.1.1; OPPO R9s Build/NMF26F)</stringProp>
-              </elementProp>
-              <elementProp name="Host" elementType="Header">
-                <stringProp name="Header.name">Host</stringProp>
-                <stringProp name="Header.value">interface.xuexi8.net</stringProp>
-              </elementProp>
-              <elementProp name="Connection" elementType="Header">
-                <stringProp name="Header.name">Connection</stringProp>
-                <stringProp name="Header.value">Keep-Alive</stringProp>
-              </elementProp>
-              <elementProp name="Accept-Encoding" elementType="Header">
-                <stringProp name="Header.name">Accept-Encoding</stringProp>
-                <stringProp name="Header.value">gzip</stringProp>
-              </elementProp>
-            </collectionProp>
-          </HeaderManager>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="班课弹窗图" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
+              <elementProp name="student_id" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;student_id&quot;:&quot;${student_id}&quot;}</stringProp>
+                <stringProp name="Argument.value">${student_id}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">student_id</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
@@ -285,13 +212,14 @@
         </HTTPSamplerProxy>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HomePage" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
+              <elementProp name="student_id" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;student_id&quot;:&quot;${student_id}&quot;}</stringProp>
+                <stringProp name="Argument.value">${student_id}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">student_id</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
@@ -321,8 +249,8 @@
           <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
           <stringProp name="HTTPSampler.path">/jiekou2/index.php?c=system&amp;a=app_icons</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
@@ -352,13 +280,14 @@
         </HTTPSamplerProxy>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="获取当前学生购物车商品数量" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
+              <elementProp name="student_id" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;student_id&quot;:&quot;${student_id}&quot;}</stringProp>
+                <stringProp name="Argument.value">${student_id}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">student_id</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
@@ -377,38 +306,7 @@
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-            <collectionProp name="HeaderManager.headers">
-              <elementProp name="Cookie" elementType="Header">
-                <stringProp name="Header.name">Cookie</stringProp>
-                <stringProp name="Header.value">acw_tc=&quot;65c86a0c15812399458947985ee5577c2b9f487254742fa93c13cf79f9cd03&quot;;$Path=&quot;/&quot;;$Domain=&quot;interface.xuexi8.net&quot;; PHPSESSID=${token}</stringProp>
-              </elementProp>
-              <elementProp name="Content-Length" elementType="Header">
-                <stringProp name="Header.name">Content-Length</stringProp>
-                <stringProp name="Header.value">523</stringProp>
-              </elementProp>
-              <elementProp name="User-Agent" elementType="Header">
-                <stringProp name="Header.name">User-Agent</stringProp>
-                <stringProp name="Header.value">Dalvik/2.1.0 (Linux; U; Android 7.1.1; OPPO R9s Build/NMF26F)</stringProp>
-              </elementProp>
-              <elementProp name="Host" elementType="Header">
-                <stringProp name="Header.name">Host</stringProp>
-                <stringProp name="Header.value">interface.xuexi8.net</stringProp>
-              </elementProp>
-              <elementProp name="Connection" elementType="Header">
-                <stringProp name="Header.name">Connection</stringProp>
-                <stringProp name="Header.value">Keep-Alive</stringProp>
-              </elementProp>
-              <elementProp name="Accept-Encoding" elementType="Header">
-                <stringProp name="Header.name">Accept-Encoding</stringProp>
-                <stringProp name="Header.value">gzip</stringProp>
-              </elementProp>
-            </collectionProp>
-            <stringProp name="TestPlan.comments">从登陆接口获取token ${token}传给PHPSESSID</stringProp>
-          </HeaderManager>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="学生登录日志" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
@@ -446,40 +344,9 @@
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-            <collectionProp name="HeaderManager.headers">
-              <elementProp name="Cookie" elementType="Header">
-                <stringProp name="Header.name">Cookie</stringProp>
-                <stringProp name="Header.value">acw_tc=&quot;65c86a0c15812399458947985ee5577c2b9f487254742fa93c13cf79f9cd03&quot;;$Path=&quot;/&quot;;$Domain=&quot;interface.xuexi8.net&quot;; PHPSESSID=${token}</stringProp>
-              </elementProp>
-              <elementProp name="Content-Length" elementType="Header">
-                <stringProp name="Header.name">Content-Length</stringProp>
-                <stringProp name="Header.value">523</stringProp>
-              </elementProp>
-              <elementProp name="User-Agent" elementType="Header">
-                <stringProp name="Header.name">User-Agent</stringProp>
-                <stringProp name="Header.value">Dalvik/2.1.0 (Linux; U; Android 7.1.1; OPPO R9s Build/NMF26F)</stringProp>
-              </elementProp>
-              <elementProp name="Host" elementType="Header">
-                <stringProp name="Header.name">Host</stringProp>
-                <stringProp name="Header.value">interface.xuexi8.net</stringProp>
-              </elementProp>
-              <elementProp name="Connection" elementType="Header">
-                <stringProp name="Header.name">Connection</stringProp>
-                <stringProp name="Header.value">Keep-Alive</stringProp>
-              </elementProp>
-              <elementProp name="Accept-Encoding" elementType="Header">
-                <stringProp name="Header.name">Accept-Encoding</stringProp>
-                <stringProp name="Header.value">gzip</stringProp>
-              </elementProp>
-            </collectionProp>
-            <stringProp name="TestPlan.comments">从登陆接口获取token ${token}传给PHPSESSID</stringProp>
-          </HeaderManager>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="专题" enabled="true">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="专题(禁用—暂时没有专题)" enabled="false">
         <collectionProp name="ultimatethreadgroupdata">
           <collectionProp name="-1091288919">
             <stringProp name="49741">250</stringProp>
@@ -645,38 +512,7 @@
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-            <collectionProp name="HeaderManager.headers">
-              <elementProp name="Cookie" elementType="Header">
-                <stringProp name="Header.name">Cookie</stringProp>
-                <stringProp name="Header.value">acw_tc=&quot;65c86a0c15812399458947985ee5577c2b9f487254742fa93c13cf79f9cd03&quot;;$Path=&quot;/&quot;;$Domain=&quot;interface.xuexi8.net&quot;; PHPSESSID=${token}</stringProp>
-              </elementProp>
-              <elementProp name="Content-Length" elementType="Header">
-                <stringProp name="Header.name">Content-Length</stringProp>
-                <stringProp name="Header.value">523</stringProp>
-              </elementProp>
-              <elementProp name="User-Agent" elementType="Header">
-                <stringProp name="Header.name">User-Agent</stringProp>
-                <stringProp name="Header.value">Dalvik/2.1.0 (Linux; U; Android 7.1.1; OPPO R9s Build/NMF26F)</stringProp>
-              </elementProp>
-              <elementProp name="Host" elementType="Header">
-                <stringProp name="Header.name">Host</stringProp>
-                <stringProp name="Header.value">interface.xuexi8.net</stringProp>
-              </elementProp>
-              <elementProp name="Connection" elementType="Header">
-                <stringProp name="Header.name">Connection</stringProp>
-                <stringProp name="Header.value">Keep-Alive</stringProp>
-              </elementProp>
-              <elementProp name="Accept-Encoding" elementType="Header">
-                <stringProp name="Header.name">Accept-Encoding</stringProp>
-                <stringProp name="Header.value">gzip</stringProp>
-              </elementProp>
-            </collectionProp>
-            <stringProp name="TestPlan.comments">从登陆接口获取token ${token}传给PHPSESSID</stringProp>
-          </HeaderManager>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="获取直播班级" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
@@ -726,36 +562,6 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-            <collectionProp name="HeaderManager.headers">
-              <elementProp name="Cookie" elementType="Header">
-                <stringProp name="Header.name">Cookie</stringProp>
-                <stringProp name="Header.value">acw_tc=&quot;65c86a0c15812399458947985ee5577c2b9f487254742fa93c13cf79f9cd03&quot;;$Path=&quot;/&quot;;$Domain=&quot;interface.xuexi8.net&quot;; PHPSESSID=${token}</stringProp>
-              </elementProp>
-              <elementProp name="Content-Length" elementType="Header">
-                <stringProp name="Header.name">Content-Length</stringProp>
-                <stringProp name="Header.value">523</stringProp>
-              </elementProp>
-              <elementProp name="User-Agent" elementType="Header">
-                <stringProp name="Header.name">User-Agent</stringProp>
-                <stringProp name="Header.value">Dalvik/2.1.0 (Linux; U; Android 7.1.1; OPPO R9s Build/NMF26F)</stringProp>
-              </elementProp>
-              <elementProp name="Host" elementType="Header">
-                <stringProp name="Header.name">Host</stringProp>
-                <stringProp name="Header.value">interface.xuexi8.net</stringProp>
-              </elementProp>
-              <elementProp name="Connection" elementType="Header">
-                <stringProp name="Header.name">Connection</stringProp>
-                <stringProp name="Header.value">Keep-Alive</stringProp>
-              </elementProp>
-              <elementProp name="Accept-Encoding" elementType="Header">
-                <stringProp name="Header.name">Accept-Encoding</stringProp>
-                <stringProp name="Header.value">gzip</stringProp>
-              </elementProp>
-            </collectionProp>
-            <stringProp name="TestPlan.comments">从登陆接口获取token ${token}传给PHPSESSID</stringProp>
-          </HeaderManager>
-          <hashTree/>
           <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="获取课程id" enabled="true">
             <stringProp name="RegexExtractor.useHeaders">false</stringProp>
             <stringProp name="RegexExtractor.refname">course_id</stringProp>
@@ -814,38 +620,7 @@
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-            <collectionProp name="HeaderManager.headers">
-              <elementProp name="Cookie" elementType="Header">
-                <stringProp name="Header.name">Cookie</stringProp>
-                <stringProp name="Header.value">acw_tc=&quot;65c86a0c15812399458947985ee5577c2b9f487254742fa93c13cf79f9cd03&quot;;$Path=&quot;/&quot;;$Domain=&quot;interface.xuexi8.net&quot;; PHPSESSID=${token}</stringProp>
-              </elementProp>
-              <elementProp name="Content-Length" elementType="Header">
-                <stringProp name="Header.name">Content-Length</stringProp>
-                <stringProp name="Header.value">523</stringProp>
-              </elementProp>
-              <elementProp name="User-Agent" elementType="Header">
-                <stringProp name="Header.name">User-Agent</stringProp>
-                <stringProp name="Header.value">Dalvik/2.1.0 (Linux; U; Android 7.1.1; OPPO R9s Build/NMF26F)</stringProp>
-              </elementProp>
-              <elementProp name="Host" elementType="Header">
-                <stringProp name="Header.name">Host</stringProp>
-                <stringProp name="Header.value">interface.xuexi8.net</stringProp>
-              </elementProp>
-              <elementProp name="Connection" elementType="Header">
-                <stringProp name="Header.name">Connection</stringProp>
-                <stringProp name="Header.value">Keep-Alive</stringProp>
-              </elementProp>
-              <elementProp name="Accept-Encoding" elementType="Header">
-                <stringProp name="Header.name">Accept-Encoding</stringProp>
-                <stringProp name="Header.value">gzip</stringProp>
-              </elementProp>
-            </collectionProp>
-            <stringProp name="TestPlan.comments">从登陆接口获取token ${token}传给PHPSESSID</stringProp>
-          </HeaderManager>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
       </hashTree>
       <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="家校" enabled="true">
         <collectionProp name="ultimatethreadgroupdata">
@@ -891,38 +666,7 @@
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-            <collectionProp name="HeaderManager.headers">
-              <elementProp name="Cookie" elementType="Header">
-                <stringProp name="Header.name">Cookie</stringProp>
-                <stringProp name="Header.value">acw_tc=&quot;65c86a0c15812399458947985ee5577c2b9f487254742fa93c13cf79f9cd03&quot;;$Path=&quot;/&quot;;$Domain=&quot;interface.xuexi8.net&quot;; PHPSESSID=${token}</stringProp>
-              </elementProp>
-              <elementProp name="Content-Length" elementType="Header">
-                <stringProp name="Header.name">Content-Length</stringProp>
-                <stringProp name="Header.value">523</stringProp>
-              </elementProp>
-              <elementProp name="User-Agent" elementType="Header">
-                <stringProp name="Header.name">User-Agent</stringProp>
-                <stringProp name="Header.value">Dalvik/2.1.0 (Linux; U; Android 7.1.1; OPPO R9s Build/NMF26F)</stringProp>
-              </elementProp>
-              <elementProp name="Host" elementType="Header">
-                <stringProp name="Header.name">Host</stringProp>
-                <stringProp name="Header.value">interface.xuexi8.net</stringProp>
-              </elementProp>
-              <elementProp name="Connection" elementType="Header">
-                <stringProp name="Header.name">Connection</stringProp>
-                <stringProp name="Header.value">Keep-Alive</stringProp>
-              </elementProp>
-              <elementProp name="Accept-Encoding" elementType="Header">
-                <stringProp name="Header.name">Accept-Encoding</stringProp>
-                <stringProp name="Header.value">gzip</stringProp>
-              </elementProp>
-            </collectionProp>
-            <stringProp name="TestPlan.comments">从登陆接口获取token ${token}传给PHPSESSID</stringProp>
-          </HeaderManager>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="家校全部班级" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
@@ -971,38 +715,7 @@
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-            <collectionProp name="HeaderManager.headers">
-              <elementProp name="Cookie" elementType="Header">
-                <stringProp name="Header.name">Cookie</stringProp>
-                <stringProp name="Header.value">acw_tc=&quot;65c86a0c15812399458947985ee5577c2b9f487254742fa93c13cf79f9cd03&quot;;$Path=&quot;/&quot;;$Domain=&quot;interface.xuexi8.net&quot;; PHPSESSID=${token}</stringProp>
-              </elementProp>
-              <elementProp name="Content-Length" elementType="Header">
-                <stringProp name="Header.name">Content-Length</stringProp>
-                <stringProp name="Header.value">523</stringProp>
-              </elementProp>
-              <elementProp name="User-Agent" elementType="Header">
-                <stringProp name="Header.name">User-Agent</stringProp>
-                <stringProp name="Header.value">Dalvik/2.1.0 (Linux; U; Android 7.1.1; OPPO R9s Build/NMF26F)</stringProp>
-              </elementProp>
-              <elementProp name="Host" elementType="Header">
-                <stringProp name="Header.name">Host</stringProp>
-                <stringProp name="Header.value">interface.xuexi8.net</stringProp>
-              </elementProp>
-              <elementProp name="Connection" elementType="Header">
-                <stringProp name="Header.name">Connection</stringProp>
-                <stringProp name="Header.value">Keep-Alive</stringProp>
-              </elementProp>
-              <elementProp name="Accept-Encoding" elementType="Header">
-                <stringProp name="Header.name">Accept-Encoding</stringProp>
-                <stringProp name="Header.value">gzip</stringProp>
-              </elementProp>
-            </collectionProp>
-            <stringProp name="TestPlan.comments">从登陆接口获取token ${token}传给PHPSESSID</stringProp>
-          </HeaderManager>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="百度" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
