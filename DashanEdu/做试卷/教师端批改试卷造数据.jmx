@@ -12,11 +12,11 @@
       <stringProp name="TestPlan.user_define_classpath"></stringProp>
     </TestPlan>
     <hashTree>
-      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults—生产环境" enabled="true">
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults—测试环境" enabled="true">
         <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
           <collectionProp name="Arguments.arguments"/>
         </elementProp>
-        <stringProp name="HTTPSampler.domain">interface.xuexi8.net</stringProp>
+        <stringProp name="HTTPSampler.domain">interface.sanbox.xuexi8.net</stringProp>
         <stringProp name="HTTPSampler.port"></stringProp>
         <stringProp name="HTTPSampler.protocol">https</stringProp>
         <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -26,10 +26,10 @@
         <stringProp name="HTTPSampler.response_timeout"></stringProp>
       </ConfigTestElement>
       <hashTree/>
-      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config-生产环境" enabled="true">
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config-测试环境" enabled="true">
         <stringProp name="delimiter">,</stringProp>
         <stringProp name="fileEncoding">GB2312</stringProp>
-        <stringProp name="filename">/useraccount-release-pigai180000_183000.csv</stringProp>
+        <stringProp name="filename">/useraccount-test18000.csv</stringProp>
         <boolProp name="ignoreFirstLine">true</boolProp>
         <boolProp name="quotedData">false</boolProp>
         <boolProp name="recycle">true</boolProp>
@@ -118,13 +118,13 @@
         <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="老师批改试卷" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="老师批改试卷_/jiekou_jy2_陈莉莉" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <intProp name="LoopController.loops">-1</intProp>
+          <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">50</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
@@ -155,7 +155,7 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/jiekou_jy2_test/index.php?c=Classdetail&amp;a=testPaperList</stringProp>
+          <stringProp name="HTTPSampler.path">/jiekou_jy/index.php?c=Classdetail&amp;a=testPaperList</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
@@ -171,14 +171,14 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="paper_id" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">299368</stringProp>
+                <stringProp name="Argument.value">21537</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">paper_id</stringProp>
               </elementProp>
               <elementProp name="course_id" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">54736</stringProp>
+                <stringProp name="Argument.value">1183</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">course_id</stringProp>
@@ -189,7 +189,7 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/jiekou_jy2_test/index.php?c=Classdetail&amp;a=testPaperDetail</stringProp>
+          <stringProp name="HTTPSampler.path">/jiekou_jy/index.php?c=Classdetail&amp;a=testPaperDetail</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
@@ -212,14 +212,14 @@
               </elementProp>
               <elementProp name="paper_id" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">299368</stringProp>
+                <stringProp name="Argument.value">21537</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">paper_id</stringProp>
               </elementProp>
               <elementProp name="course_id" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">54736</stringProp>
+                <stringProp name="Argument.value">1183</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">course_id</stringProp>
@@ -244,7 +244,7 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/jiekou_jy2_test/index.php?c=Classdetail&amp;a=getPaperStudentlist</stringProp>
+          <stringProp name="HTTPSampler.path">/jiekou_jy/index.php?c=Classdetail&amp;a=getPaperStudentlist</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
@@ -260,21 +260,21 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="type" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">1</stringProp>
+                <stringProp name="Argument.value">0</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">type</stringProp>
               </elementProp>
               <elementProp name="paper_id" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">299368</stringProp>
+                <stringProp name="Argument.value">21537</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">paper_id</stringProp>
               </elementProp>
               <elementProp name="course_id" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">54736</stringProp>
+                <stringProp name="Argument.value">1183</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">course_id</stringProp>
@@ -299,7 +299,7 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/jiekou_jy2_test/index.php?c=Classdetail&amp;a=getPaperStudentlist</stringProp>
+          <stringProp name="HTTPSampler.path">/jiekou_jy/index.php?c=Classdetail&amp;a=getPaperStudentlist</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
@@ -315,21 +315,21 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="type" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">2</stringProp>
+                <stringProp name="Argument.value">0</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">type</stringProp>
               </elementProp>
               <elementProp name="paper_id" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">299368</stringProp>
+                <stringProp name="Argument.value">21537</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">paper_id</stringProp>
               </elementProp>
               <elementProp name="course_id" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">54736</stringProp>
+                <stringProp name="Argument.value">1183</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">course_id</stringProp>
@@ -354,7 +354,7 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/jiekou_jy2_test/index.php?c=Classdetail&amp;a=getPaperStudentlist</stringProp>
+          <stringProp name="HTTPSampler.path">/jiekou_jy/index.php?c=Classdetail&amp;a=getPaperStudentlist</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
@@ -377,14 +377,14 @@
               </elementProp>
               <elementProp name="paper_id" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">299368</stringProp>
+                <stringProp name="Argument.value">21537</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">paper_id</stringProp>
               </elementProp>
               <elementProp name="course_id" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">54736</stringProp>
+                <stringProp name="Argument.value">1183</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">course_id</stringProp>
@@ -395,7 +395,7 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/jiekou_jy2_test/index.php?c=Classdetail&amp;a=pigaiStudentPaper</stringProp>
+          <stringProp name="HTTPSampler.path">/jiekou_jy/index.php?c=Classdetail&amp;a=pigaiStudentPaper</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
@@ -409,20 +409,6 @@
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="提交批改试卷结果" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
-              <elementProp name="course_id" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">54736</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">course_id</stringProp>
-              </elementProp>
-              <elementProp name="answer" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">[[{&quot;529583&quot;:&quot;回答正确&quot;},{&quot;529583&quot;:&quot;2.fenshu&quot;}],[{&quot;529576&quot;:&quot;听您明敏敏&quot;},{&quot;529576&quot;:&quot;2.fenshu&quot;}],[{&quot;532072&quot;:&quot;知识点压测&quot;},{&quot;532072&quot;:&quot;2.fenshu&quot;}],[{&quot;532047&quot;:&quot;很好&quot;},{&quot;532047&quot;:&quot;0.fenshu&quot;}]]</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">answer</stringProp>
-              </elementProp>
               <elementProp name="student_id" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">${student_id}</stringProp>
@@ -430,12 +416,26 @@
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">student_id</stringProp>
               </elementProp>
+              <elementProp name="answer" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">answer</stringProp>
+              </elementProp>
               <elementProp name="paper_id" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">299368</stringProp>
+                <stringProp name="Argument.value">21537</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">paper_id</stringProp>
+              </elementProp>
+              <elementProp name="course_id" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">1183</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">course_id</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
@@ -443,12 +443,53 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/jiekou_jy2_test/index.php?c=Classdetail&amp;a=dopg_paper</stringProp>
+          <stringProp name="HTTPSampler.path">/jiekou_jy/index.php?c=Classdetail&amp;a=dopg_paper</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="教师端分页测试" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">10</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">10</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="学生提交试卷-" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;timestamp&quot;:&quot;1585560353&quot;,&quot;question&quot;:[{&quot;answer&quot;:&quot;A&quot;,&quot;id&quot;:&quot;129225&quot;},{&quot;answer&quot;:&quot;A&quot;,&quot;id&quot;:&quot;129144&quot;},{&quot;answer&quot;:&quot;A&quot;,&quot;id&quot;:&quot;106701&quot;},{&quot;answer&quot;:&quot;A&quot;,&quot;id&quot;:&quot;106645&quot;},{&quot;answer&quot;:&quot;A&quot;,&quot;id&quot;:&quot;106566&quot;},{&quot;answer&quot;:&quot;B&quot;,&quot;id&quot;:&quot;127425&quot;},{&quot;answer&quot;:&quot;A&quot;,&quot;id&quot;:&quot;127433&quot;},{&quot;answer&quot;:&quot;B&quot;,&quot;id&quot;:&quot;77072&quot;},{&quot;answer&quot;:&quot;A&quot;,&quot;id&quot;:&quot;126485&quot;},{&quot;answer&quot;:&quot;A&quot;,&quot;id&quot;:&quot;126473&quot;},{&quot;answer&quot;:[&quot;22&quot;],&quot;id&quot;:&quot;129233&quot;},{&quot;answer&quot;:[&quot;111&quot;],&quot;id&quot;:&quot;129176&quot;},{&quot;answer&quot;:[&quot;333&quot;],&quot;id&quot;:&quot;129175&quot;},{&quot;answer&quot;:[&quot;333&quot;],&quot;id&quot;:&quot;106689&quot;},{&quot;answer&quot;:[&quot;333&quot;],&quot;id&quot;:&quot;106652&quot;},{&quot;answer&quot;:1,&quot;id&quot;:&quot;129192&quot;},{&quot;answer&quot;:1,&quot;id&quot;:&quot;129191&quot;},{&quot;answer&quot;:1,&quot;id&quot;:&quot;129189&quot;},{&quot;answer&quot;:1,&quot;id&quot;:&quot;125000&quot;},{&quot;answer&quot;:1,&quot;id&quot;:&quot;124995&quot;},{&quot;answer&quot;:[&quot;https://xuexi8.oss-cn-beijing.aliyuncs.com/base64img158556025079.jpeg&quot;],&quot;id&quot;:&quot;128573&quot;},{&quot;answer&quot;:[&quot;https://xuexi8.oss-cn-beijing.aliyuncs.com/base64img158556026156.jpeg&quot;,&quot;https://xuexi8.oss-cn-beijing.aliyuncs.com/base64img158556026745.jpeg&quot;],&quot;id&quot;:&quot;125927&quot;},{&quot;answer&quot;:[&quot;https://xuexi8.oss-cn-beijing.aliyuncs.com/base64img158556031360.jpeg&quot;],&quot;id&quot;:&quot;125892&quot;},{&quot;answer&quot;:[&quot;https://xuexi8.oss-cn-beijing.aliyuncs.com/base64img158556032058.jpeg&quot;],&quot;id&quot;:&quot;125935&quot;},{&quot;answer&quot;:[&quot;https://xuexi8.oss-cn-beijing.aliyuncs.com/base64img158556032673.jpeg&quot;],&quot;id&quot;:&quot;125880&quot;}],&quot;course&quot;:{&quot;nowTime&quot;:&quot;1585560125&quot;,&quot;nextTime&quot;:&quot;1585560353&quot;,&quot;student_id&quot;:${student_id},&quot;test_id&quot;:&quot;21537&quot;,&quot;test_type&quot;:&quot;zt&quot;,&quot;school_id&quot;:0,&quot;course_id&quot;:&quot;1183&quot;}}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">interface.sanbox.xuexi8.net</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/jiekou2/index.php?c=Student&amp;a=submitTestpaperNew</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
