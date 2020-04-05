@@ -6,6 +6,8 @@ Appium-server安装
 
 <img src="..\appium_img\1580531926969.png" alt="1580531926969" style="zoom: 67%;" />
 
+最新安装方法（未实验）：https://testerhome.com/topics/10193?locale=en
+
 - 安装Node.js，推荐LTS版本
 
 - 安装Appium
