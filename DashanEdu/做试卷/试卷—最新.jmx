@@ -160,8 +160,13 @@
       <hashTree/>
       <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="发现—试卷" enabled="true">
         <collectionProp name="ultimatethreadgroupdata">
+<<<<<<< HEAD
+          <collectionProp name="1553778475">
+            <stringProp name="51575">425</stringProp>
+=======
           <collectionProp name="-826519909">
             <stringProp name="48625">100</stringProp>
+>>>>>>> 6e9721a65a5fcc2bb5887a239f7b09c2fb46c50a
             <stringProp name="48">0</stringProp>
             <stringProp name="1629">30</stringProp>
             <stringProp name="53430">600</stringProp>
@@ -357,81 +362,16 @@
           <stringProp name="TestPlan.comments">begin:开始页面判断0开始页面1题目页面</stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="做入学测、试卷_题目页面—主观题" enabled="false">
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="student_id" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${student_id}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">student_id</stringProp>
-              </elementProp>
-              <elementProp name="test_id" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">299368</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">test_id</stringProp>
-              </elementProp>
-              <elementProp name="near_school_id" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">69</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">near_school_id</stringProp>
-              </elementProp>
-              <elementProp name="school_id" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">69</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">school_id</stringProp>
-              </elementProp>
-              <elementProp name="begin" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">1</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">begin</stringProp>
-              </elementProp>
-              <elementProp name="subject_id" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">0</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">subject_id</stringProp>
-              </elementProp>
-              <elementProp name="course_id" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">54736</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">course_id</stringProp>
-              </elementProp>
-            </collectionProp>
-          </elementProp>
-          <stringProp name="HTTPSampler.domain"></stringProp>
-          <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol"></stringProp>
-          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/jiekou2_test/index.php?c=Student&amp;a=doTestpaperNew</stringProp>
-          <stringProp name="HTTPSampler.method">POST</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
-          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-          <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
-          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          <stringProp name="TestPlan.comments">begin:开始页面判断0开始页面1题目页面</stringProp>
-        </HTTPSamplerProxy>
-        <hashTree/>
       </hashTree>
       <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="提交试卷" enabled="true">
         <collectionProp name="ultimatethreadgroupdata">
+<<<<<<< HEAD
+          <collectionProp name="1553778475">
+            <stringProp name="51575">425</stringProp>
+=======
           <collectionProp name="-826519909">
             <stringProp name="48625">100</stringProp>
+>>>>>>> 6e9721a65a5fcc2bb5887a239f7b09c2fb46c50a
             <stringProp name="48">0</stringProp>
             <stringProp name="1629">30</stringProp>
             <stringProp name="53430">600</stringProp>
@@ -460,7 +400,7 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/jiekou2_test/index.php?c=Student&amp;a=submitTestpaperNew</stringProp>
+          <stringProp name="HTTPSampler.path">jiekou2_test/index.php?c=Student&amp;a=submitPaperOnly</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -486,7 +426,7 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/jiekou2_test/index.php?c=Student&amp;a=submitTestpaperNew</stringProp>
+          <stringProp name="HTTPSampler.path">jiekou2_test/index.php?c=Student&amp;a=submitPaperOnly</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -498,7 +438,7 @@
         </HTTPSamplerProxy>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="发现—试卷" enabled="true">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="发现—试卷" enabled="false">
         <collectionProp name="ultimatethreadgroupdata">
           <collectionProp name="-319831751">
             <stringProp name="1722">60</stringProp>
@@ -515,7 +455,7 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
       </kg.apc.jmeter.threads.UltimateThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="学生试卷报告" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="学生试卷报告" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="student_id" elementType="HTTPArgument">
@@ -556,7 +496,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="学生做试卷入学测结果" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="学生做试卷入学测结果" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="student_id" elementType="HTTPArgument">
@@ -587,6 +527,76 @@
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">/jiekou2_test/index.php?c=Student&amp;a=testpaperResult</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+      </hashTree>
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="提交试卷—老接口" enabled="false">
+        <collectionProp name="ultimatethreadgroupdata">
+          <collectionProp name="-389383656">
+            <stringProp name="49">1</stringProp>
+            <stringProp name="48">0</stringProp>
+            <stringProp name="49">1</stringProp>
+            <stringProp name="49">1</stringProp>
+            <stringProp name="49">1</stringProp>
+          </collectionProp>
+        </collectionProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+      </kg.apc.jmeter.threads.UltimateThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="提交试卷" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;timestamp&quot;:&quot;1585219092&quot;,&quot;question&quot;:[{&quot;answer&quot;:[{&quot;id&quot;:&quot;526040&quot;,&quot;answer&quot;:[&quot;输入的&quot;],&quot;isdone&quot;:true},{&quot;id&quot;:&quot;526041&quot;,&quot;answer&quot;:[&quot;倒萨倒萨&quot;],&quot;isdone&quot;:true},{&quot;id&quot;:&quot;526042&quot;,&quot;answer&quot;:[&quot;萨达撒多&quot;],&quot;isdone&quot;:true},{&quot;id&quot;:&quot;526043&quot;,&quot;answer&quot;:[&quot;的撒旦&quot;],&quot;isdone&quot;:true},{&quot;id&quot;:&quot;526044&quot;,&quot;answer&quot;:[&quot;的撒旦&quot;],&quot;isdone&quot;:true}],&quot;id&quot;:&quot;526039&quot;},{&quot;answer&quot;:[{&quot;id&quot;:&quot;526215&quot;,&quot;answer&quot;:&quot;A&quot;,&quot;isdone&quot;:true},{&quot;id&quot;:&quot;526214&quot;,&quot;answer&quot;:&quot;A&quot;,&quot;isdone&quot;:true},{&quot;id&quot;:&quot;526213&quot;,&quot;answer&quot;:&quot;A&quot;,&quot;isdone&quot;:true},{&quot;id&quot;:&quot;526212&quot;,&quot;answer&quot;:&quot;B&quot;,&quot;isdone&quot;:true}],&quot;id&quot;:&quot;526211&quot;},{&quot;answer&quot;:&quot;A&quot;,&quot;id&quot;:&quot;529210&quot;},{&quot;answer&quot;:&quot;B&quot;,&quot;id&quot;:&quot;529209&quot;},{&quot;answer&quot;:&quot;A,B&quot;,&quot;id&quot;:&quot;59373&quot;},{&quot;answer&quot;:&quot;C,D&quot;,&quot;id&quot;:&quot;77941&quot;},{&quot;answer&quot;:[{&quot;id&quot;:&quot;531351&quot;,&quot;answer&quot;:1},{&quot;id&quot;:&quot;531346&quot;,&quot;answer&quot;:0},{&quot;id&quot;:&quot;531344&quot;,&quot;answer&quot;:0},{&quot;id&quot;:&quot;531339&quot;,&quot;answer&quot;:1},{&quot;id&quot;:&quot;531342&quot;,&quot;answer&quot;:1}],&quot;id&quot;:&quot;531337&quot;},{&quot;answer&quot;:[{&quot;id&quot;:&quot;531321&quot;,&quot;answer&quot;:1},{&quot;id&quot;:&quot;531330&quot;,&quot;answer&quot;:1},{&quot;id&quot;:&quot;531328&quot;,&quot;answer&quot;:1},{&quot;id&quot;:&quot;531326&quot;,&quot;answer&quot;:1},{&quot;id&quot;:&quot;531322&quot;,&quot;answer&quot;:1}],&quot;id&quot;:&quot;531319&quot;}],&quot;course&quot;:{&quot;nowTime&quot;:&quot;1585219036&quot;,&quot;nextTime&quot;:&quot;1585219092&quot;,&quot;student_id&quot;:${student_id},&quot;test_id&quot;:&quot;299369&quot;,&quot;test_type&quot;:&quot;zt&quot;,&quot;school_id&quot;:0,&quot;course_id&quot;:&quot;54736&quot;}}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/jiekou2_test/index.php?c=Student&amp;a=submitTestpaperNew</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="提交试卷—主观题" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;timestamp&quot;:&quot;1585185903&quot;,&quot;question&quot;:[{&quot;answer&quot;:[&quot;https://xuexi8.oss-cn-beijing.aliyuncs.com/base64img158518585628.jpeg&quot;],&quot;id&quot;:&quot;529583&quot;},{&quot;answer&quot;:[&quot;https://xuexi8.oss-cn-beijing.aliyuncs.com/base64img15851858735.jpeg&quot;],&quot;id&quot;:&quot;529576&quot;},{&quot;answer&quot;:[&quot;https://xuexi8.oss-cn-beijing.aliyuncs.com/base64img15851858815.jpeg&quot;],&quot;id&quot;:&quot;532072&quot;},{&quot;answer&quot;:[&quot;https://xuexi8.oss-cn-beijing.aliyuncs.com/base64img158518589161.jpeg&quot;],&quot;id&quot;:&quot;532047&quot;}],&quot;course&quot;:{&quot;nowTime&quot;:&quot;1585185731&quot;,&quot;nextTime&quot;:&quot;1585185903&quot;,&quot;student_id&quot;:&quot;${student_id}&quot;,&quot;test_id&quot;:&quot;299368&quot;,&quot;test_type&quot;:&quot;zt&quot;,&quot;school_id&quot;:0,&quot;course_id&quot;:&quot;54736&quot;}}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">interface.xuexi8.net</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/jiekou2_test/index.php?c=Student&amp;a=submitTestpaperNew</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>

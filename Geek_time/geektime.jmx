@@ -194,7 +194,7 @@
         </DebugSampler>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Python核心技术与实战" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -220,7 +220,7 @@
             </elementProp>
             <elementProp name="Content-Length" elementType="Header">
               <stringProp name="Header.name">Content-Length</stringProp>
-              <stringProp name="Header.value">60</stringProp>
+              <stringProp name="Header.value">61</stringProp>
             </elementProp>
             <elementProp name="Accept" elementType="Header">
               <stringProp name="Header.name">Accept</stringProp>
@@ -232,7 +232,7 @@
             </elementProp>
             <elementProp name="User-Agent" elementType="Header">
               <stringProp name="Header.name">User-Agent</stringProp>
-              <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36</stringProp>
+              <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36</stringProp>
             </elementProp>
             <elementProp name="Content-Type" elementType="Header">
               <stringProp name="Header.name">Content-Type</stringProp>
@@ -252,7 +252,7 @@
             </elementProp>
             <elementProp name="Referer" elementType="Header">
               <stringProp name="Header.name">Referer</stringProp>
-              <stringProp name="Header.value">https://time.geekbang.org/column/article/93915</stringProp>
+              <stringProp name="Header.value">https://time.geekbang.org/column/article/116496</stringProp>
             </elementProp>
             <elementProp name="Accept-Encoding" elementType="Header">
               <stringProp name="Header.name">Accept-Encoding</stringProp>
@@ -264,7 +264,7 @@
             </elementProp>
             <elementProp name="Cookie" elementType="Header">
               <stringProp name="Header.name">Cookie</stringProp>
-              <stringProp name="Header.value">_ga=GA1.2.129656571.1578275379; LF_ID=1584579660619-8073160-2889253; GCID=9486b73-dbf0008-09d9442-42be11a; GRID=9486b73-dbf0008-09d9442-42be11a; GCESS=BAYEwR5J3QMEECl8XgoEAAAAAAUEAAAAAAsCBAAMAQEIAQMJAQEEBAAvDQACBBApfF4HBDljLBcBBB3_GQA-; gksskpitn=14e68271-d8a5-4068-b3ee-ac220a835784; _gid=GA1.2.231178380.1585359914; Hm_lvt_022f847c4e3acd44d4a2481d9187f1e6=1585195265,1585195279,1585359914,1585370986; SERVERID=3431a294a18c59fc8f5805662e2bd51e|1585376037|1585370988; Hm_lpvt_022f847c4e3acd44d4a2481d9187f1e6=1585376035; _gat=1</stringProp>
+              <stringProp name="Header.value">_ga=GA1.2.1528532631.1582633358; LF_ID=1582633369861-1665434-2881229; GCID=6736997-f82a6b7-0e62c13-21e29e7; GRID=6736997-f82a6b7-0e62c13-21e29e7; _gid=GA1.2.1021624790.1586005175; GCESS=BAoEAAAAAAkBAQEEHf8ZAAYExLMd.QgBAwMEy4SIXgUEAAAAAAsCBAAEBAAvDQACBMuEiF4MAQEHBFMzUh4-; gksskpitn=fa06b319-b520-4e67-a7bf-9d4571f94716; Hm_lvt_022f847c4e3acd44d4a2481d9187f1e6=1586005176,1586005192,1586048072,1586074290; Hm_lpvt_022f847c4e3acd44d4a2481d9187f1e6=1586090186; SERVERID=1fa1f330efedec1559b3abbcb6e30f50|1586090239|1586090011</stringProp>
             </elementProp>
           </collectionProp>
         </HeaderManager>
@@ -296,7 +296,7 @@
           <stringProp name="TestPlan.comments">cid=259</stringProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="false">
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
             <stringProp name="JSONPostProcessor.referenceNames">audio_download_url</stringProp>
             <stringProp name="JSONPostProcessor.jsonPathExprs">$.data.list[*].audio_download_url</stringProp>
             <stringProp name="JSONPostProcessor.match_numbers">-1</stringProp>
