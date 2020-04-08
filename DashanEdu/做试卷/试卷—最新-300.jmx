@@ -146,8 +146,8 @@
       <hashTree/>
       <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="发现—试卷" enabled="true">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="-826519909">
-            <stringProp name="48625">100</stringProp>
+          <collectionProp name="-1525569414">
+            <stringProp name="51508">400</stringProp>
             <stringProp name="48">0</stringProp>
             <stringProp name="1629">30</stringProp>
             <stringProp name="53430">600</stringProp>
@@ -498,8 +498,8 @@
       </hashTree>
       <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="提交试卷" enabled="true">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="-826519909">
-            <stringProp name="48625">100</stringProp>
+          <collectionProp name="-1525569414">
+            <stringProp name="51508">400</stringProp>
             <stringProp name="48">0</stringProp>
             <stringProp name="1629">30</stringProp>
             <stringProp name="53430">600</stringProp>
@@ -528,7 +528,7 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/jiekou2_test/index.php?c=Student&amp;a=submitTestpaperNew</stringProp>
+          <stringProp name="HTTPSampler.path">/jiekou2_test/index.php?c=Student&amp;a=submitPaperOnly</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -554,7 +554,7 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/jiekou2_test/index.php?c=Student&amp;a=submitTestpaperNew</stringProp>
+          <stringProp name="HTTPSampler.path">/jiekou2_test/index.php?c=Student&amp;a=submitPaperOnly</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -566,10 +566,10 @@
         </HTTPSamplerProxy>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="发现—试卷" enabled="true">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="发现—试卷" enabled="false">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="-826519909">
-            <stringProp name="48625">100</stringProp>
+          <collectionProp name="1730398021">
+            <stringProp name="50547">300</stringProp>
             <stringProp name="48">0</stringProp>
             <stringProp name="1629">30</stringProp>
             <stringProp name="53430">600</stringProp>
