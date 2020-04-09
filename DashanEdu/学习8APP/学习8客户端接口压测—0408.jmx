@@ -12,6 +12,16 @@
       <stringProp name="TestPlan.user_define_classpath"></stringProp>
     </TestPlan>
     <hashTree>
+      <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+        <collectionProp name="Asserion.test_strings">
+          <stringProp name="49586">200</stringProp>
+        </collectionProp>
+        <stringProp name="Assertion.custom_message"></stringProp>
+        <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+        <boolProp name="Assertion.assume_success">false</boolProp>
+        <intProp name="Assertion.test_type">16</intProp>
+      </ResponseAssertion>
+      <hashTree/>
       <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
         <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
           <collectionProp name="Arguments.arguments"/>
@@ -26,6 +36,23 @@
         <stringProp name="HTTPSampler.connect_timeout">60000</stringProp>
         <stringProp name="HTTPSampler.response_timeout">60000</stringProp>
       </ConfigTestElement>
+      <hashTree/>
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+        <collectionProp name="CookieManager.cookies"/>
+        <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+        <boolProp name="CookieManager.controlledByThreadGroup">true</boolProp>
+      </CookieManager>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="每个线程并发数参数化" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="threadsCount" elementType="Argument">
+            <stringProp name="Argument.name">threadsCount</stringProp>
+            <stringProp name="Argument.value">91</stringProp>
+            <stringProp name="Argument.desc">每个线程组的并发数</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
       <hashTree/>
       <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
         <stringProp name="delimiter">,</stringProp>
@@ -133,8 +160,8 @@
       <hashTree/>
       <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="登录后一系列操作" enabled="true">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="-927974260">
-            <stringProp name="48625">100</stringProp>
+          <collectionProp name="1362450478">
+            <stringProp name="146677472">${threadsCount}</stringProp>
             <stringProp name="48">0</stringProp>
             <stringProp name="1629">30</stringProp>
             <stringProp name="50547">300</stringProp>
@@ -165,7 +192,7 @@
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">/jiekou2/index.php?c=Userv2&amp;a=loginStuednt</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
@@ -185,7 +212,7 @@
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">/jiekou2/index.php?c=MobileConfig&amp;a=forceUpdata</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
@@ -213,7 +240,7 @@
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">/jiekou2/index.php?c=Homepage&amp;a=index</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
@@ -233,7 +260,7 @@
           <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
           <stringProp name="HTTPSampler.path">/jiekou2/index.php?c=system&amp;a=app_icons</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
@@ -253,7 +280,7 @@
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">/jiekou2/index.php?c=teacher&amp;a=sliderPic</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
@@ -281,7 +308,7 @@
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">/jiekou2/index.php?c=StudentCar&amp;a=countCouse</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
@@ -319,7 +346,7 @@
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">/jiekou2/index.php?c=MobileConfig&amp;a=studentLoginLog</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
@@ -332,8 +359,8 @@
       </hashTree>
       <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="发现——面授课直播" enabled="true">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="-927974260">
-            <stringProp name="48625">100</stringProp>
+          <collectionProp name="1362450478">
+            <stringProp name="146677472">${threadsCount}</stringProp>
             <stringProp name="48">0</stringProp>
             <stringProp name="1629">30</stringProp>
             <stringProp name="50547">300</stringProp>
@@ -458,8 +485,8 @@
       </hashTree>
       <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="提交试卷" enabled="true">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="-927974260">
-            <stringProp name="48625">100</stringProp>
+          <collectionProp name="1362450478">
+            <stringProp name="146677472">${threadsCount}</stringProp>
             <stringProp name="48">0</stringProp>
             <stringProp name="1629">30</stringProp>
             <stringProp name="50547">300</stringProp>
@@ -491,7 +518,7 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;timestamp&quot;:&quot;1585219092&quot;,&quot;question&quot;:[{&quot;answer&quot;:[{&quot;id&quot;:&quot;526040&quot;,&quot;answer&quot;:[&quot;输入的&quot;],&quot;isdone&quot;:true},{&quot;id&quot;:&quot;526041&quot;,&quot;answer&quot;:[&quot;倒萨倒萨&quot;],&quot;isdone&quot;:true},{&quot;id&quot;:&quot;526042&quot;,&quot;answer&quot;:[&quot;萨达撒多&quot;],&quot;isdone&quot;:true},{&quot;id&quot;:&quot;526043&quot;,&quot;answer&quot;:[&quot;的撒旦&quot;],&quot;isdone&quot;:true},{&quot;id&quot;:&quot;526044&quot;,&quot;answer&quot;:[&quot;的撒旦&quot;],&quot;isdone&quot;:true}],&quot;id&quot;:&quot;526039&quot;},{&quot;answer&quot;:[{&quot;id&quot;:&quot;526215&quot;,&quot;answer&quot;:&quot;A&quot;,&quot;isdone&quot;:true},{&quot;id&quot;:&quot;526214&quot;,&quot;answer&quot;:&quot;A&quot;,&quot;isdone&quot;:true},{&quot;id&quot;:&quot;526213&quot;,&quot;answer&quot;:&quot;A&quot;,&quot;isdone&quot;:true},{&quot;id&quot;:&quot;526212&quot;,&quot;answer&quot;:&quot;B&quot;,&quot;isdone&quot;:true}],&quot;id&quot;:&quot;526211&quot;},{&quot;answer&quot;:&quot;A&quot;,&quot;id&quot;:&quot;529210&quot;},{&quot;answer&quot;:&quot;B&quot;,&quot;id&quot;:&quot;529209&quot;},{&quot;answer&quot;:&quot;A,B&quot;,&quot;id&quot;:&quot;59373&quot;},{&quot;answer&quot;:&quot;C,D&quot;,&quot;id&quot;:&quot;77941&quot;},{&quot;answer&quot;:[{&quot;id&quot;:&quot;531351&quot;,&quot;answer&quot;:1},{&quot;id&quot;:&quot;531346&quot;,&quot;answer&quot;:0},{&quot;id&quot;:&quot;531344&quot;,&quot;answer&quot;:0},{&quot;id&quot;:&quot;531339&quot;,&quot;answer&quot;:1},{&quot;id&quot;:&quot;531342&quot;,&quot;answer&quot;:1}],&quot;id&quot;:&quot;531337&quot;},{&quot;answer&quot;:[{&quot;id&quot;:&quot;531321&quot;,&quot;answer&quot;:1},{&quot;id&quot;:&quot;531330&quot;,&quot;answer&quot;:1},{&quot;id&quot;:&quot;531328&quot;,&quot;answer&quot;:1},{&quot;id&quot;:&quot;531326&quot;,&quot;answer&quot;:1},{&quot;id&quot;:&quot;531322&quot;,&quot;answer&quot;:1}],&quot;id&quot;:&quot;531319&quot;}],&quot;course&quot;:{&quot;nowTime&quot;:&quot;1585219036&quot;,&quot;nextTime&quot;:&quot;1585219092&quot;,&quot;student_id&quot;:${student_id},&quot;test_id&quot;:&quot;299369&quot;,&quot;test_type&quot;:&quot;zt&quot;,&quot;school_id&quot;:0,&quot;course_id&quot;:&quot;54736&quot;}}</stringProp>
+                <stringProp name="Argument.value">{&quot;timestamp&quot;:&quot;1585219092&quot;,&quot;question&quot;:[{&quot;answer&quot;:[{&quot;id&quot;:&quot;526040&quot;,&quot;answer&quot;:[&quot;输入的&quot;],&quot;isdone&quot;:true},{&quot;id&quot;:&quot;526041&quot;,&quot;answer&quot;:[&quot;倒萨倒萨&quot;],&quot;isdone&quot;:true},{&quot;id&quot;:&quot;526042&quot;,&quot;answer&quot;:[&quot;萨达撒多&quot;],&quot;isdone&quot;:true},{&quot;id&quot;:&quot;526043&quot;,&quot;answer&quot;:[&quot;的撒旦&quot;],&quot;isdone&quot;:true},{&quot;id&quot;:&quot;526044&quot;,&quot;answer&quot;:[&quot;的撒旦&quot;],&quot;isdone&quot;:true}],&quot;id&quot;:&quot;526039&quot;},{&quot;answer&quot;:[{&quot;id&quot;:&quot;526215&quot;,&quot;answer&quot;:&quot;A&quot;,&quot;isdone&quot;:true},{&quot;id&quot;:&quot;526214&quot;,&quot;answer&quot;:&quot;A&quot;,&quot;isdone&quot;:true},{&quot;id&quot;:&quot;526213&quot;,&quot;answer&quot;:&quot;A&quot;,&quot;isdone&quot;:true},{&quot;id&quot;:&quot;526212&quot;,&quot;answer&quot;:&quot;B&quot;,&quot;isdone&quot;:true}],&quot;id&quot;:&quot;526211&quot;},{&quot;answer&quot;:&quot;A&quot;,&quot;id&quot;:&quot;529210&quot;},{&quot;answer&quot;:&quot;B&quot;,&quot;id&quot;:&quot;529209&quot;},{&quot;answer&quot;:&quot;A,B&quot;,&quot;id&quot;:&quot;59373&quot;},{&quot;answer&quot;:&quot;C,D&quot;,&quot;id&quot;:&quot;77941&quot;},{&quot;answer&quot;:[{&quot;id&quot;:&quot;531351&quot;,&quot;answer&quot;:1},{&quot;id&quot;:&quot;531346&quot;,&quot;answer&quot;:0},{&quot;id&quot;:&quot;531344&quot;,&quot;answer&quot;:0},{&quot;id&quot;:&quot;531339&quot;,&quot;answer&quot;:1},{&quot;id&quot;:&quot;531342&quot;,&quot;answer&quot;:1}],&quot;id&quot;:&quot;531337&quot;},{&quot;answer&quot;:[{&quot;id&quot;:&quot;531321&quot;,&quot;answer&quot;:1},{&quot;id&quot;:&quot;531330&quot;,&quot;answer&quot;:1},{&quot;id&quot;:&quot;531328&quot;,&quot;answer&quot;:1},{&quot;id&quot;:&quot;531326&quot;,&quot;answer&quot;:1},{&quot;id&quot;:&quot;531322&quot;,&quot;answer&quot;:1}],&quot;id&quot;:&quot;531319&quot;}],&quot;course&quot;:{&quot;nowTime&quot;:&quot;1585219036&quot;,&quot;nextTime&quot;:&quot;1585219092&quot;,&quot;student_id&quot;:${__Random(180000,900000,student)},&quot;test_id&quot;:&quot;299369&quot;,&quot;test_type&quot;:&quot;zt&quot;,&quot;school_id&quot;:0,&quot;course_id&quot;:&quot;54736&quot;}}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -517,7 +544,7 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;timestamp&quot;:&quot;1585185903&quot;,&quot;question&quot;:[{&quot;answer&quot;:[&quot;https://xuexi8.oss-cn-beijing.aliyuncs.com/base64img158518585628.jpeg&quot;],&quot;id&quot;:&quot;529583&quot;},{&quot;answer&quot;:[&quot;https://xuexi8.oss-cn-beijing.aliyuncs.com/base64img15851858735.jpeg&quot;],&quot;id&quot;:&quot;529576&quot;},{&quot;answer&quot;:[&quot;https://xuexi8.oss-cn-beijing.aliyuncs.com/base64img15851858815.jpeg&quot;],&quot;id&quot;:&quot;532072&quot;},{&quot;answer&quot;:[&quot;https://xuexi8.oss-cn-beijing.aliyuncs.com/base64img158518589161.jpeg&quot;],&quot;id&quot;:&quot;532047&quot;}],&quot;course&quot;:{&quot;nowTime&quot;:&quot;1585185731&quot;,&quot;nextTime&quot;:&quot;1585185903&quot;,&quot;student_id&quot;:&quot;${student_id}&quot;,&quot;test_id&quot;:&quot;299368&quot;,&quot;test_type&quot;:&quot;zt&quot;,&quot;school_id&quot;:0,&quot;course_id&quot;:&quot;54736&quot;}}</stringProp>
+                <stringProp name="Argument.value">{&quot;timestamp&quot;:&quot;1585185903&quot;,&quot;question&quot;:[{&quot;answer&quot;:[&quot;https://xuexi8.oss-cn-beijing.aliyuncs.com/base64img158518585628.jpeg&quot;],&quot;id&quot;:&quot;529583&quot;},{&quot;answer&quot;:[&quot;https://xuexi8.oss-cn-beijing.aliyuncs.com/base64img15851858735.jpeg&quot;],&quot;id&quot;:&quot;529576&quot;},{&quot;answer&quot;:[&quot;https://xuexi8.oss-cn-beijing.aliyuncs.com/base64img15851858815.jpeg&quot;],&quot;id&quot;:&quot;532072&quot;},{&quot;answer&quot;:[&quot;https://xuexi8.oss-cn-beijing.aliyuncs.com/base64img158518589161.jpeg&quot;],&quot;id&quot;:&quot;532047&quot;}],&quot;course&quot;:{&quot;nowTime&quot;:&quot;1585185731&quot;,&quot;nextTime&quot;:&quot;1585185903&quot;,&quot;student_id&quot;:${__Random(180000,900000,student)},&quot;test_id&quot;:&quot;299368&quot;,&quot;test_type&quot;:&quot;zt&quot;,&quot;school_id&quot;:0,&quot;course_id&quot;:&quot;54736&quot;}}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -582,8 +609,8 @@
       </hashTree>
       <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="直播课" enabled="true">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="-18641551">
-            <stringProp name="100">100</stringProp>
+          <collectionProp name="1662289319">
+            <stringProp name="146677472">${threadsCount}</stringProp>
             <stringProp name="0">0</stringProp>
             <stringProp name="30">30</stringProp>
             <stringProp name="50547">300</stringProp>
@@ -892,8 +919,8 @@
       </hashTree>
       <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="家校任务" enabled="true">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="-18641551">
-            <stringProp name="100">100</stringProp>
+          <collectionProp name="1662289319">
+            <stringProp name="146677472">${threadsCount}</stringProp>
             <stringProp name="0">0</stringProp>
             <stringProp name="30">30</stringProp>
             <stringProp name="50547">300</stringProp>
@@ -1086,8 +1113,8 @@
       </hashTree>
       <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="入学测" enabled="true">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="1767030989">
-            <stringProp name="100">100</stringProp>
+          <collectionProp name="-847005437">
+            <stringProp name="146677472">${threadsCount}</stringProp>
             <stringProp name="48">0</stringProp>
             <stringProp name="30">30</stringProp>
             <stringProp name="50547">300</stringProp>
@@ -1390,8 +1417,8 @@
       </hashTree>
       <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="练一练" enabled="true">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="-18641551">
-            <stringProp name="100">100</stringProp>
+          <collectionProp name="1662289319">
+            <stringProp name="146677472">${threadsCount}</stringProp>
             <stringProp name="0">0</stringProp>
             <stringProp name="30">30</stringProp>
             <stringProp name="50547">300</stringProp>
@@ -1745,9 +1772,9 @@
       </hashTree>
       <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="面授课" enabled="true">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="-18641551">
-            <stringProp name="100">100</stringProp>
-            <stringProp name="0">0</stringProp>
+          <collectionProp name="-847005437">
+            <stringProp name="146677472">${threadsCount}</stringProp>
+            <stringProp name="48">0</stringProp>
             <stringProp name="30">30</stringProp>
             <stringProp name="50547">300</stringProp>
             <stringProp name="1629">30</stringProp>
