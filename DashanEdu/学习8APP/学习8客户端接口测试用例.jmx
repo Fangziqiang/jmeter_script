@@ -1981,11 +1981,12 @@ vars.put(&quot;is_topic&quot;,is_topic);
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="断言是否请求成功" enabled="true">
             <collectionProp name="Asserion.test_strings">
               <stringProp name="1869661087">&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;</stringProp>
+              <stringProp name="404500720">&quot;status&quot;:&quot;2&quot;,&quot;msg&quot;:&quot;暂无相关内容&quot;</stringProp>
             </collectionProp>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
-            <intProp name="Assertion.test_type">2</intProp>
+            <intProp name="Assertion.test_type">34</intProp>
           </ResponseAssertion>
           <hashTree/>
           <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="获取列表中的课程id" enabled="true">
@@ -2783,11 +2784,12 @@ vars.put(&quot;is_topic&quot;,is_topic);
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="1869629343">&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;OK&quot;</stringProp>
+                <stringProp name="-697086997">&quot;status&quot;:&quot;2&quot;,&quot;msg&quot;:&quot;暂时没有相关评价哦&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.custom_message"></stringProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">2</intProp>
+              <intProp name="Assertion.test_type">34</intProp>
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
@@ -6067,11 +6069,12 @@ System.out.println(count);</stringProp>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
               <stringProp name="1447976277">&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;</stringProp>
+              <stringProp name="1581675318">&quot;status&quot;:&quot;2&quot;,&quot;msg&quot;:&quot;暂无查询历史&quot;</stringProp>
             </collectionProp>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
-            <intProp name="Assertion.test_type">2</intProp>
+            <intProp name="Assertion.test_type">34</intProp>
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
@@ -6113,12 +6116,13 @@ System.out.println(count);</stringProp>
         <hashTree>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
+              <stringProp name="1447976277">&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;</stringProp>
               <stringProp name="1581675318">&quot;status&quot;:&quot;2&quot;,&quot;msg&quot;:&quot;暂无查询历史&quot;</stringProp>
             </collectionProp>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
-            <intProp name="Assertion.test_type">2</intProp>
+            <intProp name="Assertion.test_type">34</intProp>
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
@@ -6432,11 +6436,12 @@ System.out.println(count);</stringProp>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
               <stringProp name="1869661087">&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;</stringProp>
+              <stringProp name="-1677768563">&quot;status&quot;:&quot;2&quot;,&quot;msg&quot;:[&quot;报班后就可以看到家校任务啦~&quot;,&quot;已报班仍没有课堂信息，请及时联系班主任拉入班哦&quot;]</stringProp>
             </collectionProp>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
-            <intProp name="Assertion.test_type">16</intProp>
+            <intProp name="Assertion.test_type">48</intProp>
           </ResponseAssertion>
           <hashTree/>
           <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="获取列表中章节teacher_chapter_id" enabled="true">
