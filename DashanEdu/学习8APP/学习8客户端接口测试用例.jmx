@@ -372,7 +372,7 @@ prev.setStopThread(true);
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
-        <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+        <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor-org.json" enabled="true">
           <boolProp name="resetInterpreter">false</boolProp>
           <stringProp name="parameters"></stringProp>
           <stringProp name="filename"></stringProp>
@@ -405,6 +405,29 @@ if(status.equals(&quot;0&quot;))
 	}
 }</stringProp>
         </BeanShellPostProcessor>
+        <hashTree/>
+        <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor_fastjson" enabled="true">
+          <boolProp name="resetInterpreter">false</boolProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="script">import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+//import org.json.*;
+
+String init = vars.get(&quot;banner_list&quot;);
+
+// 转换JSON串
+JSONObject json = JSONObject.parseObject(init);
+String course_id = json.getString(&quot;course_id&quot;);
+String course_type = json.getString(&quot;course_type&quot;);
+String is_topic = json.getString(&quot;is_topic&quot;);
+
+
+vars.put(&quot;course_id&quot;,course_id);
+vars.put(&quot;course_type&quot;,course_type);
+vars.put(&quot;is_topic&quot;,is_topic);
+</stringProp>
+        </BeanShellPreProcessor>
         <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="学习8营业厅" enabled="false">
@@ -1038,7 +1061,7 @@ prev.setStopThread(true);
           <boolProp name="ForeachController.useSeparator">true</boolProp>
         </ForeachController>
         <hashTree>
-          <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
+          <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor_fastjson" enabled="true">
             <boolProp name="resetInterpreter">false</boolProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>

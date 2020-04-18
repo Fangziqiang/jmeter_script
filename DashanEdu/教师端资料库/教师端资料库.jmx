@@ -1261,7 +1261,7 @@ prev.setStopThread(true);
               </elementProp>
               <elementProp name="limit" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">100</stringProp>
+                <stringProp name="Argument.value">31</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">limit</stringProp>
@@ -1344,19 +1344,27 @@ import org.apache.jmeter.samplers.SampleResult;
 import org.apache.jmeter.assertions.AssertionResult; 
 import org.json.JSONObject;
 String response_data = prev.getResponseDataAsString();
-JSONObject data_obj = new JSONObject(response_data);
-log.info(response_data);
+//JSONObject data_obj = new JSONObject(response_data);
+//log.info(response_data);
 String data_type=&quot;&quot;;
 String url=&quot;&quot;;
 
 try{
+	JSONObject data_obj = new JSONObject(response_data);
+	log.info(response_data);
 	data_type = data_obj.get(&quot;data&quot;).get(&quot;data_info&quot;).get(&quot;data_type&quot;);
 	url =data_obj.get(&quot;data&quot;).get(&quot;data_info&quot;).get(&quot;url&quot;);
 	log.info(&quot;data_type：&quot;+data_type);
 }
 catch(Exception e){
-	log.info(&quot;数据解析异常&quot;);
-	throw e;
+	Failure = true;
+    	log.info(&quot;数据解析异常，断言失败&quot;);
+    	FailureMessage = &quot;数据解析异常，断言失败&quot;;
+//    	throw e;
+//	prev.setStopThread(true);
+	break;
+	//如果数据解析异常，直接停止所有程序，慎用 
+//	System.exit(1);
 }
 
 
