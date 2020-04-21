@@ -3877,9 +3877,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
         </HTTPSamplerProxy>
         <hashTree>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-            <collectionProp name="Asserion.test_strings">
-              <stringProp name="-894798233">&quot;status&quot;:&quot;2001&quot;,&quot;msg&quot;:&quot;该功能暂不可用&quot;</stringProp>
-            </collectionProp>
+            <collectionProp name="Asserion.test_strings"/>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
@@ -4186,11 +4184,12 @@ System.out.println(count);</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="1869629343">&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;OK&quot;</stringProp>
+                <stringProp name="411714699">&quot;status&quot;:&quot;2&quot;,&quot;msg&quot;:&quot;暂无相关测评&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.custom_message"></stringProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">16</intProp>
+              <intProp name="Assertion.test_type">48</intProp>
             </ResponseAssertion>
             <hashTree/>
             <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="test_id" enabled="true">
@@ -4775,15 +4774,6 @@ System.out.println(count);</stringProp>
           <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="断言msg" enabled="true">
             <stringProp name="JSON_PATH">$.msg</stringProp>
             <stringProp name="EXPECTED_VALUE">操作成功</stringProp>
-            <boolProp name="JSONVALIDATION">true</boolProp>
-            <boolProp name="EXPECT_NULL">false</boolProp>
-            <boolProp name="INVERT">false</boolProp>
-            <boolProp name="ISREGEX">false</boolProp>
-          </JSONPathAssertion>
-          <hashTree/>
-          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="json中 data断言" enabled="true">
-            <stringProp name="JSON_PATH">$.data.page</stringProp>
-            <stringProp name="EXPECTED_VALUE">{&quot;pagenum&quot;:84,&quot;nowpage&quot;:1}</stringProp>
             <boolProp name="JSONVALIDATION">true</boolProp>
             <boolProp name="EXPECT_NULL">false</boolProp>
             <boolProp name="INVERT">false</boolProp>
