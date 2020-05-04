@@ -1,0 +1,111 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string"
+    },
+    "msg": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "teacher": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "u_phone": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "teach_time": {
+              "type": "string"
+            },
+            "signature": {
+              "type": "string"
+            },
+            "photos": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "work": {
+              "type": "string"
+            },
+            "suc_case": {
+              "type": "string"
+            },
+            "avatar": {
+              "type": "string"
+            },
+            "z_group_name": {
+              "type": "string"
+            },
+            "cert_no": {
+              "type": "string"
+            }
+          }
+        },
+        "courseClass": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "course_name": {
+                "type": "string"
+              },
+              "start_date": {
+                "type": "string"
+              },
+              "school_name": {
+                "type": "string"
+              },
+              "price": {
+                "type": [
+                  "number",
+                  "string"
+                ]
+              },
+              "chapter_num": {
+                "type": "string"
+              },
+              "student_num": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "course_name",
+              "start_date",
+              "school_name",
+              "price",
+              "chapter_num",
+              "student_num"
+            ]
+          }
+        },
+        "courseLive": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "courseVideo": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
