@@ -9,10 +9,27 @@ Android APP的常见概念
 
 ## App入口
 
-- ```
+学习8APP启动入口
+
+appPackage="com.me.fzw.dashanonline";
+appActivity="com.me.fzw.dashanonline.activity.GuidePageActivity
+
+- ```json
+  {
+    "platformName": "Android",
+  "deviceName": "sanxingA9",
+    "appPackage": "com.me.fzw.dashanonline",
+    "appActivity": "com.me.fzw.dashanonline.activity.GuidePageActivity",
+    "noReset": "True"
+  }
+  ```
+  
+  
+  
+  ```
   adb logcat |grep -i Displayed
   ```
-
+  
   windows使用findstr替代grep
   
 - ```
