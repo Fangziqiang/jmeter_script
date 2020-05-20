@@ -8,6 +8,8 @@
 
 - 解压后把Maven的根目录配置到系统环境变量中 M2_HOME
 
+- 在path中添加 %M2_HOME%\bin; 路径
+
 - 测试mvn -v
 
   
