@@ -12,12 +12,19 @@ Android APP的常见概念
 学习8APP启动入口
 
 appPackage="com.me.fzw.dashanonline";
-appActivity="com.me.fzw.dashanonline.activity.GuidePageActivity
+appActivity="com.me.fzw.dashanonline.activity.GuidePageActivity"
+
+教师端
+
+appPackage="com.me.fzw.dashanonline.teacher";
+appActivity=".activity.LoginActivity"
+
+adb logcat |grep -i Displayed
 
 - ```json
   {
     "platformName": "Android",
-  "deviceName": "sanxingA9",
+    "deviceName": "sanxingA9",
     "appPackage": "com.me.fzw.dashanonline",
     "appActivity": "com.me.fzw.dashanonline.activity.GuidePageActivity",
     "noReset": "True"
