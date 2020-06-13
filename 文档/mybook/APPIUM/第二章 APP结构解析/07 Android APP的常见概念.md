@@ -14,12 +14,16 @@ Android APP的常见概念
 appPackage="com.me.fzw.dashanonline";
 appActivity="com.me.fzw.dashanonline.activity.GuidePageActivity"
 
+"appPackage=com.me.fzw.dashanonline.teacher,appActivity=.activity.LoginActivity"
+
 教师端
 
 appPackage="com.me.fzw.dashanonline.teacher";
 appActivity=".activity.LoginActivity"
 
 adb logcat |grep -i Displayed
+
+java -jar appcrawler-2.4.0-jar-with-dependencies.jar --capability “appPackage=com.xueqiu.android,appActivity=.view.WelcomeActivityAlias”
 
 - ```json
   {
