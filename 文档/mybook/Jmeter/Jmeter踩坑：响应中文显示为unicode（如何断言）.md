@@ -3,7 +3,7 @@ Jmeter踩坑：响应中文显示为unicode（如何断言）
 在断言一个接口返回信息时，接口返回的是unicode编码的内容，部分响应信息如下：
 
 ```json
-{"status":"0","msg":"\u64CD\u4F5C\u6210\u529F","data":{"coush_array":[{"id":"4147","name":"1-3\u5E74\u7EA7\u8BED\u6587\u6625\u5B63\u5F00\u5B66\u6536\u5FC3\u8BFE","cover_picture":"https:%5C*****%5C/lilclpic%5C/lilclpic_1579077026207.png","price_current":"8","student_num":"209","numer":"3","lecture_type":"10","start_time":"","subject_id":"34","lesson_type_id":"0","brand":"0","lesson_type":"1","class_type":"1","type":"2","brand_type":
+{"status":"0","msg":"\u64CD\u4F5C\u6210\u529F","data":{"coush_array":[{"id":"4147","name":"1-3\u5E74\u7EA7\u8BED\u6587\u6625\u5B63\u5F00\u5B66\u6536\u5FC3\u8BFE","cover_picture":"https:%5C*****%5C/lilclpic%5C/lilclpic_1579077026207.png","price_current":"8","student_num":"209","numer":"3","lecture_type":"10","start_time":"","subject_id":"34","lesson_type_id":"0","brand":"0","lesson_type":"1","class_type":"1","type":"2","brand_type":2}]},}
 ```
 
 于是添加了一个响应断言，如下：
