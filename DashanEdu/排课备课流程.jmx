@@ -66,6 +66,226 @@
         <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Benshell断言样例" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler（mock返回信息）" enabled="true">
+          <stringProp name="BeanShellSampler.query">return &quot;{&quot;code&quot;:&quot;0&quot;,&quot;data&quot;:{&quot;name&quot;:&quot;6.0.1&quot;,&quot;ios_version&quot;:&quot;6.1.0&quot;,&quot;ipad_version&quot;:&quot;6.1.0&quot;,&quot;hd_version&quot;:&quot;6.1.1&quot;,&quot;ios_down_url&quot;:&quot;&quot;,&quot;android_down_url&quot;:&quot;http://www.xuexi8.net/xuexi8/xuexi8.apk&quot;,&quot;hd_down_url&quot;:&quot;http://www.xuexi8.net/xuexi8/xuexi8Hd.apk&quot;,&quot;ipad_down_url&quot;:&quot;&quot;,&quot;updata_content&quot;:&quot;学习8 v6.0全新改版，让学习更高效！&quot;},&quot;msg&quot;:&quot;ok&quot;}&quot;</stringProp>
+          <stringProp name="BeanShellSampler.filename"></stringProp>
+          <stringProp name="BeanShellSampler.parameters"></stringProp>
+          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+        </BeanShellSampler>
+        <hashTree>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import org.apache.jmeter.assertions; 
+import org.apache.jmeter.samplers.SampleResult; 
+import org.apache.jmeter.assertions.AssertionResult; 
+import org.json.*;
+String response_data = prev.getResponseDataAsString();
+JSONObject data_obj = new JSONObject(response_data);
+log.info(response_data);
+String code = data_obj.get(&quot;remark&quot;); 
+log.info(code);
+if(code.equals(&quot;接口测试服务商&quot;)) 
+{ 
+String user_name = data_obj.get(&quot;dockedContact&quot;).get(&quot;name&quot;).toString(); 
+    if(user_name.equals(&quot;zhufc&quot;)){ 
+    Failure = true; 
+    log.info(user_name);
+    log.info(&quot;提取值与预期相符,断言通过&quot;);
+    FailureMessage = &quot;断言通过&quot;;
+    } 
+    else{ 
+    	Failure = false;
+    	log.info(&quot;名称不同，断言失败&quot;);
+    	FailureMessage = &quot;断言失败&quot;;
+prev.setStopThread(true);
+    } 
+} </stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor-org.json" enabled="true">
+          <boolProp name="resetInterpreter">false</boolProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="script">import org.apache.jmeter.assertions; 
+import org.apache.jmeter.samplers.SampleResult; 
+import org.apache.jmeter.assertions.AssertionResult; 
+import org.json.*;
+String response_data = prev.getResponseDataAsString();
+JSONObject data_obj = new JSONObject(response_data);
+log.info(response_data);
+String status = data_obj.get(&quot;status&quot;); 
+
+log.info(status);
+if(status.equals(&quot;0&quot;)) 
+{
+	String msg = data_obj.get(&quot;msg&quot;).toString();
+	//String login_token = data_obj.get(&quot;data&quot;).data_obj.get(&quot;login_token&quot;)toString();
+	if(msg.equals(&quot;登录成功1&quot;)){ 
+//		Failure = false; 
+		log.info(msg);
+		log.info(&quot;提取值与预期相符,断言通过&quot;);
+		FailureMessage = &quot;断言通过&quot;;
+    }
+    else{
+    	//把断言失败置为真，即用例失败，并在结果树中显示FailureMessage
+    		Failure = true;
+    		log.info(&quot;名称不同，断言失败&quot;);
+    		FailureMessage = &quot;断言失败&quot;;
+//	prev.setStopThread(true);
+	}
+}</stringProp>
+        </BeanShellPostProcessor>
+        <hashTree/>
+        <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor_fastjson" enabled="true">
+          <boolProp name="resetInterpreter">false</boolProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="script">import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+//import org.json.*;
+
+String init = vars.get(&quot;banner_list&quot;);
+
+// 转换JSON串
+JSONObject json = JSONObject.parseObject(init);
+String course_id = json.getString(&quot;course_id&quot;);
+String course_type = json.getString(&quot;course_type&quot;);
+String is_topic = json.getString(&quot;is_topic&quot;);
+
+
+vars.put(&quot;course_id&quot;,course_id);
+vars.put(&quot;course_type&quot;,course_type);
+vars.put(&quot;is_topic&quot;,is_topic);
+</stringProp>
+        </BeanShellPreProcessor>
+        <hashTree/>
+        <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion_fastjson" enabled="true">
+          <stringProp name="BeanShellAssertion.query">import org.apache.jmeter.assertions; 
+import org.apache.jmeter.samplers.SampleResult; 
+import org.apache.jmeter.assertions.AssertionResult; 
+import org.json.JSONObject;
+String response_data = prev.getResponseDataAsString();
+//JSONObject data_obj = new JSONObject(response_data);
+//log.info(response_data);
+String data_type=&quot;&quot;;
+String url=&quot;&quot;;
+
+try{
+	JSONObject data_obj = new JSONObject(response_data);
+	log.info(response_data);
+	data_type = data_obj.get(&quot;data&quot;).get(&quot;data_info&quot;).get(&quot;data_type&quot;);
+	url =data_obj.get(&quot;data&quot;).get(&quot;data_info&quot;).get(&quot;url&quot;);
+	log.info(&quot;data_type：&quot;+data_type);
+}
+catch(Exception e){
+	Failure = true;
+    	log.info(&quot;数据解析异常，断言失败&quot;);
+    	FailureMessage = &quot;数据解析异常，断言失败&quot;;
+//    	throw e;
+//	prev.setStopThread(true);
+	break;
+	//如果数据解析异常，直接停止所有程序，慎用 
+//	System.exit(1);
+}
+
+
+if(data_type !=&quot;&quot;)
+{
+	if(data_type.equals(&quot;2&quot;)){
+		//String playauth = data_obj.get(&quot;data&quot;).get(&quot;data_info&quot;).get(&quot;playauth&quot;);
+		if(url.equals(&quot;&quot;)){
+			//String playauth = data_obj.get(&quot;data&quot;).get(&quot;data_info&quot;).get(&quot;playauth&quot;);
+			Failure = true;
+    			log.info(&quot;视频url为空，断言失败&quot;);
+    			FailureMessage = &quot;视频url为空，断言失败&quot;;
+		}
+		else{
+			Failure = false;
+    			log.info(&quot;视频正常,断言通过&quot;);
+    			FailureMessage = &quot;视频正常,断言通过&quot;;
+		}
+	}
+
+    else{
+    		if(url.equals(&quot;&quot;)){
+     		Failure = true;
+		    	log.info(&quot;url为空，断言失败&quot;);
+		    	FailureMessage = &quot;url为空，断言失败&quot;;
+    		}else if(url.length()&gt;100){
+    			Failure = false;
+    			log.info(&quot;文件url太长，断言失败&quot;);
+    			FailureMessage = &quot;文件url太长，断言失败&quot;;
+    		}else{
+    			Failure = false;
+    			log.info(&quot;文件url不为空，断言通过&quot;);
+    			FailureMessage = &quot;文件url不为空，断言通过&quot;;
+    		}
+    	}
+}
+else{
+	Failure = true;
+    	log.info(&quot;data_type为空，断言失败&quot;);
+    	FailureMessage = &quot;data_type为空，断言失败&quot;;
+    	//断言失败则停止线程执行
+	//prev.setStopThread(true);
+	}</stringProp>
+          <stringProp name="BeanShellAssertion.filename"></stringProp>
+          <stringProp name="BeanShellAssertion.parameters"></stringProp>
+          <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+        </BeanShellAssertion>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="登录" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+      </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="新生报读" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
@@ -80,6 +300,12 @@
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree/>
         <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
           <collectionProp name="HeaderManager.headers">
             <elementProp name="Host" elementType="Header">
@@ -90,21 +316,21 @@
               <stringProp name="Header.name">Connection</stringProp>
               <stringProp name="Header.value">keep-alive</stringProp>
             </elementProp>
-            <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
-              <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
-              <stringProp name="Header.value">1</stringProp>
+            <elementProp name="Accept" elementType="Header">
+              <stringProp name="Header.name">Accept</stringProp>
+              <stringProp name="Header.value">*/*</stringProp>
+            </elementProp>
+            <elementProp name="Sec-Fetch-Dest" elementType="Header">
+              <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+              <stringProp name="Header.value">empty</stringProp>
+            </elementProp>
+            <elementProp name="X-Requested-With" elementType="Header">
+              <stringProp name="Header.name">X-Requested-With</stringProp>
+              <stringProp name="Header.value">XMLHttpRequest</stringProp>
             </elementProp>
             <elementProp name="User-Agent" elementType="Header">
               <stringProp name="Header.name">User-Agent</stringProp>
               <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36</stringProp>
-            </elementProp>
-            <elementProp name="Sec-Fetch-Dest" elementType="Header">
-              <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
-              <stringProp name="Header.value">iframe</stringProp>
-            </elementProp>
-            <elementProp name="Accept" elementType="Header">
-              <stringProp name="Header.name">Accept</stringProp>
-              <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</stringProp>
             </elementProp>
             <elementProp name="Sec-Fetch-Site" elementType="Header">
               <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
@@ -112,11 +338,7 @@
             </elementProp>
             <elementProp name="Sec-Fetch-Mode" elementType="Header">
               <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
-              <stringProp name="Header.value">navigate</stringProp>
-            </elementProp>
-            <elementProp name="Sec-Fetch-User" elementType="Header">
-              <stringProp name="Header.name">Sec-Fetch-User</stringProp>
-              <stringProp name="Header.value">?1</stringProp>
+              <stringProp name="Header.value">cors</stringProp>
             </elementProp>
             <elementProp name="Referer" elementType="Header">
               <stringProp name="Header.name">Referer</stringProp>
@@ -132,7 +354,7 @@
             </elementProp>
             <elementProp name="Cookie" elementType="Header">
               <stringProp name="Header.name">Cookie</stringProp>
-              <stringProp name="Header.value">JSESSIONID=A71556237E5315C0AE65E9DDA70DB93F; gr_user_id=fa5f2dfb-5750-4f06-9cc1-ecc2931778ce; gr_cs1_95af396a-c15c-4fcc-930a-52625d39bbce=user_id%3A14294; gr_session_id_94cbd549f50f38fe=288e5ea3-d14b-4c89-9ca7-3735c0419327; gr_cs1_288e5ea3-d14b-4c89-9ca7-3735c0419327=user_id%3A21152; gr_session_id_94cbd549f50f38fe_288e5ea3-d14b-4c89-9ca7-3735c0419327=true</stringProp>
+              <stringProp name="Header.value">JSESSIONID=E3002D4C4A5490DEF58C8296540B6563; gr_user_id=fa5f2dfb-5750-4f06-9cc1-ecc2931778ce; gr_session_id_94cbd549f50f38fe=e97feaf5-6615-42c4-aae4-a0103ebb5467; gr_cs1_e97feaf5-6615-42c4-aae4-a0103ebb5467=user_id%3A21152; gr_session_id_94cbd549f50f38fe_e97feaf5-6615-42c4-aae4-a0103ebb5467=true</stringProp>
             </elementProp>
           </collectionProp>
         </HeaderManager>
@@ -367,7 +589,7 @@
               </elementProp>
               <elementProp name="contact" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">17610831850</stringProp>
+                <stringProp name="Argument.value">${phone}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">contact</stringProp>
@@ -381,7 +603,7 @@
               </elementProp>
               <elementProp name="cusName" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">17610831850</stringProp>
+                <stringProp name="Argument.value">客户{phone}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">cusName</stringProp>
@@ -486,13 +708,20 @@
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="getCusAndStuByStudentId.do" enabled="true">
+        <hashTree>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="获取学生id" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">studentId</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.data</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="getCusAndStuByStudentId获取学生基本信息" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="studentId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">474647</stringProp>
+                <stringProp name="Argument.value">${studentId}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">studentId</stringProp>
@@ -519,7 +748,7 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="studentId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">474647</stringProp>
+                <stringProp name="Argument.value">${studentId}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">studentId</stringProp>
@@ -546,7 +775,7 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="studentId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">474647</stringProp>
+                <stringProp name="Argument.value">${studentId}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">studentId</stringProp>
@@ -587,7 +816,7 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="studentId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">474647</stringProp>
+                <stringProp name="Argument.value">${studentId}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">studentId</stringProp>
@@ -642,20 +871,96 @@
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree/>
+        <hashTree>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="script">import org.apache.jmeter.assertions; 
+import org.apache.jmeter.samplers.SampleResult; 
+import org.apache.jmeter.assertions.AssertionResult; 
+import org.json.JSONObject;
+String response_data = prev.getResponseDataAsString();
+//JSONObject data_obj = new JSONObject(response_data);
+//log.info(response_data);
+String data_type=&quot;&quot;;
+String url=&quot;&quot;;
+
+try{
+	JSONObject data_obj = new JSONObject(response_data);
+	log.info(response_data);
+	data_type = data_obj.get(&quot;data&quot;).get(&quot;data_info&quot;).get(&quot;data_type&quot;);
+	url =data_obj.get(&quot;data&quot;).get(&quot;data_info&quot;).get(&quot;url&quot;);
+	log.info(&quot;data_type：&quot;+data_type);
+}
+catch(Exception e){
+	Failure = true;
+    	log.info(&quot;数据解析异常，断言失败&quot;);
+    	FailureMessage = &quot;数据解析异常，断言失败&quot;;
+//    	throw e;
+//	prev.setStopThread(true);
+	break;
+	//如果数据解析异常，直接停止所有程序，慎用 
+//	System.exit(1);
+}
+
+
+if(data_type !=&quot;&quot;)
+{
+	if(data_type.equals(&quot;2&quot;)){
+		//String playauth = data_obj.get(&quot;data&quot;).get(&quot;data_info&quot;).get(&quot;playauth&quot;);
+		if(url.equals(&quot;&quot;)){
+			//String playauth = data_obj.get(&quot;data&quot;).get(&quot;data_info&quot;).get(&quot;playauth&quot;);
+			Failure = true;
+    			log.info(&quot;视频url为空，断言失败&quot;);
+    			FailureMessage = &quot;视频url为空，断言失败&quot;;
+		}
+		else{
+			Failure = false;
+    			log.info(&quot;视频正常,断言通过&quot;);
+    			FailureMessage = &quot;视频正常,断言通过&quot;;
+		}
+	}
+
+    else{
+    		if(url.equals(&quot;&quot;)){
+     		Failure = true;
+		    	log.info(&quot;url为空，断言失败&quot;);
+		    	FailureMessage = &quot;url为空，断言失败&quot;;
+    		}else if(url.length()&gt;100){
+    			Failure = false;
+    			log.info(&quot;文件url太长，断言失败&quot;);
+    			FailureMessage = &quot;文件url太长，断言失败&quot;;
+    		}else{
+    			Failure = false;
+    			log.info(&quot;文件url不为空，断言通过&quot;);
+    			FailureMessage = &quot;文件url不为空，断言通过&quot;;
+    		}
+    	}
+}
+else{
+	Failure = true;
+    	log.info(&quot;data_type为空，断言失败&quot;);
+    	FailureMessage = &quot;data_type为空，断言失败&quot;;
+    	//断言失败则停止线程执行
+	//prev.setStopThread(true);
+	}</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="cashCoupons.do添加报读课程" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="studentId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">474647</stringProp>
+                <stringProp name="Argument.value">${studentId}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">studentId</stringProp>
               </elementProp>
               <elementProp name="productIds" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">124788</stringProp>
+                <stringProp name="Argument.value">125283</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">productIds</stringProp>
@@ -690,7 +995,7 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;productLists&quot;:[{&quot;price&quot;:&quot;220&quot;,&quot;quantity&quot;:&quot;10&quot;,&quot;totalPrice&quot;:&quot;2200&quot;,&quot;productUuId&quot;:&quot;bcf57d3e-437b-4204-ff5c-73e0e67f0395&quot;,&quot;productId&quot;:&quot;124788&quot;,&quot;miniClassId&quot;:&quot;35445&quot;}],&quot;selectPromotionList&quot;:[],&quot;studentId&quot;:474647,&quot;blCampusId&quot;:&quot;6666&quot;,&quot;contractType&quot;:&quot;NEW_CONTRACT&quot;}</stringProp>
+                <stringProp name="Argument.value">{&quot;productLists&quot;:[{&quot;price&quot;:&quot;40&quot;,&quot;quantity&quot;:&quot;30&quot;,&quot;totalPrice&quot;:&quot;1200&quot;,&quot;productUuId&quot;:&quot;fc102f8c-72d5-6f42-8c00-667f91943617&quot;,&quot;productId&quot;:&quot;125283&quot;,&quot;miniClassId&quot;:&quot;36266&quot;}],&quot;selectProsmotionList&quot;:[],&quot;studentId&quot;:${studentId},&quot;blCampusId&quot;:&quot;6666&quot;,&quot;contractType&quot;:&quot;NEW_CONTRACT&quot;}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -716,7 +1021,7 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;productLists&quot;:[{&quot;price&quot;:&quot;220&quot;,&quot;quantity&quot;:&quot;10&quot;,&quot;totalPrice&quot;:&quot;2200&quot;,&quot;productUuId&quot;:&quot;bcf57d3e-437b-4204-ff5c-73e0e67f0395&quot;,&quot;productId&quot;:&quot;124788&quot;,&quot;miniClassId&quot;:&quot;35445&quot;}],&quot;selectPromotionList&quot;:[],&quot;studentId&quot;:474647,&quot;blCampusId&quot;:&quot;6666&quot;,&quot;contractType&quot;:&quot;NEW_CONTRACT&quot;,&quot;autoCalculate&quot;:&quot;AUTO&quot;}</stringProp>
+                <stringProp name="Argument.value">{&quot;productLists&quot;:[{&quot;price&quot;:&quot;40&quot;,&quot;quantity&quot;:&quot;30&quot;,&quot;totalPrice&quot;:&quot;1200&quot;,&quot;productUuId&quot;:&quot;fc102f8c-72d5-6f42-8c00-667f91943617&quot;,&quot;productId&quot;:&quot;125283&quot;,&quot;miniClassId&quot;:&quot;36266&quot;}],&quot;selectPromotionList&quot;:[],&quot;studentId&quot;:${studentId},&quot;blCampusId&quot;:&quot;6666&quot;,&quot;contractType&quot;:&quot;NEW_CONTRACT&quot;,&quot;autoCalculate&quot;:&quot;AUTO&quot;}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -736,7 +1041,103 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="findAvailablePromotions.do" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;productLists&quot;:[{&quot;price&quot;:&quot;40&quot;,&quot;quantity&quot;:&quot;30&quot;,&quot;totalPrice&quot;:&quot;1200&quot;,&quot;productUuId&quot;:&quot;fc102f8c-72d5-6f42-8c00-667f91943617&quot;,&quot;productId&quot;:&quot;125283&quot;,&quot;miniClassId&quot;:&quot;36266&quot;}],&quot;selectPromotionList&quot;:[{&quot;calOrder&quot;:1,&quot;promotionId&quot;:23474}],&quot;studentId&quot;:${studentId},&quot;blCampusId&quot;:&quot;6666&quot;,&quot;contractType&quot;:&quot;NEW_CONTRACT&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/eduboss/dashan/web/contract/findAvailablePromotions.do</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="保存合同" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;blCampusId&quot;:&quot;6666&quot;,&quot;signByWho&quot;:&quot;21152&quot;,&quot;signTime&quot;:&quot;2020-07-02&quot;,&quot;stuName&quot;:${studentName},&quot;gradeId&quot;:${gradeId},&quot;cusPhone&quot;:${studentContact},&quot;schoolId&quot;:${schoolId},&quot;cusOrg&quot;:${cusOrg},&quot;cusType&quot;:${cusType},&quot;syncChargePaymentId&quot;:&quot;0&quot;,&quot;realContractAmount&quot;:&quot;1200&quot;,&quot;promotionContractAmount&quot;:&quot;384&quot;,&quot;paidContractAmount&quot;:&quot;0&quot;,&quot;planContractAmount&quot;:&quot;816&quot;,&quot;&quot;:&quot;816&quot;,&quot;cusId&quot;:693299,&quot;stuId&quot;:474647,&quot;promotionAmountOriginal&quot;:&quot;384&quot;,&quot;contractPromotionIds&quot;:&quot;23474_1&quot;,&quot;giftObjectCmdList&quot;:[],&quot;cashCouponCmdList&quot;:[],&quot;contractProductAddCmdList&quot;:[{&quot;miniClassId&quot;:&quot;36266&quot;,&quot;productId&quot;:&quot;125283&quot;,&quot;productType&quot;:&quot;SMALL_CLASS&quot;,&quot;firstSchoolTime&quot;:&quot;2020-07-02&quot;,&quot;validEndDate&quot;:&quot;&quot;,&quot;quantity&quot;:&quot;30&quot;,&quot;price&quot;:&quot;40&quot;,&quot;discountUnitPrice&quot;:&quot;27.2&quot;,&quot;payment&quot;:&quot;1200&quot;,&quot;subContractTypeId&quot;:&quot;&quot;,&quot;remark&quot;:&quot;&quot;,&quot;uuid&quot;:&quot;06cdbe59-f0a2-44b2-b060-f2750bb7e8ee&quot;,&quot;contractPromotionAmountOriginal&quot;:&quot;384&quot;,&quot;freeCutMoney&quot;:0,&quot;planPromotionHours&quot;:&quot;0.00&quot;,&quot;cashCouponCutPriceDistributionStr&quot;:&quot;&quot;,&quot;productUuid&quot;:&quot;fc102f8c-72d5-6f42-8c00-667f91943617&quot;,&quot;contractProductSubjects&quot;:[]}],&quot;contractPromotionProductUuids&quot;:&quot;23474Mfc102f8c-72d5-6f42-8c00-667f91943617&quot;,&quot;contractType&quot;:&quot;NEW_CONTRACT&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/eduboss/dashan/web/contract/add.do</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="contractId" enabled="false">
+            <stringProp name="JSONPostProcessor.referenceNames">contractId</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.data.contractId</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="contractId" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${contractId}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">contractId</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/eduboss/ContractAction/getContractById.do</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
       </hashTree>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="phone" elementType="Argument">
+            <stringProp name="Argument.name">phone</stringProp>
+            <stringProp name="Argument.value">17600000001</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
     </hashTree>
   </hashTree>
 </jmeterTestPlan>
