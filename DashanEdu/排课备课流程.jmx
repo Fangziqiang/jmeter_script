@@ -66,6 +66,59 @@
         <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="Host" elementType="Header">
+            <stringProp name="Header.name">Host</stringProp>
+            <stringProp name="Header.value">pre.xuexi8.work</stringProp>
+          </elementProp>
+          <elementProp name="Connection" elementType="Header">
+            <stringProp name="Header.name">Connection</stringProp>
+            <stringProp name="Header.value">keep-alive</stringProp>
+          </elementProp>
+          <elementProp name="Accept" elementType="Header">
+            <stringProp name="Header.name">Accept</stringProp>
+            <stringProp name="Header.value">*/*</stringProp>
+          </elementProp>
+          <elementProp name="Sec-Fetch-Dest" elementType="Header">
+            <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+            <stringProp name="Header.value">empty</stringProp>
+          </elementProp>
+          <elementProp name="X-Requested-With" elementType="Header">
+            <stringProp name="Header.name">X-Requested-With</stringProp>
+            <stringProp name="Header.value">XMLHttpRequest</stringProp>
+          </elementProp>
+          <elementProp name="User-Agent" elementType="Header">
+            <stringProp name="Header.name">User-Agent</stringProp>
+            <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36</stringProp>
+          </elementProp>
+          <elementProp name="Sec-Fetch-Site" elementType="Header">
+            <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
+            <stringProp name="Header.value">same-origin</stringProp>
+          </elementProp>
+          <elementProp name="Sec-Fetch-Mode" elementType="Header">
+            <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
+            <stringProp name="Header.value">cors</stringProp>
+          </elementProp>
+          <elementProp name="Referer" elementType="Header">
+            <stringProp name="Header.name">Referer</stringProp>
+            <stringProp name="Header.value">https://pre.xuexi8.work/eduboss/</stringProp>
+          </elementProp>
+          <elementProp name="Accept-Encoding" elementType="Header">
+            <stringProp name="Header.name">Accept-Encoding</stringProp>
+            <stringProp name="Header.value">gzip, deflate, br</stringProp>
+          </elementProp>
+          <elementProp name="Accept-Language" elementType="Header">
+            <stringProp name="Header.name">Accept-Language</stringProp>
+            <stringProp name="Header.value">zh-CN,zh;q=0.9</stringProp>
+          </elementProp>
+          <elementProp name="Cookie" elementType="Header">
+            <stringProp name="Header.name">Cookie</stringProp>
+            <stringProp name="Header.value">JSESSIONID=6D33CC13F8C3463C759AEA76795869D6; gr_user_id=fa5f2dfb-5750-4f06-9cc1-ecc2931778ce; gr_session_id_94cbd549f50f38fe=da69992e-b60d-46a5-98c7-ddfab11ce754; gr_cs1_da69992e-b60d-46a5-98c7-ddfab11ce754=user_id%3A21152; gr_session_id_94cbd549f50f38fe_da69992e-b60d-46a5-98c7-ddfab11ce754=true</stringProp>
+          </elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Benshell断言样例" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
@@ -186,6 +239,8 @@ String response_data = prev.getResponseDataAsString();
 //log.info(response_data);
 String data_type=&quot;&quot;;
 String url=&quot;&quot;;
+//注意：如果您正在使用(导入)org.json.simple.JSONArray,则必须使用JSONArray.size()来获取所需的数据.
+//但是,如果您使用的是org.json.JSONArray,请使用JSONArray.length().
 
 try{
 	JSONObject data_obj = new JSONObject(response_data);
@@ -305,59 +360,6 @@ else{
           <boolProp name="displayJMeterVariables">true</boolProp>
           <boolProp name="displaySystemProperties">false</boolProp>
         </DebugSampler>
-        <hashTree/>
-        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-          <collectionProp name="HeaderManager.headers">
-            <elementProp name="Host" elementType="Header">
-              <stringProp name="Header.name">Host</stringProp>
-              <stringProp name="Header.value">pre.xuexi8.work</stringProp>
-            </elementProp>
-            <elementProp name="Connection" elementType="Header">
-              <stringProp name="Header.name">Connection</stringProp>
-              <stringProp name="Header.value">keep-alive</stringProp>
-            </elementProp>
-            <elementProp name="Accept" elementType="Header">
-              <stringProp name="Header.name">Accept</stringProp>
-              <stringProp name="Header.value">*/*</stringProp>
-            </elementProp>
-            <elementProp name="Sec-Fetch-Dest" elementType="Header">
-              <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
-              <stringProp name="Header.value">empty</stringProp>
-            </elementProp>
-            <elementProp name="X-Requested-With" elementType="Header">
-              <stringProp name="Header.name">X-Requested-With</stringProp>
-              <stringProp name="Header.value">XMLHttpRequest</stringProp>
-            </elementProp>
-            <elementProp name="User-Agent" elementType="Header">
-              <stringProp name="Header.name">User-Agent</stringProp>
-              <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36</stringProp>
-            </elementProp>
-            <elementProp name="Sec-Fetch-Site" elementType="Header">
-              <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
-              <stringProp name="Header.value">same-origin</stringProp>
-            </elementProp>
-            <elementProp name="Sec-Fetch-Mode" elementType="Header">
-              <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
-              <stringProp name="Header.value">cors</stringProp>
-            </elementProp>
-            <elementProp name="Referer" elementType="Header">
-              <stringProp name="Header.name">Referer</stringProp>
-              <stringProp name="Header.value">https://pre.xuexi8.work/eduboss/</stringProp>
-            </elementProp>
-            <elementProp name="Accept-Encoding" elementType="Header">
-              <stringProp name="Header.name">Accept-Encoding</stringProp>
-              <stringProp name="Header.value">gzip, deflate, br</stringProp>
-            </elementProp>
-            <elementProp name="Accept-Language" elementType="Header">
-              <stringProp name="Header.name">Accept-Language</stringProp>
-              <stringProp name="Header.value">zh-CN,zh;q=0.9</stringProp>
-            </elementProp>
-            <elementProp name="Cookie" elementType="Header">
-              <stringProp name="Header.name">Cookie</stringProp>
-              <stringProp name="Header.value">JSESSIONID=E3002D4C4A5490DEF58C8296540B6563; gr_user_id=fa5f2dfb-5750-4f06-9cc1-ecc2931778ce; gr_session_id_94cbd549f50f38fe=e97feaf5-6615-42c4-aae4-a0103ebb5467; gr_cs1_e97feaf5-6615-42c4-aae4-a0103ebb5467=user_id%3A21152; gr_session_id_94cbd549f50f38fe_e97feaf5-6615-42c4-aae4-a0103ebb5467=true</stringProp>
-            </elementProp>
-          </collectionProp>
-        </HeaderManager>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="获取iframe模板信息" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
@@ -883,15 +885,27 @@ import org.json.JSONObject;
 String response_data = prev.getResponseDataAsString();
 //JSONObject data_obj = new JSONObject(response_data);
 //log.info(response_data);
-String data_type=&quot;&quot;;
-String url=&quot;&quot;;
+String uuid=&quot;&quot;;
+String promotionUuid=&quot;&quot;;
+String productId=&quot;&quot;
+String miniClassId=&quot;&quot;
 
 try{
 	JSONObject data_obj = new JSONObject(response_data);
 	log.info(response_data);
-	data_type = data_obj.get(&quot;data&quot;).get(&quot;data_info&quot;).get(&quot;data_type&quot;);
-	url =data_obj.get(&quot;data&quot;).get(&quot;data_info&quot;).get(&quot;url&quot;);
-	log.info(&quot;data_type：&quot;+data_type);
+	JSONArray data = data_obj.getJSONArray(&quot;data&quot;);
+	
+	for(int i = 0; i &lt; data.size(); i++){
+		miniClassId = data_obj.get(&quot;data&quot;)(i).get(&quot;miniClass&quot;).get(&quot;miniClassId&quot;);
+		if (miniClassId==36266){
+			uuid =data_obj.get(&quot;data&quot;)(i).get(&quot;product&quot;).get(&quot;uuid&quot;);
+			promotionUuid =data_obj.get(&quot;data&quot;)(i).get(&quot;product&quot;).get(&quot;promotionUuid&quot;);
+			productId = data_obj.get(&quot;data&quot;)(i).get(&quot;product&quot;).get(&quot;productId&quot;);
+		}
+	}
+	
+	log.info(&quot;uuid：&quot;+uuid);
+	log.info(&quot;promotionUuid：&quot;+uuid);
 }
 catch(Exception e){
 	Failure = true;
@@ -902,49 +916,7 @@ catch(Exception e){
 	break;
 	//如果数据解析异常，直接停止所有程序，慎用 
 //	System.exit(1);
-}
-
-
-if(data_type !=&quot;&quot;)
-{
-	if(data_type.equals(&quot;2&quot;)){
-		//String playauth = data_obj.get(&quot;data&quot;).get(&quot;data_info&quot;).get(&quot;playauth&quot;);
-		if(url.equals(&quot;&quot;)){
-			//String playauth = data_obj.get(&quot;data&quot;).get(&quot;data_info&quot;).get(&quot;playauth&quot;);
-			Failure = true;
-    			log.info(&quot;视频url为空，断言失败&quot;);
-    			FailureMessage = &quot;视频url为空，断言失败&quot;;
-		}
-		else{
-			Failure = false;
-    			log.info(&quot;视频正常,断言通过&quot;);
-    			FailureMessage = &quot;视频正常,断言通过&quot;;
-		}
-	}
-
-    else{
-    		if(url.equals(&quot;&quot;)){
-     		Failure = true;
-		    	log.info(&quot;url为空，断言失败&quot;);
-		    	FailureMessage = &quot;url为空，断言失败&quot;;
-    		}else if(url.length()&gt;100){
-    			Failure = false;
-    			log.info(&quot;文件url太长，断言失败&quot;);
-    			FailureMessage = &quot;文件url太长，断言失败&quot;;
-    		}else{
-    			Failure = false;
-    			log.info(&quot;文件url不为空，断言通过&quot;);
-    			FailureMessage = &quot;文件url不为空，断言通过&quot;;
-    		}
-    	}
-}
-else{
-	Failure = true;
-    	log.info(&quot;data_type为空，断言失败&quot;);
-    	FailureMessage = &quot;data_type为空，断言失败&quot;;
-    	//断言失败则停止线程执行
-	//prev.setStopThread(true);
-	}</stringProp>
+}</stringProp>
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
@@ -1138,6 +1110,105 @@ else{
         </collectionProp>
       </Arguments>
       <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="TEST" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="findProduct.do" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="blCampusId" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">6666</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">blCampusId</stringProp>
+              </elementProp>
+              <elementProp name="contractType" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">NEW_CONTRACT</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">contractType</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/eduboss/dashan/web/contract/findProduct.do</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="script">import org.apache.jmeter.assertions; 
+import org.apache.jmeter.samplers.SampleResult; 
+import org.apache.jmeter.assertions.AssertionResult;
+import org.json.JSONObject;
+import org.json.JSONArray;
+//注意：如果您正在使用(导入)org.json.simple.JSONArray,则必须使用JSONArray.size()来获取所需的数据.
+//但是,如果您使用的是org.json.JSONArray,请使用JSONArray.length().
+String response_data = prev.getResponseDataAsString();
+//JSONObject data_obj = new JSONObject(response_data);
+//log.info(response_data);
+String uuid=&quot;&quot;;
+String promotionUuid=&quot;&quot;;
+String productId=&quot;&quot;;
+String miniClassId=&quot;&quot;;
+
+try{
+	JSONObject data_obj = new JSONObject(response_data);
+//	log.info(response_data);
+	JSONArray data = data_obj.getJSONArray(&quot;data&quot;);
+	
+	for(int i = 0; i &lt; data.length(); i++){
+		miniClassId = data.getJSONObject(i).get(&quot;miniClass&quot;).get(&quot;miniClassId&quot;);
+		log.info(miniClassId);
+//		if (miniClassId==36266){
+//			uuid =data_obj.get(&quot;data&quot;)(i).get(&quot;product&quot;).get(&quot;uuid&quot;);
+//			promotionUuid =data_obj.get(&quot;data&quot;)(i).get(&quot;product&quot;).get(&quot;promotionUuid&quot;);
+//			productId = data_obj.get(&quot;data&quot;)(i).get(&quot;product&quot;).get(&quot;productId&quot;);
+		}
+//	}
+//	
+//	log.info(&quot;uuid：&quot;+uuid);
+//	log.info(&quot;promotionUuid：&quot;+uuid);
+}
+catch(Exception e){
+	Failure = true;
+    	log.info(&quot;数据解析异常，断言失败&quot;);
+    	FailureMessage = &quot;数据解析异常，断言失败&quot;;
+//    	throw e;
+//	prev.setStopThread(true);
+	break;
+	//如果数据解析异常，直接停止所有程序，慎用 
+//	System.exit(1);
+}</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
     </hashTree>
   </hashTree>
 </jmeterTestPlan>
