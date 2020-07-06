@@ -114,7 +114,7 @@
           </elementProp>
           <elementProp name="Cookie" elementType="Header">
             <stringProp name="Header.name">Cookie</stringProp>
-            <stringProp name="Header.value">JSESSIONID=6D33CC13F8C3463C759AEA76795869D6; gr_user_id=fa5f2dfb-5750-4f06-9cc1-ecc2931778ce; gr_session_id_94cbd549f50f38fe=da69992e-b60d-46a5-98c7-ddfab11ce754; gr_cs1_da69992e-b60d-46a5-98c7-ddfab11ce754=user_id%3A21152; gr_session_id_94cbd549f50f38fe_da69992e-b60d-46a5-98c7-ddfab11ce754=true</stringProp>
+            <stringProp name="Header.value">JSESSIONID=2353E9D38A12FF19C191D9A8211A35EE; gr_user_id=fa5f2dfb-5750-4f06-9cc1-ecc2931778ce; gr_session_id_94cbd549f50f38fe=df69de63-93d9-4b1e-98c3-0fd840da4fa0; gr_session_id_94cbd549f50f38fe_df69de63-93d9-4b1e-98c3-0fd840da4fa0=true; gr_cs1_df69de63-93d9-4b1e-98c3-0fd840da4fa0=user_id%3A21152</stringProp>
           </elementProp>
         </collectionProp>
       </HeaderManager>
@@ -1167,6 +1167,7 @@ import org.apache.jmeter.samplers.SampleResult;
 import org.apache.jmeter.assertions.AssertionResult;
 import org.json.JSONObject;
 import org.json.JSONArray;
+import org.json.*;
 //注意：如果您正在使用(导入)org.json.simple.JSONArray,则必须使用JSONArray.size()来获取所需的数据.
 //但是,如果您使用的是org.json.JSONArray,请使用JSONArray.length().
 String response_data = prev.getResponseDataAsString();
@@ -1177,14 +1178,18 @@ String promotionUuid=&quot;&quot;;
 String productId=&quot;&quot;;
 String miniClassId=&quot;&quot;;
 
-try{
+//try{
 	JSONObject data_obj = new JSONObject(response_data);
 //	log.info(response_data);
 	JSONArray data = data_obj.getJSONArray(&quot;data&quot;);
-	
+	log.info(&quot;data数组长度&quot;+data.length());
 	for(int i = 0; i &lt; data.length(); i++){
-		miniClassId = data.getJSONObject(i).get(&quot;miniClass&quot;).get(&quot;miniClassId&quot;);
-		log.info(miniClassId);
+//		miniClassId = data.getJSONObject(i).get(&quot;miniClass&quot;).get(&quot;miniClassId&quot;);
+		JSONObject data2_obj = data.getJSONObject(i);
+		String data2_obj_string=JSONObject.toJSONString(data2_obj);
+		log.info(data2_obj_string);
+//		miniClassId = data2_obj.get(&quot;miniClass&quot;).get(&quot;miniClassId&quot;);
+//		log.info(miniClassId);
 //		if (miniClassId==36266){
 //			uuid =data_obj.get(&quot;data&quot;)(i).get(&quot;product&quot;).get(&quot;uuid&quot;);
 //			promotionUuid =data_obj.get(&quot;data&quot;)(i).get(&quot;product&quot;).get(&quot;promotionUuid&quot;);
@@ -1194,17 +1199,18 @@ try{
 //	
 //	log.info(&quot;uuid：&quot;+uuid);
 //	log.info(&quot;promotionUuid：&quot;+uuid);
-}
-catch(Exception e){
-	Failure = true;
-    	log.info(&quot;数据解析异常，断言失败&quot;);
-    	FailureMessage = &quot;数据解析异常，断言失败&quot;;
-//    	throw e;
-//	prev.setStopThread(true);
-	break;
-	//如果数据解析异常，直接停止所有程序，慎用 
-//	System.exit(1);
-}</stringProp>
+//}
+//catch(Exception e){
+//	log.info(e);
+//	Failure = true;
+//    	log.info(&quot;数据解析异常，断言失败&quot;);
+//    	FailureMessage = &quot;数据解析异常，断言失败&quot;;
+////    	throw e;
+////	prev.setStopThread(true);
+//	break;
+//	//如果数据解析异常，直接停止所有程序，慎用 
+////	System.exit(1);
+//}</stringProp>
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
