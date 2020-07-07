@@ -114,7 +114,7 @@
           </elementProp>
           <elementProp name="Cookie" elementType="Header">
             <stringProp name="Header.name">Cookie</stringProp>
-            <stringProp name="Header.value">JSESSIONID=2353E9D38A12FF19C191D9A8211A35EE; gr_user_id=fa5f2dfb-5750-4f06-9cc1-ecc2931778ce; gr_session_id_94cbd549f50f38fe=df69de63-93d9-4b1e-98c3-0fd840da4fa0; gr_session_id_94cbd549f50f38fe_df69de63-93d9-4b1e-98c3-0fd840da4fa0=true; gr_cs1_df69de63-93d9-4b1e-98c3-0fd840da4fa0=user_id%3A21152</stringProp>
+            <stringProp name="Header.value">JSESSIONID=8F6521EFC8857FD3B4365F21C6AEF534; gr_user_id=fa5f2dfb-5750-4f06-9cc1-ecc2931778ce; gr_session_id_94cbd549f50f38fe=5eff3b91-cdac-485e-b731-1924906eddfc; gr_session_id_94cbd549f50f38fe_5eff3b91-cdac-485e-b731-1924906eddfc=true; gr_cs1_5eff3b91-cdac-485e-b731-1924906eddfc=user_id%3A21152</stringProp>
           </elementProp>
         </collectionProp>
       </HeaderManager>
