@@ -75,7 +75,6 @@ public class jsonSample {
 		}
 	}
 	
-	
 	private static void createJsonByMap(){
 		HashMap<String,Object> wangxiaoer = new HashMap<String,Object>();
 		Object nullObject = null;

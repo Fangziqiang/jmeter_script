@@ -1,0 +1,176 @@
+{
+    "resultCode": 0,
+    "resultMessage": "操作成功",
+    "businessCode": 0,
+    "data": [
+        {
+            "product": {
+                "productId": "122872",
+                "productName": "2018六年级一对一",
+                "subjectIds": "848489,848490,848491,848492,848493,848494,848495,848498,848499",
+                "gradeIds": null,
+                "gradeName": "六年级",
+                "gradeId": "848466",
+                "quantity": 10,
+                "price": 255,
+                "payment": 2550,
+                "categoryName": "一对一",
+                "category": "ONE_ON_ONE_COURSE",
+                "belongFeeTypeId": null,
+                "productVersionId": "848860",
+                "productQuarterId": null,
+                "allowModifyPrice": 0,
+                "allowLadderPrice": 1,
+                "courseTypeId": null,
+                "uuid": "6ce7c392-36d2-4e53-9e62-6dd6b5657f59",
+                "promotionUuid": "cb3fb872-4183-4a9f-9d44-ec5e9ff507e9",
+                "allowLockingClassTotalhours": 0,
+                "ladderPrice": [
+                    {
+                        "id": "11266",
+                        "productId": "122872",
+                        "productQuantityStart": 0,
+                        "productQuantityEnd": 0,
+                        "productPrice": 0,
+                        "ladderOrder": 1
+                    }
+                ],
+                "subjectDto": [
+                    {
+                        "id": "848489",
+                        "name": "英语"
+                    },
+                    {
+                        "id": "848490",
+                        "name": "物理"
+                    },
+                    {
+                        "id": "848491",
+                        "name": "化学"
+                    },
+                    {
+                        "id": "848492",
+                        "name": "数学"
+                    },
+                    {
+                        "id": "848493",
+                        "name": "语文"
+                    },
+                    {
+                        "id": "848494",
+                        "name": "生物"
+                    },
+                    {
+                        "id": "848495",
+                        "name": "地理"
+                    },
+                    {
+                        "id": "848498",
+                        "name": "政治"
+                    },
+                    {
+                        "id": "848499",
+                        "name": "历史"
+                    }
+                ],
+                "otherProducts": [
+                    {
+                        "productId": "122848",
+                        "productName": "2019材费120",
+                        "subjectIds": null,
+                        "gradeIds": null,
+                        "gradeName": null,
+                        "gradeId": null,
+                        "quantity": null,
+                        "price": 120,
+                        "payment": 120,
+                        "categoryName": "其他",
+                        "category": "OTHERS",
+                        "belongFeeTypeId": null,
+                        "productVersionId": null,
+                        "productQuarterId": null,
+                        "allowModifyPrice": 0,
+                        "allowLadderPrice": null,
+                        "courseTypeId": "848766",
+                        "uuid": "6ce7c392-36d2-4e53-9e62-6dd6b5657f59",
+                        "promotionUuid": "39bc1519-45b6-440c-818d-bc686de017df",
+                        "allowLockingClassTotalhours": 0,
+                        "ladderPrice": [],
+                        "subjectDto": [],
+                        "otherProducts": []
+                    }
+                ]
+            },
+            "miniClass": null,
+            "onScheduleClass": null
+        },
+        {
+            "product": {
+                "productId": "122875",
+                "productName": "2019六年级1对2",
+                "subjectIds": "848492,848493,848489",
+                "gradeIds": "",
+                "gradeName": "六年级",
+                "gradeId": "848466",
+                "quantity": 1,
+                "price": 200,
+                "payment": 200,
+                "categoryName": "1对N",
+                "category": "ONE_ON_N_GROUP",
+                "belongFeeTypeId": null,
+                "productVersionId": "848818",
+                "productQuarterId": null,
+                "allowModifyPrice": 1,
+                "allowLadderPrice": 0,
+                "courseTypeId": "848756",
+                "uuid": "0e339ce0-2ce5-41b7-a048-885f0c2ee70e",
+                "promotionUuid": "a2909b53-45fb-450c-ab3b-f40b0b00780b",
+                "allowLockingClassTotalhours": 0,
+                "ladderPrice": [],
+                "subjectDto": [
+                    {
+                        "id": "848492",
+                        "name": "数学"
+                    },
+                    {
+                        "id": "848493",
+                        "name": "语文"
+                    },
+                    {
+                        "id": "848489",
+                        "name": "英语"
+                    }
+                ],
+                "otherProducts": [
+                    {
+                        "productId": "122867",
+                        "productName": "一对N资料费250",
+                        "subjectIds": null,
+                        "gradeIds": null,
+                        "gradeName": null,
+                        "gradeId": null,
+                        "quantity": null,
+                        "price": 250,
+                        "payment": 250,
+                        "categoryName": "其他",
+                        "category": "OTHERS",
+                        "belongFeeTypeId": null,
+                        "productVersionId": null,
+                        "productQuarterId": null,
+                        "allowModifyPrice": 0,
+                        "allowLadderPrice": null,
+                        "courseTypeId": null,
+                        "uuid": "0e339ce0-2ce5-41b7-a048-885f0c2ee70e",
+                        "promotionUuid": "5dbd9802-7fdf-4b7e-9ed0-48f7cd589342",
+                        "allowLockingClassTotalhours": 0,
+                        "ladderPrice": [],
+                        "subjectDto": [],
+                        "otherProducts": []
+                    }
+                ]
+            },
+            "miniClass": null,
+            "onScheduleClass": null
+        }
+    ]
+}
