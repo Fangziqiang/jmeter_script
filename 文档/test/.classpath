@@ -2,7 +2,7 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="E:/apache-jmeter-5.2.1/lib/json.jar"/>
-	<classpathentry kind="lib" path="E:/apache-jmeter-5.2.1/jmeter_script/commons-io-2.7.jar"/>
+	<classpathentry kind="lib" path="D:/apache-jmeter-5.2.1/lib/json.jar"/>
+	<classpathentry kind="lib" path="D:/学习资料/03性能测试/Jmeter资料/apache-jmeter-3.3/jmeter_script/commons-io-2.7.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

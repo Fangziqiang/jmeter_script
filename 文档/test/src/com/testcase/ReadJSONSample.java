@@ -8,7 +8,7 @@ import org.apache.commons.io.FileUtils;
 
 public class ReadJSONSample {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException, JSONException {
 		// TODO Auto-generated method stub
 		File file = new File(ReadJSONSample.class.getResource("wangxiaoer.json").getFile());
 		String content = FileUtils.readFileToString(file);
