@@ -18,15 +18,15 @@ public class jsonSample2 {
 		Object nullObject = null;
 	
 		try{
-			wangxiaoer.put("name", "ÍõĞ¡¶ş");
+			wangxiaoer.put("name", "ç‹å°äºŒ");
 			wangxiaoer.put("age", 25);
 			wangxiaoer.put("birthday", "1990-01-01");
-			wangxiaoer.put("school", "À¶Ïè");
-			wangxiaoer.put("major", new String[] {"Àí·¢","ÍÚ¾ò»ú"});
+			wangxiaoer.put("school", "è“ç¿”");
+			wangxiaoer.put("major", new String[] {"ç†å‘","æŒ–æ˜æœº"});
 			wangxiaoer.put("has_girlfriend", false);
 			wangxiaoer.put("car", nullObject);
 			wangxiaoer.put("house", nullObject);
-			wangxiaoer.put("comment", "ÕâÊÇÒ»¸ö×¢ÊÍ");
+			wangxiaoer.put("comment", "è¿™æ˜¯ä¸€ä¸ªæ³¨é‡Š");
 			
 			System.out.println(wangxiaoer.toString());
 		}catch(JSONException e){
@@ -38,31 +38,31 @@ public class jsonSample2 {
 	private static void createJsonByMap(){
 		HashMap<String,Object> wangxiaoer = new HashMap<String,Object>();
 		Object nullObject = null;
-		wangxiaoer.put("name", "ÍõĞ¡¶ş");
+		wangxiaoer.put("name", "ç‹å°äºŒ");
 		wangxiaoer.put("age", 25);
 		wangxiaoer.put("birthday", "1990-01-01");
-		wangxiaoer.put("school", "À¶Ïè");
-		wangxiaoer.put("major", new String[] {"Àí·¢","ÍÚ¾ò»ú"});
+		wangxiaoer.put("school", "è“ç¿”");
+		wangxiaoer.put("major", new String[] {"ç†å‘","æŒ–æ˜æœº"});
 		wangxiaoer.put("has_girlfriend", false);
 		wangxiaoer.put("car", nullObject);
 		wangxiaoer.put("house", nullObject);
-		wangxiaoer.put("comment", "ÕâÊÇÒ»¸ö×¢ÊÍ");
+		wangxiaoer.put("comment", "è¿™æ˜¯ä¸€ä¸ªæ³¨é‡Š");
 	
 		System.out.println(new JSONObject(wangxiaoer));
 	}
-//	Ê¹ÓÃjavabean
+//	ä½¿ç”¨javabean
 	/*
 	private static void createJsonByBean(){
 		Diaosi wangxiaoer = new Diaosi();
-		wangxiaoer.setName("ÍõĞ¡¶ş");
+		wangxiaoer.setName("ç‹å°äºŒ");
 		wangxiaoer.setAge(25);
 		wangxiaoer.setBirthday("1990-01-01");
-		wangxiaoer.setSchool("À¶Ïè");
-		wangxiaoer.setMajor(new String[] {"Àí·¢","ÍÚ¾ò»ú"});
+		wangxiaoer.setSchool("è“ç¿”");
+		wangxiaoer.setMajor(new String[] {"ç†å‘","æŒ–æ˜æœº"});
 		wangxiaoer.setHas_girlfriend(false);
 		wangxiaoer.setCar(null);
 		wangxiaoer.setHouse("null");
-		wangxiaoer.setComment("ÕâÊÇÒ»¸ö×¢ÊÍ");
+		wangxiaoer.setComment("è¿™æ˜¯ä¸€ä¸ªæ³¨é‡Š");
 	
 		System.out.println(new JSONObject(wangxiaoer));
 	}

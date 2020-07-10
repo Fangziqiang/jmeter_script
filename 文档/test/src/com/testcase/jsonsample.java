@@ -19,7 +19,7 @@ public class jsonsample {
 			JSONObject data_obj = new JSONObject(response_data);
 //			log.info(response_data);
 			JSONArray data = data_obj.getJSONArray("data");
-//			log.info("data数组长度"+data.length());
+//			log.info("data鏁扮粍闀垮害"+data.length());
 			for(int i = 0; i < data.length(); i++){
 //				miniClassId = data.getJSONObject(i).get("miniClass").get("miniClassId");
 				JSONObject data2_obj = data.getJSONObject(i);
