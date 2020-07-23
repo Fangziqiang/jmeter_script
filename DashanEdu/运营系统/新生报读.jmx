@@ -18,7 +18,7 @@
         <stringProp name="HTTPSampler.domain">pre.xuexi8.work</stringProp>
         <stringProp name="HTTPSampler.port"></stringProp>
         <stringProp name="HTTPSampler.protocol">https</stringProp>
-        <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+        <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
         <stringProp name="HTTPSampler.path"></stringProp>
         <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
         <stringProp name="HTTPSampler.connect_timeout"></stringProp>
@@ -114,10 +114,22 @@
           </elementProp>
           <elementProp name="Cookie" elementType="Header">
             <stringProp name="Header.name">Cookie</stringProp>
-            <stringProp name="Header.value">JSESSIONID=8F6521EFC8857FD3B4365F21C6AEF534; gr_user_id=fa5f2dfb-5750-4f06-9cc1-ecc2931778ce; gr_session_id_94cbd549f50f38fe=5eff3b91-cdac-485e-b731-1924906eddfc; gr_session_id_94cbd549f50f38fe_5eff3b91-cdac-485e-b731-1924906eddfc=true; gr_cs1_5eff3b91-cdac-485e-b731-1924906eddfc=user_id%3A21152</stringProp>
+            <stringProp name="Header.value">JSESSIONID=75E8BD0232E744DE4B9A379911C04D00; gr_user_id=fa5f2dfb-5750-4f06-9cc1-ecc2931778ce; gr_session_id_94cbd549f50f38fe=8b253710-7cc0-4d84-99ec-7e4b2459bbd8; gr_session_id_94cbd549f50f38fe_8b253710-7cc0-4d84-99ec-7e4b2459bbd8=true; gr_cs1_8b253710-7cc0-4d84-99ec-7e4b2459bbd8=user_id%3A21152</stringProp>
           </elementProp>
         </collectionProp>
       </HeaderManager>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+        <stringProp name="delimiter">,</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="filename">E:/apache-jmeter-5.2.1/jmeter_script/DashanEdu/yy_student_info_test.csv</stringProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <boolProp name="quotedData">true</boolProp>
+        <boolProp name="recycle">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="variableNames">x_id,phone,student_id,student_name</stringProp>
+      </CSVDataSet>
       <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Benshell断言样例" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -345,7 +357,7 @@ else{
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">1</stringProp>
+          <intProp name="LoopController.loops">-1</intProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
@@ -572,7 +584,7 @@ else{
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="新增学生" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="新增学生" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="picture" elementType="HTTPArgument">
@@ -712,7 +724,7 @@ else{
         </HTTPSamplerProxy>
         <hashTree>
           <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="获取学生id" enabled="true">
-            <stringProp name="JSONPostProcessor.referenceNames">studentId</stringProp>
+            <stringProp name="JSONPostProcessor.referenceNames">x_id</stringProp>
             <stringProp name="JSONPostProcessor.jsonPathExprs">$.data</stringProp>
             <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
           </JSONPostProcessor>
@@ -723,7 +735,7 @@ else{
             <collectionProp name="Arguments.arguments">
               <elementProp name="studentId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${studentId}</stringProp>
+                <stringProp name="Argument.value">${x_id}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">studentId</stringProp>
@@ -744,13 +756,32 @@ else{
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree/>
+        <hashTree>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="cusOrg" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">cusOrg</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.cusOrg</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="gradeId" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">gradeId</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.gradeId</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="cusOrg" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">cusType</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.cusType</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+        </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="findStudentSignDetail.do" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="studentId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${studentId}</stringProp>
+                <stringProp name="Argument.value">${x_id}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">studentId</stringProp>
@@ -777,7 +808,7 @@ else{
             <collectionProp name="Arguments.arguments">
               <elementProp name="studentId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${studentId}</stringProp>
+                <stringProp name="Argument.value">${x_id}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">studentId</stringProp>
@@ -818,7 +849,7 @@ else{
             <collectionProp name="Arguments.arguments">
               <elementProp name="studentId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${studentId}</stringProp>
+                <stringProp name="Argument.value">${x_id}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">studentId</stringProp>
@@ -880,43 +911,52 @@ else{
             <boolProp name="resetInterpreter">false</boolProp>
             <stringProp name="script">import org.apache.jmeter.assertions; 
 import org.apache.jmeter.samplers.SampleResult; 
-import org.apache.jmeter.assertions.AssertionResult; 
+import org.apache.jmeter.assertions.AssertionResult;
 import org.json.JSONObject;
+import org.json.JSONArray;
+import org.json.*;
+//注意：如果您正在使用(导入)org.json.simple.JSONArray,则必须使用JSONArray.size()来获取所需的数据.
+//但是,如果您使用的是org.json.JSONArray,请使用JSONArray.length().
 String response_data = prev.getResponseDataAsString();
 //JSONObject data_obj = new JSONObject(response_data);
 //log.info(response_data);
 String uuid=&quot;&quot;;
 String promotionUuid=&quot;&quot;;
-String productId=&quot;&quot;
-String miniClassId=&quot;&quot;
+String productId=&quot;&quot;;
 
-try{
-	JSONObject data_obj = new JSONObject(response_data);
-	log.info(response_data);
-	JSONArray data = data_obj.getJSONArray(&quot;data&quot;);
-	
-	for(int i = 0; i &lt; data.size(); i++){
-		miniClassId = data_obj.get(&quot;data&quot;)(i).get(&quot;miniClass&quot;).get(&quot;miniClassId&quot;);
-		if (miniClassId==36266){
-			uuid =data_obj.get(&quot;data&quot;)(i).get(&quot;product&quot;).get(&quot;uuid&quot;);
-			promotionUuid =data_obj.get(&quot;data&quot;)(i).get(&quot;product&quot;).get(&quot;promotionUuid&quot;);
-			productId = data_obj.get(&quot;data&quot;)(i).get(&quot;product&quot;).get(&quot;productId&quot;);
-		}
+	JSONObject jsonObject = new JSONObject(response_data);
+
+	//获取JSON对象中的data数组
+	JSONArray dataArray = jsonObject.getJSONArray(&quot;data&quot;);
+	log.info(&quot;data数组长度&quot;+dataArray.length());
+	for(int i = 0; i &lt; dataArray.length(); i++){
+	//遍历data数组,获取数组中的子对象
+		JSONObject dataObject = (JSONObject)dataArray.get(i);
+		JSONObject data_productObject = dataObject.getJSONObject(&quot;product&quot;);
+		
+		String uuid = data_productObject.getString(&quot;uuid&quot;);
+		String promotionUuid =data_productObject.getString(&quot;promotionUuid&quot;);
+		try {
+				JSONObject data_miniClassObject = dataObject.getJSONObject(&quot;miniClass&quot;);
+				String miniClassId = data_miniClassObject.getString(&quot;miniClassId&quot;);
+				//miniClassId-36266对应 家校任务课程2班
+				if(miniClassId.contentEquals(&quot;36266&quot;)) {
+//					System.out.println(&quot;data[&quot;+i+&quot;].product.uuid=&quot;+uuid);
+//					System.out.println(&quot;data[&quot;+i+&quot;].product.promotionUuid=&quot;+promotionUuid);
+//					System.out.println(uuid);
+//					System.out.println(promotionUuid);
+//					System.out.println(&quot;nihao&quot;);
+					vars.put(&quot;uuid&quot;,uuid.toString());
+					vars.put(&quot;promotionUuid&quot;,promotionUuid.toString());
+					log.info(uuid);
+				}
+			} catch (Exception e) {
+				// TODO: handle exception
+				e.printStackTrace();
+			}
+		
 	}
-	
-	log.info(&quot;uuid：&quot;+uuid);
-	log.info(&quot;promotionUuid：&quot;+uuid);
-}
-catch(Exception e){
-	Failure = true;
-    	log.info(&quot;数据解析异常，断言失败&quot;);
-    	FailureMessage = &quot;数据解析异常，断言失败&quot;;
-//    	throw e;
-//	prev.setStopThread(true);
-	break;
-	//如果数据解析异常，直接停止所有程序，慎用 
-//	System.exit(1);
-}</stringProp>
+</stringProp>
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
@@ -925,7 +965,7 @@ catch(Exception e){
             <collectionProp name="Arguments.arguments">
               <elementProp name="studentId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${studentId}</stringProp>
+                <stringProp name="Argument.value">${x_id}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">studentId</stringProp>
@@ -967,7 +1007,7 @@ catch(Exception e){
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;productLists&quot;:[{&quot;price&quot;:&quot;40&quot;,&quot;quantity&quot;:&quot;30&quot;,&quot;totalPrice&quot;:&quot;1200&quot;,&quot;productUuId&quot;:&quot;fc102f8c-72d5-6f42-8c00-667f91943617&quot;,&quot;productId&quot;:&quot;125283&quot;,&quot;miniClassId&quot;:&quot;36266&quot;}],&quot;selectProsmotionList&quot;:[],&quot;studentId&quot;:${studentId},&quot;blCampusId&quot;:&quot;6666&quot;,&quot;contractType&quot;:&quot;NEW_CONTRACT&quot;}</stringProp>
+                <stringProp name="Argument.value">{&quot;productLists&quot;:[{&quot;price&quot;:&quot;40&quot;,&quot;quantity&quot;:&quot;30&quot;,&quot;totalPrice&quot;:&quot;1200&quot;,&quot;productUuId&quot;:&quot;fc102f8c-72d5-6f42-8c00-667f91943617&quot;,&quot;productId&quot;:&quot;125283&quot;,&quot;miniClassId&quot;:&quot;36266&quot;}],&quot;selectProsmotionList&quot;:[],&quot;studentId&quot;:${x_id},&quot;blCampusId&quot;:&quot;6666&quot;,&quot;contractType&quot;:&quot;NEW_CONTRACT&quot;}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -986,14 +1026,72 @@ catch(Exception e){
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree/>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">pre.xuexi8.work</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">keep-alive</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Dest" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                <stringProp name="Header.value">empty</stringProp>
+              </elementProp>
+              <elementProp name="X-Requested-With" elementType="Header">
+                <stringProp name="Header.name">X-Requested-With</stringProp>
+                <stringProp name="Header.value">XMLHttpRequest</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Site" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
+                <stringProp name="Header.value">same-origin</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Mode" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
+                <stringProp name="Header.value">cors</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://pre.xuexi8.work/eduboss/</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">zh-CN,zh;q=0.9</stringProp>
+              </elementProp>
+              <elementProp name="Cookie" elementType="Header">
+                <stringProp name="Header.name">Cookie</stringProp>
+                <stringProp name="Header.value">JSESSIONID=75E8BD0232E744DE4B9A379911C04D00; gr_user_id=fa5f2dfb-5750-4f06-9cc1-ecc2931778ce; gr_session_id_94cbd549f50f38fe=8b253710-7cc0-4d84-99ec-7e4b2459bbd8; gr_session_id_94cbd549f50f38fe_8b253710-7cc0-4d84-99ec-7e4b2459bbd8=true; gr_cs1_8b253710-7cc0-4d84-99ec-7e4b2459bbd8=user_id%3A21152</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="计算优惠信息calculatePromotion.do" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;productLists&quot;:[{&quot;price&quot;:&quot;40&quot;,&quot;quantity&quot;:&quot;30&quot;,&quot;totalPrice&quot;:&quot;1200&quot;,&quot;productUuId&quot;:&quot;fc102f8c-72d5-6f42-8c00-667f91943617&quot;,&quot;productId&quot;:&quot;125283&quot;,&quot;miniClassId&quot;:&quot;36266&quot;}],&quot;selectPromotionList&quot;:[],&quot;studentId&quot;:${studentId},&quot;blCampusId&quot;:&quot;6666&quot;,&quot;contractType&quot;:&quot;NEW_CONTRACT&quot;,&quot;autoCalculate&quot;:&quot;AUTO&quot;}</stringProp>
+                <stringProp name="Argument.value">{&quot;productLists&quot;:[{&quot;price&quot;:&quot;40&quot;,&quot;quantity&quot;:&quot;30&quot;,&quot;totalPrice&quot;:&quot;1200&quot;,&quot;productUuId&quot;:&quot;fc102f8c-72d5-6f42-8c00-667f91943617&quot;,&quot;productId&quot;:&quot;125283&quot;,&quot;miniClassId&quot;:&quot;36266&quot;}],&quot;selectPromotionList&quot;:[],&quot;studentId&quot;:${x_id},&quot;blCampusId&quot;:&quot;6666&quot;,&quot;contractType&quot;:&quot;NEW_CONTRACT&quot;,&quot;autoCalculate&quot;:&quot;AUTO&quot;}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -1012,14 +1110,72 @@ catch(Exception e){
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree/>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">pre.xuexi8.work</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">keep-alive</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Dest" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                <stringProp name="Header.value">empty</stringProp>
+              </elementProp>
+              <elementProp name="X-Requested-With" elementType="Header">
+                <stringProp name="Header.name">X-Requested-With</stringProp>
+                <stringProp name="Header.value">XMLHttpRequest</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Site" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
+                <stringProp name="Header.value">same-origin</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Mode" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
+                <stringProp name="Header.value">cors</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://pre.xuexi8.work/eduboss/</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">zh-CN,zh;q=0.9</stringProp>
+              </elementProp>
+              <elementProp name="Cookie" elementType="Header">
+                <stringProp name="Header.name">Cookie</stringProp>
+                <stringProp name="Header.value">JSESSIONID=75E8BD0232E744DE4B9A379911C04D00; gr_user_id=fa5f2dfb-5750-4f06-9cc1-ecc2931778ce; gr_session_id_94cbd549f50f38fe=8b253710-7cc0-4d84-99ec-7e4b2459bbd8; gr_session_id_94cbd549f50f38fe_8b253710-7cc0-4d84-99ec-7e4b2459bbd8=true; gr_cs1_8b253710-7cc0-4d84-99ec-7e4b2459bbd8=user_id%3A21152</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="findAvailablePromotions.do" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;productLists&quot;:[{&quot;price&quot;:&quot;40&quot;,&quot;quantity&quot;:&quot;30&quot;,&quot;totalPrice&quot;:&quot;1200&quot;,&quot;productUuId&quot;:&quot;fc102f8c-72d5-6f42-8c00-667f91943617&quot;,&quot;productId&quot;:&quot;125283&quot;,&quot;miniClassId&quot;:&quot;36266&quot;}],&quot;selectPromotionList&quot;:[{&quot;calOrder&quot;:1,&quot;promotionId&quot;:23474}],&quot;studentId&quot;:${studentId},&quot;blCampusId&quot;:&quot;6666&quot;,&quot;contractType&quot;:&quot;NEW_CONTRACT&quot;}</stringProp>
+                <stringProp name="Argument.value">{&quot;productLists&quot;:[{&quot;price&quot;:&quot;40&quot;,&quot;quantity&quot;:&quot;30&quot;,&quot;totalPrice&quot;:&quot;1200&quot;,&quot;productUuId&quot;:&quot;fc102f8c-72d5-6f42-8c00-667f91943617&quot;,&quot;productId&quot;:&quot;125283&quot;,&quot;miniClassId&quot;:&quot;36266&quot;}],&quot;selectPromotionList&quot;:[{&quot;calOrder&quot;:1,&quot;promotionId&quot;:23474}],&quot;studentId&quot;:${x_id},&quot;blCampusId&quot;:&quot;6666&quot;,&quot;contractType&quot;:&quot;NEW_CONTRACT&quot;}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -1038,14 +1194,72 @@ catch(Exception e){
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="保存合同" enabled="false">
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">pre.xuexi8.work</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">keep-alive</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Dest" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                <stringProp name="Header.value">empty</stringProp>
+              </elementProp>
+              <elementProp name="X-Requested-With" elementType="Header">
+                <stringProp name="Header.name">X-Requested-With</stringProp>
+                <stringProp name="Header.value">XMLHttpRequest</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Site" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
+                <stringProp name="Header.value">same-origin</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Mode" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
+                <stringProp name="Header.value">cors</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://pre.xuexi8.work/eduboss/</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">zh-CN,zh;q=0.9</stringProp>
+              </elementProp>
+              <elementProp name="Cookie" elementType="Header">
+                <stringProp name="Header.name">Cookie</stringProp>
+                <stringProp name="Header.value">JSESSIONID=75E8BD0232E744DE4B9A379911C04D00; gr_user_id=fa5f2dfb-5750-4f06-9cc1-ecc2931778ce; gr_session_id_94cbd549f50f38fe=8b253710-7cc0-4d84-99ec-7e4b2459bbd8; gr_session_id_94cbd549f50f38fe_8b253710-7cc0-4d84-99ec-7e4b2459bbd8=true; gr_cs1_8b253710-7cc0-4d84-99ec-7e4b2459bbd8=user_id%3A21152</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="保存合同" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;blCampusId&quot;:&quot;6666&quot;,&quot;signByWho&quot;:&quot;21152&quot;,&quot;signTime&quot;:&quot;2020-07-02&quot;,&quot;stuName&quot;:${studentName},&quot;gradeId&quot;:${gradeId},&quot;cusPhone&quot;:${studentContact},&quot;schoolId&quot;:${schoolId},&quot;cusOrg&quot;:${cusOrg},&quot;cusType&quot;:${cusType},&quot;syncChargePaymentId&quot;:&quot;0&quot;,&quot;realContractAmount&quot;:&quot;1200&quot;,&quot;promotionContractAmount&quot;:&quot;384&quot;,&quot;paidContractAmount&quot;:&quot;0&quot;,&quot;planContractAmount&quot;:&quot;816&quot;,&quot;&quot;:&quot;816&quot;,&quot;cusId&quot;:693299,&quot;stuId&quot;:474647,&quot;promotionAmountOriginal&quot;:&quot;384&quot;,&quot;contractPromotionIds&quot;:&quot;23474_1&quot;,&quot;giftObjectCmdList&quot;:[],&quot;cashCouponCmdList&quot;:[],&quot;contractProductAddCmdList&quot;:[{&quot;miniClassId&quot;:&quot;36266&quot;,&quot;productId&quot;:&quot;125283&quot;,&quot;productType&quot;:&quot;SMALL_CLASS&quot;,&quot;firstSchoolTime&quot;:&quot;2020-07-02&quot;,&quot;validEndDate&quot;:&quot;&quot;,&quot;quantity&quot;:&quot;30&quot;,&quot;price&quot;:&quot;40&quot;,&quot;discountUnitPrice&quot;:&quot;27.2&quot;,&quot;payment&quot;:&quot;1200&quot;,&quot;subContractTypeId&quot;:&quot;&quot;,&quot;remark&quot;:&quot;&quot;,&quot;uuid&quot;:&quot;06cdbe59-f0a2-44b2-b060-f2750bb7e8ee&quot;,&quot;contractPromotionAmountOriginal&quot;:&quot;384&quot;,&quot;freeCutMoney&quot;:0,&quot;planPromotionHours&quot;:&quot;0.00&quot;,&quot;cashCouponCutPriceDistributionStr&quot;:&quot;&quot;,&quot;productUuid&quot;:&quot;fc102f8c-72d5-6f42-8c00-667f91943617&quot;,&quot;contractProductSubjects&quot;:[]}],&quot;contractPromotionProductUuids&quot;:&quot;23474Mfc102f8c-72d5-6f42-8c00-667f91943617&quot;,&quot;contractType&quot;:&quot;NEW_CONTRACT&quot;}</stringProp>
+                <stringProp name="Argument.value">{&quot;blCampusId&quot;:&quot;6666&quot;,&quot;signByWho&quot;:&quot;21152&quot;,&quot;signTime&quot;:&quot;2020-07-23&quot;,&quot;stuName&quot;:&quot;${student_name}&quot;,&quot;gradeId&quot;:&quot;${gradeId}&quot;,&quot;cusPhone&quot;:&quot;${phone}&quot;,&quot;cusOrg&quot;:&quot;${cusOrg}&quot;,&quot;syncChargePaymentId&quot;:&quot;0&quot;,&quot;realContractAmount&quot;:&quot;1200&quot;,&quot;promotionContractAmount&quot;:&quot;0&quot;,&quot;paidContractAmount&quot;:&quot;0&quot;,&quot;planContractAmount&quot;:&quot;1200&quot;,&quot;&quot;:&quot;1200&quot;,&quot;cusId&quot;:693269,&quot;stuId&quot;:${x_id},&quot;promotionAmountOriginal&quot;:&quot;0&quot;,&quot;giftObjectCmdList&quot;:[],&quot;cashCouponCmdList&quot;:[],&quot;contractProductAddCmdList&quot;:[{&quot;miniClassId&quot;:&quot;36266&quot;,&quot;productId&quot;:&quot;125283&quot;,&quot;productType&quot;:&quot;SMALL_CLASS&quot;,&quot;firstSchoolTime&quot;:&quot;2020-07-23&quot;,&quot;validEndDate&quot;:&quot;&quot;,&quot;quantity&quot;:&quot;30&quot;,&quot;price&quot;:&quot;40&quot;,&quot;discountUnitPrice&quot;:&quot;40&quot;,&quot;payment&quot;:&quot;1200&quot;,&quot;subContractTypeId&quot;:&quot;&quot;,&quot;remark&quot;:&quot;&quot;,&quot;uuid&quot;:&quot;${uuid}&quot;,&quot;contractPromotionAmountOriginal&quot;:&quot;0.00&quot;,&quot;freeCutMoney&quot;:0,&quot;planPromotionHours&quot;:&quot;0.00&quot;,&quot;productUuid&quot;:&quot;${promotionUuid}&quot;,&quot;contractProductSubjects&quot;:[]}],&quot;contractType&quot;:&quot;NEW_CONTRACT&quot;}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -1070,6 +1284,63 @@ catch(Exception e){
             <stringProp name="JSONPostProcessor.jsonPathExprs">$.data.contractId</stringProp>
             <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
           </JSONPostProcessor>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">pre.xuexi8.work</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">keep-alive</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Dest" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                <stringProp name="Header.value">empty</stringProp>
+              </elementProp>
+              <elementProp name="X-Requested-With" elementType="Header">
+                <stringProp name="Header.name">X-Requested-With</stringProp>
+                <stringProp name="Header.value">XMLHttpRequest</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Site" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
+                <stringProp name="Header.value">same-origin</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Mode" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
+                <stringProp name="Header.value">cors</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://pre.xuexi8.work/eduboss/</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">zh-CN,zh;q=0.9</stringProp>
+              </elementProp>
+              <elementProp name="Cookie" elementType="Header">
+                <stringProp name="Header.name">Cookie</stringProp>
+                <stringProp name="Header.value">JSESSIONID=75E8BD0232E744DE4B9A379911C04D00; gr_user_id=fa5f2dfb-5750-4f06-9cc1-ecc2931778ce; gr_session_id_94cbd549f50f38fe=8b253710-7cc0-4d84-99ec-7e4b2459bbd8; gr_session_id_94cbd549f50f38fe_8b253710-7cc0-4d84-99ec-7e4b2459bbd8=true; gr_cs1_8b253710-7cc0-4d84-99ec-7e4b2459bbd8=user_id%3A21152</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
           <hashTree/>
         </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request" enabled="false">
@@ -1100,11 +1371,11 @@ catch(Exception e){
         </HTTPSamplerProxy>
         <hashTree/>
       </hashTree>
-      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="false">
         <collectionProp name="Arguments.arguments">
           <elementProp name="phone" elementType="Argument">
             <stringProp name="Argument.name">phone</stringProp>
-            <stringProp name="Argument.value">17600000001</stringProp>
+            <stringProp name="Argument.value">17600000003</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -1176,44 +1447,48 @@ String response_data = prev.getResponseDataAsString();
 String uuid=&quot;&quot;;
 String promotionUuid=&quot;&quot;;
 String productId=&quot;&quot;;
-String miniClassId=&quot;&quot;;
 
-//try{
-	JSONObject data_obj = new JSONObject(response_data);
-//	log.info(response_data);
-	JSONArray data = data_obj.getJSONArray(&quot;data&quot;);
-	log.info(&quot;data数组长度&quot;+data.length());
-	for(int i = 0; i &lt; data.length(); i++){
-//		miniClassId = data.getJSONObject(i).get(&quot;miniClass&quot;).get(&quot;miniClassId&quot;);
-		JSONObject data2_obj = data.getJSONObject(i);
-		String data2_obj_string=JSONObject.toJSONString(data2_obj);
-		log.info(data2_obj_string);
-//		miniClassId = data2_obj.get(&quot;miniClass&quot;).get(&quot;miniClassId&quot;);
-//		log.info(miniClassId);
-//		if (miniClassId==36266){
-//			uuid =data_obj.get(&quot;data&quot;)(i).get(&quot;product&quot;).get(&quot;uuid&quot;);
-//			promotionUuid =data_obj.get(&quot;data&quot;)(i).get(&quot;product&quot;).get(&quot;promotionUuid&quot;);
-//			productId = data_obj.get(&quot;data&quot;)(i).get(&quot;product&quot;).get(&quot;productId&quot;);
-		}
-//	}
-//	
-//	log.info(&quot;uuid：&quot;+uuid);
-//	log.info(&quot;promotionUuid：&quot;+uuid);
-//}
-//catch(Exception e){
-//	log.info(e);
-//	Failure = true;
-//    	log.info(&quot;数据解析异常，断言失败&quot;);
-//    	FailureMessage = &quot;数据解析异常，断言失败&quot;;
-////    	throw e;
-////	prev.setStopThread(true);
-//	break;
-//	//如果数据解析异常，直接停止所有程序，慎用 
-////	System.exit(1);
-//}</stringProp>
+	JSONObject jsonObject = new JSONObject(response_data);
+
+	//获取JSON对象中的data数组
+	JSONArray dataArray = jsonObject.getJSONArray(&quot;data&quot;);
+	log.info(&quot;data数组长度&quot;+dataArray.length());
+	for(int i = 0; i &lt; dataArray.length(); i++){
+	//遍历data数组,获取数组中的子对象
+		JSONObject dataObject = (JSONObject)dataArray.get(i);
+		JSONObject data_productObject = dataObject.getJSONObject(&quot;product&quot;);
+		
+		String uuid = data_productObject.getString(&quot;uuid&quot;);
+		String promotionUuid =data_productObject.getString(&quot;promotionUuid&quot;);
+		try {
+				JSONObject data_miniClassObject = dataObject.getJSONObject(&quot;miniClass&quot;);
+				String miniClassId = data_miniClassObject.getString(&quot;miniClassId&quot;);
+				if(miniClassId.contentEquals(&quot;36285&quot;)) {
+//					System.out.println(&quot;data[&quot;+i+&quot;].product.uuid=&quot;+uuid);
+//					System.out.println(&quot;data[&quot;+i+&quot;].product.promotionUuid=&quot;+promotionUuid);
+//					System.out.println(uuid);
+//					System.out.println(promotionUuid);
+//					System.out.println(&quot;nihao&quot;);
+					vars.put(&quot;uuid&quot;,uuid.toString());
+					vars.put(&quot;promotionUuid&quot;,promotionUuid.toString());
+					log.info(uuid);
+				}
+			} catch (Exception e) {
+				// TODO: handle exception
+				e.printStackTrace();
+			}
+		
+	}
+</stringProp>
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree/>
       </hashTree>
     </hashTree>
   </hashTree>
