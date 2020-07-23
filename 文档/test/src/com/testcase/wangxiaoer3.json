@@ -1,0 +1,53 @@
+{
+    "resultCode": 0,
+    "resultMessage": "操作成功",
+    "businessCode": 0,
+    "data": [
+        {
+            "product": {
+                "productId": "125330",
+                "productName": "2020年寒假三年级数学培优班",
+                "subjectIds": "848492",
+                "gradeIds": "",
+                "gradeName": "三年级",
+                "gradeId": "848463",
+                "quantity": 4,
+                "price": 60.66,
+                "payment": 242.64,
+                "categoryName": "班课",
+                "category": "SMALL_CLASS",
+                "belongFeeTypeId": null,
+                "productVersionId": "848822",
+                "productQuarterId": "848819",
+                "allowModifyPrice": 0,
+                "allowLadderPrice": 0,
+                "courseTypeId": "848727",
+                "uuid": "314505b9-70ea-480e-8817-8112c2f1c02b",
+                "promotionUuid": "9af6f17a-61b0-4ea1-b78c-493e1be1d2a6",
+                "allowLockingClassTotalhours": 0,
+                "ladderPrice": [],
+                "subjectDto": [
+                    {
+                        "id": "848492",
+                        "name": "数学"
+                    }
+                ],
+                "otherProducts": []
+            },
+            "miniClass": {
+                "miniClassId": "36285",
+                "miniClassName": "2020年寒假三年级数学培优班2班",
+                "consume": 11,
+                "totalClassHours": 15,
+                "unitPrice": 60.66,
+                "payment": 242.64,
+                "signNum": 3,
+                "recruitNum": 1,
+                "classroom": null,
+                "startDate": "2020-07-23",
+                "seatNumber": null
+            },
+            "onScheduleClass": null
+        }
+    ]
+}
