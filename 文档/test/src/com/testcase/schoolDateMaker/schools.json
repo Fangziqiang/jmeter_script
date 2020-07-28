@@ -1,0 +1,546 @@
+{
+    "status": "0",
+    "msg": "OK",
+    "data": [
+        {
+            "school_id": "59",
+            "school_name": "东明路校区",
+            "address": "河南省郑州市金水区东风路东明路交叉口西南角",
+            "distances": "0"
+        },
+        {
+            "school_id": "80",
+            "school_name": "农科路校区",
+            "address": "河南省郑州市金水区农科路与政七街交叉口西100米路南（农科路小学对面）",
+            "distances": "1.2km"
+        },
+        {
+            "school_id": "10",
+            "school_name": "花园路校区",
+            "address": "花园路黄河路交叉口东北角（民生银行4楼）",
+            "distances": "1.7km"
+        },
+        {
+            "school_id": "130",
+            "school_name": "天一大厦校区",
+            "address": "黄河路姚寨路西南角天一大厦3楼",
+            "distances": "2.1km"
+        },
+        {
+            "school_id": "135",
+            "school_name": "蓝堡湾校区",
+            "address": "金水区文博东路与东风路交叉口东150米路南三楼",
+            "distances": "2.5km"
+        },
+        {
+            "school_id": "31",
+            "school_name": "农大校区",
+            "address": "文化路与丰产路交叉口东北角（农大科技楼4楼）",
+            "distances": "3.2km"
+        },
+        {
+            "school_id": "67",
+            "school_name": "未来路校区",
+            "address": "未来路与福元路交叉口向北100米路东（广东发展银行南20米）",
+            "distances": "3.4km"
+        },
+        {
+            "school_id": "105",
+            "school_name": "建业贰号城邦校区",
+            "address": "农业路与勤工路交叉口向北50米路西（建业贰号城邦）",
+            "distances": "3.4km"
+        },
+        {
+            "school_id": "13",
+            "school_name": "宝龙广场校区",
+            "address": "农业东路与九如路交汇处宝龙城市广场B区三楼",
+            "distances": "3.7km"
+        },
+        {
+            "school_id": "116",
+            "school_name": "新七中校区",
+            "address": "花园路与三全路向西1000米路南（新七中斜对面）",
+            "distances": "4.6km"
+        },
+        {
+            "school_id": "113",
+            "school_name": "东关校区",
+            "address": "东关小学西20米路南（商城路城东路交叉口）",
+            "distances": "4.7km"
+        },
+        {
+            "school_id": "69",
+            "school_name": "优胜路校区",
+            "address": "河南省郑州市金水区优胜南路劳卫路交叉口向东20米路北",
+            "distances": "4.8km"
+        },
+        {
+            "school_id": "75",
+            "school_name": "中方园校区",
+            "address": "园田路与北三环交叉口东北角（中方园东区）",
+            "distances": "4.8km"
+        },
+        {
+            "school_id": "94",
+            "school_name": "商城东路校区",
+            "address": "商城路与凤台路交叉口向东20米路北（滨河绿城西50米）",
+            "distances": "5km"
+        },
+        {
+            "school_id": "34",
+            "school_name": "金桥小学校区",
+            "address": "丰乐路与群英路交叉口向北50米路东（金桥小学向东80米）",
+            "distances": "5km"
+        },
+        {
+            "school_id": "36",
+            "school_name": "森林半岛校区",
+            "address": "丰庆路与东风路向北100米路西（森林半岛）",
+            "distances": "5.4km"
+        },
+        {
+            "school_id": "47",
+            "school_name": "四月天校区",
+            "address": "园田路与宏达路交叉口东北角（朝阳小区）二楼",
+            "distances": "5.5km"
+        },
+        {
+            "school_id": "12",
+            "school_name": "聚源路校区",
+            "address": "聚源路宏图街交叉口西南角（鼎天东尚营销中心）",
+            "distances": "5.7km"
+        },
+        {
+            "school_id": "125",
+            "school_name": "凤凰城校区",
+            "address": "玉凤路青年路交叉口向南100米路西凤凰幸福城购物中心南馆二楼",
+            "distances": "5.9km"
+        },
+        {
+            "school_id": "138",
+            "school_name": "凤凰幸福城校区",
+            "address": "金水区青年路凤凰幸福城购物中心北馆2楼",
+            "distances": "5.9km"
+        },
+        {
+            "school_id": "21",
+            "school_name": "南关校区",
+            "address": "南关街与德济路交叉口一楼",
+            "distances": "5.9km"
+        },
+        {
+            "school_id": "118",
+            "school_name": "海亮时代ONE校区",
+            "address": "金水区宏康路与香山路交叉口东南角 海亮广场三楼",
+            "distances": "6.1km"
+        },
+        {
+            "school_id": "110",
+            "school_name": "龙翔校区",
+            "address": "平安大道与秋澄街交叉口龙兴嘉园3号院北门",
+            "distances": "6.3km"
+        },
+        {
+            "school_id": "73",
+            "school_name": "建业壹号城邦校区",
+            "address": "河南省郑州市丰乐路与博颂路交叉口南200米路西",
+            "distances": "6.5km"
+        },
+        {
+            "school_id": "45",
+            "school_name": "普罗旺世校区",
+            "address": "索凌路与国基路交叉口向南50米路东（普罗旺世对面）",
+            "distances": "6.7km"
+        },
+        {
+            "school_id": "15",
+            "school_name": "畅和街校区",
+            "address": "畅和街庙张街交叉口向北100米路西观屿国际东门路西大山外语",
+            "distances": "6.8km"
+        },
+        {
+            "school_id": "100",
+            "school_name": "雅居乐校区",
+            "address": "永顺路与象湖南路交叉口向南50米路东",
+            "distances": "6.8km"
+        },
+        {
+            "school_id": "119",
+            "school_name": "杨金路校区",
+            "address": "杨金路与中州大道交叉口向东1500米聚方科技园三楼",
+            "distances": "6.9km"
+        },
+        {
+            "school_id": "109",
+            "school_name": "54中校区",
+            "address": "商鼎路与徐庄街交叉口东南50米大哈超市二楼大山外语",
+            "distances": "7.1km"
+        },
+        {
+            "school_id": "131",
+            "school_name": "VIP教学中心校区",
+            "address": "东周路商都路交叉口向西150米路北中茁教育中心一楼大山外语",
+            "distances": "7.1km"
+        },
+        {
+            "school_id": "76",
+            "school_name": "龙门实验校区",
+            "address": "龙门路丰庆路交叉口向北50米路东（瀚宇天悦一期西门）",
+            "distances": "7.2km"
+        },
+        {
+            "school_id": "114",
+            "school_name": "德风街校区",
+            "address": "未来路德风街交叉口向东100米路北",
+            "distances": "7.4km"
+        },
+        {
+            "school_id": "14",
+            "school_name": "康平路校区",
+            "address": "康平路与福禄街交叉口西300米路南（旭日龙园北门）",
+            "distances": "7.4km"
+        },
+        {
+            "school_id": "30",
+            "school_name": "金城街校区",
+            "address": "紫荆山路与金城街交叉口向东300米路北（交警四大队斜对面100米路路北）",
+            "distances": "7.5km"
+        },
+        {
+            "school_id": "128",
+            "school_name": "棉纺路校区",
+            "address": "棉纺路百花路交叉口北200米路东（宏江瀚苑西门）",
+            "distances": "7.6km"
+        },
+        {
+            "school_id": "39",
+            "school_name": "幸福港湾校区",
+            "address": "航海路与城东南路向北500米路东 幸福港湾青年公寓2楼",
+            "distances": "7.7km"
+        },
+        {
+            "school_id": "51",
+            "school_name": "鑫苑现代城校区",
+            "address": "永安街与庆丰街交叉口西北角50米路西（鑫苑现代城南100米路西）",
+            "distances": "7.9km"
+        },
+        {
+            "school_id": "17",
+            "school_name": "朝凤路校区",
+            "address": "朝凤路与经北二路交叉口向北200米西南角（朝凤路小学西北）",
+            "distances": "8.1km"
+        },
+        {
+            "school_id": "66",
+            "school_name": "开元路校区",
+            "address": "开元路清华园路交叉口东100米路南大山外语",
+            "distances": "8.1km"
+        },
+        {
+            "school_id": "37",
+            "school_name": "正商蓝钻校区",
+            "address": "未来路与航海路交叉口向南200米路东（老蓝钻北门）",
+            "distances": "8.3km"
+        },
+        {
+            "school_id": "3",
+            "school_name": "煤仓北街校区",
+            "address": "西站路与冉屯东路交叉口向北200米（风和日丽西门）",
+            "distances": "8.4km"
+        },
+        {
+            "school_id": "74",
+            "school_name": "汝河路校区",
+            "address": "汝河路与淮北街交叉口向东300米路北（路砦花苑北区向西50路北）",
+            "distances": "8.7km"
+        },
+        {
+            "school_id": "16",
+            "school_name": "卢浮宫校区",
+            "address": "普惠路与列里路交叉口东50米路南（郑东新区实验学校对面）",
+            "distances": "8.7km"
+        },
+        {
+            "school_id": "41",
+            "school_name": "美景鸿城校区",
+            "address": "管城区腾飞路七里河小学斜对面向西50米",
+            "distances": "8.8km"
+        },
+        {
+            "school_id": "8",
+            "school_name": "华强广场校区",
+            "address": "电厂路与漳河路交叉口向西100米华强城市广场一期三楼大山外语",
+            "distances": "8.8km"
+        },
+        {
+            "school_id": "38",
+            "school_name": "江山路校区",
+            "address": "江山路与三全路交叉口向北100米（北城花园门口东侧）",
+            "distances": "9km"
+        },
+        {
+            "school_id": "11",
+            "school_name": "航海东路校区",
+            "address": "经南三路与第一大街交叉口东南角（伟业地产）",
+            "distances": "9.2km"
+        },
+        {
+            "school_id": "102",
+            "school_name": "迎宾路校区",
+            "address": "花园路与迎宾路交叉口向西1500米路北（郑州四中东隔壁）",
+            "distances": "9.7km"
+        },
+        {
+            "school_id": "78",
+            "school_name": "龙子湖校区",
+            "address": "姚夏路与薛夏南路交叉口向北100米路东（金水区陈三桥社区西院西门北100米）",
+            "distances": "9.8km"
+        },
+        {
+            "school_id": "111",
+            "school_name": "紫辰路校区",
+            "address": "紫辰路与南三环交叉口向北200米路西（永丰新城东门）",
+            "distances": "10.1km"
+        },
+        {
+            "school_id": "120",
+            "school_name": "二七万达校区",
+            "address": "人和路与汉江路交叉口向西50米路南",
+            "distances": "10.1km"
+        },
+        {
+            "school_id": "1",
+            "school_name": "中原万达校区",
+            "address": "中原路与秦岭路交汇处西北角3楼（万仕达商务楼）",
+            "distances": "10.2km"
+        },
+        {
+            "school_id": "50",
+            "school_name": "碧云路校区",
+            "address": "航海路与碧云路交叉口向南50米路东",
+            "distances": "10.3km"
+        },
+        {
+            "school_id": "79",
+            "school_name": "阅山公馆校区",
+            "address": "经开区第四大街与经南六路交叉口向北50米路东（阅山公馆）",
+            "distances": "10.4km"
+        },
+        {
+            "school_id": "56",
+            "school_name": "行云路校区",
+            "address": "行云路与长江路交叉口向南500米路西(郑州师范学院附属培智学校北60米路西）",
+            "distances": "10.7km"
+        },
+        {
+            "school_id": "115",
+            "school_name": "紫荆华庭校区",
+            "address": "河南省郑州市管城回族区贺江路",
+            "distances": "10.7km"
+        },
+        {
+            "school_id": "54",
+            "school_name": "橄榄城校区",
+            "address": "南三环与连云路交叉口向西50米路北建设银行后",
+            "distances": "10.7km"
+        },
+        {
+            "school_id": "93",
+            "school_name": "民安北郡校区",
+            "address": "开元路与清华园路交叉口向北200米民安北郡一期西门",
+            "distances": "11km"
+        },
+        {
+            "school_id": "84",
+            "school_name": "佛岗校区",
+            "address": "碧云路贺江路东50米路北（马记食府隔壁）",
+            "distances": "11.2km"
+        },
+        {
+            "school_id": "4",
+            "school_name": "和昌澜景校区",
+            "address": "汝河路与昆仑路交叉口（华山路小学）向西200米路南",
+            "distances": "12km"
+        },
+        {
+            "school_id": "103",
+            "school_name": "滨河新城校区",
+            "address": "经开区第15大街与经南八路交叉口向北100米路西（经开一中西侧）",
+            "distances": "12km"
+        },
+        {
+            "school_id": "5",
+            "school_name": "瑞达路校区",
+            "address": "瑞达路合欢街交叉口西南角（浦发银行瑞达路支行西20米）",
+            "distances": "12km"
+        },
+        {
+            "school_id": "83",
+            "school_name": "祝福红城校区",
+            "address": "石楠路药厂街交叉口南100路东（祝福红城三期西门大山外语）",
+            "distances": "13.4km"
+        },
+        {
+            "school_id": "133",
+            "school_name": "水木清城校区",
+            "address": "郑州中原区雪松路西、樊楼路南8号楼2层201-209号商铺",
+            "distances": "13.4km"
+        },
+        {
+            "school_id": "6",
+            "school_name": "枫杨校区",
+            "address": "高新区银屏路迎春街交叉口东南角大山外语（金麒麟酒店南20米）",
+            "distances": "13.5km"
+        },
+        {
+            "school_id": "108",
+            "school_name": "锦绣山河校区",
+            "address": "河南省郑州市二七区南彩路",
+            "distances": "14.1km"
+        },
+        {
+            "school_id": "107",
+            "school_name": "谦祥万和城校区",
+            "address": "高新区长椿路和莲花街交叉口向北100米谦祥万和城D区13号楼底商（工业大学西门斜对面）",
+            "distances": "15km"
+        },
+        {
+            "school_id": "134",
+            "school_name": "绿源路校区",
+            "address": "江山路与绿源路交叉口向东50米惠源商务二楼",
+            "distances": "16km"
+        },
+        {
+            "school_id": "82",
+            "school_name": "运河上城校区",
+            "address": "建设路西四环锦艺运河上城南门1号楼下",
+            "distances": "16.4km"
+        },
+        {
+            "school_id": "129",
+            "school_name": "锦和苑校区",
+            "address": "郑州市高新区西四环与堂门路交叉口向北100米路东（糖果时光小区西门）",
+            "distances": "16.4km"
+        },
+        {
+            "school_id": "71",
+            "school_name": "万科城校区",
+            "address": "科学大道与须水东路交叉口向北100米路东（星光广场旁边）",
+            "distances": "16.8km"
+        },
+        {
+            "school_id": "7",
+            "school_name": "同兴街校区",
+            "address": "马寨镇东方路与同兴街交叉口西南角（好又多超市对面）",
+            "distances": "18.2km"
+        },
+        {
+            "school_id": "137",
+            "school_name": "梧桐郡",
+            "address": "龙湖外国语小学向东300米路南",
+            "distances": "18.8km"
+        },
+        {
+            "school_id": "96",
+            "school_name": "国瑞城校区",
+            "address": "祥云路与滨湖路交叉口向南300米路西国瑞城小学对面",
+            "distances": "18.8km"
+        },
+        {
+            "school_id": "136",
+            "school_name": "锦艺城校区",
+            "address": "新郑市龙湖锦艺城商场2号门肯德基对面 一楼商铺大山外语",
+            "distances": "20.1km"
+        },
+        {
+            "school_id": "57",
+            "school_name": "华南城校区",
+            "address": "郑新快速路与祥安路向西100米路南九恒大药房西隔壁",
+            "distances": "20.3km"
+        },
+        {
+            "school_id": "99",
+            "school_name": "桥航路校区",
+            "address": "航空港区桥航路与凌霜街东北角（桥航路小学向北30米路东）",
+            "distances": "27.4km"
+        },
+        {
+            "school_id": "101",
+            "school_name": "巡航路校区",
+            "address": "航空港区巡航路与凌寒街交叉口向东200米路北（领航学校北门东100米）",
+            "distances": "30.2km"
+        },
+        {
+            "school_id": "2",
+            "school_name": "帝湖校区",
+            "address": "桐柏路航海路交叉口北50米路东启福国际1号楼3楼",
+            "distances": "31.4km"
+        },
+        {
+            "school_id": "127",
+            "school_name": "鑫苑鑫家校区",
+            "address": "南四环与大学路交叉口西南角鑫苑鑫家2期北门",
+            "distances": "32.6km"
+        },
+        {
+            "school_id": "18",
+            "school_name": "上街校区",
+            "address": "汝南路济源路交叉口上街雕像东南角",
+            "distances": "36.5km"
+        },
+        {
+            "school_id": "132",
+            "school_name": "碧桂园凤凰湾校区",
+            "address": "平原新区滨湖大道碧桂园凤凰湾1期南门售楼部西侧",
+            "distances": "42.1km"
+        },
+        {
+            "school_id": "55",
+            "school_name": "长江路校区",
+            "address": "长江路与嵩山路向西300米路北（郑州优智外国语中学向东100米路北）",
+            "distances": "71.2km"
+        },
+        {
+            "school_id": "139",
+            "school_name": "杜兰街校区",
+            "address": null,
+            "distances": "12164.8km"
+        },
+        {
+            "school_id": "140",
+            "school_name": "东润城校区",
+            "address": null,
+            "distances": "12164.8km"
+        },
+        {
+            "school_id": "141",
+            "school_name": "五月花城校区",
+            "address": null,
+            "distances": "12164.8km"
+        },
+        {
+            "school_id": "142",
+            "school_name": "荣邦城校区",
+            "address": null,
+            "distances": "12164.8km"
+        },
+        {
+            "school_id": "143",
+            "school_name": "阳光城校区",
+            "address": null,
+            "distances": "12164.8km"
+        },
+        {
+            "school_id": "144",
+            "school_name": "紫薇里校区",
+            "address": null,
+            "distances": "12164.8km"
+        },
+        {
+            "school_id": "145",
+            "school_name": "凯旋门校区",
+            "address": null,
+            "distances": "12164.8km"
+        }
+    ]
+}
