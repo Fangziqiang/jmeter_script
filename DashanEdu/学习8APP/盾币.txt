@@ -1,0 +1,49 @@
+SELECT t.flower,t.* from yy_xb.student t where u_phone=17610831883;
+student_log_13 
+update yy_xb.student set flower=3535 where u_phone=17610831883;
+
+450343
+
+
+SELECT * from student_log_0 where to_user_id=151673
+UNION all
+SELECT * from student_log_1 where to_user_id=151673
+UNION all
+SELECT * from student_log_2 where to_user_id=151673
+UNION all
+SELECT * from student_log_3 where to_user_id=151673
+UNION all
+SELECT * from student_log_4 where to_user_id=151673
+UNION all
+SELECT * from student_log_5 where to_user_id=151673
+UNION all
+SELECT * from student_log_6 where to_user_id=151673
+UNION all
+SELECT * from student_log_7 where to_user_id=151673
+UNION all
+SELECT * from student_log_8 where to_user_id=151673
+UNION all
+SELECT * from student_log_9 where to_user_id=151673
+UNION all
+SELECT * from student_log_10 where to_user_id=151673
+UNION all
+SELECT * from student_log_11 where to_user_id=151673
+UNION all
+SELECT * from student_log_12 where to_user_id=151673
+UNION all
+SELECT * from student_log_13 where to_user_id=151673
+SELECT * from student_log_13  ORDER BY id desc
+UNION all
+SELECT * from student_log_14 where to_user_id=151673
+UNION all
+SELECT * from student_log_15 where to_user_id=151673
+UNION all
+SELECT * from student_log_16 where to_user_id=151673
+UNION all
+SELECT * from student_log_17 where to_user_id=151673
+UNION all
+SELECT * from student_log_18 where to_user_id=151673
+UNION all
+SELECT * from student_log_19 where to_user_id=151673
+
+INSERT INTO `jy_xb`.`student_log_13`(`type`, `type_name`, `integral`, `user_id`, `to_user_id`, `course_id`, `chapter_id`, `create_time`, `teacher_chapter_id`, `practice_id`, `course_type`, `is_tongbu`) VALUES ( 15, '课后巩固班级排名第一', '+100', 0, 151673, 10266, 0, 1595865602, 16847, 0, 0, 0);
