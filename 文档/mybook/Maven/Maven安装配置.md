@@ -12,9 +12,19 @@
 
 - 测试mvn -v
 
-  
+- maven目录结构
 
+  ![1596116006616](img/Maven安装配置/1596116006616.png)
 
+3、仓库的配置
 
+仓库的分类
 
+![1596121221208](img/Maven安装配置/1596121221208.png)
+
+本地仓库的配置：
+
+修改maven安装路径下D:\Program Files\apache-maven-3.6.3\conf\settings.xml
+
+![1596121552477](img/Maven安装配置/1596121552477.png)
 
