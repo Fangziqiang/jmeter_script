@@ -197,7 +197,7 @@ prev.setResponseData(outBuffer.toString());</stringProp>
         <stringProp name="variableNames">phone,password,student_id,student_name,x_id,grade,student_no,school</stringProp>
       </CSVDataSet>
       <hashTree/>
-      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config-预生产环境" enabled="true">
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config-预生产环境" enabled="false">
         <stringProp name="delimiter">,</stringProp>
         <stringProp name="fileEncoding">GB2312</stringProp>
         <stringProp name="filename">/student_1000dun_2.csv</stringProp>
@@ -676,7 +676,7 @@ prev.setResponseData(outBuffer.toString());</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">30</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
@@ -1115,14 +1115,14 @@ public class writeToFile {
               </elementProp>
               <elementProp name="product_id" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">3494</stringProp>
+                <stringProp name="Argument.value">147</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">product_id</stringProp>
               </elementProp>
               <elementProp name="price" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">390</stringProp>
+                <stringProp name="Argument.value">8900</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">price</stringProp>
@@ -1155,7 +1155,7 @@ public class writeToFile {
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
               <stringProp name="1869629343">&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;OK&quot;</stringProp>
-              <stringProp name="-1544102741">{&quot;status&quot;:&quot;1&quot;,&quot;msg&quot;:&quot;销售仓库农科路校区的物品[20200427018山果儿文件袋（颜色随机）]库存不足，当前库存：0&quot;}</stringProp>
+              <stringProp name="1933370492">{&quot;status&quot;:&quot;1&quot;,&quot;msg&quot;:&quot;销售仓库东明路校区的物品[20200427048山果儿挂钟]库存不足，当前库存：0&quot;}</stringProp>
             </collectionProp>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
