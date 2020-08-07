@@ -390,7 +390,7 @@ under the License.
 
 ![image-20200807174104453](Maven教程/image-20200807174104453.png)
 
-将项目转换成IDEA项目：
+将项目转换成IDEA项目：mvn idea:idea
 
 ![image-20200807175204814](Maven教程/image-20200807175204814.png)
 
