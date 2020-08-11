@@ -12,63 +12,6 @@
       <stringProp name="TestPlan.user_define_classpath"></stringProp>
     </TestPlan>
     <hashTree>
-      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-        <collectionProp name="HeaderManager.headers">
-          <elementProp name="Host" elementType="Header">
-            <stringProp name="Header.name">Host</stringProp>
-            <stringProp name="Header.value">sanbox.xuexi8.tech</stringProp>
-          </elementProp>
-          <elementProp name="Connection" elementType="Header">
-            <stringProp name="Header.name">Connection</stringProp>
-            <stringProp name="Header.value">keep-alive</stringProp>
-          </elementProp>
-          <elementProp name="Content-Length" elementType="Header">
-            <stringProp name="Header.name">Content-Length</stringProp>
-            <stringProp name="Header.value">753</stringProp>
-          </elementProp>
-          <elementProp name="Cache-Control" elementType="Header">
-            <stringProp name="Header.name">Cache-Control</stringProp>
-            <stringProp name="Header.value">max-age=0</stringProp>
-          </elementProp>
-          <elementProp name="Origin" elementType="Header">
-            <stringProp name="Header.name">Origin</stringProp>
-            <stringProp name="Header.value">http://sanbox.xuexi8.tech</stringProp>
-          </elementProp>
-          <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
-            <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
-            <stringProp name="Header.value">1</stringProp>
-          </elementProp>
-          <elementProp name="Content-Type" elementType="Header">
-            <stringProp name="Header.name">Content-Type</stringProp>
-            <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
-          </elementProp>
-          <elementProp name="User-Agent" elementType="Header">
-            <stringProp name="Header.name">User-Agent</stringProp>
-            <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36</stringProp>
-          </elementProp>
-          <elementProp name="Accept" elementType="Header">
-            <stringProp name="Header.name">Accept</stringProp>
-            <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</stringProp>
-          </elementProp>
-          <elementProp name="Referer" elementType="Header">
-            <stringProp name="Header.name">Referer</stringProp>
-            <stringProp name="Header.value">http://sanbox.xuexi8.tech/index.php?c=TiKu&amp;a=edit_question&amp;page_type=tk&amp;auth_id=123&amp;type=fill</stringProp>
-          </elementProp>
-          <elementProp name="Accept-Encoding" elementType="Header">
-            <stringProp name="Header.name">Accept-Encoding</stringProp>
-            <stringProp name="Header.value">gzip, deflate</stringProp>
-          </elementProp>
-          <elementProp name="Accept-Language" elementType="Header">
-            <stringProp name="Header.name">Accept-Language</stringProp>
-            <stringProp name="Header.value">zh-CN,zh;q=0.9</stringProp>
-          </elementProp>
-          <elementProp name="Cookie" elementType="Header">
-            <stringProp name="Header.name">Cookie</stringProp>
-            <stringProp name="Header.value">p_h5_upload_u=CC0200A4-65CA-406B-822C-BB53A66245FE; selectedStreamLevel=SD; _bl_uid=k5kvXbqqz3psyme5IlXbl3wabvRd; PHPSESSID=34h044neeamtl07a0fgs93skh5; Hm_lvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1597043038,1597051456,1597106140,1597108147; laravel_session=oVyGc0oeSqVnslY9PUVW7SwVhTIvQnxWFLxdOHpd; Hm_lpvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1597108867</stringProp>
-          </elementProp>
-        </collectionProp>
-      </HeaderManager>
-      <hashTree/>
       <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
         <stringProp name="filename"></stringProp>
         <stringProp name="parameters"></stringProp>
@@ -8242,6 +8185,73 @@ vars.put(&quot;is_topic&quot;,is_topic);
         <stringProp name="TestPlan.comments">q_status: 0:未提审 1:审核中 2已上线 3已下线 4已删除</stringProp>
       </ThreadGroup>
       <hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="Host" elementType="Header">
+              <stringProp name="Header.name">Host</stringProp>
+              <stringProp name="Header.value">pre.xuexi8.tech</stringProp>
+            </elementProp>
+            <elementProp name="Connection" elementType="Header">
+              <stringProp name="Header.name">Connection</stringProp>
+              <stringProp name="Header.value">keep-alive</stringProp>
+            </elementProp>
+            <elementProp name="Content-Length" elementType="Header">
+              <stringProp name="Header.name">Content-Length</stringProp>
+              <stringProp name="Header.value">753</stringProp>
+            </elementProp>
+            <elementProp name="Cache-Control" elementType="Header">
+              <stringProp name="Header.name">Cache-Control</stringProp>
+              <stringProp name="Header.value">max-age=0</stringProp>
+            </elementProp>
+            <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+              <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+              <stringProp name="Header.value">1</stringProp>
+            </elementProp>
+            <elementProp name="Content-Type" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+            </elementProp>
+            <elementProp name="User-Agent" elementType="Header">
+              <stringProp name="Header.name">User-Agent</stringProp>
+              <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36</stringProp>
+            </elementProp>
+            <elementProp name="Accept" elementType="Header">
+              <stringProp name="Header.name">Accept</stringProp>
+              <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</stringProp>
+            </elementProp>
+            <elementProp name="Referer" elementType="Header">
+              <stringProp name="Header.name">Referer</stringProp>
+              <stringProp name="Header.value">http://pre.xuexi8.tech/index.php?c=Jiaoyan&amp;a=bz_practice&amp;page_type=tk&amp;is_practice=1&amp;auth_id=174</stringProp>
+            </elementProp>
+            <elementProp name="Accept-Encoding" elementType="Header">
+              <stringProp name="Header.name">Accept-Encoding</stringProp>
+              <stringProp name="Header.value">gzip, deflate</stringProp>
+            </elementProp>
+            <elementProp name="Accept-Language" elementType="Header">
+              <stringProp name="Header.name">Accept-Language</stringProp>
+              <stringProp name="Header.value">zh-CN,zh;q=0.9</stringProp>
+            </elementProp>
+            <elementProp name="Cookie" elementType="Header">
+              <stringProp name="Header.name">Cookie</stringProp>
+              <stringProp name="Header.value">p_h5_upload_u=23067789-67FB-4CF1-844A-6C23F4156010; selectedStreamLevel=LD; _bl_uid=gUk5Ccv6hp0gd4gmXa0IrUy94z3n; PHPSESSID=1clbrre5v2acv819odac3hdqp0; Hm_lvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1597051456,1597106140,1597108147,1597142224; Hm_lpvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1597142378</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults—Pre环境" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">pre.xuexi8.tech</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </ConfigTestElement>
+        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="单选题" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
@@ -8506,9 +8516,9 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">sanbox.xuexi8.tech</stringProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
           <stringProp name="HTTPSampler.path">/index.php?c=TiKu&amp;a=addquestionparams</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -8820,9 +8830,9 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">sanbox.xuexi8.tech</stringProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
           <stringProp name="HTTPSampler.path">/index.php?c=TiKu&amp;a=addquestionparams</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -9043,9 +9053,9 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">sanbox.xuexi8.tech</stringProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
           <stringProp name="HTTPSampler.path">/index.php?c=TiKu&amp;a=addquestionparams</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -9259,9 +9269,9 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">sanbox.xuexi8.tech</stringProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
           <stringProp name="HTTPSampler.path">/index.php?c=TiKu&amp;a=addquestionparams</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
