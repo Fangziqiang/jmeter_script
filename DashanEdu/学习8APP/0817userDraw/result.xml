@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3090&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3100&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3110&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3111&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3118&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3119&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3126&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3141&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3147&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3149&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3159&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3212&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3233&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3236&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3253&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3258&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3264&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3283&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3304&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3308&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3344&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3373&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3379&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3386&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3404&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3410&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3405&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3436&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3455&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3445&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3486&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3496&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3498&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3552&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3567&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3556&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3577&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3597&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3571&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3672&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3679&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3602&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3695&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3692&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3732&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3736&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3751&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3756&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3762&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3795&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3794&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3801&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3851&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3848&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3912&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3947&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3939&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4021&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;3948&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4000&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4026&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4022&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4025&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4028&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4058&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4059&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4137&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4120&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4190&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4215&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4225&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4278&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4300&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4325&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4327&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4335&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4392&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4343&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4400&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4410&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4404&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4419&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4433&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4456&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4505&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4489&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4480&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4516&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4510&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4533&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4617&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4546&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4629&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4634&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4642&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4646&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4671&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4717&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4713&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4736&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4742&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4739&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4763&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4833&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4799&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4843&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4893&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4882&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4904&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4942&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4897&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4975&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4968&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4983&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4990&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;4997&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5010&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5014&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5028&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5031&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5039&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5058&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5073&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5088&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5113&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5104&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5124&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5142&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5127&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5175&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5235&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5217&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5276&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5239&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5310&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5374&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5357&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5408&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5415&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5423&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5434&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5463&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5464&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5478&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5487&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5488&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5490&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5519&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5540&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5533&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5544&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5567&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5569&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5586&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5592&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5603&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5613&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5612&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5622&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5646&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5714&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5642&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5724&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5751&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5752&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5753&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5770&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5771&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5828&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5815&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5856&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5869&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5857&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5881&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5887&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5980&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;5999&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6058&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6060&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6072&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6103&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6183&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6184&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6190&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6217&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6197&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6221&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6234&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6235&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6240&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6244&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6248&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6280&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6299&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6345&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6351&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6349&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6362&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6365&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6493&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6498&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6507&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6522&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6545&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6548&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6552&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6599&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6561&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6661&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6611&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6720&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6734&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6746&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6748&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6760&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6749&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6768&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6796&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6803&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6832&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6815&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6837&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6843&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6840&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6847&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6851&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6857&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6867&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6870&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6875&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6966&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6981&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7002&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;6982&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7005&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7026&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7078&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7085&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7129&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7086&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7160&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7169&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7175&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7228&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7236&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7197&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7238&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7271&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7363&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7390&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7399&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7409&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7413&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7432&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7465&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7441&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7498&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7503&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7517&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7602&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7572&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7683&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7625&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7710&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7717&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7716&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7722&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7735&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7731&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7791&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7859&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7869&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7820&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7890&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7918&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7953&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7966&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7978&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7979&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;7990&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;8022&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;8013&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;8056&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;8074&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;8059&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;8082&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;8133&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;8128&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;8222&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;8176&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;8233&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;8257&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;8243&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;8291&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;8308&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;8295&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;8310&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;8313&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;8324&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+<httpSample>
+  <responseData class="java.lang.String">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;prize_id&quot;:6,&quot;stages_prize_id&quot;:351,&quot;student_id&quot;:&quot;8325&quot;,&quot;is_need&quot;:1}}</responseData>
+</httpSample>
+
+</testResults>
