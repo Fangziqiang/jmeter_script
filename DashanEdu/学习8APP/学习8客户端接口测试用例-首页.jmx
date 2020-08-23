@@ -12,7 +12,7 @@
       <stringProp name="TestPlan.user_define_classpath"></stringProp>
     </TestPlan>
     <hashTree>
-      <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+      <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="false">
         <stringProp name="filename"></stringProp>
         <stringProp name="parameters"></stringProp>
         <boolProp name="resetInterpreter">false</boolProp>
@@ -74,7 +74,7 @@
 prev.setResponseData(outBuffer.toString());</stringProp>
       </BeanShellPostProcessor>
       <hashTree/>
-      <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+      <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="false">
         <stringProp name="BeanShellAssertion.query">String s=new String(prev.getResponseData(),&quot;UTF-8&quot;);
         char aChar;
         int len= s.length();
