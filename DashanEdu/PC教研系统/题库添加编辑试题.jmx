@@ -136,7 +136,7 @@ prev.setResponseData(outBuffer.toString());</stringProp>
         <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
       </BeanShellAssertion>
       <hashTree/>
-      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults—Pre环境" enabled="true">
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults—Pre环境" enabled="false">
         <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
           <collectionProp name="Arguments.arguments"/>
         </elementProp>
@@ -150,11 +150,78 @@ prev.setResponseData(outBuffer.toString());</stringProp>
         <stringProp name="HTTPSampler.response_timeout"></stringProp>
       </ConfigTestElement>
       <hashTree/>
-      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager_测试环境" enabled="false">
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager_Pre环境" enabled="false">
         <collectionProp name="HeaderManager.headers">
           <elementProp name="Host" elementType="Header">
             <stringProp name="Header.name">Host</stringProp>
             <stringProp name="Header.value">pre.xuexi8.tech</stringProp>
+          </elementProp>
+          <elementProp name="Connection" elementType="Header">
+            <stringProp name="Header.name">Connection</stringProp>
+            <stringProp name="Header.value">keep-alive</stringProp>
+          </elementProp>
+          <elementProp name="Content-Length" elementType="Header">
+            <stringProp name="Header.name">Content-Length</stringProp>
+            <stringProp name="Header.value">43</stringProp>
+          </elementProp>
+          <elementProp name="Accept" elementType="Header">
+            <stringProp name="Header.name">Accept</stringProp>
+            <stringProp name="Header.value">*/*</stringProp>
+          </elementProp>
+          <elementProp name="X-Requested-With" elementType="Header">
+            <stringProp name="Header.name">X-Requested-With</stringProp>
+            <stringProp name="Header.value">XMLHttpRequest</stringProp>
+          </elementProp>
+          <elementProp name="User-Agent" elementType="Header">
+            <stringProp name="Header.name">User-Agent</stringProp>
+            <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36</stringProp>
+          </elementProp>
+          <elementProp name="Content-Type" elementType="Header">
+            <stringProp name="Header.name">Content-Type</stringProp>
+            <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
+          </elementProp>
+          <elementProp name="Origin" elementType="Header">
+            <stringProp name="Header.name">Origin</stringProp>
+            <stringProp name="Header.value">http://pre.xuexi8.tech</stringProp>
+          </elementProp>
+          <elementProp name="Referer" elementType="Header">
+            <stringProp name="Header.name">Referer</stringProp>
+            <stringProp name="Header.value">http://pre.xuexi8.tech/index.php?c=TiKu&amp;a=shitiList&amp;auth_id=120</stringProp>
+          </elementProp>
+          <elementProp name="Accept-Encoding" elementType="Header">
+            <stringProp name="Header.name">Accept-Encoding</stringProp>
+            <stringProp name="Header.value">gzip, deflate</stringProp>
+          </elementProp>
+          <elementProp name="Accept-Language" elementType="Header">
+            <stringProp name="Header.name">Accept-Language</stringProp>
+            <stringProp name="Header.value">zh-CN,zh;q=0.9</stringProp>
+          </elementProp>
+          <elementProp name="Cookie" elementType="Header">
+            <stringProp name="Header.name">Cookie</stringProp>
+            <stringProp name="Header.value">p_h5_upload_u=23067789-67FB-4CF1-844A-6C23F4156010; selectedStreamLevel=LD; _bl_uid=gUk5Ccv6hp0gd4gmXa0IrUy94z3n; Hm_lvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1597192566,1597213329,1597215490,1597279052; PHPSESSID=kjdnuv4jog4lv1416aert6soe7; laravel_session=DovXCitl6vPvyTrTFMNsEJk7FuAuYDcse6mQunpB; Hm_lpvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1597304238</stringProp>
+          </elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults—测试环境" enabled="true">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <stringProp name="HTTPSampler.domain">sanbox.xuexi8.tech</stringProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <stringProp name="HTTPSampler.protocol">https</stringProp>
+        <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+        <stringProp name="HTTPSampler.path"></stringProp>
+        <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+        <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+        <stringProp name="HTTPSampler.response_timeout"></stringProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager_测试环境" enabled="true">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="Host" elementType="Header">
+            <stringProp name="Header.name">Host</stringProp>
+            <stringProp name="Header.value">sanbox.xuexi8.tech</stringProp>
           </elementProp>
           <elementProp name="Connection" elementType="Header">
             <stringProp name="Header.name">Connection</stringProp>
@@ -186,7 +253,7 @@ prev.setResponseData(outBuffer.toString());</stringProp>
           </elementProp>
           <elementProp name="Referer" elementType="Header">
             <stringProp name="Header.name">Referer</stringProp>
-            <stringProp name="Header.value">http://pre.xuexi8.tech/index.php?c=Jiaoyan&amp;a=bz_practice&amp;page_type=tk&amp;is_practice=1&amp;auth_id=174</stringProp>
+            <stringProp name="Header.value">http://sanbox.xuexi8.tech/index.php?c=Jiaoyan&amp;a=bz_practice&amp;page_type=tk&amp;is_practice=1&amp;auth_id=174</stringProp>
           </elementProp>
           <elementProp name="Accept-Encoding" elementType="Header">
             <stringProp name="Header.name">Accept-Encoding</stringProp>
@@ -198,24 +265,10 @@ prev.setResponseData(outBuffer.toString());</stringProp>
           </elementProp>
           <elementProp name="Cookie" elementType="Header">
             <stringProp name="Header.name">Cookie</stringProp>
-            <stringProp name="Header.value">p_h5_upload_u=23067789-67FB-4CF1-844A-6C23F4156010; selectedStreamLevel=LD; _bl_uid=gUk5Ccv6hp0gd4gmXa0IrUy94z3n; PHPSESSID=1clbrre5v2acv819odac3hdqp0; Hm_lvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1597051456,1597106140,1597108147,1597142224; Hm_lpvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1597142378</stringProp>
+            <stringProp name="Header.value">p_h5_upload_u=CC0200A4-65CA-406B-822C-BB53A66245FE; selectedStreamLevel=SD; _bl_uid=k5kvXbqqz3psyme5IlXbl3wabvRd; PHPSESSID=fv02s9uicv00mldp21ls2sqpob; Hm_lvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1598403944,1598488902,1598508980,1598574824; Hm_lpvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1598584177</stringProp>
           </elementProp>
         </collectionProp>
       </HeaderManager>
-      <hashTree/>
-      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults—测试环境" enabled="false">
-        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
-          <collectionProp name="Arguments.arguments"/>
-        </elementProp>
-        <stringProp name="HTTPSampler.domain">sanbox.xuexi8.tech</stringProp>
-        <stringProp name="HTTPSampler.port"></stringProp>
-        <stringProp name="HTTPSampler.protocol">https</stringProp>
-        <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-        <stringProp name="HTTPSampler.path"></stringProp>
-        <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
-        <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-        <stringProp name="HTTPSampler.response_timeout"></stringProp>
-      </ConfigTestElement>
       <hashTree/>
       <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config测试环境" enabled="false">
         <stringProp name="delimiter">,</stringProp>
@@ -296,59 +349,6 @@ prev.setResponseData(outBuffer.toString());</stringProp>
         <intProp name="Assertion.test_type">16</intProp>
         <stringProp name="Assertion.scope">all</stringProp>
       </ResponseAssertion>
-      <hashTree/>
-      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager_Pre环境" enabled="true">
-        <collectionProp name="HeaderManager.headers">
-          <elementProp name="Host" elementType="Header">
-            <stringProp name="Header.name">Host</stringProp>
-            <stringProp name="Header.value">pre.xuexi8.tech</stringProp>
-          </elementProp>
-          <elementProp name="Connection" elementType="Header">
-            <stringProp name="Header.name">Connection</stringProp>
-            <stringProp name="Header.value">keep-alive</stringProp>
-          </elementProp>
-          <elementProp name="Content-Length" elementType="Header">
-            <stringProp name="Header.name">Content-Length</stringProp>
-            <stringProp name="Header.value">43</stringProp>
-          </elementProp>
-          <elementProp name="Accept" elementType="Header">
-            <stringProp name="Header.name">Accept</stringProp>
-            <stringProp name="Header.value">*/*</stringProp>
-          </elementProp>
-          <elementProp name="X-Requested-With" elementType="Header">
-            <stringProp name="Header.name">X-Requested-With</stringProp>
-            <stringProp name="Header.value">XMLHttpRequest</stringProp>
-          </elementProp>
-          <elementProp name="User-Agent" elementType="Header">
-            <stringProp name="Header.name">User-Agent</stringProp>
-            <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36</stringProp>
-          </elementProp>
-          <elementProp name="Content-Type" elementType="Header">
-            <stringProp name="Header.name">Content-Type</stringProp>
-            <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
-          </elementProp>
-          <elementProp name="Origin" elementType="Header">
-            <stringProp name="Header.name">Origin</stringProp>
-            <stringProp name="Header.value">http://pre.xuexi8.tech</stringProp>
-          </elementProp>
-          <elementProp name="Referer" elementType="Header">
-            <stringProp name="Header.name">Referer</stringProp>
-            <stringProp name="Header.value">http://pre.xuexi8.tech/index.php?c=TiKu&amp;a=shitiList&amp;auth_id=120</stringProp>
-          </elementProp>
-          <elementProp name="Accept-Encoding" elementType="Header">
-            <stringProp name="Header.name">Accept-Encoding</stringProp>
-            <stringProp name="Header.value">gzip, deflate</stringProp>
-          </elementProp>
-          <elementProp name="Accept-Language" elementType="Header">
-            <stringProp name="Header.name">Accept-Language</stringProp>
-            <stringProp name="Header.value">zh-CN,zh;q=0.9</stringProp>
-          </elementProp>
-          <elementProp name="Cookie" elementType="Header">
-            <stringProp name="Header.name">Cookie</stringProp>
-            <stringProp name="Header.value">p_h5_upload_u=23067789-67FB-4CF1-844A-6C23F4156010; selectedStreamLevel=LD; _bl_uid=gUk5Ccv6hp0gd4gmXa0IrUy94z3n; Hm_lvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1597192566,1597213329,1597215490,1597279052; PHPSESSID=kjdnuv4jog4lv1416aert6soe7; laravel_session=DovXCitl6vPvyTrTFMNsEJk7FuAuYDcse6mQunpB; Hm_lpvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1597304238</stringProp>
-          </elementProp>
-        </collectionProp>
-      </HeaderManager>
       <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Benshell断言样例" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -5778,7 +5778,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="parentId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">586145</stringProp>
+                <stringProp name="Argument.value">450731</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">parentId</stringProp>
@@ -6071,7 +6071,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="parentId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">586145</stringProp>
+                <stringProp name="Argument.value">450731</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">parentId</stringProp>
@@ -6385,7 +6385,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="parentId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">586145</stringProp>
+                <stringProp name="Argument.value">450731</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">parentId</stringProp>
@@ -6608,7 +6608,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="parentId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">586145</stringProp>
+                <stringProp name="Argument.value">450731</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">parentId</stringProp>
@@ -6831,7 +6831,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="parentId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">586145</stringProp>
+                <stringProp name="Argument.value">450731</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">parentId</stringProp>
@@ -7264,7 +7264,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="parentId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">586151</stringProp>
+                <stringProp name="Argument.value">450737</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">parentId</stringProp>
@@ -7557,7 +7557,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="parentId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">586151</stringProp>
+                <stringProp name="Argument.value">450737</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">parentId</stringProp>
@@ -7871,7 +7871,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="parentId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">586151</stringProp>
+                <stringProp name="Argument.value">450737</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">parentId</stringProp>
@@ -8094,7 +8094,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="parentId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">586151</stringProp>
+                <stringProp name="Argument.value">450737</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">parentId</stringProp>
@@ -8279,6 +8279,59 @@ vars.put(&quot;is_topic&quot;,is_topic);
         <stringProp name="TestPlan.comments">q_status: 0:未提审 1:审核中 2已上线 3已下线 4已删除</stringProp>
       </ThreadGroup>
       <hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="练一练Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="Host" elementType="Header">
+              <stringProp name="Header.name">Host</stringProp>
+              <stringProp name="Header.value">sanbox.xuexi8.tech</stringProp>
+            </elementProp>
+            <elementProp name="Connection" elementType="Header">
+              <stringProp name="Header.name">Connection</stringProp>
+              <stringProp name="Header.value">keep-alive</stringProp>
+            </elementProp>
+            <elementProp name="Content-Length" elementType="Header">
+              <stringProp name="Header.name">Content-Length</stringProp>
+              <stringProp name="Header.value">753</stringProp>
+            </elementProp>
+            <elementProp name="Cache-Control" elementType="Header">
+              <stringProp name="Header.name">Cache-Control</stringProp>
+              <stringProp name="Header.value">max-age=0</stringProp>
+            </elementProp>
+            <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+              <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+              <stringProp name="Header.value">1</stringProp>
+            </elementProp>
+            <elementProp name="Content-Type" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+            </elementProp>
+            <elementProp name="User-Agent" elementType="Header">
+              <stringProp name="Header.name">User-Agent</stringProp>
+              <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36</stringProp>
+            </elementProp>
+            <elementProp name="Accept" elementType="Header">
+              <stringProp name="Header.name">Accept</stringProp>
+              <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</stringProp>
+            </elementProp>
+            <elementProp name="Referer" elementType="Header">
+              <stringProp name="Header.name">Referer</stringProp>
+              <stringProp name="Header.value">http://sanbox.xuexi8.tech/index.php?c=Jiaoyan&amp;a=bz_practice&amp;auth_id=174</stringProp>
+            </elementProp>
+            <elementProp name="Accept-Encoding" elementType="Header">
+              <stringProp name="Header.name">Accept-Encoding</stringProp>
+              <stringProp name="Header.value">gzip, deflate</stringProp>
+            </elementProp>
+            <elementProp name="Accept-Language" elementType="Header">
+              <stringProp name="Header.name">Accept-Language</stringProp>
+              <stringProp name="Header.value">zh-CN,zh;q=0.9</stringProp>
+            </elementProp>
+            <elementProp name="Cookie" elementType="Header">
+              <stringProp name="Header.name">Cookie</stringProp>
+              <stringProp name="Header.value">p_h5_upload_u=CC0200A4-65CA-406B-822C-BB53A66245FE; selectedStreamLevel=SD; _bl_uid=k5kvXbqqz3psyme5IlXbl3wabvRd; PHPSESSID=lvqp55no431e4k6occi4c4l3qh; Hm_lvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1598488902,1598508980,1598574824,1598664254; token=; Hm_lpvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1598692962</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="单选题" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
@@ -9326,6 +9379,59 @@ vars.put(&quot;is_topic&quot;,is_topic);
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="练一练Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="Host" elementType="Header">
+              <stringProp name="Header.name">Host</stringProp>
+              <stringProp name="Header.value">sanbox.xuexi8.tech</stringProp>
+            </elementProp>
+            <elementProp name="Connection" elementType="Header">
+              <stringProp name="Header.name">Connection</stringProp>
+              <stringProp name="Header.value">keep-alive</stringProp>
+            </elementProp>
+            <elementProp name="Content-Length" elementType="Header">
+              <stringProp name="Header.name">Content-Length</stringProp>
+              <stringProp name="Header.value">753</stringProp>
+            </elementProp>
+            <elementProp name="Cache-Control" elementType="Header">
+              <stringProp name="Header.name">Cache-Control</stringProp>
+              <stringProp name="Header.value">max-age=0</stringProp>
+            </elementProp>
+            <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+              <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+              <stringProp name="Header.value">1</stringProp>
+            </elementProp>
+            <elementProp name="Content-Type" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+            </elementProp>
+            <elementProp name="User-Agent" elementType="Header">
+              <stringProp name="Header.name">User-Agent</stringProp>
+              <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36</stringProp>
+            </elementProp>
+            <elementProp name="Accept" elementType="Header">
+              <stringProp name="Header.name">Accept</stringProp>
+              <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</stringProp>
+            </elementProp>
+            <elementProp name="Referer" elementType="Header">
+              <stringProp name="Header.name">Referer</stringProp>
+              <stringProp name="Header.value">http://sanbox.xuexi8.tech/index.php?c=Jiaoyan&amp;a=bz_practice&amp;auth_id=174</stringProp>
+            </elementProp>
+            <elementProp name="Accept-Encoding" elementType="Header">
+              <stringProp name="Header.name">Accept-Encoding</stringProp>
+              <stringProp name="Header.value">gzip, deflate</stringProp>
+            </elementProp>
+            <elementProp name="Accept-Language" elementType="Header">
+              <stringProp name="Header.name">Accept-Language</stringProp>
+              <stringProp name="Header.value">zh-CN,zh;q=0.9</stringProp>
+            </elementProp>
+            <elementProp name="Cookie" elementType="Header">
+              <stringProp name="Header.name">Cookie</stringProp>
+              <stringProp name="Header.value">p_h5_upload_u=CC0200A4-65CA-406B-822C-BB53A66245FE; selectedStreamLevel=SD; _bl_uid=k5kvXbqqz3psyme5IlXbl3wabvRd; PHPSESSID=lvqp55no431e4k6occi4c4l3qh; Hm_lvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1598488902,1598508980,1598574824,1598664254; token=; Hm_lpvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1598692962</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="听力理解——主题" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
@@ -9597,7 +9703,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="parentId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">586045</stringProp>
+                <stringProp name="Argument.value">450775</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">parentId</stringProp>
@@ -9890,7 +9996,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="parentId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">586045</stringProp>
+                <stringProp name="Argument.value">450775</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">parentId</stringProp>
@@ -10204,7 +10310,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="parentId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">586045</stringProp>
+                <stringProp name="Argument.value">450775</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">parentId</stringProp>
@@ -10427,7 +10533,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="parentId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">586045</stringProp>
+                <stringProp name="Argument.value">450775</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">parentId</stringProp>
@@ -10611,6 +10717,59 @@ vars.put(&quot;is_topic&quot;,is_topic);
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="练一练Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="Host" elementType="Header">
+              <stringProp name="Header.name">Host</stringProp>
+              <stringProp name="Header.value">sanbox.xuexi8.tech</stringProp>
+            </elementProp>
+            <elementProp name="Connection" elementType="Header">
+              <stringProp name="Header.name">Connection</stringProp>
+              <stringProp name="Header.value">keep-alive</stringProp>
+            </elementProp>
+            <elementProp name="Content-Length" elementType="Header">
+              <stringProp name="Header.name">Content-Length</stringProp>
+              <stringProp name="Header.value">753</stringProp>
+            </elementProp>
+            <elementProp name="Cache-Control" elementType="Header">
+              <stringProp name="Header.name">Cache-Control</stringProp>
+              <stringProp name="Header.value">max-age=0</stringProp>
+            </elementProp>
+            <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+              <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+              <stringProp name="Header.value">1</stringProp>
+            </elementProp>
+            <elementProp name="Content-Type" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+            </elementProp>
+            <elementProp name="User-Agent" elementType="Header">
+              <stringProp name="Header.name">User-Agent</stringProp>
+              <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36</stringProp>
+            </elementProp>
+            <elementProp name="Accept" elementType="Header">
+              <stringProp name="Header.name">Accept</stringProp>
+              <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</stringProp>
+            </elementProp>
+            <elementProp name="Referer" elementType="Header">
+              <stringProp name="Header.name">Referer</stringProp>
+              <stringProp name="Header.value">http://sanbox.xuexi8.tech/index.php?c=Jiaoyan&amp;a=bz_practice&amp;auth_id=174</stringProp>
+            </elementProp>
+            <elementProp name="Accept-Encoding" elementType="Header">
+              <stringProp name="Header.name">Accept-Encoding</stringProp>
+              <stringProp name="Header.value">gzip, deflate</stringProp>
+            </elementProp>
+            <elementProp name="Accept-Language" elementType="Header">
+              <stringProp name="Header.name">Accept-Language</stringProp>
+              <stringProp name="Header.value">zh-CN,zh;q=0.9</stringProp>
+            </elementProp>
+            <elementProp name="Cookie" elementType="Header">
+              <stringProp name="Header.name">Cookie</stringProp>
+              <stringProp name="Header.value">p_h5_upload_u=CC0200A4-65CA-406B-822C-BB53A66245FE; selectedStreamLevel=SD; _bl_uid=k5kvXbqqz3psyme5IlXbl3wabvRd; PHPSESSID=lvqp55no431e4k6occi4c4l3qh; Hm_lvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1598488902,1598508980,1598574824,1598664254; token=; Hm_lpvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1598692962</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="添加材料题" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
@@ -10861,7 +11020,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="parentId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">586087</stringProp>
+                <stringProp name="Argument.value">450781</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">parentId</stringProp>
@@ -11154,7 +11313,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="parentId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">586087</stringProp>
+                <stringProp name="Argument.value">450781</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">parentId</stringProp>
@@ -11468,7 +11627,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="parentId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">586087</stringProp>
+                <stringProp name="Argument.value">450781</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">parentId</stringProp>
@@ -11691,7 +11850,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="parentId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">586087</stringProp>
+                <stringProp name="Argument.value">450781</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">parentId</stringProp>
