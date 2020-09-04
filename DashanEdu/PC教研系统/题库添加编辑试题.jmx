@@ -203,7 +203,7 @@ prev.setResponseData(outBuffer.toString());</stringProp>
         </collectionProp>
       </HeaderManager>
       <hashTree/>
-      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults—测试环境" enabled="true">
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults—测试环境" enabled="false">
         <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
           <collectionProp name="Arguments.arguments"/>
         </elementProp>
@@ -217,7 +217,7 @@ prev.setResponseData(outBuffer.toString());</stringProp>
         <stringProp name="HTTPSampler.response_timeout"></stringProp>
       </ConfigTestElement>
       <hashTree/>
-      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager_测试环境" enabled="true">
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager_测试环境" enabled="false">
         <collectionProp name="HeaderManager.headers">
           <elementProp name="Host" elementType="Header">
             <stringProp name="Header.name">Host</stringProp>
@@ -265,7 +265,7 @@ prev.setResponseData(outBuffer.toString());</stringProp>
           </elementProp>
           <elementProp name="Cookie" elementType="Header">
             <stringProp name="Header.name">Cookie</stringProp>
-            <stringProp name="Header.value">p_h5_upload_u=CC0200A4-65CA-406B-822C-BB53A66245FE; selectedStreamLevel=SD; _bl_uid=k5kvXbqqz3psyme5IlXbl3wabvRd; PHPSESSID=fv02s9uicv00mldp21ls2sqpob; Hm_lvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1598403944,1598488902,1598508980,1598574824; Hm_lpvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1598584177</stringProp>
+            <stringProp name="Header.value">p_h5_upload_u=CC0200A4-65CA-406B-822C-BB53A66245FE; selectedStreamLevel=SD; _bl_uid=k5kvXbqqz3psyme5IlXbl3wabvRd; PHPSESSID=sri92d1vaovdj83rnogo1u3tbc; Hm_lvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1599125650,1599130416,1599131785,1599179733; Hm_lpvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1599182951</stringProp>
           </elementProp>
         </collectionProp>
       </HeaderManager>
@@ -476,6 +476,23 @@ vars.put(&quot;is_topic&quot;,is_topic);
         <stringProp name="TestPlan.comments">q_status: 0:未提审 1:审核中 2已上线 3已下线 4已删除</stringProp>
       </ThreadGroup>
       <hashTree>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="自定义变量" enabled="true">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="content" elementType="Argument">
+              <stringProp name="Argument.name">content</stringProp>
+              <stringProp name="Argument.value">试题版本号测试</stringProp>
+              <stringProp name="Argument.desc">false</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="q_status" elementType="Argument">
+              <stringProp name="Argument.name">q_status</stringProp>
+              <stringProp name="Argument.value">2</stringProp>
+              <stringProp name="Argument.desc">试题是否发布</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="填空题（客观）" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
@@ -544,7 +561,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="q_status" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">0</stringProp>
+                <stringProp name="Argument.value">${q_status}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">q_status</stringProp>
@@ -670,7 +687,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="stem" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">&lt;p&gt;${__time(yyyy-MM-dd HH:mm:ss,)}【我的试题】手动添加填空题，正确答案是【【手工】】&lt;/p&gt;</stringProp>
+                <stringProp name="Argument.value">&lt;p&gt;${__time(yyyy-MM-dd HH:mm:ss,)}【我的试题-${content}】手动添加填空题，正确答案是【【手工】】&lt;/p&gt;</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">stem</stringProp>
@@ -767,7 +784,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="q_status" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">0</stringProp>
+                <stringProp name="Argument.value">${q_status}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">q_status</stringProp>
@@ -886,7 +903,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="stem" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">&lt;p&gt;${__time(yyyy-MM-dd HH:mm:ss,)}【我的试题】接口自动化测试添加单选题&lt;/p&gt;</stringProp>
+                <stringProp name="Argument.value">&lt;p&gt;${__time(yyyy-MM-dd HH:mm:ss,)}【我的试题-${content}】接口自动化测试添加单选题&lt;/p&gt;</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">stem</stringProp>
@@ -1046,7 +1063,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="q_status" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">0</stringProp>
+                <stringProp name="Argument.value">${q_status}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">q_status</stringProp>
@@ -1235,7 +1252,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="stem" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">&lt;p&gt;${__time(yyyy-MM-dd HH:mm:ss,)}【我的试题】通过接口添加多选题&lt;/p&gt;</stringProp>
+                <stringProp name="Argument.value">&lt;p&gt;${__time(yyyy-MM-dd HH:mm:ss,)}【我的试题-${content}】通过接口添加多选题&lt;/p&gt;</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">stem</stringProp>
@@ -1479,7 +1496,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="stem" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">&lt;p&gt;${__time(yyyy-MM-dd HH:mm:ss,)}  【我的试题】通过接口添加判断题&lt;/p&gt;</stringProp>
+                <stringProp name="Argument.value">&lt;p&gt;${__time(yyyy-MM-dd HH:mm:ss,)}  【我的试题-${content}】通过接口添加判断题&lt;/p&gt;</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">stem</stringProp>
@@ -1576,7 +1593,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="q_status" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">0</stringProp>
+                <stringProp name="Argument.value">${q_status}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">q_status</stringProp>
@@ -1695,7 +1712,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="stem" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">&lt;p&gt;${__time(yyyy-MM-dd HH:mm:ss,)}  【我的试题】通过接口添加问答题，问答题题干：接口测试的目的&lt;/p&gt;</stringProp>
+                <stringProp name="Argument.value">&lt;p&gt;${__time(yyyy-MM-dd HH:mm:ss,)}  【我的试题-${content}】通过接口添加问答题，问答题题干：接口测试的目的&lt;/p&gt;</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">stem</stringProp>
@@ -1806,7 +1823,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="q_status" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">0</stringProp>
+                <stringProp name="Argument.value">${q_status}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">q_status</stringProp>
@@ -1931,7 +1948,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="stem" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${__time(yyyy-MM-dd HH:mm:ss,)}+【我的试题】 hello songjian</stringProp>
+                <stringProp name="Argument.value">${__time(yyyy-MM-dd HH:mm:ss,)}+【我的试题-${content}】 hello songjian</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">stem</stringProp>
@@ -2055,7 +2072,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="q_status" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">0</stringProp>
+                <stringProp name="Argument.value">${q_status}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">q_status</stringProp>
@@ -2174,7 +2191,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="stem" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">&lt;p&gt;${__time(yyyy-MM-dd HH:mm:ss,)} 【我的试题】通过接口添加完型填空题&lt;/p&gt;</stringProp>
+                <stringProp name="Argument.value">&lt;p&gt;${__time(yyyy-MM-dd HH:mm:ss,)} 【我的试题-${content}】通过接口添加完型填空题&lt;/p&gt;</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">stem</stringProp>
@@ -2278,7 +2295,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="q_status" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">0</stringProp>
+                <stringProp name="Argument.value">${q_status}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">q_status</stringProp>
@@ -2404,7 +2421,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="stem" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">&lt;p&gt;${__time(yyyy-MM-dd HH:mm:ss,)}【我的试题】通过接口添加填空题（主观），下面描述正确的是【【A|B】】&lt;/p&gt;&lt;p&gt;A：java是最好的语言&lt;/p&gt;&lt;p&gt;B：PHP是最好的语言&lt;/p&gt;&lt;p&gt;C：python第一&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;</stringProp>
+                <stringProp name="Argument.value">&lt;p&gt;${__time(yyyy-MM-dd HH:mm:ss,)}【我的试题-${content}】通过接口添加填空题（主观），下面描述正确的是【【A|B】】&lt;/p&gt;&lt;p&gt;A：java是最好的语言&lt;/p&gt;&lt;p&gt;B：PHP是最好的语言&lt;/p&gt;&lt;p&gt;C：python第一&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">stem</stringProp>
@@ -2501,7 +2518,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="q_status" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">0</stringProp>
+                <stringProp name="Argument.value">${q_status}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">q_status</stringProp>
@@ -2620,7 +2637,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="stem" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">&lt;p&gt;${__time(yyyy-MM-dd HH:mm:ss)}【我的试题】通过接口添加作文题:  请以“疫情期间，难忘那份感动”为题，写一篇记叙文。要求：①不少于600字。 ②文中不得出现真实的人名、校名等，如果需要，请用“xx”代替。 &lt;/p&gt;</stringProp>
+                <stringProp name="Argument.value">&lt;p&gt;${__time(yyyy-MM-dd HH:mm:ss)}【我的试题-${content}】通过接口添加作文题:  请以“疫情期间，难忘那份感动”为题，写一篇记叙文。要求：①不少于600字。 ②文中不得出现真实的人名、校名等，如果需要，请用“xx”代替。 &lt;/p&gt;</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">stem</stringProp>
@@ -2724,7 +2741,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="q_status" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">0</stringProp>
+                <stringProp name="Argument.value">${q_status}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">q_status</stringProp>
@@ -2843,7 +2860,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="stem" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">&lt;p&gt;${__time(yyyy-MM-dd HH:mm:ss,)}【我的试题】通过接口添加默写题：&lt;/p&gt;&lt;p&gt;在下面的横线上填写相应的句子。 &amp;nbsp;&lt;/p&gt;&lt;p&gt;____________，似曾相识燕归来。___________（晏殊《浣溪沙》） &amp;nbsp;&lt;/p&gt;</stringProp>
+                <stringProp name="Argument.value">&lt;p&gt;${__time(yyyy-MM-dd HH:mm:ss,)}【我的试题-${content}】通过接口添加默写题：&lt;/p&gt;&lt;p&gt;在下面的横线上填写相应的句子。 &amp;nbsp;&lt;/p&gt;&lt;p&gt;____________，似曾相识燕归来。___________（晏殊《浣溪沙》） &amp;nbsp;&lt;/p&gt;</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">stem</stringProp>
@@ -2953,7 +2970,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="q_status" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">0</stringProp>
+                <stringProp name="Argument.value">${q_status}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">q_status</stringProp>
@@ -3072,7 +3089,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="stem" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">&lt;p&gt;${__time(yyyy-MM-dd HH:mm:ss,)}【我的试题】 接口添加背诵题：&lt;/p&gt;&lt;p&gt;请背诵《水调歌头·明月几时有&amp;nbsp;》这首诗词&lt;/p&gt;</stringProp>
+                <stringProp name="Argument.value">&lt;p&gt;${__time(yyyy-MM-dd HH:mm:ss,)}【我的试题-${content}】 接口添加背诵题：&lt;/p&gt;&lt;p&gt;请背诵《水调歌头·明月几时有&amp;nbsp;》这首诗词&lt;/p&gt;</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">stem</stringProp>
@@ -3148,7 +3165,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="q_status" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">0</stringProp>
+                <stringProp name="Argument.value">${q_status}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">q_status</stringProp>
@@ -3253,7 +3270,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="stem" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">&lt;p&gt;${__time(yyyy-MM-dd HH:mm:ss,)}【我的试题】接口添加解答题接口添加解答题接口添加解答题接口添加解答题接口添加解答题接口添加解答题接口添加解答题&lt;/p&gt; </stringProp>
+                <stringProp name="Argument.value">&lt;p&gt;${__time(yyyy-MM-dd HH:mm:ss,)}【我的试题-${content}】接口添加解答题接口添加解答题接口添加解答题接口添加解答题接口添加解答题接口添加解答题接口添加解答题&lt;/p&gt; </stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">stem</stringProp>
@@ -3392,7 +3409,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="q_status" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">0</stringProp>
+                <stringProp name="Argument.value">${q_status}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">q_status</stringProp>
@@ -3511,7 +3528,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="stem" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">&lt;p&gt;${__time(yyyy-MM-dd HH:mm:ss,)}【我的试题】接口添加综合运用试题&lt;/p&gt;&lt;p&gt;试题题干：综合运用试题&lt;/p&gt;</stringProp>
+                <stringProp name="Argument.value">&lt;p&gt;${__time(yyyy-MM-dd HH:mm:ss,)}【我的试题-${content}】接口添加综合运用试题&lt;/p&gt;&lt;p&gt;试题题干：综合运用试题&lt;/p&gt;</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">stem</stringProp>
@@ -3587,7 +3604,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="stem" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">&lt;p&gt;${__time(yyyy-MM-dd HH:mm:ss,)}【我的试题】接口添加试题：实验探究题&lt;/p&gt;&lt;p&gt;试题题干：实验探究题&lt;/p&gt;</stringProp>
+                <stringProp name="Argument.value">&lt;p&gt;${__time(yyyy-MM-dd HH:mm:ss,)}【我的试题-${content}】接口添加试题：实验探究题&lt;/p&gt;&lt;p&gt;试题题干：实验探究题&lt;/p&gt;</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">stem</stringProp>
@@ -3629,7 +3646,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="q_status" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">0</stringProp>
+                <stringProp name="Argument.value">${q_status}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">q_status</stringProp>
@@ -3810,7 +3827,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="stem" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">&lt;p&gt;${__time(yyyy-MM-dd HH:mm:ss,)}【我的试题】接口添加试题：证明题&lt;/p&gt;&lt;p&gt;试题题干：证明题&lt;/p&gt;</stringProp>
+                <stringProp name="Argument.value">&lt;p&gt;${__time(yyyy-MM-dd HH:mm:ss,)}【我的试题-${content}】接口添加试题：证明题&lt;/p&gt;&lt;p&gt;试题题干：证明题&lt;/p&gt;</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">stem</stringProp>
@@ -3852,7 +3869,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="q_status" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">0</stringProp>
+                <stringProp name="Argument.value">${q_status}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">q_status</stringProp>
@@ -19683,6 +19700,150 @@ vars.put(&quot;is_topic&quot;,is_topic);
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="Host" elementType="Header">
+              <stringProp name="Header.name">Host</stringProp>
+              <stringProp name="Header.value">sanbox-interface.xuexi8.net</stringProp>
+            </elementProp>
+            <elementProp name="DO" elementType="Header">
+              <stringProp name="Header.name">DO</stringProp>
+              <stringProp name="Header.value">2F5869E7-1639-40E0-9262-3A5F76B51C8E</stringProp>
+            </elementProp>
+            <elementProp name="Accept" elementType="Header">
+              <stringProp name="Header.name">Accept</stringProp>
+              <stringProp name="Header.value">*/*</stringProp>
+            </elementProp>
+            <elementProp name="Content-Encoding" elementType="Header">
+              <stringProp name="Header.name">Content-Encoding</stringProp>
+              <stringProp name="Header.value">gzip</stringProp>
+            </elementProp>
+            <elementProp name="DSS" elementType="Header">
+              <stringProp name="Header.name">DSS</stringProp>
+              <stringProp name="Header.value">eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IkdXaEJiZXdIWWQifQ.eyJpc3MiOiJodHRwczpcL1wvaW50ZXJmYWNlLnh1ZXhpOC5uZXRcLyIsImF1ZCI6Imh0dHBzOlwvXC9pbnRlcmZhY2UueHVleGk4Lm5ldFwvIiwianRpIjoiR1doQmJld0hZZCIsImlhdCI6MTU5OTIwMzU2NSwibmJmIjoxNTk5MjAzNTY1LCJleHAiOjE1OTkyMDM4NjUsInVpZCI6IjE1MTc5MSIsInVzZXIiOnsiaWQiOiIxNTE3OTEiLCJ0cnVlX25hbWUiOiJcdTY1Yjk2Iiwic3R1ZGVudF9ubyI6IjAwMDAwMDE5ODIiLCJ1X3Bob25lIjoiMTc2MTA4MzE4ODYiLCJncmFkZSI6IjU5IiwieF9pZCI6IjQ3NDI1NyIsInhfc190eXBlIjoiMSIsInN0YXR1cyI6IjEiLCJuZXdfYXZhdGFyIjoiaHR0cHM6XC9cL3h1ZXhpOC5vc3MtY24tYmVpamluZy5hbGl5dW5jcy5jb21cLzE1ODIyNTk4NTA0NjkucG5nP3gtb3NzLXByb2Nlc3M9c3R5bGVcL3RodW1iNiIsInNleCI6IjIiLCJzY2hvb2wiOiIiLCJncmFkZV9uYW1lIjoiXHU0ZTAwXHU1ZTc0XHU3ZWE3IiwiaXNfcnVsZSI6IjEifX0.mCsehSeZriUafdaC6b5l2cD8ICNhrVcVclw44F-q-Yg</stringProp>
+            </elementProp>
+            <elementProp name="LONGITUDE" elementType="Header">
+              <stringProp name="Header.name">LONGITUDE</stringProp>
+              <stringProp name="Header.value">113.712179</stringProp>
+            </elementProp>
+            <elementProp name="APPCLIENT" elementType="Header">
+              <stringProp name="Header.name">APPCLIENT</stringProp>
+              <stringProp name="Header.value">IOS</stringProp>
+            </elementProp>
+            <elementProp name="LATITUDE" elementType="Header">
+              <stringProp name="Header.name">LATITUDE</stringProp>
+              <stringProp name="Header.value">34.796288</stringProp>
+            </elementProp>
+            <elementProp name="APPVERSION" elementType="Header">
+              <stringProp name="Header.name">APPVERSION</stringProp>
+              <stringProp name="Header.value">6.3.0</stringProp>
+            </elementProp>
+            <elementProp name="Accept-Language" elementType="Header">
+              <stringProp name="Header.name">Accept-Language</stringProp>
+              <stringProp name="Header.value">zh-Hans-CN;q=1</stringProp>
+            </elementProp>
+            <elementProp name="Accept-Encoding" elementType="Header">
+              <stringProp name="Header.name">Accept-Encoding</stringProp>
+              <stringProp name="Header.value">gzip, deflate, br</stringProp>
+            </elementProp>
+            <elementProp name="Content-Type" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/json;charset=utf-8</stringProp>
+            </elementProp>
+            <elementProp name="DST" elementType="Header">
+              <stringProp name="Header.name">DST</stringProp>
+              <stringProp name="Header.value">F60BD7E0FEFD50E8CFD61F8C236AAAA4</stringProp>
+            </elementProp>
+            <elementProp name="Content-Length" elementType="Header">
+              <stringProp name="Header.name">Content-Length</stringProp>
+              <stringProp name="Header.value">213</stringProp>
+            </elementProp>
+            <elementProp name="User-Agent" elementType="Header">
+              <stringProp name="Header.name">User-Agent</stringProp>
+              <stringProp name="Header.value">xue xi8/6.3.0 (iPhone; iOS 13.4.1; Scale/3.00)</stringProp>
+            </elementProp>
+            <elementProp name="Connection" elementType="Header">
+              <stringProp name="Header.name">Connection</stringProp>
+              <stringProp name="Header.value">keep-alive</stringProp>
+            </elementProp>
+            <elementProp name="Cookie" elementType="Header">
+              <stringProp name="Header.name">Cookie</stringProp>
+              <stringProp name="Header.value">PHPSESSID=7lm4ei67rp2d3q09lou6oobjvl</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="teacher_chapter_id" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">16994</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">teacher_chapter_id</stringProp>
+              </elementProp>
+              <elementProp name="course_id" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">10663</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">course_id</stringProp>
+              </elementProp>
+              <elementProp name="flag" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">1</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">flag</stringProp>
+              </elementProp>
+              <elementProp name="do_type" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">homework</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">do_type</stringProp>
+              </elementProp>
+              <elementProp name="student_id" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">151791</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">student_id</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">sanbox-interface.xuexi8.net</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/jiekou2/restful/question/list</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">{&quot;teacher_chapter_id&quot;:&quot;16994&quot;,&quot;course_id&quot;:&quot;10663&quot;,&quot;flag&quot;:&quot;1&quot;,&quot;do_type&quot;:&quot;homework&quot;,&quot;student_id&quot;:&quot;151791&quot;}</stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
       </hashTree>
