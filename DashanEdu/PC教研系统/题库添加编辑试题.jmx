@@ -136,7 +136,7 @@ prev.setResponseData(outBuffer.toString());</stringProp>
         <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
       </BeanShellAssertion>
       <hashTree/>
-      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults—Pre环境" enabled="false">
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults—Pre环境" enabled="true">
         <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
           <collectionProp name="Arguments.arguments"/>
         </elementProp>
@@ -150,7 +150,7 @@ prev.setResponseData(outBuffer.toString());</stringProp>
         <stringProp name="HTTPSampler.response_timeout"></stringProp>
       </ConfigTestElement>
       <hashTree/>
-      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager_Pre环境" enabled="false">
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager_Pre环境" enabled="true">
         <collectionProp name="HeaderManager.headers">
           <elementProp name="Host" elementType="Header">
             <stringProp name="Header.name">Host</stringProp>
@@ -198,12 +198,12 @@ prev.setResponseData(outBuffer.toString());</stringProp>
           </elementProp>
           <elementProp name="Cookie" elementType="Header">
             <stringProp name="Header.name">Cookie</stringProp>
-            <stringProp name="Header.value">p_h5_upload_u=23067789-67FB-4CF1-844A-6C23F4156010; selectedStreamLevel=LD; _bl_uid=gUk5Ccv6hp0gd4gmXa0IrUy94z3n; Hm_lvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1597192566,1597213329,1597215490,1597279052; PHPSESSID=kjdnuv4jog4lv1416aert6soe7; laravel_session=DovXCitl6vPvyTrTFMNsEJk7FuAuYDcse6mQunpB; Hm_lpvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1597304238</stringProp>
+            <stringProp name="Header.value">p_h5_upload_u=23067789-67FB-4CF1-844A-6C23F4156010; selectedStreamLevel=LD; _bl_uid=gUk5Ccv6hp0gd4gmXa0IrUy94z3n; Hm_lvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1599179733,1599439723,1599525579,1599611467; PHPSESSID=53gh86i7u6jarq3756f5dbm2l2; laravel_session=Ki9jKXEhp19ivx6HizwXELK2tOfb5jlVeOjR0MIn; Hm_lpvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1599615894</stringProp>
           </elementProp>
         </collectionProp>
       </HeaderManager>
       <hashTree/>
-      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults—测试环境" enabled="true">
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults—测试环境" enabled="false">
         <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
           <collectionProp name="Arguments.arguments"/>
         </elementProp>
@@ -217,7 +217,7 @@ prev.setResponseData(outBuffer.toString());</stringProp>
         <stringProp name="HTTPSampler.response_timeout"></stringProp>
       </ConfigTestElement>
       <hashTree/>
-      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager_测试环境" enabled="true">
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager_测试环境" enabled="false">
         <collectionProp name="HeaderManager.headers">
           <elementProp name="Host" elementType="Header">
             <stringProp name="Header.name">Host</stringProp>
@@ -265,7 +265,7 @@ prev.setResponseData(outBuffer.toString());</stringProp>
           </elementProp>
           <elementProp name="Cookie" elementType="Header">
             <stringProp name="Header.name">Cookie</stringProp>
-            <stringProp name="Header.value">p_h5_upload_u=CC0200A4-65CA-406B-822C-BB53A66245FE; selectedStreamLevel=SD; _bl_uid=k5kvXbqqz3psyme5IlXbl3wabvRd; PHPSESSID=g1tv7ep3a97nkj2vad8viou3ve; Hm_lvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1599130416,1599131785,1599179733,1599439723; Hm_lpvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1599467063</stringProp>
+            <stringProp name="Header.value">p_h5_upload_u=CC0200A4-65CA-406B-822C-BB53A66245FE; selectedStreamLevel=SD; _bl_uid=k5kvXbqqz3psyme5IlXbl3wabvRd; PHPSESSID=t67ps64k7t03tk2umaqmk7htf2; Hm_lvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1599131785,1599179733,1599439723,1599525579; token=; Hm_lpvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1599549416</stringProp>
           </elementProp>
         </collectionProp>
       </HeaderManager>
@@ -342,11 +342,12 @@ prev.setResponseData(outBuffer.toString());</stringProp>
       <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="HttpCodeStatus断言" enabled="true">
         <collectionProp name="Asserion.test_strings">
           <stringProp name="-1606201635">HTTP/1.1 200 OK</stringProp>
+          <stringProp name="103172738">HTTP/1.1 302</stringProp>
         </collectionProp>
         <stringProp name="Assertion.custom_message"></stringProp>
         <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
         <boolProp name="Assertion.assume_success">false</boolProp>
-        <intProp name="Assertion.test_type">16</intProp>
+        <intProp name="Assertion.test_type">48</intProp>
         <stringProp name="Assertion.scope">all</stringProp>
       </ResponseAssertion>
       <hashTree/>
@@ -480,7 +481,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
           <collectionProp name="Arguments.arguments">
             <elementProp name="content" elementType="Argument">
               <stringProp name="Argument.name">content</stringProp>
-              <stringProp name="Argument.value">试题版本号测试</stringProp>
+              <stringProp name="Argument.value">1</stringProp>
               <stringProp name="Argument.desc">false</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
@@ -5546,7 +5547,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
           <collectionProp name="Arguments.arguments">
             <elementProp name="parentId" elementType="Argument">
               <stringProp name="Argument.name">parentId</stringProp>
-              <stringProp name="Argument.value">451032</stringProp>
+              <stringProp name="Argument.value">451096</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
@@ -7056,7 +7057,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
           <collectionProp name="Arguments.arguments">
             <elementProp name="parentId" elementType="Argument">
               <stringProp name="Argument.name">parentId</stringProp>
-              <stringProp name="Argument.value">451032</stringProp>
+              <stringProp name="Argument.value">451102</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
