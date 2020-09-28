@@ -162,7 +162,7 @@ prev.setResponseData(outBuffer.toString());</stringProp>
         <stringProp name="variableNames">phone,password,student_id,student_name,x_id,grade,student_no,school</stringProp>
       </CSVDataSet>
       <hashTree/>
-      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults—生产环境" enabled="true">
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults—生产环境" enabled="false">
         <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
           <collectionProp name="Arguments.arguments"/>
         </elementProp>
@@ -176,7 +176,7 @@ prev.setResponseData(outBuffer.toString());</stringProp>
         <stringProp name="HTTPSampler.response_timeout"></stringProp>
       </ConfigTestElement>
       <hashTree/>
-      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config-生产环境" enabled="true">
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config-生产环境" enabled="false">
         <stringProp name="delimiter">,</stringProp>
         <stringProp name="fileEncoding">GB2312</stringProp>
         <stringProp name="filename">/useraccount-release.csv</stringProp>
@@ -187,6 +187,20 @@ prev.setResponseData(outBuffer.toString());</stringProp>
         <boolProp name="stopThread">false</boolProp>
         <stringProp name="variableNames">phone,password,student_id,student_name,x_id,grade,student_no,school</stringProp>
       </CSVDataSet>
+      <hashTree/>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults—预生产环境" enabled="true">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <stringProp name="HTTPSampler.domain">pre-interface.xuexi8.net</stringProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <stringProp name="HTTPSampler.protocol">https</stringProp>
+        <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+        <stringProp name="HTTPSampler.path"></stringProp>
+        <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+        <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+        <stringProp name="HTTPSampler.response_timeout"></stringProp>
+      </ConfigTestElement>
       <hashTree/>
       <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
@@ -2136,17 +2150,73 @@ prev.setStopThread(true);
       <hashTree>
         <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
           <collectionProp name="HeaderManager.headers">
-            <elementProp name="" elementType="Header">
-              <stringProp name="Header.name">DSS</stringProp>
-              <stringProp name="Header.value">d408be3ae2ab9d94f03b7dc17b36838d928b785450ad262b7cbcd92244a012d9</stringProp>
+            <elementProp name="Host" elementType="Header">
+              <stringProp name="Header.name">Host</stringProp>
+              <stringProp name="Header.value">pre-interface.xuexi8.net</stringProp>
             </elementProp>
-            <elementProp name="" elementType="Header">
+            <elementProp name="DO" elementType="Header">
+              <stringProp name="Header.name">DO</stringProp>
+              <stringProp name="Header.value">2F5869E7-1639-40E0-9262-3A5F76B51C8E</stringProp>
+            </elementProp>
+            <elementProp name="Accept" elementType="Header">
+              <stringProp name="Header.name">Accept</stringProp>
+              <stringProp name="Header.value">*/*</stringProp>
+            </elementProp>
+            <elementProp name="Content-Encoding" elementType="Header">
+              <stringProp name="Header.name">Content-Encoding</stringProp>
+              <stringProp name="Header.value">gzip</stringProp>
+            </elementProp>
+            <elementProp name="DSS" elementType="Header">
+              <stringProp name="Header.name">DSS</stringProp>
+              <stringProp name="Header.value">eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IkhWSHBsa2FndlkifQ.eyJpc3MiOiJodHRwczpcL1wvaW50ZXJmYWNlLnh1ZXhpOC5uZXRcLyIsImF1ZCI6Imh0dHBzOlwvXC9pbnRlcmZhY2UueHVleGk4Lm5ldFwvIiwianRpIjoiSFZIcGxrYWd2WSIsImlhdCI6MTYwMDc2NTM5MiwibmJmIjoxNjAwNzY1MzkyLCJleHAiOjE2MDEzNzAxOTIsInVpZCI6IjE5MzQzMCIsInVzZXIiOnsiaWQiOiIxOTM0MzAiLCJ0cnVlX25hbWUiOiJcdTY1YjkiLCJzdHVkZW50X25vIjoiMDAwMDIxNDc5NiIsInVfcGhvbmUiOiIxNzYxMDgzMTg4MyIsImdyYWRlIjoiMzIiLCJ4X2lkIjoiMTg2Mjc2IiwieF9zX3R5cGUiOiIxIiwic3RhdHVzIjoiMSIsIm5ld19hdmF0YXIiOiJodHRwczpcL1wveHVleGk4Lm9zcy1jbi1iZWlqaW5nLmFsaXl1bmNzLmNvbVwvdXBsb2FkXC9oZWFkcGljXC8yMjRlOWIyZTVmNmYyOTA4ZDU2YTZmOGFiZjQ3YjZhYy5qcGc_eC1vc3MtcHJvY2Vzcz1zdHlsZVwvdGh1bWI2Iiwic2V4IjoiMSIsInNjaG9vbCI6Ilx1OTBkMVx1NWRkZVx1NGUwMFx1NGUyZCIsImdyYWRlX25hbWUiOiJcdTRlMDlcdTVlNzRcdTdlYTciLCJpc19ydWxlIjoiMSJ9fQ.1J2GEW2g9fDutEhyCN3gzEjNwyTzVp29NRs1TOJjNY8</stringProp>
+            </elementProp>
+            <elementProp name="APPVERSION" elementType="Header">
               <stringProp name="Header.name">APPVERSION</stringProp>
               <stringProp name="Header.value">6.3.0</stringProp>
             </elementProp>
+            <elementProp name="LONGITUDE" elementType="Header">
+              <stringProp name="Header.name">LONGITUDE</stringProp>
+              <stringProp name="Header.value">113.712308</stringProp>
+            </elementProp>
+            <elementProp name="LATITUDE" elementType="Header">
+              <stringProp name="Header.name">LATITUDE</stringProp>
+              <stringProp name="Header.value">34.796167</stringProp>
+            </elementProp>
+            <elementProp name="APPCLIENT" elementType="Header">
+              <stringProp name="Header.name">APPCLIENT</stringProp>
+              <stringProp name="Header.value">IOS</stringProp>
+            </elementProp>
+            <elementProp name="Accept-Language" elementType="Header">
+              <stringProp name="Header.name">Accept-Language</stringProp>
+              <stringProp name="Header.value">zh-Hans-CN;q=1</stringProp>
+            </elementProp>
+            <elementProp name="Accept-Encoding" elementType="Header">
+              <stringProp name="Header.name">Accept-Encoding</stringProp>
+              <stringProp name="Header.value">gzip, deflate, br</stringProp>
+            </elementProp>
             <elementProp name="Content-Type" elementType="Header">
               <stringProp name="Header.name">Content-Type</stringProp>
-              <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+              <stringProp name="Header.value">application/json</stringProp>
+            </elementProp>
+            <elementProp name="DST" elementType="Header">
+              <stringProp name="Header.name">DST</stringProp>
+              <stringProp name="Header.value">C84CC909694848658DFD3E76E7A50447</stringProp>
+            </elementProp>
+            <elementProp name="Content-Length" elementType="Header">
+              <stringProp name="Header.name">Content-Length</stringProp>
+              <stringProp name="Header.value">209</stringProp>
+            </elementProp>
+            <elementProp name="User-Agent" elementType="Header">
+              <stringProp name="Header.name">User-Agent</stringProp>
+              <stringProp name="Header.value">xue xi8/6.3.0 (iPhone; iOS 14.0; Scale/3.00)</stringProp>
+            </elementProp>
+            <elementProp name="Connection" elementType="Header">
+              <stringProp name="Header.name">Connection</stringProp>
+              <stringProp name="Header.value">keep-alive</stringProp>
+            </elementProp>
+            <elementProp name="Cookie" elementType="Header">
+              <stringProp name="Header.name">Cookie</stringProp>
+              <stringProp name="Header.value">PHPSESSID=o4lt2hk29v14p7t4es1kp9bsab; _bl_uid=11k32fFnd5CkX5lXO71dd0q4q3Lh</stringProp>
             </elementProp>
           </collectionProp>
         </HeaderManager>
@@ -2403,46 +2473,17 @@ prev.setStopThread(true);
         </HTTPSamplerProxy>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="试题列表" enabled="true">
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
-              <elementProp name="teacher_chapter_id" elementType="HTTPArgument">
+              <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">16988</stringProp>
+                <stringProp name="Argument.value">{&quot;cbckey&quot;:&quot;GfYC7u8LI2G4s\/F97DXfqJyigUvOJysOOY5x0FUT0\/1e+XEYmWYZz1hXzzkynFaQAxjDEddHromf3l9SwwJ\/le3Dx\/yHBj+B7llX5lhkmakMxX9m4kemDtrc1nepDiIpRnwUNCx0lR4oqiAoJ6N7mU4n+W6Jj4yOiqSCx4moNxlp4PsdheqNrPdJxvgdAzNc&quot;}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">teacher_chapter_id</stringProp>
-              </elementProp>
-              <elementProp name="course_id" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">10663</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">course_id</stringProp>
-              </elementProp>
-              <elementProp name="flag" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">1</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">flag</stringProp>
-              </elementProp>
-              <elementProp name="do_type" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">homework</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">do_type</stringProp>
-              </elementProp>
-              <elementProp name="student_id" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">151791</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">student_id</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">sanbox-interface.xuexi8.net</stringProp>
+          <stringProp name="HTTPSampler.domain">pre-interface.xuexi8.net</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
