@@ -1,0 +1,9 @@
+type,stem,analysis,answer,score
+single_choice,<p>$$\sin x^2+\cos x^2=()$$</p>,<p>$$\sin x^2+\cos x^2=1$$</p>,0,2
+single_choice,<p>$$\alpha+\beta-\gamma\times\delta\div\epsilon&gt;\varepsilon&lt;\zeta\ge\eta\le\theta\ne\vartheta\pm\iota$$</p>,<p>找出一样的公式</p>,0,2
+single_choice,<p>$$\sin\alpha/\cos\alpha!=()$$</p>,<p>$$\tan\alpha$$</p>,1,2
+single_choice,<p>$$\frac{\infty}{\infty}&gt;\sqrt{\infty}&gt;\infty^2&gt;\infty_2&gt;\infty\degree$$</p>,<p>$$\sqrt[]{}\infty\infty$$</p>,2,2
+single_choice,<p>$$\overline{}\infty\overline{}\sin\alpha\neq\overrightarrow{}\cos\overrightarrow{}\beta$$</p>,<p>$$\psi\mid \omega\in\Delta\notin\Theta\subset\Lambda$$</p>,3,2
+single_choice,<p>$$\sin\alpha/\cos\alpha$$=</p>,<p>$$\tan\alpha$$</p>,0,2
+single_choice,"<p>函数的单调性：设x1、x2$$\in$$$$\left[\alpha,\beta\right]$$，且x1$$&lt;$$x2，则f(x1)-f(x2)&lt;0$$\Leftrightarrow$$f(x)在$$\left[\alpha,\beta\right]$$上是增函数</p>",<p>函数的单调性</p>,0,2
+single_choice,<p>$$\sin(\alpha+k.2\pi)=\sin\alpha$$，$$\sin2\alpha=2\sin\alpha\cos\alpha$$</p>,<p>$$\sin(\alpha+k.2\pi)=\sin\alpha$$，$$\sin2\alpha=2\sin\alpha\cos\alpha$$</p>,0,2

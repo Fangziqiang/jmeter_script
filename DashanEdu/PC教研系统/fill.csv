@@ -1,0 +1,9 @@
+type,stem,analysis,score
+fill,<p>$$\Xi\supset\Pi\subseteq\Sigma\supseteq\Upsilon\cup\Phi\cap\Psi\phi\Omega\forall$$【【0】】</p>,<p>0<br/></p>,2
+fill,<p>$$\sin\alpha\cdot\cos\beta\cdot\tan\theta$$【【1】】</p>,<p>1</p>,2
+fill,<p>$$\gamma→\alpha←\beta$$厉害不厉害？【【厉害】】</p>,<p>厉害</p>,2
+fill,<p>$$\lambda$$=$$\beta↑$$=$$\chi↓$$=$$@#￥&amp;$$=【【0】】</p>,<p>0</p>,2
+fill,<p>$$\left\{①②③④⑤⑥⑦⑧⑨⑩\right\}$$集合中有【【10】】个元素</p>,<p>10</p>,2
+fill,<p>$$\superset$$【【1】】</p>,<p>1<br/></p>,2
+fill,<p>分数指数幂：$$a^{\frac{n}{m}}$$=$$\sqrt[n]{a^m}$$，请填写这是分数指数【【幂】】</p>,<p>分数指数幂：$$a^{\frac{n}{m}}$$=$$\sqrt[n]{a^m}$$</p>,2
+fill,"<p>向量的平行与垂直$$a//b\Leftrightarrow a=\lambda b$$,$$a\perp b\Leftrightarrow a\cdot b=0$$这是向量的【【平行】】与【【垂直】】公式</p>","<p>向量的平行与垂直$$a//b\Leftrightarrow a=\lambda b$$,$$a\perp b\Leftrightarrow a\cdot b=0$$</p>",2

@@ -1,0 +1,116 @@
+type,stem,analysis,answer,score
+determine,<p>$$\sin\alpha+\cos\beta$$</p>,<p>$$\sin\alpha+\cos\beta$$</p>,1,2
+determine,<p>$$\sin\beta-\cos\beta$$</p>,<p>$$\sin\beta-\cos\beta$$</p>,1,2
+determine,<p>$$\tan\gamma\times\log\delta$$</p>,<p>$$\tan\gamma\times\log\delta$$</p>,1,2
+determine,<p>$$\tan\alpha$$=$$\sin\alpha\div\cos\alpha$$</p>,<p>$$\tan\alpha$$=$$\sin\alpha\div\cos\alpha$$</p>,1,2
+determine,<p>$$\delta$$²âÊÔ</p>,<p>$$\delta$$²âÊÔ</p>,1,2
+determine,<p>$$\epsilon$$²âÊÔ</p>,<p>$$\epsilon$$²âÊÔ</p>,1,2
+determine,<p>$$\varepsilon$$²âÊÔ</p>,<p>$$\varepsilon$$²âÊÔ</p>,1,2
+determine,<p>$$\zeta$$²âÊÔ</p>,<p>$$\zeta$$²âÊÔ</p>,1,2
+determine,<p>$$\eta$$²âÊÔ</p>,<p>$$\eta$$²âÊÔ</p>,1,2
+determine,<p>$$\theta$$²âÊÔ</p>,<p>$$\theta$$²âÊÔ</p>,1,2
+determine,<p>$$\vartheta$$²âÊÔ</p>,<p>$$\vartheta$$²âÊÔ</p>,1,2
+determine,<p>$$\iota$$²âÊÔ</p>,<p>$$\iota$$²âÊÔ</p>,1,2
+determine,<p>$$\kappa$$²âÊÔ</p>,<p>$$\kappa$$²âÊÔ</p>,1,2
+determine,<p>$$\lambda$$²âÊÔ</p>,<p>$$\lambda$$²âÊÔ</p>,1,2
+determine,<p>$$\mu$$²âÊÔ</p>,<p>$$\mu$$²âÊÔ</p>,1,2
+determine,<p>$$\nu$$²âÊÔ</p>,<p>$$\nu$$²âÊÔ</p>,1,2
+determine,<p>$$\xi$$²âÊÔ</p>,<p>$$\xi$$²âÊÔ</p>,1,2
+determine,<p>$$\pi\varpi&gt;$$²âÊÔ</p>,<p>$$\pi\varpi&gt;$$²âÊÔ</p>,1,2
+determine,<p>$$\rho&lt;\varrho$$²âÊÔ</p>,<p>$$\rho&lt;\varrho$$²âÊÔ</p>,1,2
+determine,<p>$$\sigma\geq\varsigma$$²âÊÔ</p>,<p>$$\sigma\geq\varsigma$$²âÊÔ</p>,1,2
+determine,<p>$$\tau\leq\upsilon$$²âÊÔ</p>,<p>$$\tau\leq\upsilon$$²âÊÔ</p>,1,2
+determine,<p>$$\phi\neq\varphi$$²âÊÔ</p>,<p>$$\phi\neq\varphi$$²âÊÔ</p>,1,2
+determine,<p>$$\chi\pm\psi$$²âÊÔ</p>,<p>$$\chi\pm\psi$$²âÊÔ</p>,1,2
+determine,<p>$$\omega\%\Delta$$²âÊÔ</p>,<p>$$\omega\%\Delta$$²âÊÔ</p>,1,2
+determine,<p>$$\Theta$$²âÊÔ</p>,<p>$$\Theta$$²âÊÔ</p>,1,2
+determine,<p>$$\Lambda$$²âÊÔ</p>,<p>$$\Lambda$$²âÊÔ</p>,1,2
+determine,<p>$$\Xi$$²âÊÔ</p>,<p>$$\Xi$$²âÊÔ</p>,1,2
+determine,<p>$$\Pi$$²âÊÔ</p>,<p>$$\Pi$$²âÊÔ</p>,1,2
+determine,<p>$$\Sigma(\alpha_i\beta_j+\mu\nu)$$²âÊÔ</p>,<p>$$\Sigma(\alpha_i\beta_j+\mu\nu)$$²âÊÔ</p>,1,2
+determine,<p>$$\Upsilon(\alpha¡ú\beta)$$²âÊÔ</p>,<p>$$\Upsilon(\alpha¡ú\beta)$$²âÊÔ</p>,1,2
+determine,<p>$$(\frac{\sin\alpha}{\cos\alpha})^2=\frac{\sin^2\alpha}{\cos^2\alpha}$$²âÊÔ</p>,<p>$$(\frac{\sin\alpha}{\cos\alpha})^2=\frac{\sin^2\alpha}{\cos^2\alpha}$$²âÊÔ</p>,1,2
+determine,<p>$$\Omega:\Omega:\Psi:\Phi$$²âÊÔ</p>,<p>$$\Omega:\Omega:\Psi:\Phi$$²âÊÔ</p>,1,2
+determine,<p>$$\left\{¢Ù¢Ú¢Û¢Ü¢İ¢Ş\right\}$$²âÊÔ</p>,<p>$$\left\{¢Ù¢Ú¢Û¢Ü¢İ¢Ş\right\}$$²âÊÔ</p>,1,2
+determine,<p>$$@$$²âÊÔ</p>,<p>$$@$$²âÊÔ</p>,1,2
+determine,<p>$$#$$²âÊÔ</p>,<p>$$#$$²âÊÔ</p>,1,2
+determine,<p>$$£¤$$²âÊÔ</p>,<p>$$£¤$$²âÊÔ</p>,1,2
+determine,<p>$$&amp;$$²âÊÔ</p>,<p>$$&amp;$$²âÊÔ</p>,1,2
+determine,<p>$$\alpha*\beta$$²âÊÔ</p>,<p>$$\alpha*\beta$$²âÊÔ</p>,1,2
+determine,<p>$$\left[\tan\theta\right]¡ú\infty$$²âÊÔ</p>,<p>$$\left[\tan\theta\right]¡ú\infty$$²âÊÔ</p>,1,2
+determine,<p>$$\epsilon¡ú\infty$$²âÊÔ</p>,<p>$$\epsilon¡ú\infty$$²âÊÔ</p>,1,2
+determine,<p>0$$¡û\varepsilon$$²âÊÔ</p>,<p>0$$¡û\varepsilon$$²âÊÔ</p>,1,2
+determine,<p>$$\sin\alpha¡ü$$²âÊÔ</p>,<p>$$\sin\alpha¡ü$$²âÊÔ</p>,1,2
+determine,<p>$$\cos\beta¡ı$$²âÊÔ</p>,<p>$$\cos\beta¡ı$$²âÊÔ</p>,1,2
+determine,<p>$$\sin\alpha&#39;$$²âÊÔ</p>,<p>$$\sin\alpha&#39;$$²âÊÔ</p>,1,2
+determine,<p>$$\tan\theta&quot;$$²âÊÔ</p>,<p>$$\tan\theta&quot;$$²âÊÔ</p>,1,2
+determine,<p>$$\tan\theta$$$$!$$=$$\cos\theta\div\sin\theta$$²âÊÔ</p>,<p>$$\tan\theta$$$$!$$=$$\cos\theta\div\sin\theta$$²âÊÔ</p>,1,2
+determine,<p>$$\alpha¡¢\beta¡¢\gamma$$²âÊÔ</p>,<p>$$\alpha¡¢\beta¡¢\gamma$$²âÊÔ</p>,1,2
+determine,<p>$$\alpha/\beta$$²âÊÔ</p>,<p>$$\alpha/\beta$$²âÊÔ</p>,1,2
+determine,<p>$$\setminus\alpha\setminus$$²âÊÔ</p>,<p>$$\setminus\alpha\setminus$$²âÊÔ</p>,1,2
+determine,<p>$$?$$²âÊÔ</p>,<p>$$?$$²âÊÔ</p>,1,2
+determine,"<p>$$\sin,\cos$$²âÊÔ</p>","<p>$$\sin,\cos$$²âÊÔ</p>",1,2
+determine,<p>$$\subseteq»ò\supseteq$$²âÊÔ</p>,<p>$$\subseteq»ò\supseteq$$²âÊÔ</p>,1,2
+determine,<p>$$\int_1^{100}(n)$$²âÊÔ</p>,<p>$$\int_1^{100}(n)$$²âÊÔ</p>,1,2
+determine,<p>$$\sqrt{\tan\theta}$$²âÊÔ</p>,<p>$$\sqrt{\tan\theta}$$²âÊÔ</p>,1,2
+determine,<p>$$\alpha^{ }\sin\alpha$$²âÊÔ</p>,<p>$$\alpha^{ }\sin\alpha$$²âÊÔ</p>,1,2
+determine,<p>$$\beta_{}\sin\beta$$²âÊÔ</p>,<p>$$\beta_{}\sin\beta$$²âÊÔ</p>,1,2
+determine,<p>$$\alpha=60^{\circ}$$²âÊÔ</p>,<p>$$\alpha=60^{\circ}$$²âÊÔ</p>,1,2
+determine,<p>$$\overline{\alpha\beta}\cdot\alpha\beta$$²âÊÔ</p>,<p>$$\overline{\alpha\beta}\cdot\alpha\beta$$²âÊÔ</p>,1,2
+determine,<p>$$\overrightarrow{\mu\nu}=\mid\mu\nu\mid$$²âÊÔ</p>,<p>$$\overrightarrow{\mu\nu}=\mid\mu\nu\mid$$²âÊÔ</p>,1,2
+determine,<p>$$\sqrt{\sin\alpha\cos\alpha}$$²âÊÔ</p>,<p>$$\sqrt{\sin\alpha\cos\alpha}$$²âÊÔ</p>,1,2
+determine,<p>$$\sin60^{\circ}=\frac{\sqrt{3}}{2}$$²âÊÔ</p>,<p>$$\sin60^{\circ}=\frac{\sqrt{3}}{2}$$²âÊÔ</p>,1,2
+determine,<p>$$\sin\alpha\cdot\sin\beta$$</p>,<p>$$\sin\alpha\cdot\sin\beta$$</p>,1,2
+determine,<p>$$\odot$$²âÊÔ</p>,<p>$$\odot$$²âÊÔ</p>,1,2
+determine,<p>$$\oplus$$²âÊÔ</p>,<p>$$\oplus$$²âÊÔ</p>,1,2
+determine,<p>$$\otimes$$²âÊÔ</p>,<p>$$\otimes$$²âÊÔ</p>,1,2
+determine,<p>$$\approx$$²âÊÔ</p>,<p>$$\approx$$²âÊÔ</p>,1,2
+determine,<p>$$\equiv $$²âÊÔ</p>,<p>$$\equiv $$²âÊÔ</p>,1,2
+determine,<p>$$\triangle$$²âÊÔ</p>,<p>$$\triangle$$²âÊÔ</p>,1,2
+determine,<p>$$\angle\alpha+\angle\beta$$²âÊÔ</p>,<p>$$\angle\alpha+\angle\beta$$²âÊÔ</p>,1,2
+determine,<p>$$\alpha\perp\beta$$²âÊÔ</p>,<p>$$\alpha\perp\beta$$²âÊÔ</p>,1,2
+determine,<p>$$\sim$$²âÊÔ</p>,<p>$$\sim$$²âÊÔ</p>,1,2
+determine,<p>$$\cong $$²âÊÔ</p>,<p>$$\cong $$²âÊÔ</p>,1,2
+determine,<p>$$\cdots $$²âÊÔ</p>,<p>$$\cdots $$²âÊÔ</p>,1,2
+determine,<p>$$\in\notin$$²âÊÔ</p>,<p>$$\in\notin$$²âÊÔ</p>,1,2
+determine,<p>$$\subset\superset$$²âÊÔ</p>,<p>$$\subset\superset$$²âÊÔ</p>,1,2
+determine,<p>$$\subseteq\supseteq$$²âÊÔ</p>,<p>$$\subseteq\supseteq$$²âÊÔ</p>,1,2
+determine,<p>$$\cup\cap$$²âÊÔ</p>,<p>$$\cup\cap$$²âÊÔ</p>,1,2
+determine,<p>$$\phi$$²âÊÔ</p>,<p>$$\phi$$²âÊÔ</p>,1,2
+determine,<p>$$\int_{}^{}\sin\alpha\cos\alpha$$²âÊÔ</p>,<p>$$\int_{}^{}\sin\alpha\cos\alpha$$²âÊÔ</p>,1,2
+determine,<p>$$\infty\exists$$²âÊÔ</p>,<p>$$\infty\exists$$²âÊÔ</p>,1,2
+determine,<p>$$\forall$$²âÊÔ</p>,<p>$$\forall$$²âÊÔ</p>,1,2
+determine,<p>$$\Rightarrow\Leftrightarrow$$²âÊÔ</p>,<p>$$\Rightarrow\Leftrightarrow$$²âÊÔ</p>,1,2
+determine,<p>$$\vee\wedge$$²âÊÔ</p>,<p>$$\vee\wedge$$²âÊÔ</p>,1,2
+determine,<p>$$\mid $$²âÊÔ</p>,<p>$$\mid $$²âÊÔ</p>,1,2
+determine,<p>$$\mid \mid $$²âÊÔ</p>,<p>$$\mid \mid $$²âÊÔ</p>,1,2
+determine,<p>$$\mid$$²âÊÔ</p>,<p>$$\mid$$²âÊÔ</p>,1,2
+determine,<p>$$\mid $$²âÊÔ</p>,<p>$$\mid $$²âÊÔ</p>,1,2
+determine,<p>$$\superset$$0924</p>,<p>$$\superset$$0924</p>,1,2
+determine,<p>$$\superset$$²âÊÔ</p>,<p>$$\superset$$²âÊÔ</p>,1,2
+determine,<p>$$^{\circ}$$</p>,<p>$$^{\circ}$$</p>,1,2
+determine,<p>$$\alpha$$=60$$^{\circ}$$²âÊÔ</p>,<p>$$\alpha$$=60$$^{\circ}$$²âÊÔ</p>,1,2
+determine,<p>$$\triangle ABC\cong\triangle DBC$$²âÊÔ</p>,<p>$$\triangle ABC\cong\triangle DBC$$²âÊÔ</p>,1,2
+determine,<p>$$\supset\subset\supseteq\subseteq$$</p>,<p>$$\supset\subset\supseteq\subseteq$$</p>,1,2
+determine,<p>$$\supset$$</p>,<p>$$\supset$$</p>,1,2
+determine,<p>$$\left[\alpha\beta\right]\left\{\gamma\delta\right\}$$</p>,<p>$$\left[\alpha\beta\right]\left\{\gamma\delta\right\}$$</p>,1,2
+determine,<p>$$\subset\supset$$²âÊÔ</p>,<p>$$\subset\supset$$²âÊÔ</p>,1,2
+determine,<p>$$\left\{\alpha\beta\right\}¡ú\infty$$²âÊÔ</p>,<p>$$\left\{\alpha\beta\right\}¡ú\infty$$²âÊÔ</p>,1,2
+determine,<p>$$\left[\mu\nu\right]¡ú\infty$$²âÊÔ</p>,<p>$$\left[\mu\nu\right]¡ú\infty$$²âÊÔ</p>,1,2
+determine,<p>$$\Upsilon(\sin\alpha\cos\beta)&gt;\rho$$²âÊÔ</p>,<p>$$\Upsilon(\sin\alpha\cos\beta)&gt;\rho$$²âÊÔ</p>,1,2
+determine,<p>$$\Sigma(\alpha_i\beta_j+\mu\nu)$$²âÊÔ</p>,<p>$$\Sigma(\alpha_i\beta_j+\mu\nu)$$²âÊÔ</p>,1,2
+determine,<p>ÓĞÀíÖ¸ÊıÃİµÄĞÔÖÊ£º$$a^m\cdot a^n$$=$$a^{m+n}$$</p>,<p>ÓĞÀíÖ¸ÊıÃİµÄĞÔÖÊ£º$$a^m\cdot a^n$$=$$a^{m+n}$$</p>,1,2
+determine,"<p>²»µÈÊ½£¬Èô$$a,b\in R\Rightarrow a^2+b^2\ge2ab$$£¨µ±ÇÒ½öµ±a=bÊ±£¬È¡µÈºÅ£©</p>","<p>²»µÈÊ½£¬Èô$$a,b\in R\Rightarrow a^2+b^2\ge2ab$$£¨µ±ÇÒ½öµ±a=bÊ±£¬È¡µÈºÅ£©</p>",1,2
+determine,"<p>Ö±ÏßÓëÔ²µÄÎ»ÖÃ¹ØÏµ£º$$\Delta=\sqrt[]{b^2-4ac}$$,$$\Delta&lt;0$$,ÔòÏàÀë</p>",<p>Ö±ÏßÓëÔ²µÄÎ»ÖÃ¹ØÏµ</p>,1,2
+determine,"<p>Å×ÎïÏß$$y^2=2px$$,½¹°ë¾¶$$\mid PF\mid=x_0+\frac{p}{2}$$</p>","<p>Å×ÎïÏß$$y^2=2px$$,½¹°ë¾¶$$\mid PF\mid=x_0+\frac{p}{2}$$</p>",1,2
+determine,<p>ÕıÌ¬·Ö²¼µÄ¸ÅÂÊP(a&lt;X$$\le b$$)=$$\int_a^b\varphi(x)dx$$</p>,<p>ÕıÌ¬·Ö²¼µÄ¸ÅÂÊP(a&lt;X$$\le b$$)=$$\int_a^b\varphi(x)dx$$</p>,1,2
+determine,"<p>$$\angle1+\angle2=90^{\circ}$$,$$\angle1+\angle3=90^{\circ}$$,Ôò$$\angle2=\angle3$$</p>","<p>$$\angle1+\angle2=90^{\circ}$$,$$\angle1+\angle3=90^{\circ}$$,Ôò$$\angle2=\angle3$$</p>",1,2
+determine,"<p>$$A\subseteq B,B\subseteq C\Rightarrow A\subseteq C$$,$$A\cap B=A\Leftrightarrow A\cup B=B\Leftrightarrow A\subseteq B\Leftrightarrow C_UB\subseteq C_UA\Leftrightarrow A\cap C_UB=\Phi$$</p>","<p>$$A\subseteq B,B\subseteq C\Rightarrow A\subseteq C$$,$$A\cap B=A\Leftrightarrow A\cup B=B\Leftrightarrow A\subseteq B\Leftrightarrow C_UB\subseteq C_UA\Leftrightarrow A\cap C_UB=\Phi$$</p>",1,2
+determine,<p>$$P(\overline{A})=1-P(A)$$</p>,<p>¸ÅÂÊ¹«Ê½</p>,1,2
+determine,<p>ĞÂ$$\rho&lt;\varrho$$</p>,<p>ĞÂ$$\rho&lt;\varrho$$</p>,1,2
+determine,<p>ĞÂ$$\&amp;$$</p>,<p>ĞÂ$$\&amp;$$</p>,1,2
+determine,<p>¼õºÅ$$-$$</p>,<p>¼õºÅ$$-$$</p>,1,2
+determine,<p>$$\alpha+\beta-\gamma\times\delta\div\epsilon&gt;\varepsilon&lt;\zeta\ge\eta\le\theta\ne\vartheta+\iota$$ĞÂ</p>,<p>$$\alpha+\beta-\gamma\times\delta\div\epsilon&gt;\varepsilon&lt;\zeta\ge\eta\le\theta\ne\vartheta+\iota$$ĞÂ</p>,1,2
+determine,<p>$$\rho$$ĞÂ</p>,<p>$$\rho$$ĞÂ</p>,1,2
+determine,<p>ĞÂ$$&lt;$$</p>,<p>ĞÂ$$&lt;$$</p>,1,2
+determine,<p>$$-\alpha\beta$$</p>,<p>$$-\alpha\beta$$</p>,1,2

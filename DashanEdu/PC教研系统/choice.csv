@@ -1,0 +1,4 @@
+type,stem,analysis,answer,score
+choice,<p>取址符号测试$$&amp;$$=（）？</p>,<p>$$&amp;$$</p>,0,2
+choice,<p>函数的导数：$$①$$$$(\sin\alpha)&#39;$$=$$\cos\alpha$$$$②(a^x)&#39;$$=$$a^xlna$$$$③(\log_ax)&#39;$$=$$\frac{1}{xlna}$$$$④(x^n)&#39;$$=n$$x^{n-1}$$</p>,<p>$$①②③④$$都对</p>,0,2
+choice,"<p>平面向量：设$$A(x_1,y_1),B(x_2,y_2)$$则$$\overrightarrow{AB}=\overrightarrow{OB}-\overrightarrow{OA}=(x_2-x_1,y_2-y_1)$$</p>",<p>平面向量的坐标运算</p>,"0,1,2",2
