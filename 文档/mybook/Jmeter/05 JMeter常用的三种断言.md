@@ -45,3 +45,6 @@ __Pattern Mactching Rules：模式匹配规则__
 
 ## 三、Duration Assertion（持续时间断言）
 判断是否在给定的时间内返回响应结果
+
+## 四、JSON Schema Assertion
+

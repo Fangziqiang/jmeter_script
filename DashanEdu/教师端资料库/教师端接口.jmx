@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.2.1">
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.3">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="教师端" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -806,7 +806,7 @@ else{
           </ResponseAssertion>
           <hashTree/>
           <org.apache.jmeter.assertions.JSONSchemaAssertion guiclass="org.apache.jmeter.assertions.gui.JSONSchemaAssertionGui" testclass="org.apache.jmeter.assertions.JSONSchemaAssertion" testname="JSON Schema Assertion" enabled="true">
-            <stringProp name="jsonschema_assertion_filename">E:\apache-jmeter-5.2.1\jmeter_script\DashanEdu\教师端资料库\教师端主页接口_jsons-chema.txt</stringProp>
+            <stringProp name="jsonschema_assertion_filename">E:\apache-jmeter-5.2.1\jmeter_script\DashanEdu\教师端资料库\我的-教师端主页接口_jsons-chema.txt</stringProp>
           </org.apache.jmeter.assertions.JSONSchemaAssertion>
           <hashTree/>
         </hashTree>
