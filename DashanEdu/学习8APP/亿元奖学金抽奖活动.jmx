@@ -153,7 +153,7 @@ prev.setResponseData(outBuffer.toString());</stringProp>
       <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config测试环境" enabled="false">
         <stringProp name="delimiter">,</stringProp>
         <stringProp name="fileEncoding">GB2312</stringProp>
-        <stringProp name="filename">/useraccount-test.csv</stringProp>
+        <stringProp name="filename">/data/useraccount-test.csv</stringProp>
         <boolProp name="ignoreFirstLine">true</boolProp>
         <boolProp name="quotedData">false</boolProp>
         <boolProp name="recycle">true</boolProp>
@@ -179,7 +179,7 @@ prev.setResponseData(outBuffer.toString());</stringProp>
       <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config-生产环境" enabled="false">
         <stringProp name="delimiter">,</stringProp>
         <stringProp name="fileEncoding">GB2312</stringProp>
-        <stringProp name="filename">/useraccount-release.csv</stringProp>
+        <stringProp name="filename">/data/useraccount-release.csv</stringProp>
         <boolProp name="ignoreFirstLine">true</boolProp>
         <boolProp name="quotedData">false</boolProp>
         <boolProp name="recycle">true</boolProp>
@@ -316,7 +316,7 @@ prev.setResponseData(outBuffer.toString());</stringProp>
       </ThreadGroup>
       <hashTree>
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-          <stringProp name="filename">E:/apache-jmeter-5.2.1/jmeter_script/DashanEdu/学习8APP/choujiang_test.csv</stringProp>
+          <stringProp name="filename">/data/choujiang_test.csv</stringProp>
           <stringProp name="fileEncoding">GB2312</stringProp>
           <stringProp name="variableNames">x_id,phone,student_id,student_name,expect,</stringProp>
           <boolProp name="ignoreFirstLine">true</boolProp>
@@ -422,7 +422,7 @@ prev.setResponseData(outBuffer.toString());</stringProp>
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config测试环境" enabled="false">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding">GB2312</stringProp>
-          <stringProp name="filename">E:/apache-jmeter-5.2.1/jmeter_script/DashanEdu/学习8APP/useraccount-test-20000.csv</stringProp>
+          <stringProp name="filename">/data/useraccount-test-20000.csv</stringProp>
           <boolProp name="ignoreFirstLine">true</boolProp>
           <boolProp name="quotedData">false</boolProp>
           <boolProp name="recycle">true</boolProp>
@@ -557,7 +557,7 @@ prev.setResponseData(outBuffer.toString());</stringProp>
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config  pre环境" enabled="true">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding">GB2312</stringProp>
-          <stringProp name="filename">E:/apache-jmeter-5.2.1/jmeter_script/DashanEdu/学习8APP/useraccount-release.csv</stringProp>
+          <stringProp name="filename">/data/useraccount-release.csv</stringProp>
           <boolProp name="ignoreFirstLine">true</boolProp>
           <boolProp name="quotedData">false</boolProp>
           <boolProp name="recycle">true</boolProp>
@@ -728,7 +728,7 @@ prev.setResponseData(outBuffer.toString());</stringProp>
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config  正式环境" enabled="true">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding">GB2312</stringProp>
-          <stringProp name="filename">E:/apache-jmeter-5.2.1/jmeter_script/DashanEdu/学习8APP/choujiang_release.csv</stringProp>
+          <stringProp name="filename">/data/choujiang_release.csv</stringProp>
           <boolProp name="ignoreFirstLine">true</boolProp>
           <boolProp name="quotedData">false</boolProp>
           <boolProp name="recycle">true</boolProp>

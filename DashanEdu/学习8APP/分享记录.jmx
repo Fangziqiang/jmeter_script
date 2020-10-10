@@ -27,7 +27,7 @@
       </ConfigTestElement>
       <hashTree/>
       <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="测试环境参数化文件" enabled="true">
-        <stringProp name="filename">/useraccount-test-20000.csv</stringProp>
+        <stringProp name="filename">/data/useraccount-test-20000.csv</stringProp>
         <stringProp name="fileEncoding">GB2312</stringProp>
         <stringProp name="variableNames">student_id</stringProp>
         <boolProp name="ignoreFirstLine">true</boolProp>
@@ -91,7 +91,7 @@
       <hashTree>
         <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
           <collectionProp name="Asserion.test_strings">
-            <stringProp name="-51241825">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:[]}</stringProp>
+            <stringProp name="-695215580">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:[],&quot;code&quot;:200}</stringProp>
           </collectionProp>
           <stringProp name="Assertion.custom_message"></stringProp>
           <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.2.1">
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.3">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="测试计划" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -370,7 +370,7 @@
         </ConfigTestElement>
         <hashTree/>
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="参数化班课id" enabled="true">
-          <stringProp name="filename">D:/学习资料/03性能测试/Jmeter资料/apache-jmeter-3.3/jmeter_script/DashanEdu/bk_id.dat</stringProp>
+          <stringProp name="filename">/data/bk_id.dat</stringProp>
           <stringProp name="fileEncoding">utf-8</stringProp>
           <stringProp name="variableNames">bk_id</stringProp>
           <boolProp name="ignoreFirstLine">true</boolProp>
