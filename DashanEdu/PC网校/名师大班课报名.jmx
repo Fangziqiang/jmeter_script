@@ -252,7 +252,7 @@ prev.setResponseData(outBuffer.toString());</stringProp>
           <boolProp name="recycle">false</boolProp>
           <stringProp name="shareMode">shareMode.all</stringProp>
           <boolProp name="stopThread">true</boolProp>
-          <stringProp name="variableNames">phone,password,student_id</stringProp>
+          <stringProp name="variableNames">phone,student_id</stringProp>
         </CSVDataSet>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="提交报名" enabled="true">
@@ -261,7 +261,7 @@ prev.setResponseData(outBuffer.toString());</stringProp>
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;device&quot;:&quot;2&quot;,&quot;course_tem_id&quot;:&quot;1338&quot;,&quot;student_id&quot;:&quot;${student_id}&quot;,&quot;type&quot;:&quot;4&quot;,&quot;timestamp&quot;:${__time(/1000,)}}</stringProp>
+                <stringProp name="Argument.value">{&quot;device&quot;:&quot;2&quot;,&quot;course_tem_id&quot;:&quot;1357&quot;,&quot;student_id&quot;:&quot;${student_id}&quot;,&quot;type&quot;:&quot;4&quot;,&quot;timestamp&quot;:${__time(/1000,)}}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
