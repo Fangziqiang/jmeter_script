@@ -9,7 +9,7 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
-      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+      <stringProp name="TestPlan.user_define_classpath">E:\apache-jmeter-5.2.1\jmeter_script\AESUtils.jar</stringProp>
     </TestPlan>
     <hashTree>
       <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
@@ -1091,6 +1091,24 @@ vars.put(&quot;is_topic&quot;,is_topic);
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
+        <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+          <boolProp name="resetInterpreter">false</boolProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="script">   import AES.AEStest2;
+   String cbckey=&quot;&quot;;
+   String cSrc = &quot;{\&quot;timestamp\&quot;:\&quot;1605424485863\&quot;,\&quot;student_id\&quot;:\&quot;193430\&quot;,\&quot;testpaper_id\&quot;:\&quot;363331\&quot;,\&quot;course_id\&quot;:0,\&quot;do_type\&quot;:\&quot;classPaper\&quot;}&quot;;
+        System.out.println(cSrc);
+        // 加密
+        long lStart = System.currentTimeMillis();
+        String enString = AEStest2.Encrypt(cSrc, &quot;F697467B14B076F2&quot;);
+        System.out.println(&quot;加密后的字串是:&quot;+enString);
+        log.info(enString);
+	   //将变量enString的值付给cbckey
+        vars.put(&quot;cbckey&quot;,enString);
+</stringProp>
+        </BeanShellPostProcessor>
+        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="测评历史" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
@@ -1217,6 +1235,137 @@ vars.put(&quot;is_topic&quot;,is_topic);
             <intProp name="Assertion.test_type">16</intProp>
           </ResponseAssertion>
           <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">interface.xuexi8.net</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Cookie" elementType="Header">
+                <stringProp name="Header.name">Cookie</stringProp>
+                <stringProp name="Header.value">PHPSESSID=r7347iv7bpr7uad57ehg9dg6f3; _bl_uid=mdk0ghb7hjFgyCeO5z4RhFbqyw1y; acw_tc=65c86a0b16053439949215011ecf45f511bd58fd5cd69b133a8dfc161aba4d</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="查看试题解析" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;cbckey&quot;:&quot; +n1aGkDWyqyc7z6EoqmaUzBEmsdz82P2Psrxs+2ODJvvxWGnV6boZqx/AAI7eJ2wfDu9Q8efYQg4sE4ihzici6p5Hdtyf1CnmCPm/ZfxGjFuU69ejEmQ==&quot;}&#xd;
+&#xd;
+M4u3weHv/L5ooZGBKvKY47xqV8KS4RaKOfMYakep5TFILUy06xV9FzPT7srAcn77rDnhJIvwDjHvXh3EvCVGdlKSt6o8D5rhz5EEqUyDd67BqbcSZ0FEV5naMvRKw5lMrmUkuB0qEsMMg6MMykuQlw==</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/jiekou2/restful/question/analysis</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">使用测评历史中的试卷id查看试卷报告
+</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1879430401">&quot;status&quot;:&quot;0&quot;,&quot;code&quot;:200,&quot;msg&quot;:&quot;success&quot;,</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">16</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">interface.xuexi8.net</stringProp>
+              </elementProp>
+              <elementProp name="DO" elementType="Header">
+                <stringProp name="Header.name">DO</stringProp>
+                <stringProp name="Header.value">web123456789</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="ST" elementType="Header">
+                <stringProp name="Header.name">ST</stringProp>
+                <stringProp name="Header.value">60</stringProp>
+              </elementProp>
+              <elementProp name="DSS" elementType="Header">
+                <stringProp name="Header.name">DSS</stringProp>
+                <stringProp name="Header.value">e084fe14c24535a09829fd0a2c0d90bf</stringProp>
+              </elementProp>
+              <elementProp name="APPVERSION" elementType="Header">
+                <stringProp name="Header.name">APPVERSION</stringProp>
+                <stringProp name="Header.value">6.5.0</stringProp>
+              </elementProp>
+              <elementProp name="APPCLIENT" elementType="Header">
+                <stringProp name="Header.name">APPCLIENT</stringProp>
+                <stringProp name="Header.value">WEB</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">zh-cn</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="DST" elementType="Header">
+                <stringProp name="Header.name">DST</stringProp>
+                <stringProp name="Header.value">e62d11c84241b518b21c5ee2893078ea</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">https://interface.xuexi8.net</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (iPhone; CPU iPhone OS 13_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://interface.xuexi8.net/jiekou2/distnewv6.5/</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">165</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">keep-alive</stringProp>
+              </elementProp>
+              <elementProp name="Cookie" elementType="Header">
+                <stringProp name="Header.name">Cookie</stringProp>
+                <stringProp name="Header.value">PHPSESSID=r7347iv7bpr7uad57ehg9dg6f3; _bl_uid=mdk0ghb7hjFgyCeO5z4RhFbqyw1y; acw_tc=65c86a0b16053439949215011ecf45f511bd58fd5cd69b133a8dfc161aba4d</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
         </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="查看试题解析" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -1224,7 +1373,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;cbckey&quot;:&quot;ifUKt9UzLUZaHejCkUBFPqiIkZLI8E04dI+n1aGkDWyqyc7z6EoqmaUzBEmsdz82P2Psrxs+2ODJvvxWGnV6boZqx/AAI7eJ2wfDu9Q8efYQg4sE4ihzici6p5Hdtyf1CnmCPm/ZfxGjFuU69ejEmQ==&quot;}</stringProp>
+                <stringProp name="Argument.value">{&quot;cbckey&quot;:&quot;${cbckey}&quot;}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
