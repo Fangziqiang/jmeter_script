@@ -1,0 +1,5 @@
+evaluate_id,paperName,is_diagnosis,is_test,is_report,testpaper_id,testpaper_data
+51,六年级英语秋季入学测评,1,0,0,364554,"{""testpaper_id"":""364554"",""name"":""2020年秋季英语培优课程六年级入学测试"",""subject_id"":""10"",""limitedTime"":""20"",""score"":""40.0"",""id"":""64""}"
+69,七年级英语秋季入学测评,1,1,1,364566,"{""testpaper_id"":""364566"",""name"":""2020年秋季英语培优课程七年级入学测试"",""subject_id"":""14"",""limitedTime"":""20"",""score"":""50.0"",""id"":""76""}"
+78,八年级英语秋季入学测评,1,0,0,364567,"{""testpaper_id"":""364567"",""name"":""2020年秋季英语培优课程八年级入学测试"",""subject_id"":""18"",""limitedTime"":""20"",""score"":""50.0"",""id"":""78""}"
+87,九年级英语秋季入学测评,0,0,0,,[]
