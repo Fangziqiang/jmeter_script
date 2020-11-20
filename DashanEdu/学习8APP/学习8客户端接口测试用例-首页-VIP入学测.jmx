@@ -630,7 +630,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <intProp name="LoopController.loops">-1</intProp>
+          <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
@@ -692,7 +692,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="知识测评" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="入学测试" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -716,13 +716,26 @@ vars.put(&quot;is_topic&quot;,is_topic);
           </collectionProp>
         </Arguments>
         <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="参数化信息" enabled="true">
+          <stringProp name="delimiter">,</stringProp>
+          <stringProp name="fileEncoding">GB2312</stringProp>
+          <stringProp name="filename">/data/VIP_test_submit.csv</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <boolProp name="quotedData">true</boolProp>
+          <boolProp name="recycle">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+          <boolProp name="stopThread">true</boolProp>
+          <stringProp name="variableNames">testpaper_id,teacher_chapter_id,paperName,student_id</stringProp>
+          <stringProp name="TestPlan.comments">Allow quoted data?：是否允许数据内容加引号</stringProp>
+        </CSVDataSet>
+        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="作答预览（做题前置页面）" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;timestamp&quot;:&quot;${__time(,)}&quot;,&quot;begin&quot;:0,&quot;student_id&quot;:&quot;193430&quot;,&quot;course_id&quot;:0,&quot;test_id&quot;:&quot;364566&quot;,&quot;subject_id&quot;:0,&quot;school_id&quot;:0}</stringProp>
+                <stringProp name="Argument.value">{&quot;timestamp&quot;:&quot;${__time(,)}&quot;,&quot;begin&quot;:0,&quot;student_id&quot;:&quot;${student_id}&quot;,&quot;course_id&quot;:10196,&quot;test_id&quot;:&quot;364977&quot;,&quot;subject_id&quot;:0,&quot;school_id&quot;:0}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -740,12 +753,12 @@ vars.put(&quot;is_topic&quot;,is_topic);
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          <stringProp name="TestPlan.comments">{&quot;timestamp&quot;:&quot;1605498154&quot;,&quot;begin&quot;:0,&quot;student_id&quot;:&quot;193430&quot;,&quot;course_id&quot;:0,&quot;test_id&quot;:&quot;364566&quot;,&quot;subject_id&quot;:0,&quot;school_id&quot;:0}</stringProp>
+          <stringProp name="TestPlan.comments">{&quot;timestamp&quot;:&quot;1605865224&quot;,&quot;begin&quot;:0,&quot;student_id&quot;:&quot;193430&quot;,&quot;course_id&quot;:10196,&quot;test_id&quot;:&quot;364977&quot;,&quot;subject_id&quot;:0,&quot;school_id&quot;:0}</stringProp>
         </HTTPSamplerProxy>
         <hashTree>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="1816593987">{&quot;course&quot;:{&quot;testpaper_name&quot;:&quot;七年级英语秋季入学测评&quot;,&quot;question_number&quot;:&quot;18&quot;,&quot;limitedTime&quot;:&quot;1200&quot;,&quot;test_type&quot;:&quot;bk&quot;,&quot;near_school_id&quot;:0,&quot;school_id&quot;:0,&quot;test_id&quot;:&quot;364566&quot;,&quot;course_id&quot;:0},&quot;type&quot;:&quot;0&quot;,&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;OK&quot;}</stringProp>
+              <stringProp name="-67766541">{&quot;course&quot;:{&quot;testpaper_name&quot;:&quot;六年级人教版10月-易&quot;,&quot;question_number&quot;:&quot;30&quot;,&quot;limitedTime&quot;:&quot;1500&quot;,&quot;test_type&quot;:&quot;vipnl&quot;,&quot;near_school_id&quot;:0,&quot;school_id&quot;:0,&quot;test_id&quot;:&quot;364977&quot;,&quot;course_id&quot;:10196},&quot;type&quot;:&quot;0&quot;,&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;OK&quot;}</stringProp>
             </collectionProp>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -789,35 +802,43 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="DO" elementType="Header">
                 <stringProp name="Header.name">DO</stringProp>
-                <stringProp name="Header.value">web123456789</stringProp>
+                <stringProp name="Header.value">F31A0EE2-A1A9-4250-A588-D2D3CA2CD4F4</stringProp>
               </elementProp>
               <elementProp name="Accept" elementType="Header">
                 <stringProp name="Header.name">Accept</stringProp>
-                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
               </elementProp>
               <elementProp name="ST" elementType="Header">
                 <stringProp name="Header.name">ST</stringProp>
-                <stringProp name="Header.value">60</stringProp>
+                <stringProp name="Header.value">186276</stringProp>
               </elementProp>
               <elementProp name="DSS" elementType="Header">
                 <stringProp name="Header.name">DSS</stringProp>
-                <stringProp name="Header.value">e084fe14c24535a09829fd0a2c0d90bf</stringProp>
+                <stringProp name="Header.value">eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IjA3ZnVKTERCbHEifQ.eyJpc3MiOiJodHRwczpcL1wvaW50ZXJmYWNlLnh1ZXhpOC5uZXRcLyIsImF1ZCI6Imh0dHBzOlwvXC9pbnRlcmZhY2UueHVleGk4Lm5ldFwvIiwianRpIjoiMDdmdUpMREJscSIsImlhdCI6MTYwNTg2MzYxOSwibmJmIjoxNjA1ODYzNjE5LCJleHAiOjE2MDY0Njg0MTksInVpZCI6IjE5MzQzMCIsInVzZXIiOnsiaWQiOiIxOTM0MzAiLCJ0cnVlX25hbWUiOiJcdTY1YjkiLCJzdHVkZW50X25vIjoiMDAwMDIxNDc5NiIsInVfcGhvbmUiOiIxNzYxMDgzMTg4MyIsImdyYWRlIjoiOSIsInhfaWQiOiIxODYyNzYiLCJ4X3NfdHlwZSI6IjEiLCJzdGF0dXMiOiIxIiwibmV3X2F2YXRhciI6Imh0dHBzOlwvXC94dWV4aTgub3NzLWNuLWJlaWppbmcuYWxpeXVuY3MuY29tXC8yMDIwMDkxMTIzMDAwMVNXTS5qcGc_eC1vc3MtcHJvY2Vzcz1zdHlsZVwvdGh1bWI2Iiwic2V4IjoiMSIsInNjaG9vbCI6Ilx1OTBkMVx1NWRkZVx1NGUwMFx1NGUyZCIsImdyYWRlX25hbWUiOiJcdTUxNmRcdTVlNzRcdTdlYTciLCJpc19ydWxlIjoiMSJ9fQ.r3pE8XpmOWH49ojXGhkCwNeIgmOwlcAr5_cjjFbe3hM</stringProp>
+              </elementProp>
+              <elementProp name="LONGITUDE" elementType="Header">
+                <stringProp name="Header.name">LONGITUDE</stringProp>
+                <stringProp name="Header.value">113.7123051186663</stringProp>
+              </elementProp>
+              <elementProp name="APPCLIENT" elementType="Header">
+                <stringProp name="Header.name">APPCLIENT</stringProp>
+                <stringProp name="Header.value">IOS</stringProp>
+              </elementProp>
+              <elementProp name="LATITUDE" elementType="Header">
+                <stringProp name="Header.name">LATITUDE</stringProp>
+                <stringProp name="Header.value">34.7961625095136</stringProp>
               </elementProp>
               <elementProp name="APPVERSION" elementType="Header">
                 <stringProp name="Header.name">APPVERSION</stringProp>
                 <stringProp name="Header.value">6.5.0</stringProp>
               </elementProp>
-              <elementProp name="APPCLIENT" elementType="Header">
-                <stringProp name="Header.name">APPCLIENT</stringProp>
-                <stringProp name="Header.value">WEB</stringProp>
-              </elementProp>
               <elementProp name="Accept-Language" elementType="Header">
                 <stringProp name="Header.name">Accept-Language</stringProp>
-                <stringProp name="Header.value">zh-cn</stringProp>
+                <stringProp name="Header.value">zh-Hans-CN;q=1.0</stringProp>
               </elementProp>
               <elementProp name="Accept-Encoding" elementType="Header">
                 <stringProp name="Header.name">Accept-Encoding</stringProp>
-                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                <stringProp name="Header.value">gzip;q=1.0, compress;q=0.5</stringProp>
               </elementProp>
               <elementProp name="Content-Type" elementType="Header">
                 <stringProp name="Header.name">Content-Type</stringProp>
@@ -825,23 +846,15 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="DST" elementType="Header">
                 <stringProp name="Header.name">DST</stringProp>
-                <stringProp name="Header.value">07a216d55771583228fcaf68e5232de6</stringProp>
-              </elementProp>
-              <elementProp name="Origin" elementType="Header">
-                <stringProp name="Header.name">Origin</stringProp>
-                <stringProp name="Header.value">https://interface.xuexi8.net</stringProp>
-              </elementProp>
-              <elementProp name="User-Agent" elementType="Header">
-                <stringProp name="Header.name">User-Agent</stringProp>
-                <stringProp name="Header.value">Mozilla/5.0 (iPhone; CPU iPhone OS 13_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148</stringProp>
-              </elementProp>
-              <elementProp name="Referer" elementType="Header">
-                <stringProp name="Header.name">Referer</stringProp>
-                <stringProp name="Header.value">https://interface.xuexi8.net/jiekou2/distnewv6.5/</stringProp>
+                <stringProp name="Header.value">42398a29103858a7c03377123aca8b82</stringProp>
               </elementProp>
               <elementProp name="Content-Length" elementType="Header">
                 <stringProp name="Header.name">Content-Length</stringProp>
-                <stringProp name="Header.value">165</stringProp>
+                <stringProp name="Header.value">123</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value"></stringProp>
               </elementProp>
               <elementProp name="Connection" elementType="Header">
                 <stringProp name="Header.name">Connection</stringProp>
@@ -849,7 +862,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="Cookie" elementType="Header">
                 <stringProp name="Header.name">Cookie</stringProp>
-                <stringProp name="Header.value">PHPSESSID=cpfq0n0m29c2m68d5j0g9p6dkc; acw_tc=7b39758716054972239936822e414d4232d33c0ae507c62810a6c8cc93c131; _bl_uid=mdk0ghb7hjFgyCeO5z4RhFbqyw1y</stringProp>
+                <stringProp name="Header.value">PHPSESSID=mhtdgicr7m17u33d9k7qdrrr9n; acw_tc=7b39758516058644107397178e27545f294b0d4f6e24a41e50f70d2f097167; _bl_uid=qhkFIh9wq1414Fqvvtsy156bd9R5</stringProp>
               </elementProp>
             </collectionProp>
           </HeaderManager>
@@ -864,7 +877,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
 	String test_id = vars.get(&quot;test_id&quot;);
    
    String cbckey=&quot;&quot;;
-   String cSrc = &quot;{\&quot;timestamp\&quot;:\&quot;1605498403\&quot;,\&quot;student_id\&quot;:\&quot;193430\&quot;,\&quot;testpaper_id\&quot;:\&quot;364566\&quot;,\&quot;course_id\&quot;:0,\&quot;do_type\&quot;:\&quot;classPaper\&quot;}&quot;;
+   String cSrc =&quot;{\&quot;timestamp\&quot;:\&quot;1605865508\&quot;,\&quot;student_id\&quot;:\&quot;193430\&quot;,\&quot;testpaper_id\&quot;:\&quot;364977\&quot;,\&quot;course_id\&quot;:0,\&quot;do_type\&quot;:\&quot;vipPaper\&quot;}&quot;;
         
         // 加密
         long lStart = System.currentTimeMillis();
@@ -912,8 +925,22 @@ vars.put(&quot;is_topic&quot;,is_topic);
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">第一个学生已经提交了试题结果，下次执行次数变为2次</stringProp>
         </HTTPSamplerProxy>
         <hashTree>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="参数化信息" enabled="true">
+            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="fileEncoding">GB2312</stringProp>
+            <stringProp name="filename">/data/VIP_test_submit.csv</stringProp>
+            <boolProp name="ignoreFirstLine">true</boolProp>
+            <boolProp name="quotedData">true</boolProp>
+            <boolProp name="recycle">false</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+            <boolProp name="stopThread">true</boolProp>
+            <stringProp name="variableNames">testpaper_id,teacher_chapter_id,paperName,student_id</stringProp>
+            <stringProp name="TestPlan.comments">Allow quoted data?：是否允许数据内容加引号</stringProp>
+          </CSVDataSet>
+          <hashTree/>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="Host" elementType="Header">
@@ -994,22 +1021,24 @@ vars.put(&quot;is_topic&quot;,is_topic);
             <stringProp name="script">	import AES.AEStest2;
 
 	String timestamp = vars.get(&quot;timestamp&quot;);
+	String student_id= vars.get(&quot;student_id&quot;);
+	String teacher_chapter_id= vars.get(&quot;teacher_chapter_id&quot;);
+	String testpaper_id= vars.get(&quot;testpaper_id&quot;);
    
    	String cbckey=&quot;&quot;;
 
-		String student_id=&quot;193430&quot;;
 		String teacher_chapter_id=&quot;16724&quot;;
-		String testpaper_id=&quot;364566&quot;;
-		String near_school_id=&quot;0&quot;;
-		String school_id=&quot;10&quot;;
-		String do_type=&quot;classPaper&quot;;
-		String start_time=&quot;1605501058&quot;;
-		String from_device=&quot;app&quot;;
-		String question=&quot;[{\&quot;answer\&quot;:[{\&quot;id\&quot;:565146,\&quot;answer\&quot;:[\&quot;B\&quot;],\&quot;isdone\&quot;:true,\&quot;isImg\&quot;:false,\&quot;type\&quot;:\&quot;fill\&quot;,\&quot;standard_answer\&quot;:[[\&quot;B\&quot;]],\&quot;score\&quot;:1,\&quot;fill_is_sort\&quot;:0}],\&quot;id\&quot;:564986,\&quot;type\&quot;:\&quot;voice\&quot;,\&quot;standard_answer\&quot;:null,\&quot;score\&quot;:\&quot;1.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:[{\&quot;id\&quot;:565153,\&quot;answer\&quot;:[\&quot;T\&quot;],\&quot;isdone\&quot;:true,\&quot;isImg\&quot;:false,\&quot;type\&quot;:\&quot;fill\&quot;,\&quot;standard_answer\&quot;:[[\&quot;T\&quot;]],\&quot;score\&quot;:1,\&quot;fill_is_sort\&quot;:0}],\&quot;id\&quot;:565005,\&quot;type\&quot;:\&quot;voice\&quot;,\&quot;standard_answer\&quot;:null,\&quot;score\&quot;:\&quot;1.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:[{\&quot;id\&quot;:565151,\&quot;answer\&quot;:[\&quot;B\&quot;],\&quot;isdone\&quot;:true,\&quot;isImg\&quot;:false,\&quot;type\&quot;:\&quot;fill\&quot;,\&quot;standard_answer\&quot;:[[\&quot;B\&quot;]],\&quot;score\&quot;:1,\&quot;fill_is_sort\&quot;:0}],\&quot;id\&quot;:564997,\&quot;type\&quot;:\&quot;voice\&quot;,\&quot;standard_answer\&quot;:null,\&quot;score\&quot;:\&quot;1.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:[{\&quot;id\&quot;:565149,\&quot;answer\&quot;:[\&quot;three\&quot;,\&quot;people\&quot;],\&quot;isdone\&quot;:true,\&quot;isImg\&quot;:false,\&quot;type\&quot;:\&quot;fill\&quot;,\&quot;standard_answer\&quot;:[[\&quot;three\&quot;],[\&quot;people\&quot;]],\&quot;score\&quot;:1,\&quot;fill_is_sort\&quot;:0}],\&quot;id\&quot;:564992,\&quot;type\&quot;:\&quot;voice\&quot;,\&quot;standard_answer\&quot;:null,\&quot;score\&quot;:\&quot;1.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:[{\&quot;id\&quot;:565140,\&quot;answer\&quot;:[\&quot;B\&quot;],\&quot;isdone\&quot;:true,\&quot;isImg\&quot;:false,\&quot;type\&quot;:\&quot;fill\&quot;,\&quot;standard_answer\&quot;:[[\&quot;B\&quot;]],\&quot;score\&quot;:1,\&quot;fill_is_sort\&quot;:0}],\&quot;id\&quot;:564980,\&quot;type\&quot;:\&quot;voice\&quot;,\&quot;standard_answer\&quot;:null,\&quot;score\&quot;:\&quot;1.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;D\&quot;,\&quot;id\&quot;:564881,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;3\&quot;],\&quot;score\&quot;:\&quot;1.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;A\&quot;,\&quot;id\&quot;:564907,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;0\&quot;],\&quot;score\&quot;:\&quot;1.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:564854,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;1.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;id\&quot;:564862,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;1.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;A\&quot;,\&quot;id\&quot;:564892,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;0\&quot;],\&quot;score\&quot;:\&quot;1.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:[\&quot;do\&quot;],\&quot;id\&quot;:564883,\&quot;type\&quot;:\&quot;fill\&quot;,\&quot;standard_answer\&quot;:[[\&quot;does\&quot;]],\&quot;score\&quot;:\&quot;2.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:[\&quot;have\&quot;],\&quot;id\&quot;:564880,\&quot;type\&quot;:\&quot;fill\&quot;,\&quot;standard_answer\&quot;:[[\&quot;have\&quot;]],\&quot;score\&quot;:\&quot;2.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:[\&quot;apples\&quot;],\&quot;id\&quot;:564860,\&quot;type\&quot;:\&quot;fill\&quot;,\&quot;standard_answer\&quot;:[[\&quot;apples\&quot;]],\&quot;score\&quot;:\&quot;2.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:[\&quot;singing\&quot;],\&quot;id\&quot;:564851,\&quot;type\&quot;:\&quot;fill\&quot;,\&quot;standard_answer\&quot;:[[\&quot;are singing\&quot;]],\&quot;score\&quot;:\&quot;2.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:[\&quot;living\&quot;],\&quot;id\&quot;:564887,\&quot;type\&quot;:\&quot;fill\&quot;,\&quot;standard_answer\&quot;:[[\&quot;lives\&quot;]],\&quot;score\&quot;:\&quot;2.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:[{\&quot;id\&quot;:565002,\&quot;answer\&quot;:[\&quot;F\&quot;],\&quot;isdone\&quot;:true,\&quot;isImg\&quot;:false,\&quot;type\&quot;:\&quot;fill\&quot;,\&quot;standard_answer\&quot;:[[\&quot;F\&quot;]],\&quot;score\&quot;:2,\&quot;fill_is_sort\&quot;:0},{\&quot;id\&quot;:565018,\&quot;answer\&quot;:[\&quot;B\&quot;],\&quot;isdone\&quot;:true,\&quot;isImg\&quot;:false,\&quot;type\&quot;:\&quot;fill\&quot;,\&quot;standard_answer\&quot;:[[\&quot;B\&quot;]],\&quot;score\&quot;:2,\&quot;fill_is_sort\&quot;:0},{\&quot;id\&quot;:565019,\&quot;answer\&quot;:[\&quot;A\&quot;],\&quot;isdone\&quot;:true,\&quot;isImg\&quot;:false,\&quot;type\&quot;:\&quot;fill\&quot;,\&quot;standard_answer\&quot;:[[\&quot;A\&quot;]],\&quot;score\&quot;:2,\&quot;fill_is_sort\&quot;:0},{\&quot;id\&quot;:565023,\&quot;answer\&quot;:[\&quot;D\&quot;],\&quot;isdone\&quot;:true,\&quot;isImg\&quot;:false,\&quot;type\&quot;:\&quot;fill\&quot;,\&quot;standard_answer\&quot;:[[\&quot;D\&quot;]],\&quot;score\&quot;:2,\&quot;fill_is_sort\&quot;:0},{\&quot;id\&quot;:565024,\&quot;answer\&quot;:[\&quot;E\&quot;],\&quot;isdone\&quot;:true,\&quot;isImg\&quot;:false,\&quot;type\&quot;:\&quot;fill\&quot;,\&quot;standard_answer\&quot;:[[\&quot;E\&quot;]],\&quot;score\&quot;:2,\&quot;fill_is_sort\&quot;:0}],\&quot;id\&quot;:564987,\&quot;type\&quot;:\&quot;material\&quot;,\&quot;standard_answer\&quot;:[],\&quot;score\&quot;:\&quot;10.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:[{\&quot;id\&quot;:564966,\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;isdone\&quot;:true,\&quot;isImg\&quot;:false,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:2,\&quot;fill_is_sort\&quot;:0},{\&quot;id\&quot;:564969,\&quot;answer\&quot;:\&quot;A\&quot;,\&quot;isdone\&quot;:true,\&quot;isImg\&quot;:false,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;0\&quot;],\&quot;score\&quot;:2,\&quot;fill_is_sort\&quot;:0},{\&quot;id\&quot;:564971,\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;isdone\&quot;:true,\&quot;isImg\&quot;:false,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:2,\&quot;fill_is_sort\&quot;:0},{\&quot;id\&quot;:564976,\&quot;answer\&quot;:\&quot;A\&quot;,\&quot;isdone\&quot;:true,\&quot;isImg\&quot;:false,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;0\&quot;],\&quot;score\&quot;:2,\&quot;fill_is_sort\&quot;:0},{\&quot;id\&quot;:565007,\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;isdone\&quot;:true,\&quot;isImg\&quot;:false,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:2,\&quot;fill_is_sort\&quot;:0}],\&quot;id\&quot;:564965,\&quot;type\&quot;:\&quot;material\&quot;,\&quot;standard_answer\&quot;:[],\&quot;score\&quot;:\&quot;10.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:[{\&quot;id\&quot;:565015,\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;isdone\&quot;:true,\&quot;isImg\&quot;:false,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:2,\&quot;fill_is_sort\&quot;:0},{\&quot;id\&quot;:565025,\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;isdone\&quot;:true,\&quot;isImg\&quot;:false,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:2,\&quot;fill_is_sort\&quot;:0},{\&quot;id\&quot;:565030,\&quot;answer\&quot;:\&quot;D\&quot;,\&quot;isdone\&quot;:true,\&quot;isImg\&quot;:false,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;3\&quot;],\&quot;score\&quot;:2,\&quot;fill_is_sort\&quot;:0},{\&quot;id\&quot;:565039,\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;isdone\&quot;:true,\&quot;isImg\&quot;:false,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:2,\&quot;fill_is_sort\&quot;:0},{\&quot;id\&quot;:565051,\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;isdone\&quot;:true,\&quot;isImg\&quot;:false,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:2,\&quot;fill_is_sort\&quot;:0}],\&quot;id\&quot;:564998,\&quot;type\&quot;:\&quot;material\&quot;,\&quot;standard_answer\&quot;:[],\&quot;score\&quot;:\&quot;10.00\&quot;,\&quot;fill_is_sort\&quot;:0}]&quot;;
+		String testpaper_id=&quot;364977&quot;;
+		//String near_school_id=&quot;0&quot;;
+		//String school_id=&quot;10&quot;;
+		//String do_type=&quot;vipPaper&quot;;
+		//String start_time=&quot;1605501058&quot;;
+		//String from_device=&quot;app&quot;;
+		String question=&quot;[{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:613855,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;5.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;A\&quot;,\&quot;id\&quot;:612032,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;3\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;id\&quot;:612026,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:611582,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:611532,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:613862,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;5.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;A\&quot;,\&quot;id\&quot;:613859,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;5.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:613858,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;3\&quot;],\&quot;score\&quot;:\&quot;5.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;id\&quot;:613856,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;id\&quot;:613851,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;5.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;A\&quot;,\&quot;id\&quot;:611981,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:611974,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;3\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:611942,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;3\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;D\&quot;,\&quot;id\&quot;:611936,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;id\&quot;:611875,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;id\&quot;:611863,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:611802,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;A\&quot;,\&quot;id\&quot;:611780,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:611765,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:611756,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;0\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;A\&quot;,\&quot;id\&quot;:611746,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:611736,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;D\&quot;,\&quot;id\&quot;:611722,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;id\&quot;:611720,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;0\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;id\&quot;:611685,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;id\&quot;:611639,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;id\&quot;:611634,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;id\&quot;:610332,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;A\&quot;,\&quot;id\&quot;:610094,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:1,\&quot;id\&quot;:611839,\&quot;type\&quot;:\&quot;determine\&quot;,\&quot;standard_answer\&quot;:[\&quot;0\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0}]&quot;;
 		
-		String parameter=&quot;{\&quot;timestamp\&quot;:\&quot;&quot;+timestamp+&quot;\&quot;,\&quot;end_time\&quot;:1605502090,\&quot;question\&quot;:&quot;+question+
-				&quot;,\&quot;student_id\&quot;:\&quot;193430\&quot;,\&quot;teacher_chapter_id\&quot;:16724,\&quot;testpaper_id\&quot;:\&quot;&quot;+testpaper_id+
-				&quot;\&quot;,\&quot;near_school_id\&quot;:0,\&quot;school_id\&quot;:\&quot;10\&quot;,\&quot;do_type\&quot;:\&quot;classPaper\&quot;,\&quot;start_time\&quot;:1605501058,\&quot;from_device\&quot;:\&quot;app\&quot;}&quot;;
+		String parameter=&quot;{\&quot;timestamp\&quot;:\&quot;&quot;+timestamp+&quot;\&quot;,\&quot;end_time\&quot;:1605866092,\&quot;question\&quot;:&quot;+question+
+				&quot;,\&quot;student_id\&quot;:\&quot;&quot;+student_id+&quot;\&quot;,\&quot;teacher_chapter_id\&quot;:&quot;+teacher_chapter_id+&quot;,\&quot;testpaper_id\&quot;:\&quot;&quot;+testpaper_id+
+				&quot;\&quot;,\&quot;near_school_id\&quot;:0,\&quot;school_id\&quot;:\&quot;10\&quot;,\&quot;do_type\&quot;:\&quot;vipPaper\&quot;,\&quot;start_time\&quot;:1605865509,\&quot;from_device\&quot;:\&quot;app\&quot;}&quot;;
 		
 	    String enString = AEStest2.Encrypt(parameter,&quot;F697467B14B076F2&quot;);
 	    System.out.println(enString);
@@ -1035,7 +1064,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="测评报告" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="测评报告" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
