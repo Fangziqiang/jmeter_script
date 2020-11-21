@@ -432,7 +432,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
             <collectionProp name="Arguments.arguments">
               <elementProp name="timestamp" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${__time(,)}</stringProp>
+                <stringProp name="Argument.value">${__time(/1000,)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">timestamp</stringProp>
@@ -472,7 +472,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
             <collectionProp name="Arguments.arguments">
               <elementProp name="timestamp" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${__time(,)}</stringProp>
+                <stringProp name="Argument.value">${__time(/1000,)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">timestamp</stringProp>
@@ -511,7 +511,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;subject&quot;:&quot;0&quot;,&quot;timestamp&quot;:${__time(,)},&quot;student_id&quot;:&quot;193430&quot;,&quot;grade&quot;:&quot;9&quot;}</stringProp>
+                <stringProp name="Argument.value">{&quot;subject&quot;:&quot;0&quot;,&quot;timestamp&quot;:${__time(/1000,)},&quot;student_id&quot;:&quot;193430&quot;,&quot;grade&quot;:&quot;9&quot;}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -551,7 +551,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;timestamp&quot;:${__time(,)},&quot;grade&quot;:&quot;9&quot;,&quot;subject&quot;:&quot;837248&quot;,&quot;student_id&quot;:&quot;193430&quot;}</stringProp>
+                <stringProp name="Argument.value">{&quot;timestamp&quot;:${__time(/1000,)},&quot;grade&quot;:&quot;9&quot;,&quot;subject&quot;:&quot;837248&quot;,&quot;student_id&quot;:&quot;193430&quot;}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -591,7 +591,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;grade&quot;:&quot;19&quot;,&quot;timestamp&quot;:${__time(,)},&quot;student_id&quot;:&quot;193430&quot;,&quot;subject&quot;:&quot;0&quot;}</stringProp>
+                <stringProp name="Argument.value">{&quot;grade&quot;:&quot;19&quot;,&quot;timestamp&quot;:${__time(/1000,)},&quot;student_id&quot;:&quot;193430&quot;,&quot;subject&quot;:&quot;0&quot;}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -646,7 +646,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;timestamp&quot;:&quot;${__time(,)}&quot;,&quot;testpaper_id&quot;:&quot;${testpaper_id}&quot;,&quot;student_id&quot;:&quot;${student_id}&quot;}</stringProp>
+                <stringProp name="Argument.value">{&quot;timestamp&quot;:&quot;${__time(/1000,)}&quot;,&quot;testpaper_id&quot;:&quot;${testpaper_id}&quot;,&quot;student_id&quot;:&quot;${student_id}&quot;}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -710,7 +710,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
           <collectionProp name="Arguments.arguments">
             <elementProp name="timestamp" elementType="Argument">
               <stringProp name="Argument.name">timestamp</stringProp>
-              <stringProp name="Argument.value">${__time(,)}</stringProp>
+              <stringProp name="Argument.value">${__time(/1000,)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
@@ -725,48 +725,10 @@ vars.put(&quot;is_topic&quot;,is_topic);
           <boolProp name="recycle">false</boolProp>
           <stringProp name="shareMode">shareMode.all</stringProp>
           <boolProp name="stopThread">true</boolProp>
-          <stringProp name="variableNames">testpaper_id,teacher_chapter_id,paperName,student_id</stringProp>
+          <stringProp name="variableNames">testpaper_id,teacher_chapter_id,paperName,student_id,evaluate_id</stringProp>
           <stringProp name="TestPlan.comments">Allow quoted data?：是否允许数据内容加引号</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="作答预览（做题前置页面）" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;timestamp&quot;:&quot;${__time(,)}&quot;,&quot;begin&quot;:0,&quot;student_id&quot;:&quot;${student_id}&quot;,&quot;course_id&quot;:10196,&quot;test_id&quot;:&quot;364977&quot;,&quot;subject_id&quot;:0,&quot;school_id&quot;:0}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
-          </elementProp>
-          <stringProp name="HTTPSampler.domain"></stringProp>
-          <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol"></stringProp>
-          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/jiekou2/index.php?c=Student&amp;a=doTestpaperNew</stringProp>
-          <stringProp name="HTTPSampler.method">POST</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          <stringProp name="TestPlan.comments">{&quot;timestamp&quot;:&quot;1605865224&quot;,&quot;begin&quot;:0,&quot;student_id&quot;:&quot;193430&quot;,&quot;course_id&quot;:10196,&quot;test_id&quot;:&quot;364977&quot;,&quot;subject_id&quot;:0,&quot;school_id&quot;:0}</stringProp>
-        </HTTPSamplerProxy>
-        <hashTree>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-            <collectionProp name="Asserion.test_strings">
-              <stringProp name="-67766541">{&quot;course&quot;:{&quot;testpaper_name&quot;:&quot;六年级人教版10月-易&quot;,&quot;question_number&quot;:&quot;30&quot;,&quot;limitedTime&quot;:&quot;1500&quot;,&quot;test_type&quot;:&quot;vipnl&quot;,&quot;near_school_id&quot;:0,&quot;school_id&quot;:0,&quot;test_id&quot;:&quot;364977&quot;,&quot;course_id&quot;:10196},&quot;type&quot;:&quot;0&quot;,&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;OK&quot;}</stringProp>
-            </collectionProp>
-            <stringProp name="Assertion.custom_message"></stringProp>
-            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-            <boolProp name="Assertion.assume_success">false</boolProp>
-            <intProp name="Assertion.test_type">16</intProp>
-          </ResponseAssertion>
-          <hashTree/>
-        </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="试题列表" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
@@ -901,13 +863,13 @@ vars.put(&quot;is_topic&quot;,is_topic);
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="提交班课入学测做题结果" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="作答预览（做题前置页面）" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;cbckey&quot;:&quot;${cbckey}&quot;}</stringProp>
+                <stringProp name="Argument.value">{&quot;timestamp&quot;:&quot;${__time(/1000,)}&quot;,&quot;begin&quot;:0,&quot;student_id&quot;:&quot;${student_id}&quot;,&quot;course_id&quot;:10196,&quot;test_id&quot;:&quot;364977&quot;,&quot;subject_id&quot;:0,&quot;school_id&quot;:0}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -916,7 +878,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/jiekou2/restful/question/submit</stringProp>
+          <stringProp name="HTTPSampler.path">/jiekou2/index.php?c=Student&amp;a=doTestpaperNew</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -925,21 +887,810 @@ vars.put(&quot;is_topic&quot;,is_topic);
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          <stringProp name="TestPlan.comments">第一个学生已经提交了试题结果，下次执行次数变为2次</stringProp>
+          <stringProp name="TestPlan.comments">{&quot;timestamp&quot;:&quot;1605865224&quot;,&quot;begin&quot;:0,&quot;student_id&quot;:&quot;193430&quot;,&quot;course_id&quot;:10196,&quot;test_id&quot;:&quot;364977&quot;,&quot;subject_id&quot;:0,&quot;school_id&quot;:0}</stringProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="参数化信息" enabled="true">
-            <stringProp name="delimiter">,</stringProp>
-            <stringProp name="fileEncoding">GB2312</stringProp>
-            <stringProp name="filename">/data/VIP_test_submit.csv</stringProp>
-            <boolProp name="ignoreFirstLine">true</boolProp>
-            <boolProp name="quotedData">true</boolProp>
-            <boolProp name="recycle">false</boolProp>
-            <stringProp name="shareMode">shareMode.all</stringProp>
-            <boolProp name="stopThread">true</boolProp>
-            <stringProp name="variableNames">testpaper_id,teacher_chapter_id,paperName,student_id</stringProp>
-            <stringProp name="TestPlan.comments">Allow quoted data?：是否允许数据内容加引号</stringProp>
-          </CSVDataSet>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-67766541">{&quot;course&quot;:{&quot;testpaper_name&quot;:&quot;六年级人教版10月-易&quot;,&quot;question_number&quot;:&quot;30&quot;,&quot;limitedTime&quot;:&quot;1500&quot;,&quot;test_type&quot;:&quot;vipnl&quot;,&quot;near_school_id&quot;:0,&quot;school_id&quot;:0,&quot;test_id&quot;:&quot;364977&quot;,&quot;course_id&quot;:10196},&quot;type&quot;:&quot;0&quot;,&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;OK&quot;}</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">16</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="获取测评信息" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;timestamp&quot;:&quot;${__time(/1000,)}&quot;,&quot;testpaper_id&quot;:&quot;${testpaper_id}&quot;,&quot;student_id&quot;:&quot;${student_id}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/jiekou2/index.php?c=Enrolment&amp;a=testpaper_detail</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">{&quot;timestamp&quot;:&quot;1605491659&quot;,&quot;student_id&quot;:&quot;193430&quot;,&quot;test_id&quot;:0,&quot;evaluate_id&quot;:&quot;87&quot;}364380,365427</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="1869661087">&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">16</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">pr_testpaper_status;evaluate_status;plan_status;report_status</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.data.testpaper_status;$.data.evaluate_status;$.data.plan_status;$.data.report_status</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1;1;1;1</stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">0;0;0;0</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controlle如果未做入学测试题则提交试题" enabled="true">
+          <stringProp name="IfController.condition">${pr_testpaper_status}==0</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+        </IfController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="提交VIP入学测做题结果" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;cbckey&quot;:&quot;${cbckey}&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/jiekou2/restful/question/submit</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="TestPlan.comments">第一个学生已经提交了试题结果，下次执行次数变为2次</stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Host" elementType="Header">
+                  <stringProp name="Header.name">Host</stringProp>
+                  <stringProp name="Header.value">interface.xuexi8.net</stringProp>
+                </elementProp>
+                <elementProp name="DO" elementType="Header">
+                  <stringProp name="Header.name">DO</stringProp>
+                  <stringProp name="Header.value">web123456789</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="ST" elementType="Header">
+                  <stringProp name="Header.name">ST</stringProp>
+                  <stringProp name="Header.value">60</stringProp>
+                </elementProp>
+                <elementProp name="DSS" elementType="Header">
+                  <stringProp name="Header.name">DSS</stringProp>
+                  <stringProp name="Header.value">e084fe14c24535a09829fd0a2c0d90bf</stringProp>
+                </elementProp>
+                <elementProp name="APPVERSION" elementType="Header">
+                  <stringProp name="Header.name">APPVERSION</stringProp>
+                  <stringProp name="Header.value">6.5.0</stringProp>
+                </elementProp>
+                <elementProp name="APPCLIENT" elementType="Header">
+                  <stringProp name="Header.name">APPCLIENT</stringProp>
+                  <stringProp name="Header.value">WEB</stringProp>
+                </elementProp>
+                <elementProp name="Accept-Language" elementType="Header">
+                  <stringProp name="Header.name">Accept-Language</stringProp>
+                  <stringProp name="Header.value">zh-cn</stringProp>
+                </elementProp>
+                <elementProp name="Accept-Encoding" elementType="Header">
+                  <stringProp name="Header.name">Accept-Encoding</stringProp>
+                  <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="DST" elementType="Header">
+                  <stringProp name="Header.name">DST</stringProp>
+                  <stringProp name="Header.value">07a216d55771583228fcaf68e5232de6</stringProp>
+                </elementProp>
+                <elementProp name="Origin" elementType="Header">
+                  <stringProp name="Header.name">Origin</stringProp>
+                  <stringProp name="Header.value">https://interface.xuexi8.net</stringProp>
+                </elementProp>
+                <elementProp name="User-Agent" elementType="Header">
+                  <stringProp name="Header.name">User-Agent</stringProp>
+                  <stringProp name="Header.value">Mozilla/5.0 (iPhone; CPU iPhone OS 13_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148</stringProp>
+                </elementProp>
+                <elementProp name="Referer" elementType="Header">
+                  <stringProp name="Header.name">Referer</stringProp>
+                  <stringProp name="Header.value">https://interface.xuexi8.net/jiekou2/distnewv6.5/</stringProp>
+                </elementProp>
+                <elementProp name="Content-Length" elementType="Header">
+                  <stringProp name="Header.name">Content-Length</stringProp>
+                  <stringProp name="Header.value">165</stringProp>
+                </elementProp>
+                <elementProp name="Connection" elementType="Header">
+                  <stringProp name="Header.name">Connection</stringProp>
+                  <stringProp name="Header.value">keep-alive</stringProp>
+                </elementProp>
+                <elementProp name="Cookie" elementType="Header">
+                  <stringProp name="Header.name">Cookie</stringProp>
+                  <stringProp name="Header.value">PHPSESSID=cpfq0n0m29c2m68d5j0g9p6dkc; acw_tc=7b39758716054972239936822e414d4232d33c0ae507c62810a6c8cc93c131; _bl_uid=mdk0ghb7hjFgyCeO5z4RhFbqyw1y</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
+              <boolProp name="resetInterpreter">false</boolProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script">	import AES.AEStest2;
+
+	String timestamp = vars.get(&quot;timestamp&quot;);
+	String student_id= vars.get(&quot;student_id&quot;);
+	String teacher_chapter_id= vars.get(&quot;teacher_chapter_id&quot;);
+	String testpaper_id= vars.get(&quot;testpaper_id&quot;);
+   
+   	String cbckey=&quot;&quot;;
+
+		//String teacher_chapter_id=&quot;16724&quot;;
+		//String testpaper_id=&quot;364977&quot;;
+		//String near_school_id=&quot;0&quot;;
+		//String school_id=&quot;10&quot;;
+		//String do_type=&quot;vipPaper&quot;;
+		//String start_time=&quot;1605501058&quot;;
+		//String from_device=&quot;app&quot;;
+		String question=&quot;[{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:613855,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;5.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;A\&quot;,\&quot;id\&quot;:612032,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;3\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;id\&quot;:612026,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:611582,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:611532,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:613862,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;5.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;A\&quot;,\&quot;id\&quot;:613859,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;5.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:613858,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;3\&quot;],\&quot;score\&quot;:\&quot;5.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;id\&quot;:613856,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;id\&quot;:613851,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;5.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;A\&quot;,\&quot;id\&quot;:611981,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:611974,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;3\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:611942,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;3\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;D\&quot;,\&quot;id\&quot;:611936,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;id\&quot;:611875,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;id\&quot;:611863,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:611802,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;A\&quot;,\&quot;id\&quot;:611780,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:611765,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:611756,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;0\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;A\&quot;,\&quot;id\&quot;:611746,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:611736,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;D\&quot;,\&quot;id\&quot;:611722,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;id\&quot;:611720,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;0\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;id\&quot;:611685,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;id\&quot;:611639,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;id\&quot;:611634,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;id\&quot;:610332,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;A\&quot;,\&quot;id\&quot;:610094,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:1,\&quot;id\&quot;:611839,\&quot;type\&quot;:\&quot;determine\&quot;,\&quot;standard_answer\&quot;:[\&quot;0\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0}]&quot;;
+		
+		String parameter=&quot;{\&quot;timestamp\&quot;:\&quot;&quot;+timestamp+&quot;\&quot;,\&quot;end_time\&quot;:1605866092,\&quot;question\&quot;:&quot;+question+
+				&quot;,\&quot;student_id\&quot;:\&quot;&quot;+student_id+&quot;\&quot;,\&quot;teacher_chapter_id\&quot;:&quot;+teacher_chapter_id+&quot;,\&quot;testpaper_id\&quot;:\&quot;&quot;+testpaper_id+
+				&quot;\&quot;,\&quot;near_school_id\&quot;:0,\&quot;school_id\&quot;:\&quot;10\&quot;,\&quot;do_type\&quot;:\&quot;vipPaper\&quot;,\&quot;start_time\&quot;:1605865509,\&quot;from_device\&quot;:\&quot;app\&quot;}&quot;;
+		
+	    String enString = AEStest2.Encrypt(parameter,&quot;F697467B14B076F2&quot;);
+	    System.out.println(enString);
+	    vars.put(&quot;cbckey&quot;,enString);
+
+
+
+
+
+
+
+	    </stringProp>
+            </BeanShellPreProcessor>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-932830415">{&quot;status&quot;:&quot;0&quot;,&quot;code&quot;:200,&quot;msg&quot;:&quot;success&quot;,&quot;data&quot;:{&quot;url&quot;:&quot;bg&quot;}}</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller(综合评估)" enabled="true">
+          <stringProp name="TestPlan.comments">如果未进行综合评估则提交综合评估</stringProp>
+          <stringProp name="IfController.condition">${evaluate_status}==0</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+        </IfController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="提交综合评估" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;timestamp&quot;:&quot;${__time(/1000,)}&quot;,&quot;student_id&quot;:&quot;${student_id}&quot;,&quot;testpaper_id&quot;:&quot;${testpaper_id}&quot;,&quot;evaluate_id&quot;:&quot;${evaluate_id}&quot;,&quot;questions&quot;:[{&quot;question_id&quot;:&quot;25&quot;,&quot;question_type&quot;:&quot;1&quot;,&quot;question_result&quot;:&quot;65&quot;},{&quot;question_id&quot;:&quot;26&quot;,&quot;question_type&quot;:&quot;4&quot;,&quot;question_result&quot;:&quot;1&quot;},{&quot;question_id&quot;:&quot;27&quot;,&quot;question_type&quot;:&quot;4&quot;,&quot;question_result&quot;:&quot;学习&quot;},{&quot;question_id&quot;:&quot;28&quot;,&quot;question_type&quot;:&quot;1&quot;,&quot;question_result&quot;:&quot;71&quot;},{&quot;question_id&quot;:&quot;29&quot;,&quot;question_type&quot;:&quot;1&quot;,&quot;question_result&quot;:&quot;76&quot;},{&quot;question_id&quot;:&quot;30&quot;,&quot;question_type&quot;:&quot;1&quot;,&quot;question_result&quot;:&quot;78&quot;},{&quot;question_id&quot;:&quot;31&quot;,&quot;question_type&quot;:&quot;1&quot;,&quot;question_result&quot;:&quot;84&quot;},{&quot;question_id&quot;:&quot;32&quot;,&quot;question_type&quot;:&quot;1&quot;,&quot;question_result&quot;:&quot;87&quot;},{&quot;question_id&quot;:&quot;33&quot;,&quot;question_type&quot;:&quot;1&quot;,&quot;question_result&quot;:&quot;91&quot;}]}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/jiekou2/index.php?c=Enrolment&amp;a=submit_questions</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-695215580">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:[],&quot;code&quot;:200}</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller（课时规划）" enabled="true">
+          <stringProp name="TestPlan.comments">如果未进行课时规划则提交课时规划</stringProp>
+          <stringProp name="IfController.condition">${plan_status}==0</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+        </IfController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="提交课时规划" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;signature&quot;:&quot;20201121112332SSE.jpg&quot;,&quot;test_id&quot;:&quot;${testpaper_id}&quot;,&quot;plan&quot;:&quot;[\n  {\n    \&quot;id\&quot; : \&quot;2830\&quot;,\n    \&quot;name\&quot; : \&quot;分数的认识\&quot;,\n    \&quot;hour\&quot; : \&quot;2\&quot;\n  },\n  {\n    \&quot;id\&quot; : \&quot;2835\&quot;,\n    \&quot;name\&quot; : \&quot;长方体正方体（认识、展开、折叠）\&quot;,\n    \&quot;hour\&quot; : \&quot;2\&quot;\n  },\n  {\n    \&quot;id\&quot; : \&quot;2897\&quot;,\n    \&quot;name\&quot; : \&quot;分数的基本性质\&quot;,\n    \&quot;hour\&quot; : \&quot;2\&quot;\n  },\n  {\n    \&quot;id\&quot; : \&quot;2961\&quot;,\n    \&quot;name\&quot; : \&quot;分数加减法的应用\&quot;,\n    \&quot;hour\&quot; : \&quot;2\&quot;\n  },\n  {\n    \&quot;id\&quot; : \&quot;2991\&quot;,\n    \&quot;name\&quot; : \&quot;分数的意义和性质\&quot;,\n    \&quot;hour\&quot; : \&quot;2\&quot;\n  },\n  {\n    \&quot;id\&quot; : \&quot;3005\&quot;,\n    \&quot;name\&quot; : \&quot;位置与方向（方位角）\&quot;,\n    \&quot;hour\&quot; : \&quot;2\&quot;\n  },\n  {\n    \&quot;id\&quot; : \&quot;3006\&quot;,\n    \&quot;name\&quot; : \&quot;单元复习卷：分数乘法\&quot;,\n    \&quot;hour\&quot; : \&quot;2\&quot;\n  },\n  {\n    \&quot;id\&quot; : \&quot;3007\&quot;,\n    \&quot;name\&quot; : \&quot;统计和数学广角（找次品、打电话）\&quot;,\n    \&quot;hour\&quot; : \&quot;2\&quot;\n  },\n  {\n    \&quot;id\&quot; : \&quot;3008\&quot;,\n    \&quot;name\&quot; : \&quot;图形的运动（三）\&quot;,\n    \&quot;hour\&quot; : \&quot;2\&quot;\n  },\n  {\n    \&quot;id\&quot; : \&quot;3015\&quot;,\n    \&quot;name\&quot; : \&quot;长方体和正方体的认识、展开、折叠\&quot;,\n    \&quot;hour\&quot; : \&quot;2\&quot;\n  },\n  {\n    \&quot;id\&quot; : \&quot;3100\&quot;,\n    \&quot;name\&quot; : \&quot;长方体和正方体的体积\&quot;,\n    \&quot;hour\&quot; : \&quot;6\&quot;\n  },\n  {\n    \&quot;id\&quot; : \&quot;3115\&quot;,\n    \&quot;name\&quot; : \&quot;分数乘法的意义\&quot;,\n    \&quot;hour\&quot; : \&quot;2\&quot;\n  },\n  {\n    \&quot;id\&quot; : \&quot;3118\&quot;,\n    \&quot;name\&quot; : \&quot;单元复习卷：分数的意义和性质\&quot;,\n    \&quot;hour\&quot; : \&quot;2\&quot;\n  },\n  {\n    \&quot;id\&quot; : \&quot;3134\&quot;,\n    \&quot;name\&quot; : \&quot;分数乘法的混合运算和简便运算\&quot;,\n    \&quot;hour\&quot; : \&quot;4\&quot;\n  },\n  {\n    \&quot;id\&quot; : \&quot;3135\&quot;,\n    \&quot;name\&quot; : \&quot;分数乘法应用题\&quot;,\n    \&quot;hour\&quot; : \&quot;4\&quot;\n  },\n  {\n    \&quot;id\&quot; : \&quot;3272\&quot;,\n    \&quot;name\&quot; : \&quot;单元复习卷：分数加减法\&quot;,\n    \&quot;hour\&quot; : \&quot;2\&quot;\n  },\n  {\n    \&quot;id\&quot; : \&quot;3296\&quot;,\n    \&quot;name\&quot; : \&quot;单元复习：图形的运动（三）\&quot;,\n    \&quot;hour\&quot; : \&quot;2\&quot;\n  },\n  {\n    \&quot;id\&quot; : \&quot;3297\&quot;,\n    \&quot;name\&quot; : \&quot;单元复习卷：分数的加法和减法\&quot;,\n    \&quot;hour\&quot; : \&quot;2\&quot;\n  },\n  {\n    \&quot;id\&quot; : \&quot;3298\&quot;,\n    \&quot;name\&quot; : \&quot;折线统计图\&quot;,\n    \&quot;hour\&quot; : \&quot;2\&quot;\n  },\n  {\n    \&quot;id\&quot; : \&quot;3299\&quot;,\n    \&quot;name\&quot; : \&quot;单元复习卷：折线统计图\&quot;,\n    \&quot;hour\&quot; : \&quot;2\&quot;\n  },\n  {\n    \&quot;id\&quot; : \&quot;3317\&quot;,\n    \&quot;name\&quot; : \&quot;单元复习卷：位置与方向（方位角）\&quot;,\n    \&quot;hour\&quot; : \&quot;2\&quot;\n  },\n  {\n    \&quot;id\&quot; : \&quot;4698\&quot;,\n    \&quot;name\&quot; : \&quot;长方体和正方体（棱长和、表面积）\&quot;,\n    \&quot;hour\&quot; : \&quot;4\&quot;\n  },\n  {\n    \&quot;id\&quot; : \&quot;5619\&quot;,\n    \&quot;name\&quot; : \&quot;分数乘法的意义与计算\&quot;,\n    \&quot;hour\&quot; : \&quot;2\&quot;\n  },\n  {\n    \&quot;id\&quot; : \&quot;5627\&quot;,\n    \&quot;name\&quot; : \&quot;因数与倍数（奇偶质合）\&quot;,\n    \&quot;hour\&quot; : \&quot;2\&quot;\n  },\n  {\n    \&quot;id\&quot; : \&quot;5629\&quot;,\n    \&quot;name\&quot; : \&quot;分数加减应用题\&quot;,\n    \&quot;hour\&quot; : \&quot;2\&quot;\n  },\n  {\n    \&quot;id\&quot; : \&quot;5669\&quot;,\n    \&quot;name\&quot; : \&quot;因数倍数（奇偶质合）\&quot;,\n    \&quot;hour\&quot; : \&quot;2\&quot;\n  },\n  {\n    \&quot;id\&quot; : \&quot;5671\&quot;,\n    \&quot;name\&quot; : \&quot;分数乘法应用题\&quot;,\n    \&quot;hour\&quot; : \&quot;2\&quot;\n  }\n]&quot;,&quot;timestamp&quot;:${__time(/1000,)},&quot;student_id&quot;:&quot;${student_id}&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/jiekou2/index.php?c=Lesson&amp;a=submitPlan</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-1491966390">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;OK&quot;,&quot;code&quot;:200}</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller（测评报告&amp;综合评估报告）" enabled="true">
+          <stringProp name="IfController.condition">${report_status}==1</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+        </IfController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="测评报告" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;timestamp&quot;:&quot;${__time(/1000,)}&quot;,&quot;student_id&quot;:&quot;${student_id}&quot;,&quot;testpaper_id&quot;:&quot;${testpaper_id}&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/jiekou2/index.php?c=Enrolment&amp;a=testpaper_report</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="TestPlan.comments">
+</stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-855486424">&quot;status&quot;:&quot;0&quot;</stringProp>
+                <stringProp name="-1024162917">&quot;msg&quot;:&quot;ok&quot;</stringProp>
+                <stringProp name="723337899">&quot;code&quot;:200</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="综合评估报告" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;testpaper_id&quot;:&quot;${testpaper_id}&quot;,&quot;timestamp&quot;:${__time(/1000,)},&quot;student_id&quot;:&quot;${student_id}&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/jiekou2/index.php?c=Enrolment&amp;a=evaluate_report</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="TestPlan.comments">
+</stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-855486424">&quot;status&quot;:&quot;0&quot;</stringProp>
+                <stringProp name="-1024162917">&quot;msg&quot;:&quot;ok&quot;</stringProp>
+                <stringProp name="723337899">&quot;code&quot;:200</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller（试题解析）" enabled="true">
+          <stringProp name="IfController.condition">${report_status}==1</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+        </IfController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="试题解析" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;cbckey&quot;:&quot;${analysis_paramter}&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/jiekou2/restful/question/analysis</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="TestPlan.comments">
+</stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-855486424">&quot;status&quot;:&quot;0&quot;</stringProp>
+                <stringProp name="-1376434230">&quot;msg&quot;:&quot;success&quot;</stringProp>
+                <stringProp name="723337899">&quot;code&quot;:200</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
+              <boolProp name="resetInterpreter">false</boolProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script">	import AES.AEStest2;
+
+	String timestamp = vars.get(&quot;timestamp&quot;);
+	String student_id= vars.get(&quot;student_id&quot;);
+	String testpaper_id= vars.get(&quot;testpaper_id&quot;);
+   
+   	String analysis_paramter=&quot;&quot;;
+
+		//String teacher_chapter_id=&quot;16724&quot;;
+		//String testpaper_id=&quot;364977&quot;;
+		//String near_school_id=&quot;0&quot;;
+		//String school_id=&quot;10&quot;;
+		//String do_type=&quot;vipPaper&quot;;
+		//String start_time=&quot;1605501058&quot;;
+		//String from_device=&quot;app&quot;;
+		String parameter=&quot;{\&quot;timestamp\&quot;:\&quot;&quot;+timestamp+&quot;\&quot;,\&quot;student_id\&quot;:\&quot;&quot;+student_id+&quot;\&quot;,\&quot;testpaper_id\&quot;:\&quot;&quot;+testpaper_id+&quot;\&quot;,\&quot;course_id\&quot;:\&quot;0\&quot;,\&quot;do_type\&quot;:\&quot;vipPaper\&quot;}&quot;;
+		
+	    String enString = AEStest2.Encrypt(parameter,&quot;F697467B14B076F2&quot;);
+	    System.out.println(enString);
+	    vars.put(&quot;analysis_paramter&quot;,enString);
+
+
+
+
+
+
+
+	    </stringProp>
+            </BeanShellPreProcessor>
+            <hashTree/>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Host" elementType="Header">
+                  <stringProp name="Header.name">Host</stringProp>
+                  <stringProp name="Header.value">interface.xuexi8.net</stringProp>
+                </elementProp>
+                <elementProp name="DO" elementType="Header">
+                  <stringProp name="Header.name">DO</stringProp>
+                  <stringProp name="Header.value">web123456789</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="ST" elementType="Header">
+                  <stringProp name="Header.name">ST</stringProp>
+                  <stringProp name="Header.value">60</stringProp>
+                </elementProp>
+                <elementProp name="DSS" elementType="Header">
+                  <stringProp name="Header.name">DSS</stringProp>
+                  <stringProp name="Header.value">e084fe14c24535a09829fd0a2c0d90bf</stringProp>
+                </elementProp>
+                <elementProp name="APPVERSION" elementType="Header">
+                  <stringProp name="Header.name">APPVERSION</stringProp>
+                  <stringProp name="Header.value">6.5.0</stringProp>
+                </elementProp>
+                <elementProp name="APPCLIENT" elementType="Header">
+                  <stringProp name="Header.name">APPCLIENT</stringProp>
+                  <stringProp name="Header.value">WEB</stringProp>
+                </elementProp>
+                <elementProp name="Accept-Language" elementType="Header">
+                  <stringProp name="Header.name">Accept-Language</stringProp>
+                  <stringProp name="Header.value">zh-cn</stringProp>
+                </elementProp>
+                <elementProp name="Accept-Encoding" elementType="Header">
+                  <stringProp name="Header.name">Accept-Encoding</stringProp>
+                  <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="DST" elementType="Header">
+                  <stringProp name="Header.name">DST</stringProp>
+                  <stringProp name="Header.value">07a216d55771583228fcaf68e5232de6</stringProp>
+                </elementProp>
+                <elementProp name="Origin" elementType="Header">
+                  <stringProp name="Header.name">Origin</stringProp>
+                  <stringProp name="Header.value">https://interface.xuexi8.net</stringProp>
+                </elementProp>
+                <elementProp name="User-Agent" elementType="Header">
+                  <stringProp name="Header.name">User-Agent</stringProp>
+                  <stringProp name="Header.value">Mozilla/5.0 (iPhone; CPU iPhone OS 13_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148</stringProp>
+                </elementProp>
+                <elementProp name="Referer" elementType="Header">
+                  <stringProp name="Header.name">Referer</stringProp>
+                  <stringProp name="Header.value">https://interface.xuexi8.net/jiekou2/distnewv6.5/</stringProp>
+                </elementProp>
+                <elementProp name="Content-Length" elementType="Header">
+                  <stringProp name="Header.name">Content-Length</stringProp>
+                  <stringProp name="Header.value">165</stringProp>
+                </elementProp>
+                <elementProp name="Connection" elementType="Header">
+                  <stringProp name="Header.name">Connection</stringProp>
+                  <stringProp name="Header.value">keep-alive</stringProp>
+                </elementProp>
+                <elementProp name="Cookie" elementType="Header">
+                  <stringProp name="Header.name">Cookie</stringProp>
+                  <stringProp name="Header.value">PHPSESSID=cpfq0n0m29c2m68d5j0g9p6dkc; acw_tc=7b39758716054972239936822e414d4232d33c0ae507c62810a6c8cc93c131; _bl_uid=mdk0ghb7hjFgyCeO5z4RhFbqyw1y</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="测评历史(待完善)" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="参数化信息" enabled="true">
+          <stringProp name="delimiter">,</stringProp>
+          <stringProp name="fileEncoding">GB2312</stringProp>
+          <stringProp name="filename">/data/VIP_test_submit.csv</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <boolProp name="quotedData">true</boolProp>
+          <boolProp name="recycle">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+          <boolProp name="stopThread">true</boolProp>
+          <stringProp name="variableNames">testpaper_id_nouse,teacher_chapter_id,paperName,student_id,evaluate_id</stringProp>
+          <stringProp name="TestPlan.comments">Allow quoted data?：是否允许数据内容加引号</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="false">
+          <boolProp name="resetInterpreter">false</boolProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="script">   import AES.AEStest2;
+   String cbckey=&quot;&quot;;
+   String cSrc = &quot;{\&quot;timestamp\&quot;:\&quot;1605424485863\&quot;,\&quot;student_id\&quot;:\&quot;193430\&quot;,\&quot;testpaper_id\&quot;:\&quot;363331\&quot;,\&quot;course_id\&quot;:0,\&quot;do_type\&quot;:\&quot;classPaper\&quot;}&quot;;
+        System.out.println(cSrc);
+        // 加密
+        long lStart = System.currentTimeMillis();
+        String enString = AEStest2.Encrypt(cSrc, &quot;F697467B14B076F2&quot;);
+        System.out.println(&quot;加密后的字串是:&quot;+enString);
+        log.info(enString);
+	   //将变量enString的值付给cbckey
+        vars.put(&quot;cbckey&quot;,enString);
+</stringProp>
+        </BeanShellPostProcessor>
+        <hashTree/>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="timestamp" elementType="Argument">
+              <stringProp name="Argument.name">timestamp</stringProp>
+              <stringProp name="Argument.value">${__time(,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="测评历史" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;student_id&quot;:&quot;${student_id}&quot;,&quot;timestamp&quot;:${__time(/1000,)}}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/jiekou2/index.php?c=Enrolment&amp;a=testpaper_history</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">{&quot;timestamp&quot;:&quot;1605344079&quot;,&quot;student_id&quot;:&quot;193430&quot;}</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor(提取试卷id)" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">testpaper_id</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.data[*].id</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">0</stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">0</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-855486424">&quot;status&quot;:&quot;0&quot;</stringProp>
+              <stringProp name="-1024194661">&quot;msg&quot;:&quot;OK&quot;</stringProp>
+              <stringProp name="723337899">&quot;code&quot;:200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">16</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="综合评估报告" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;testpaper_id&quot;:&quot;${testpaper_id}&quot;,&quot;timestamp&quot;:${__time(/1000,)},&quot;student_id&quot;:&quot;${student_id}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/jiekou2/index.php?c=Enrolment&amp;a=evaluate_report</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">
+</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-855486424">&quot;status&quot;:&quot;0&quot;</stringProp>
+              <stringProp name="-1024162917">&quot;msg&quot;:&quot;ok&quot;</stringProp>
+              <stringProp name="723337899">&quot;code&quot;:200</stringProp>
+              <stringProp name="-640198000">&quot;status&quot;:&quot;2&quot;,&quot;msg&quot;:&quot;还没有生成课时规划&quot;</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">48</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="测评报告" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;timestamp&quot;:&quot;${__time(/1000,)}&quot;,&quot;student_id&quot;:&quot;${student_id}&quot;,&quot;testpaper_id&quot;:&quot;${testpaper_id}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/jiekou2/index.php?c=Enrolment&amp;a=testpaper_report</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">使用测评历史中的试卷id查看试卷报告
+</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-855486424">&quot;status&quot;:&quot;0&quot;</stringProp>
+              <stringProp name="-1024162917">&quot;msg&quot;:&quot;ok&quot;</stringProp>
+              <stringProp name="723337899">&quot;code&quot;:200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">16</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="试题解析" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;cbckey&quot;:&quot;${analysis_paramter}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/jiekou2/restful/question/analysis</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">
+</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-855486424">&quot;status&quot;:&quot;0&quot;</stringProp>
+              <stringProp name="-1376434230">&quot;msg&quot;:&quot;success&quot;</stringProp>
+              <stringProp name="723337899">&quot;code&quot;:200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">16</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">	import AES.AEStest2;
+
+	String timestamp = vars.get(&quot;timestamp&quot;);
+	String student_id= vars.get(&quot;student_id&quot;);
+	String testpaper_id= vars.get(&quot;testpaper_id&quot;);
+   
+   	String analysis_paramter=&quot;&quot;;
+
+		//String teacher_chapter_id=&quot;16724&quot;;
+		//String testpaper_id=&quot;364977&quot;;
+		//String near_school_id=&quot;0&quot;;
+		//String school_id=&quot;10&quot;;
+		//String do_type=&quot;vipPaper&quot;;
+		//String start_time=&quot;1605501058&quot;;
+		//String from_device=&quot;app&quot;;
+		String parameter=&quot;{\&quot;timestamp\&quot;:\&quot;&quot;+timestamp+&quot;\&quot;,\&quot;student_id\&quot;:\&quot;&quot;+student_id+&quot;\&quot;,\&quot;testpaper_id\&quot;:\&quot;&quot;+testpaper_id+&quot;\&quot;,\&quot;course_id\&quot;:\&quot;0\&quot;,\&quot;do_type\&quot;:\&quot;vipPaper\&quot;}&quot;;
+		
+	    String enString = AEStest2.Encrypt(parameter,&quot;F697467B14B076F2&quot;);
+	    System.out.println(enString);
+	    vars.put(&quot;analysis_paramter&quot;,enString);
+
+
+
+
+
+
+
+	    </stringProp>
+          </BeanShellPreProcessor>
           <hashTree/>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
@@ -1013,548 +1764,6 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
             </collectionProp>
           </HeaderManager>
-          <hashTree/>
-          <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">	import AES.AEStest2;
-
-	String timestamp = vars.get(&quot;timestamp&quot;);
-	String student_id= vars.get(&quot;student_id&quot;);
-	String teacher_chapter_id= vars.get(&quot;teacher_chapter_id&quot;);
-	String testpaper_id= vars.get(&quot;testpaper_id&quot;);
-   
-   	String cbckey=&quot;&quot;;
-
-		String teacher_chapter_id=&quot;16724&quot;;
-		String testpaper_id=&quot;364977&quot;;
-		//String near_school_id=&quot;0&quot;;
-		//String school_id=&quot;10&quot;;
-		//String do_type=&quot;vipPaper&quot;;
-		//String start_time=&quot;1605501058&quot;;
-		//String from_device=&quot;app&quot;;
-		String question=&quot;[{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:613855,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;5.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;A\&quot;,\&quot;id\&quot;:612032,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;3\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;id\&quot;:612026,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:611582,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:611532,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:613862,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;5.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;A\&quot;,\&quot;id\&quot;:613859,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;5.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:613858,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;3\&quot;],\&quot;score\&quot;:\&quot;5.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;id\&quot;:613856,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;id\&quot;:613851,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;5.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;A\&quot;,\&quot;id\&quot;:611981,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:611974,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;3\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:611942,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;3\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;D\&quot;,\&quot;id\&quot;:611936,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;id\&quot;:611875,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;id\&quot;:611863,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:611802,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;A\&quot;,\&quot;id\&quot;:611780,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:611765,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:611756,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;0\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;A\&quot;,\&quot;id\&quot;:611746,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;B\&quot;,\&quot;id\&quot;:611736,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;D\&quot;,\&quot;id\&quot;:611722,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;id\&quot;:611720,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;0\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;id\&quot;:611685,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;id\&quot;:611639,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;1\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;id\&quot;:611634,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;C\&quot;,\&quot;id\&quot;:610332,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:\&quot;A\&quot;,\&quot;id\&quot;:610094,\&quot;type\&quot;:\&quot;single_choice\&quot;,\&quot;standard_answer\&quot;:[\&quot;2\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0},{\&quot;answer\&quot;:1,\&quot;id\&quot;:611839,\&quot;type\&quot;:\&quot;determine\&quot;,\&quot;standard_answer\&quot;:[\&quot;0\&quot;],\&quot;score\&quot;:\&quot;3.00\&quot;,\&quot;fill_is_sort\&quot;:0}]&quot;;
-		
-		String parameter=&quot;{\&quot;timestamp\&quot;:\&quot;&quot;+timestamp+&quot;\&quot;,\&quot;end_time\&quot;:1605866092,\&quot;question\&quot;:&quot;+question+
-				&quot;,\&quot;student_id\&quot;:\&quot;&quot;+student_id+&quot;\&quot;,\&quot;teacher_chapter_id\&quot;:&quot;+teacher_chapter_id+&quot;,\&quot;testpaper_id\&quot;:\&quot;&quot;+testpaper_id+
-				&quot;\&quot;,\&quot;near_school_id\&quot;:0,\&quot;school_id\&quot;:\&quot;10\&quot;,\&quot;do_type\&quot;:\&quot;vipPaper\&quot;,\&quot;start_time\&quot;:1605865509,\&quot;from_device\&quot;:\&quot;app\&quot;}&quot;;
-		
-	    String enString = AEStest2.Encrypt(parameter,&quot;F697467B14B076F2&quot;);
-	    System.out.println(enString);
-	    vars.put(&quot;cbckey&quot;,enString);
-
-
-
-
-
-
-
-	    </stringProp>
-          </BeanShellPreProcessor>
-          <hashTree/>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-            <collectionProp name="Asserion.test_strings">
-              <stringProp name="-932830415">{&quot;status&quot;:&quot;0&quot;,&quot;code&quot;:200,&quot;msg&quot;:&quot;success&quot;,&quot;data&quot;:{&quot;url&quot;:&quot;bg&quot;}}</stringProp>
-            </collectionProp>
-            <stringProp name="Assertion.custom_message"></stringProp>
-            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-            <boolProp name="Assertion.assume_success">false</boolProp>
-            <intProp name="Assertion.test_type">16</intProp>
-          </ResponseAssertion>
-          <hashTree/>
-        </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="测评报告" enabled="false">
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;timestamp&quot;:&quot;${__time(,)}&quot;,&quot;student_id&quot;:&quot;193430&quot;,&quot;testpaper_id&quot;:&quot;364566&quot;}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
-          </elementProp>
-          <stringProp name="HTTPSampler.domain"></stringProp>
-          <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol"></stringProp>
-          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/jiekou2/index.php?c=classTest&amp;a=classTestReport</stringProp>
-          <stringProp name="HTTPSampler.method">POST</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          <stringProp name="TestPlan.comments">使用测评历史中的试卷id查看试卷报告
-</stringProp>
-        </HTTPSamplerProxy>
-        <hashTree>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-            <collectionProp name="Asserion.test_strings">
-              <stringProp name="-855486424">&quot;status&quot;:&quot;0&quot;</stringProp>
-              <stringProp name="-1024162917">&quot;msg&quot;:&quot;ok&quot;</stringProp>
-              <stringProp name="723337899">&quot;code&quot;:200</stringProp>
-            </collectionProp>
-            <stringProp name="Assertion.custom_message"></stringProp>
-            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-            <boolProp name="Assertion.assume_success">false</boolProp>
-            <intProp name="Assertion.test_type">16</intProp>
-          </ResponseAssertion>
-          <hashTree/>
-        </hashTree>
-      </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="测评历史" enabled="true">
-        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
-        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
-          <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">1</stringProp>
-        </elementProp>
-        <stringProp name="ThreadGroup.num_threads">1</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
-        <boolProp name="ThreadGroup.scheduler">false</boolProp>
-        <stringProp name="ThreadGroup.duration"></stringProp>
-        <stringProp name="ThreadGroup.delay"></stringProp>
-        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
-      </ThreadGroup>
-      <hashTree>
-        <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="false">
-          <boolProp name="resetInterpreter">false</boolProp>
-          <stringProp name="parameters"></stringProp>
-          <stringProp name="filename"></stringProp>
-          <stringProp name="script">   import AES.AEStest2;
-   String cbckey=&quot;&quot;;
-   String cSrc = &quot;{\&quot;timestamp\&quot;:\&quot;1605424485863\&quot;,\&quot;student_id\&quot;:\&quot;193430\&quot;,\&quot;testpaper_id\&quot;:\&quot;363331\&quot;,\&quot;course_id\&quot;:0,\&quot;do_type\&quot;:\&quot;classPaper\&quot;}&quot;;
-        System.out.println(cSrc);
-        // 加密
-        long lStart = System.currentTimeMillis();
-        String enString = AEStest2.Encrypt(cSrc, &quot;F697467B14B076F2&quot;);
-        System.out.println(&quot;加密后的字串是:&quot;+enString);
-        log.info(enString);
-	   //将变量enString的值付给cbckey
-        vars.put(&quot;cbckey&quot;,enString);
-</stringProp>
-        </BeanShellPostProcessor>
-        <hashTree/>
-        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
-          <collectionProp name="Arguments.arguments">
-            <elementProp name="timestamp" elementType="Argument">
-              <stringProp name="Argument.name">timestamp</stringProp>
-              <stringProp name="Argument.value">${__time(,)}</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-          </collectionProp>
-        </Arguments>
-        <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="测评历史" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;timestamp&quot;:${__time(,)},&quot;student_id&quot;:&quot;193430&quot;}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
-          </elementProp>
-          <stringProp name="HTTPSampler.domain"></stringProp>
-          <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol"></stringProp>
-          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/jiekou2/index.php?c=classTest&amp;a=classTestListHistory</stringProp>
-          <stringProp name="HTTPSampler.method">POST</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          <stringProp name="TestPlan.comments">{&quot;timestamp&quot;:&quot;1605344079&quot;,&quot;student_id&quot;:&quot;193430&quot;}</stringProp>
-        </HTTPSamplerProxy>
-        <hashTree>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor(提取试卷id)" enabled="true">
-            <stringProp name="JSONPostProcessor.referenceNames">test_id</stringProp>
-            <stringProp name="JSONPostProcessor.jsonPathExprs">$.data[*].id</stringProp>
-            <stringProp name="JSONPostProcessor.match_numbers">0</stringProp>
-            <stringProp name="JSONPostProcessor.defaultValues">363140</stringProp>
-          </JSONPostProcessor>
-          <hashTree/>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-            <collectionProp name="Asserion.test_strings">
-              <stringProp name="-855486424">&quot;status&quot;:&quot;0&quot;</stringProp>
-              <stringProp name="-1024162917">&quot;msg&quot;:&quot;ok&quot;</stringProp>
-              <stringProp name="723337899">&quot;code&quot;:200</stringProp>
-            </collectionProp>
-            <stringProp name="Assertion.custom_message"></stringProp>
-            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-            <boolProp name="Assertion.assume_success">false</boolProp>
-            <intProp name="Assertion.test_type">16</intProp>
-          </ResponseAssertion>
-          <hashTree/>
-        </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="测评报告" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;timestamp&quot;:&quot;${__time(,)}&quot;,&quot;student_id&quot;:&quot;193430&quot;,&quot;testpaper_id&quot;:&quot;${test_id}&quot;}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
-          </elementProp>
-          <stringProp name="HTTPSampler.domain"></stringProp>
-          <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol"></stringProp>
-          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/jiekou2/index.php?c=classTest&amp;a=classTestReport</stringProp>
-          <stringProp name="HTTPSampler.method">POST</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          <stringProp name="TestPlan.comments">使用测评历史中的试卷id查看试卷报告
-</stringProp>
-        </HTTPSamplerProxy>
-        <hashTree>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-            <collectionProp name="Asserion.test_strings">
-              <stringProp name="-855486424">&quot;status&quot;:&quot;0&quot;</stringProp>
-              <stringProp name="-1024162917">&quot;msg&quot;:&quot;ok&quot;</stringProp>
-              <stringProp name="723337899">&quot;code&quot;:200</stringProp>
-            </collectionProp>
-            <stringProp name="Assertion.custom_message"></stringProp>
-            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-            <boolProp name="Assertion.assume_success">false</boolProp>
-            <intProp name="Assertion.test_type">16</intProp>
-          </ResponseAssertion>
-          <hashTree/>
-        </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="查看试题解析" enabled="false">
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;timestamp&quot;:&quot;${__time(,)}&quot;,&quot;student_id&quot;:&quot;193430&quot;,&quot;testpaper_id&quot;:&quot;${test_id}&quot;,&quot;course_id&quot;:0,&quot;do_type&quot;:&quot;classPaper&quot;}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
-          </elementProp>
-          <stringProp name="HTTPSampler.domain"></stringProp>
-          <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol"></stringProp>
-          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/jiekou2/restful/question/analysis</stringProp>
-          <stringProp name="HTTPSampler.method">POST</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          <stringProp name="TestPlan.comments">使用测评历史中的试卷id查看试卷报告
-</stringProp>
-        </HTTPSamplerProxy>
-        <hashTree>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-            <collectionProp name="Asserion.test_strings">
-              <stringProp name="-1879430401">&quot;status&quot;:&quot;0&quot;,&quot;code&quot;:200,&quot;msg&quot;:&quot;success&quot;,</stringProp>
-            </collectionProp>
-            <stringProp name="Assertion.custom_message"></stringProp>
-            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-            <boolProp name="Assertion.assume_success">false</boolProp>
-            <intProp name="Assertion.test_type">16</intProp>
-          </ResponseAssertion>
-          <hashTree/>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-            <collectionProp name="HeaderManager.headers">
-              <elementProp name="Host" elementType="Header">
-                <stringProp name="Header.name">Host</stringProp>
-                <stringProp name="Header.value">interface.xuexi8.net</stringProp>
-              </elementProp>
-              <elementProp name="Accept-Encoding" elementType="Header">
-                <stringProp name="Header.name">Accept-Encoding</stringProp>
-                <stringProp name="Header.value">gzip, deflate, br</stringProp>
-              </elementProp>
-              <elementProp name="Cookie" elementType="Header">
-                <stringProp name="Header.name">Cookie</stringProp>
-                <stringProp name="Header.value">PHPSESSID=r7347iv7bpr7uad57ehg9dg6f3; _bl_uid=mdk0ghb7hjFgyCeO5z4RhFbqyw1y; acw_tc=65c86a0b16053439949215011ecf45f511bd58fd5cd69b133a8dfc161aba4d</stringProp>
-              </elementProp>
-            </collectionProp>
-          </HeaderManager>
-          <hashTree/>
-        </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="查看试题解析" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;cbckey&quot;:&quot;${cbckey}&quot;}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
-          </elementProp>
-          <stringProp name="HTTPSampler.domain"></stringProp>
-          <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol"></stringProp>
-          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/jiekou2/restful/question/analysis</stringProp>
-          <stringProp name="HTTPSampler.method">POST</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          <stringProp name="TestPlan.comments">使用测评历史中的试卷id查看试卷报告
-</stringProp>
-        </HTTPSamplerProxy>
-        <hashTree>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-            <collectionProp name="Asserion.test_strings">
-              <stringProp name="-1879430401">&quot;status&quot;:&quot;0&quot;,&quot;code&quot;:200,&quot;msg&quot;:&quot;success&quot;,</stringProp>
-            </collectionProp>
-            <stringProp name="Assertion.custom_message"></stringProp>
-            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-            <boolProp name="Assertion.assume_success">false</boolProp>
-            <intProp name="Assertion.test_type">16</intProp>
-          </ResponseAssertion>
-          <hashTree/>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-            <collectionProp name="HeaderManager.headers">
-              <elementProp name="Host" elementType="Header">
-                <stringProp name="Header.name">Host</stringProp>
-                <stringProp name="Header.value">interface.xuexi8.net</stringProp>
-              </elementProp>
-              <elementProp name="DO" elementType="Header">
-                <stringProp name="Header.name">DO</stringProp>
-                <stringProp name="Header.value">web123456789</stringProp>
-              </elementProp>
-              <elementProp name="Accept" elementType="Header">
-                <stringProp name="Header.name">Accept</stringProp>
-                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
-              </elementProp>
-              <elementProp name="ST" elementType="Header">
-                <stringProp name="Header.name">ST</stringProp>
-                <stringProp name="Header.value">60</stringProp>
-              </elementProp>
-              <elementProp name="DSS" elementType="Header">
-                <stringProp name="Header.name">DSS</stringProp>
-                <stringProp name="Header.value">e084fe14c24535a09829fd0a2c0d90bf</stringProp>
-              </elementProp>
-              <elementProp name="APPVERSION" elementType="Header">
-                <stringProp name="Header.name">APPVERSION</stringProp>
-                <stringProp name="Header.value">6.5.0</stringProp>
-              </elementProp>
-              <elementProp name="APPCLIENT" elementType="Header">
-                <stringProp name="Header.name">APPCLIENT</stringProp>
-                <stringProp name="Header.value">WEB</stringProp>
-              </elementProp>
-              <elementProp name="Accept-Language" elementType="Header">
-                <stringProp name="Header.name">Accept-Language</stringProp>
-                <stringProp name="Header.value">zh-cn</stringProp>
-              </elementProp>
-              <elementProp name="Accept-Encoding" elementType="Header">
-                <stringProp name="Header.name">Accept-Encoding</stringProp>
-                <stringProp name="Header.value">gzip, deflate, br</stringProp>
-              </elementProp>
-              <elementProp name="Content-Type" elementType="Header">
-                <stringProp name="Header.name">Content-Type</stringProp>
-                <stringProp name="Header.value">application/json</stringProp>
-              </elementProp>
-              <elementProp name="DST" elementType="Header">
-                <stringProp name="Header.name">DST</stringProp>
-                <stringProp name="Header.value">e62d11c84241b518b21c5ee2893078ea</stringProp>
-              </elementProp>
-              <elementProp name="Origin" elementType="Header">
-                <stringProp name="Header.name">Origin</stringProp>
-                <stringProp name="Header.value">https://interface.xuexi8.net</stringProp>
-              </elementProp>
-              <elementProp name="User-Agent" elementType="Header">
-                <stringProp name="Header.name">User-Agent</stringProp>
-                <stringProp name="Header.value">Mozilla/5.0 (iPhone; CPU iPhone OS 13_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148</stringProp>
-              </elementProp>
-              <elementProp name="Referer" elementType="Header">
-                <stringProp name="Header.name">Referer</stringProp>
-                <stringProp name="Header.value">https://interface.xuexi8.net/jiekou2/distnewv6.5/</stringProp>
-              </elementProp>
-              <elementProp name="Content-Length" elementType="Header">
-                <stringProp name="Header.name">Content-Length</stringProp>
-                <stringProp name="Header.value">165</stringProp>
-              </elementProp>
-              <elementProp name="Connection" elementType="Header">
-                <stringProp name="Header.name">Connection</stringProp>
-                <stringProp name="Header.value">keep-alive</stringProp>
-              </elementProp>
-              <elementProp name="Cookie" elementType="Header">
-                <stringProp name="Header.name">Cookie</stringProp>
-                <stringProp name="Header.value">PHPSESSID=r7347iv7bpr7uad57ehg9dg6f3; _bl_uid=mdk0ghb7hjFgyCeO5z4RhFbqyw1y; acw_tc=65c86a0b16053439949215011ecf45f511bd58fd5cd69b133a8dfc161aba4d</stringProp>
-              </elementProp>
-            </collectionProp>
-          </HeaderManager>
-          <hashTree/>
-          <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
-            <boolProp name="resetInterpreter">false</boolProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="script">	import AES.AEStest2;
-
-	String timestamp = vars.get(&quot;timestamp&quot;);
-	String test_id = vars.get(&quot;test_id&quot;);
-   
-   String cbckey=&quot;&quot;;
-   String cSrc = &quot;{\&quot;timestamp\&quot;:\&quot;&quot;+timestamp+&quot;\&quot;,\&quot;student_id\&quot;:\&quot;193430\&quot;,\&quot;testpaper_id\&quot;:\&quot;&quot;+test_id+&quot;\&quot;,\&quot;course_id\&quot;:0,\&quot;do_type\&quot;:\&quot;classPaper\&quot;}&quot;;
-        System.out.println(cSrc);
-        // 加密
-        long lStart = System.currentTimeMillis();
-        String enString = AEStest2.Encrypt(cSrc, &quot;F697467B14B076F2&quot;);
-        System.out.println(&quot;加密后的字串是:&quot;+enString);
-        log.info(enString);
-	   //将变量enString的值付给cbckey
-        vars.put(&quot;cbckey&quot;,enString);
-</stringProp>
-          </BeanShellPreProcessor>
-          <hashTree/>
-        </hashTree>
-      </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="测评报告分享" enabled="true">
-        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
-        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
-          <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">1</stringProp>
-        </elementProp>
-        <stringProp name="ThreadGroup.num_threads">1</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
-        <boolProp name="ThreadGroup.scheduler">false</boolProp>
-        <stringProp name="ThreadGroup.duration"></stringProp>
-        <stringProp name="ThreadGroup.delay"></stringProp>
-        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
-      </ThreadGroup>
-      <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="生成测评报告海报" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;timestamp&quot;:&quot;${__time(,)}&quot;,&quot;gread_id&quot;:&quot;12&quot;,&quot;paper_id&quot;:&quot;364566&quot;}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
-          </elementProp>
-          <stringProp name="HTTPSampler.domain"></stringProp>
-          <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol"></stringProp>
-          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/jiekou2/index.php?c=classTest&amp;a=classTestQRCode</stringProp>
-          <stringProp name="HTTPSampler.method">POST</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
-        </HTTPSamplerProxy>
-        <hashTree>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-            <collectionProp name="Asserion.test_strings">
-              <stringProp name="-855486424">&quot;status&quot;:&quot;0&quot;</stringProp>
-              <stringProp name="-1024162917">&quot;msg&quot;:&quot;ok&quot;</stringProp>
-              <stringProp name="723337899">&quot;code&quot;:200</stringProp>
-            </collectionProp>
-            <stringProp name="Assertion.custom_message"></stringProp>
-            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-            <boolProp name="Assertion.assume_success">false</boolProp>
-            <intProp name="Assertion.test_type">16</intProp>
-          </ResponseAssertion>
-          <hashTree/>
-        </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="分享测评报告到微信或者微信朋友圈" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;type&quot;:&quot;10&quot;,&quot;status&quot;:&quot;0&quot;,&quot;timestamp&quot;:${__time(,)},&quot;student_id&quot;:&quot;193430&quot;}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
-          </elementProp>
-          <stringProp name="HTTPSampler.domain"></stringProp>
-          <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol"></stringProp>
-          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/jiekou2/index.php?c=Queue&amp;a=share</stringProp>
-          <stringProp name="HTTPSampler.method">POST</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          <stringProp name="TestPlan.comments">
-</stringProp>
-        </HTTPSamplerProxy>
-        <hashTree>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-            <collectionProp name="Asserion.test_strings">
-              <stringProp name="-695215580">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:[],&quot;code&quot;:200}</stringProp>
-            </collectionProp>
-            <stringProp name="Assertion.custom_message"></stringProp>
-            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-            <boolProp name="Assertion.assume_success">false</boolProp>
-            <intProp name="Assertion.test_type">16</intProp>
-          </ResponseAssertion>
-          <hashTree/>
-        </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="分享增加盾币" enabled="true">
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;teacher_chapter_id&quot;:{},&quot;practice_id&quot;:&quot;0&quot;,&quot;course_id&quot;:{},&quot;student_id&quot;:&quot;193430&quot;,&quot;timestamp&quot;:${__time(,)},&quot;share_type&quot;:&quot;4&quot;}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
-          </elementProp>
-          <stringProp name="HTTPSampler.domain"></stringProp>
-          <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol"></stringProp>
-          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/jiekou2/index.php?c=Coursev2&amp;a=shareAddDunbi</stringProp>
-          <stringProp name="HTTPSampler.method">POST</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
-        </HTTPSamplerProxy>
-        <hashTree>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-            <collectionProp name="Asserion.test_strings">
-              <stringProp name="900769044">{&quot;status&quot;:&quot;2&quot;,&quot;msg&quot;:&quot;已经分享过了&quot;,&quot;data&quot;:[&quot;https://interface.xuexi8.net//jiekou2//images/biaoqing/kong408.png&quot;,&quot;https://interface.xuexi8.net//jiekou2//images/biaoqing/kong612.png&quot;],&quot;code&quot;:200}</stringProp>
-              <stringProp name="-799777244">{&quot;status&quot;:&quot;0&quot;,&quot;msg&quot;:&quot;OK&quot;,&quot;data&quot;:[],&quot;code&quot;:200}</stringProp>
-            </collectionProp>
-            <stringProp name="Assertion.custom_message"></stringProp>
-            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-            <boolProp name="Assertion.assume_success">false</boolProp>
-            <intProp name="Assertion.test_type">48</intProp>
-          </ResponseAssertion>
           <hashTree/>
         </hashTree>
       </hashTree>
