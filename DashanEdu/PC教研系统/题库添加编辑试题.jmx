@@ -198,7 +198,7 @@ prev.setResponseData(outBuffer.toString());</stringProp>
           </elementProp>
           <elementProp name="Cookie" elementType="Header">
             <stringProp name="Header.name">Cookie</stringProp>
-            <stringProp name="Header.value">p_h5_upload_u=23067789-67FB-4CF1-844A-6C23F4156010; selectedStreamLevel=LD; _bl_uid=gUk5Ccv6hp0gd4gmXa0IrUy94z3n; Hm_lvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1604452550,1604455793,1604625363,1604714358; PHPSESSID=8hiqcm2uoj4aarcj092e7tl6g4; Hm_lpvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1604738418</stringProp>
+            <stringProp name="Header.value">p_h5_upload_u=23067789-67FB-4CF1-844A-6C23F4156010; selectedStreamLevel=LD; _bl_uid=gUk5Ccv6hp0gd4gmXa0IrUy94z3n; Hm_lvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1606099242,1606100649,1606180062,1606266230; PHPSESSID=rcorku7u4vrpm1lcnvl40ntjvf; laravel_session=UDmLejonNR9TecltacqoPlELgXHJMZP5HnlRydQe; token=; Hm_lpvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1606290786</stringProp>
           </elementProp>
         </collectionProp>
       </HeaderManager>
@@ -12072,19 +12072,19 @@ vars.put(&quot;is_topic&quot;,is_topic);
           <collectionProp name="Arguments.arguments">
             <elementProp name="course_tem_id" elementType="Argument">
               <stringProp name="Argument.name">course_tem_id</stringProp>
-              <stringProp name="Argument.value">18139</stringProp>
+              <stringProp name="Argument.value">2809</stringProp>
               <stringProp name="Argument.desc">false</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="course_id" elementType="Argument">
               <stringProp name="Argument.name">course_id</stringProp>
-              <stringProp name="Argument.value">18139</stringProp>
+              <stringProp name="Argument.value">2809</stringProp>
               <stringProp name="Argument.desc">false</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="chapter_id" elementType="Argument">
               <stringProp name="Argument.name">chapter_id</stringProp>
-              <stringProp name="Argument.value">541954</stringProp>
+              <stringProp name="Argument.value">481495</stringProp>
               <stringProp name="Argument.desc">false</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
@@ -12278,7 +12278,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="score" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">2</stringProp>
+                <stringProp name="Argument.value">5</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">score</stringProp>
@@ -13261,7 +13261,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="score" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">2</stringProp>
+                <stringProp name="Argument.value">5</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">score</stringProp>
@@ -13740,7 +13740,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="score" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">2</stringProp>
+                <stringProp name="Argument.value">5</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">score</stringProp>
@@ -13970,7 +13970,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="score" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">2</stringProp>
+                <stringProp name="Argument.value">5</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">score</stringProp>
@@ -14186,7 +14186,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="score" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">2</stringProp>
+                <stringProp name="Argument.value">5</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">score</stringProp>
@@ -14507,222 +14507,6 @@ vars.put(&quot;is_topic&quot;,is_topic);
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="背诵题" enabled="true">
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="teacher_chapter_id" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value"></stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">teacher_chapter_id</stringProp>
-              </elementProp>
-              <elementProp name="type" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">recite</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">type</stringProp>
-              </elementProp>
-              <elementProp name="page_type" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">jy</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">page_type</stringProp>
-              </elementProp>
-              <elementProp name="parentId" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">0</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">parentId</stringProp>
-              </elementProp>
-              <elementProp name="question_id" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">0</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">question_id</stringProp>
-              </elementProp>
-              <elementProp name="isEditor" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">0</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">isEditor</stringProp>
-              </elementProp>
-              <elementProp name="val" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value"></stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">val</stringProp>
-              </elementProp>
-              <elementProp name="knowledge_ids" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">3219,3220</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">knowledge_ids</stringProp>
-              </elementProp>
-              <elementProp name="viptag_ids" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">2273,2274</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">viptag_ids</stringProp>
-              </elementProp>
-              <elementProp name="page" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">1</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">page</stringProp>
-              </elementProp>
-              <elementProp name="is_practice" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">0</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">is_practice</stringProp>
-              </elementProp>
-              <elementProp name="question_type_id" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">6</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">question_type_id</stringProp>
-              </elementProp>
-              <elementProp name="select" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">3,4</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">select</stringProp>
-              </elementProp>
-              <elementProp name="question_course_tem_type" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">3</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">question_course_tem_type</stringProp>
-              </elementProp>
-              <elementProp name="difficulty" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">5</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">difficulty</stringProp>
-              </elementProp>
-              <elementProp name="mypic" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value"></stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">mypic</stringProp>
-              </elementProp>
-              <elementProp name="answer" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">1</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">answer</stringProp>
-              </elementProp>
-              <elementProp name="mypic" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value"></stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">mypic</stringProp>
-              </elementProp>
-              <elementProp name="score" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">20</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">score</stringProp>
-              </elementProp>
-              <elementProp name="issetparams" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">1</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">issetparams</stringProp>
-              </elementProp>
-              <elementProp name="stem" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">&lt;p&gt;${__time(yyyy-MM-dd HH:mm:ss,)} 接口添加背诵题：&lt;/p&gt;&lt;p&gt;请背诵《水调歌头·明月几时有&amp;nbsp;》这首诗词&lt;/p&gt;</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">stem</stringProp>
-              </elementProp>
-              <elementProp name="analysis" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">&lt;p&gt;丙辰中秋，欢饮达旦，大醉，作此篇，兼怀子由。&lt;/p&gt;&lt;p&gt;明月几时有？把酒问青天。不知天上宫阙，今夕是何年。我欲乘风归去，又恐琼楼玉宇，高处不胜寒。起舞弄清影，何似在人间。(何似 一作：何时；又恐 一作：惟 / 唯恐)&lt;/p&gt;&lt;p&gt;转朱阁，低绮户，照无眠。不应有恨，何事长向别时圆？人有悲欢离合，月有阴晴圆缺，此事古难全。但愿人长久，千里共婵娟。(长向 一作：偏向)&lt;/p&gt;</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">analysis</stringProp>
-              </elementProp>
-              <elementProp name="grade" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">9</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">grade</stringProp>
-              </elementProp>
-              <elementProp name="subject" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">11</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">subject</stringProp>
-              </elementProp>
-              <elementProp name="course_tem_id" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${course_tem_id}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">course_tem_id</stringProp>
-              </elementProp>
-              <elementProp name="course_id" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${course_id}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">course_id</stringProp>
-              </elementProp>
-              <elementProp name="chapter_id" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${chapter_id}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">chapter_id</stringProp>
-              </elementProp>
-              <elementProp name="q_status" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${q_status}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">q_status</stringProp>
-              </elementProp>
-            </collectionProp>
-          </elementProp>
-          <stringProp name="HTTPSampler.domain"></stringProp>
-          <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol"></stringProp>
-          <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
-          <stringProp name="HTTPSampler.path">/index.php?c=TiKu&amp;a=addquestionparams</stringProp>
-          <stringProp name="HTTPSampler.method">POST</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
-        </HTTPSamplerProxy>
-        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="解答题" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
@@ -14854,7 +14638,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="score" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">2</stringProp>
+                <stringProp name="Argument.value">5</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">score</stringProp>
@@ -15091,7 +14875,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="score" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">2</stringProp>
+                <stringProp name="Argument.value">5</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">score</stringProp>
@@ -15223,7 +15007,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="score" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">2</stringProp>
+                <stringProp name="Argument.value">5</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">score</stringProp>
@@ -15446,7 +15230,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="score" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">2</stringProp>
+                <stringProp name="Argument.value">5</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">score</stringProp>
@@ -16949,25 +16733,25 @@ vars.put(&quot;is_topic&quot;,is_topic);
           <collectionProp name="Arguments.arguments">
             <elementProp name="course_tem_id" elementType="Argument">
               <stringProp name="Argument.name">course_tem_id</stringProp>
-              <stringProp name="Argument.value">18139</stringProp>
+              <stringProp name="Argument.value">2809</stringProp>
               <stringProp name="Argument.desc">false</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="course_id" elementType="Argument">
               <stringProp name="Argument.name">course_id</stringProp>
-              <stringProp name="Argument.value">18139</stringProp>
+              <stringProp name="Argument.value">2809</stringProp>
               <stringProp name="Argument.desc">false</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="chapter_id" elementType="Argument">
               <stringProp name="Argument.name">chapter_id</stringProp>
-              <stringProp name="Argument.value">541954</stringProp>
+              <stringProp name="Argument.value">481495</stringProp>
               <stringProp name="Argument.desc">false</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="parentId" elementType="Argument">
               <stringProp name="Argument.name">parentId</stringProp>
-              <stringProp name="Argument.value">451032</stringProp>
+              <stringProp name="Argument.value">586504</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
@@ -17112,7 +16896,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="score" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">10</stringProp>
+                <stringProp name="Argument.value">13</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">score</stringProp>
@@ -17140,21 +16924,21 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="course_tem_id" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">321974</stringProp>
+                <stringProp name="Argument.value">${course_tem_id}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">course_tem_id</stringProp>
               </elementProp>
               <elementProp name="course_id" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">321974</stringProp>
+                <stringProp name="Argument.value">${course_id}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">course_id</stringProp>
               </elementProp>
               <elementProp name="chapter_id" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">502059</stringProp>
+                <stringProp name="Argument.value">${chapter_id}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">chapter_id</stringProp>
@@ -18151,7 +17935,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
               </elementProp>
               <elementProp name="score" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">2</stringProp>
+                <stringProp name="Argument.value">5</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">score</stringProp>
@@ -18479,83 +18263,30 @@ vars.put(&quot;is_topic&quot;,is_topic);
           <collectionProp name="Arguments.arguments">
             <elementProp name="course_tem_id" elementType="Argument">
               <stringProp name="Argument.name">course_tem_id</stringProp>
-              <stringProp name="Argument.value">18139</stringProp>
+              <stringProp name="Argument.value">2809</stringProp>
               <stringProp name="Argument.desc">false</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="course_id" elementType="Argument">
               <stringProp name="Argument.name">course_id</stringProp>
-              <stringProp name="Argument.value">18139</stringProp>
+              <stringProp name="Argument.value">2809</stringProp>
               <stringProp name="Argument.desc">false</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="chapter_id" elementType="Argument">
               <stringProp name="Argument.name">chapter_id</stringProp>
-              <stringProp name="Argument.value">541954</stringProp>
+              <stringProp name="Argument.value">481495</stringProp>
               <stringProp name="Argument.desc">false</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="parentId" elementType="Argument">
               <stringProp name="Argument.name">parentId</stringProp>
-              <stringProp name="Argument.value">451032</stringProp>
+              <stringProp name="Argument.value">586490</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
           <stringProp name="TestPlan.comments">2020暑假-1五年级常规大班</stringProp>
         </Arguments>
-        <hashTree/>
-        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager_Pre环境" enabled="true">
-          <collectionProp name="HeaderManager.headers">
-            <elementProp name="Host" elementType="Header">
-              <stringProp name="Header.name">Host</stringProp>
-              <stringProp name="Header.value">pre.xuexi8.tech</stringProp>
-            </elementProp>
-            <elementProp name="Connection" elementType="Header">
-              <stringProp name="Header.name">Connection</stringProp>
-              <stringProp name="Header.value">keep-alive</stringProp>
-            </elementProp>
-            <elementProp name="Content-Length" elementType="Header">
-              <stringProp name="Header.name">Content-Length</stringProp>
-              <stringProp name="Header.value">43</stringProp>
-            </elementProp>
-            <elementProp name="Accept" elementType="Header">
-              <stringProp name="Header.name">Accept</stringProp>
-              <stringProp name="Header.value">*/*</stringProp>
-            </elementProp>
-            <elementProp name="X-Requested-With" elementType="Header">
-              <stringProp name="Header.name">X-Requested-With</stringProp>
-              <stringProp name="Header.value">XMLHttpRequest</stringProp>
-            </elementProp>
-            <elementProp name="User-Agent" elementType="Header">
-              <stringProp name="Header.name">User-Agent</stringProp>
-              <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36</stringProp>
-            </elementProp>
-            <elementProp name="Content-Type" elementType="Header">
-              <stringProp name="Header.name">Content-Type</stringProp>
-              <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
-            </elementProp>
-            <elementProp name="Origin" elementType="Header">
-              <stringProp name="Header.name">Origin</stringProp>
-              <stringProp name="Header.value">http://pre.xuexi8.tech</stringProp>
-            </elementProp>
-            <elementProp name="Referer" elementType="Header">
-              <stringProp name="Header.name">Referer</stringProp>
-              <stringProp name="Header.value">http://pre.xuexi8.tech/index.php?c=TiKu&amp;a=shitiList&amp;auth_id=120</stringProp>
-            </elementProp>
-            <elementProp name="Accept-Encoding" elementType="Header">
-              <stringProp name="Header.name">Accept-Encoding</stringProp>
-              <stringProp name="Header.value">gzip, deflate</stringProp>
-            </elementProp>
-            <elementProp name="Accept-Language" elementType="Header">
-              <stringProp name="Header.name">Accept-Language</stringProp>
-              <stringProp name="Header.value">zh-CN,zh;q=0.9</stringProp>
-            </elementProp>
-            <elementProp name="Cookie" elementType="Header">
-              <stringProp name="Header.name">Cookie</stringProp>
-              <stringProp name="Header.value">p_h5_upload_u=23067789-67FB-4CF1-844A-6C23F4156010; selectedStreamLevel=LD; _bl_uid=gUk5Ccv6hp0gd4gmXa0IrUy94z3n; Hm_lvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1597192566,1597213329,1597215490,1597279052; PHPSESSID=kjdnuv4jog4lv1416aert6soe7; laravel_session=DovXCitl6vPvyTrTFMNsEJk7FuAuYDcse6mQunpB; Hm_lpvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1597304238</stringProp>
-            </elementProp>
-          </collectionProp>
-        </HeaderManager>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="添加材料题" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
@@ -18707,27 +18438,6 @@ vars.put(&quot;is_topic&quot;,is_topic);
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">analysis</stringProp>
               </elementProp>
-              <elementProp name="course_tem_id" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">321974</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">course_tem_id</stringProp>
-              </elementProp>
-              <elementProp name="course_id" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">321974</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">course_id</stringProp>
-              </elementProp>
-              <elementProp name="chapter_id" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">502059</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">chapter_id</stringProp>
-              </elementProp>
               <elementProp name="grade" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">9</stringProp>
@@ -18741,6 +18451,27 @@ vars.put(&quot;is_topic&quot;,is_topic);
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">subject</stringProp>
+              </elementProp>
+              <elementProp name="course_tem_id" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${course_tem_id}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">course_tem_id</stringProp>
+              </elementProp>
+              <elementProp name="course_id" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${course_id}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">course_id</stringProp>
+              </elementProp>
+              <elementProp name="chapter_id" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${chapter_id}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">chapter_id</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
@@ -19366,7 +19097,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="听力理解添加——填空题（客观）" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="填空题（客观）" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="teacher_chapter_id" elementType="HTTPArgument">

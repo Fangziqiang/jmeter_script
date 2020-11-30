@@ -1064,8 +1064,8 @@ vars.put(&quot;is_topic&quot;,is_topic);
         // 加密
         long lStart = System.currentTimeMillis();
         String enString = AEStest2.Encrypt(cSrc, &quot;F697467B14B076F2&quot;);
-        System.out.println(&quot;加密后的字串是:&quot;+enString);
-        log.info(enString);
+//        System.out.println(&quot;加密后的字串是:&quot;+enString);
+//        log.info(enString);
 	   //将变量enString的值付给cbckey
         vars.put(&quot;cbckey&quot;,enString);
 </stringProp>
@@ -1207,7 +1207,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
 				&quot;\&quot;,\&quot;near_school_id\&quot;:0,\&quot;school_id\&quot;:\&quot;10\&quot;,\&quot;do_type\&quot;:\&quot;classPaper\&quot;,\&quot;start_time\&quot;:1605501058,\&quot;from_device\&quot;:\&quot;app\&quot;}&quot;;
 		
 	    String enString = AEStest2.Encrypt(parameter,&quot;F697467B14B076F2&quot;);
-	    System.out.println(enString);
+//	    System.out.println(enString);
 	    vars.put(&quot;cbckey&quot;,enString);
 
 
@@ -1584,8 +1584,8 @@ vars.put(&quot;is_topic&quot;,is_topic);
         // 加密
         long lStart = System.currentTimeMillis();
         String enString = AEStest2.Encrypt(cSrc, &quot;F697467B14B076F2&quot;);
-        System.out.println(&quot;加密后的字串是:&quot;+enString);
-        log.info(enString);
+//        System.out.println(&quot;加密后的字串是:&quot;+enString);
+//        log.info(enString);
 	   //将变量enString的值付给cbckey
         vars.put(&quot;cbckey&quot;,enString);
 </stringProp>
