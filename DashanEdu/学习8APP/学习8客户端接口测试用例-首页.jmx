@@ -5235,6 +5235,88 @@ System.out.println(count);</stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
       </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="班课附近三校区(新)" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="lng" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">113.523824</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">lng</stringProp>
+              </elementProp>
+              <elementProp name="lat" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">34.815005</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">lat</stringProp>
+              </elementProp>
+              <elementProp name="page" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">1</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">page</stringProp>
+              </elementProp>
+              <elementProp name="num" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">3</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">num</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/jiekou2/index.php?c=Teacher&amp;a=getnearSchool_new</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="断言status" enabled="true">
+            <stringProp name="JSON_PATH">$.status</stringProp>
+            <stringProp name="EXPECTED_VALUE">0</stringProp>
+            <boolProp name="JSONVALIDATION">true</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">false</boolProp>
+            <boolProp name="ISREGEX">true</boolProp>
+          </JSONPathAssertion>
+          <hashTree/>
+          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="断言msg" enabled="true">
+            <stringProp name="JSON_PATH">$.near_school</stringProp>
+            <stringProp name="EXPECTED_VALUE">[{&quot;lng&quot;:&quot;113.523824&quot;,&quot;lat&quot;:&quot;34.815005&quot;,&quot;id&quot;:&quot;71&quot;,&quot;areas_id&quot;:&quot;18&quot;,&quot;school_name&quot;:&quot;万科城校区&quot;,&quot;address&quot;:&quot;科学大道与须水东路交叉口向北100米路东（星光广场旁边）&quot;,&quot;tell&quot;:&quot;66398678&quot;,&quot;picture&quot;:&quot;1490068172359.jpg&quot;,&quot;distance&quot;:0,&quot;pic&quot;:&quot;https:\/\/xuexi8.oss-cn-beijing.aliyuncs.com\/1490068172359.jpg?x-oss-process=style\/thumb6&quot;,&quot;small_pic&quot;:&quot;https:\/\/xuexi8.oss-cn-beijing.aliyuncs.com\/1490068172359.jpg?x-oss-process=style\/thumb3&quot;},{&quot;lng&quot;:&quot;113.534236&quot;,&quot;lat&quot;:&quot;34.838788&quot;,&quot;id&quot;:&quot;129&quot;,&quot;areas_id&quot;:&quot;18&quot;,&quot;school_name&quot;:&quot;锦和苑校区&quot;,&quot;address&quot;:&quot;郑州市高新区西四环与堂门路交叉口向北100米路东（糖果时光小区西门）&quot;,&quot;tell&quot;:&quot;0371-53377731&quot;,&quot;picture&quot;:null,&quot;distance&quot;:2.81},{&quot;lng&quot;:&quot;113.549278&quot;,&quot;lat&quot;:&quot;34.837062&quot;,&quot;id&quot;:&quot;107&quot;,&quot;areas_id&quot;:&quot;18&quot;,&quot;school_name&quot;:&quot;谦祥万和城校区&quot;,&quot;address&quot;:&quot;高新区长椿路和莲花街交叉口向北100米谦祥万和城D区13号楼底商（工业大学西门斜对面）&quot;,&quot;tell&quot;:&quot;58690833&quot;,&quot;picture&quot;:&quot;course\/default.jpg&quot;,&quot;distance&quot;:3.38,&quot;pic&quot;:&quot;https:\/\/xuexi8.oss-cn-beijing.aliyuncs.com\/course\/default.jpg?x-oss-process=style\/thumb6&quot;,&quot;small_pic&quot;:&quot;https:\/\/xuexi8.oss-cn-beijing.aliyuncs.com\/course\/default.jpg?x-oss-process=style\/thumb3&quot;}]</stringProp>
+            <boolProp name="JSONVALIDATION">true</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">false</boolProp>
+            <boolProp name="ISREGEX">false</boolProp>
+          </JSONPathAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
     </hashTree>
   </hashTree>
 </jmeterTestPlan>

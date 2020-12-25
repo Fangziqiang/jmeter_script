@@ -19551,7 +19551,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
-        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="false">
           <collectionProp name="HeaderManager.headers">
             <elementProp name="Host" elementType="Header">
               <stringProp name="Header.name">Host</stringProp>
@@ -19624,7 +19624,7 @@ vars.put(&quot;is_topic&quot;,is_topic);
           </collectionProp>
         </HeaderManager>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="teacher_chapter_id" elementType="HTTPArgument">
@@ -19678,6 +19678,81 @@ vars.put(&quot;is_topic&quot;,is_topic);
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="TestPlan.comments">{&quot;teacher_chapter_id&quot;:&quot;16994&quot;,&quot;course_id&quot;:&quot;10663&quot;,&quot;flag&quot;:&quot;1&quot;,&quot;do_type&quot;:&quot;homework&quot;,&quot;student_id&quot;:&quot;151791&quot;}</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager_Pre环境" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="Host" elementType="Header">
+              <stringProp name="Header.name">Host</stringProp>
+              <stringProp name="Header.value">sanbox.xuexi8.tech</stringProp>
+            </elementProp>
+            <elementProp name="Connection" elementType="Header">
+              <stringProp name="Header.name">Connection</stringProp>
+              <stringProp name="Header.value">keep-alive</stringProp>
+            </elementProp>
+            <elementProp name="Content-Length" elementType="Header">
+              <stringProp name="Header.name">Content-Length</stringProp>
+              <stringProp name="Header.value">323</stringProp>
+            </elementProp>
+            <elementProp name="Accept" elementType="Header">
+              <stringProp name="Header.name">Accept</stringProp>
+              <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+            </elementProp>
+            <elementProp name="Origin" elementType="Header">
+              <stringProp name="Header.name">Origin</stringProp>
+              <stringProp name="Header.value">http://sanbox.xuexi8.tech</stringProp>
+            </elementProp>
+            <elementProp name="User-Agent" elementType="Header">
+              <stringProp name="Header.name">User-Agent</stringProp>
+              <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36</stringProp>
+            </elementProp>
+            <elementProp name="Content-Type" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+            </elementProp>
+            <elementProp name="Referer" elementType="Header">
+              <stringProp name="Header.name">Referer</stringProp>
+              <stringProp name="Header.value">http://sanbox.xuexi8.tech/index.php?c=TeacherTrain&amp;a=applicantsDoWork&amp;user_id=5489&amp;train_id=56&amp;map_id=127&amp;checkpoint_id=31&amp;task_id=27&amp;testpaper_id=22094&amp;task_time_limit=2</stringProp>
+            </elementProp>
+            <elementProp name="Accept-Encoding" elementType="Header">
+              <stringProp name="Header.name">Accept-Encoding</stringProp>
+              <stringProp name="Header.value">gzip, deflate</stringProp>
+            </elementProp>
+            <elementProp name="Accept-Language" elementType="Header">
+              <stringProp name="Header.name">Accept-Language</stringProp>
+              <stringProp name="Header.value">zh-CN,zh;q=0.9</stringProp>
+            </elementProp>
+            <elementProp name="Cookie" elementType="Header">
+              <stringProp name="Header.name">Cookie</stringProp>
+              <stringProp name="Header.value">p_h5_u=FDB57FE1-1BF5-459A-8136-DDD8F51CA9F6; p_h5_upload_u=6F069759-2FBB-43BB-96A7-69BA438D81B7; __guid=212604182.2999333009674499600.1600338812313.619; _bl_uid=sIkUIhkyvvncz0xUFq80m702IjXR; selectedStreamLevel=SD; PHPSESSID=5k6di5h7nielvbvhpv7gih5712; Hm_lvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1607320623,1607396085,1607492915,1607498124; monitor_count=45; Hm_lpvt_c56d44d93e3f10e4fe0e0c29be7ebf9e=1607501230</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;end_time&quot;:&quot;2020-12-09 15:57&quot;,&quot;answers&quot;:&quot;{\&quot;451769\&quot;:[1],\&quot;451805\&quot;:[\&quot;1607499507265.png\&quot;],\&quot;451807\&quot;:[\&quot;1607499515311.png\&quot;],\&quot;451808\&quot;:[\&quot;C\&quot;],\&quot;451809\&quot;:[\&quot;1607499499531.png\&quot;]}&quot;,&quot;user_id&quot;:&quot;5490&quot;,&quot;train_id&quot;:&quot;56&quot;,&quot;checkpoint_id&quot;:&quot;31&quot;,&quot;map_id&quot;:&quot;127&quot;,&quot;task_id&quot;:&quot;27&quot;,&quot;testpaper_id&quot;:&quot;22094&quot;,&quot;begin_time&quot;:&quot;2020-12-09 15:55&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">http://sanbox.xuexi8.tech/tch/saveTestPaper</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
       </hashTree>
