@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.3">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="智能推荐系统" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+        <stringProp name="filename"></stringProp>
+        <stringProp name="parameters"></stringProp>
+        <boolProp name="resetInterpreter">false</boolProp>
+        <stringProp name="script">String s=new String(prev.getResponseData(),&quot;UTF-8&quot;);
+        char aChar;
+        int len= s.length();
+        StringBuffer outBuffer=new StringBuffer(len);
+        for(int x =0; x &lt;len;){
+            aChar= s.charAt(x++);
+            if(aChar==&apos;\\&apos;){
+                aChar= s.charAt(x++);
+                if(aChar==&apos;u&apos;){
+                    int value =0;
+                    for(int i=0;i&lt;4;i++){
+                        aChar= s.charAt(x++);
+                        switch(aChar){
+                            case&apos;0&apos;:
+                            case&apos;1&apos;:
+                            case&apos;2&apos;:
+                            case&apos;3&apos;:
+                            case&apos;4&apos;:
+                            case&apos;5&apos;:
+                            case&apos;6&apos;:
+                            case&apos;7&apos;:
+                            case&apos;8&apos;:
+                            case&apos;9&apos;:
+                                value=(value &lt;&lt;4)+aChar-&apos;0&apos;;
+                                break;
+                            case&apos;a&apos;:
+                            case&apos;b&apos;:
+                            case&apos;c&apos;:
+                            case&apos;d&apos;:
+                            case&apos;e&apos;:
+                            case&apos;f&apos;:
+                                value=(value &lt;&lt;4)+10+aChar-&apos;a&apos;;
+                                break;
+                            case&apos;A&apos;:
+                            case&apos;B&apos;:
+                            case&apos;C&apos;:
+                            case&apos;D&apos;:
+                            case&apos;E&apos;:
+                            case&apos;F&apos;:
+                                value=(value &lt;&lt;4)+10+aChar-&apos;A&apos;;
+                                break;
+                            default:
+                                throw new IllegalArgumentException(
+                                        &quot;Malformed   \\uxxxx  encoding.&quot;);}}
+                    outBuffer.append((char) value);}else{
+                    if(aChar==&apos;t&apos;)
+                        aChar=&apos;\t&apos;;
+                    else if(aChar==&apos;r&apos;)
+                    aChar=&apos;\r&apos;;
+                    else if(aChar==&apos;n&apos;)
+                    aChar=&apos;\n&apos;;
+                    else if(aChar==&apos;f&apos;)
+                    aChar=&apos;\f&apos;;
+                    outBuffer.append(aChar);}}else
+                outBuffer.append(aChar);}
+prev.setResponseData(outBuffer.toString());</stringProp>
+      </BeanShellPostProcessor>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">10</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="Host" elementType="Header">
+              <stringProp name="Header.name">Host</stringProp>
+              <stringProp name="Header.value">sanbox-recapi.xuexi8.tech</stringProp>
+            </elementProp>
+            <elementProp name="Connection" elementType="Header">
+              <stringProp name="Header.name">Connection</stringProp>
+              <stringProp name="Header.value">keep-alive</stringProp>
+            </elementProp>
+            <elementProp name="Content-Length" elementType="Header">
+              <stringProp name="Header.name">Content-Length</stringProp>
+              <stringProp name="Header.value">44</stringProp>
+            </elementProp>
+            <elementProp name="Accept" elementType="Header">
+              <stringProp name="Header.name">Accept</stringProp>
+              <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+            </elementProp>
+            <elementProp name="X-Token" elementType="Header">
+              <stringProp name="Header.name">X-Token</stringProp>
+              <stringProp name="Header.value">59186007d0a5679951.96681398</stringProp>
+            </elementProp>
+            <elementProp name="User-Agent" elementType="Header">
+              <stringProp name="Header.name">User-Agent</stringProp>
+              <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36</stringProp>
+            </elementProp>
+            <elementProp name="Content-Type" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+            </elementProp>
+            <elementProp name="Origin" elementType="Header">
+              <stringProp name="Header.name">Origin</stringProp>
+              <stringProp name="Header.value">http://sanbox-rec.xuexi8.tech</stringProp>
+            </elementProp>
+            <elementProp name="Referer" elementType="Header">
+              <stringProp name="Header.name">Referer</stringProp>
+              <stringProp name="Header.value">http://sanbox-rec.xuexi8.tech/</stringProp>
+            </elementProp>
+            <elementProp name="Accept-Encoding" elementType="Header">
+              <stringProp name="Header.name">Accept-Encoding</stringProp>
+              <stringProp name="Header.value">gzip, deflate</stringProp>
+            </elementProp>
+            <elementProp name="Accept-Language" elementType="Header">
+              <stringProp name="Header.name">Accept-Language</stringProp>
+              <stringProp name="Header.value">zh-CN,zh;q=0.9</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+          <stringProp name="delimiter">,</stringProp>
+          <stringProp name="fileEncoding">GB2312</stringProp>
+          <stringProp name="filename">E:/apache-jmeter-5.2.1/jmeter_script/DashanEdu/智能推荐系统/data/student_phone.csv</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <boolProp name="quotedData">true</boolProp>
+          <boolProp name="recycle">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+          <boolProp name="stopThread">true</boolProp>
+          <stringProp name="variableNames">phone</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="查询学生课程推荐列表" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">sanbox-recapi.xuexi8.tech</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+          <stringProp name="HTTPSampler.path">/admin/recommend</stringProp>
+          <stringProp name="HTTPSampler.method">OPTIONS</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="查询学生课程推荐列表" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;student_id&quot;:&quot;${phone}&quot;,&quot;course_type&quot;:0}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">sanbox-recapi.xuexi8.tech</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+          <stringProp name="HTTPSampler.path">/admin/recommend</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="408987137">&quot;code&quot;:100000,&quot;msg&quot;:&quot;OK&quot;</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">16</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
