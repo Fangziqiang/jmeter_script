@@ -2078,7 +2078,7 @@ String productId=&quot;&quot;;
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <intProp name="LoopController.loops">-1</intProp>
+          <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
@@ -2100,15 +2100,15 @@ String productId=&quot;&quot;;
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;blCampusId&quot;:&quot;6775&quot;,&quot;signByWho&quot;:&quot;14294&quot;,&quot;signTime&quot;:&quot;2021-01-26&quot;,&quot;stuName&quot;:&quot;141&quot;,&quot;gradeId&quot;:&quot;837221&quot;,&quot;cusPhone&quot;:&quot;${phone}&quot;,&quot;cusOrg&quot;:&quot;837528&quot;,&quot;syncChargePaymentId&quot;:&quot;0&quot;,&quot;realContractAmount&quot;:&quot;0.3&quot;,&quot;promotionContractAmount&quot;:&quot;0&quot;,&quot;paidContractAmount&quot;:&quot;0&quot;,&quot;planContractAmount&quot;:&quot;0.3&quot;,&quot;&quot;:&quot;0.3&quot;,&quot;cusId&quot;:392453,&quot;stuId&quot;:${x_id},&quot;consultorId&quot;:&quot;14294&quot;,&quot;campusDirectorId&quot;:&quot;14294&quot;,&quot;promotionAmountOriginal&quot;:&quot;0&quot;,&quot;giftObjectCmdList&quot;:[],&quot;cashCouponCmdList&quot;:[],&quot;contractProductAddCmdList&quot;:[{&quot;miniClassId&quot;:&quot;91982&quot;,&quot;productId&quot;:&quot;1904&quot;,&quot;productType&quot;:&quot;SMALL_CLASS&quot;,&quot;firstSchoolTime&quot;:&quot;2021-01-26&quot;,&quot;validEndDate&quot;:&quot;&quot;,&quot;quantity&quot;:&quot;30&quot;,&quot;price&quot;:&quot;0.01&quot;,&quot;discountUnitPrice&quot;:&quot;0.01&quot;,&quot;payment&quot;:&quot;0.3&quot;,&quot;subContractTypeId&quot;:&quot;&quot;,&quot;remark&quot;:&quot;&quot;,&quot;uuid&quot;:&quot;77118874-cfdb-4815-b155-3bd5c04ef9bd&quot;,&quot;contractPromotionAmountOriginal&quot;:&quot;0.00&quot;,&quot;freeCutMoney&quot;:0,&quot;planPromotionHours&quot;:&quot;0.00&quot;,&quot;productUuid&quot;:&quot;a09bb848-480b-6f19-7afc-ff481dafc98a&quot;,&quot;contractProductSubjects&quot;:[]}],&quot;contractType&quot;:&quot;NEW_CONTRACT&quot;}</stringProp>
+                <stringProp name="Argument.value">{&quot;blCampusId&quot;:&quot;6775&quot;,&quot;signByWho&quot;:&quot;14294&quot;,&quot;signTime&quot;:&quot;2021-01-26&quot;,&quot;stuName&quot;:&quot;141&quot;,&quot;gradeId&quot;:&quot;837221&quot;,&quot;cusPhone&quot;:&quot;14100000002&quot;,&quot;cusOrg&quot;:&quot;837528&quot;,&quot;syncChargePaymentId&quot;:&quot;0&quot;,&quot;realContractAmount&quot;:&quot;0.3&quot;,&quot;promotionContractAmount&quot;:&quot;0&quot;,&quot;paidContractAmount&quot;:&quot;0&quot;,&quot;planContractAmount&quot;:&quot;0.3&quot;,&quot;&quot;:&quot;0.3&quot;,&quot;cusId&quot;:392453,&quot;stuId&quot;:250956,&quot;consultorId&quot;:&quot;14294&quot;,&quot;campusDirectorId&quot;:&quot;14294&quot;,&quot;promotionAmountOriginal&quot;:&quot;0&quot;,&quot;giftObjectCmdList&quot;:[],&quot;cashCouponCmdList&quot;:[],&quot;contractProductAddCmdList&quot;:[{&quot;miniClassId&quot;:&quot;91982&quot;,&quot;productId&quot;:&quot;1904&quot;,&quot;productType&quot;:&quot;SMALL_CLASS&quot;,&quot;firstSchoolTime&quot;:&quot;2021-01-26&quot;,&quot;validEndDate&quot;:&quot;&quot;,&quot;quantity&quot;:&quot;30&quot;,&quot;price&quot;:&quot;0.01&quot;,&quot;discountUnitPrice&quot;:&quot;0.01&quot;,&quot;payment&quot;:&quot;0.3&quot;,&quot;subContractTypeId&quot;:&quot;&quot;,&quot;remark&quot;:&quot;&quot;,&quot;uuid&quot;:&quot;77118874-cfdb-4815-b155-3bd5c04ef9bd&quot;,&quot;contractPromotionAmountOriginal&quot;:&quot;0.00&quot;,&quot;freeCutMoney&quot;:0,&quot;planPromotionHours&quot;:&quot;0.00&quot;,&quot;productUuid&quot;:&quot;a09bb848-480b-6f19-7afc-ff481dafc98a&quot;,&quot;contractProductSubjects&quot;:[]}],&quot;contractType&quot;:&quot;NEW_CONTRACT&quot;}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.domain">xuexi8.work</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol"></stringProp>
-          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
           <stringProp name="HTTPSampler.path">/eduboss/dashan/web/contract/add.do</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
